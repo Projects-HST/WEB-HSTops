@@ -39,6 +39,17 @@ class Apiandroid extends CI_Controller {
 		{
 			return FALSE;
 		}
+		
+		if($_POST == FALSE)
+		{
+			$res = array();
+			$res["opn"] = "Generate OTP";
+			$res["scode"] = 204;
+			$res["message"] = "Input error";
+
+			echo json_encode($res);
+			return;
+		}
 
 		$version_code = '';
 		$version_code = $this->input->post("version_code");
@@ -60,6 +71,17 @@ class Apiandroid extends CI_Controller {
 			return FALSE;
 		}
 
+		if($_POST == FALSE)
+		{
+			$res = array();
+			$res["opn"] = "Generate OTP";
+			$res["scode"] = 204;
+			$res["message"] = "Input error";
+
+			echo json_encode($res);
+			return;
+		}
+		
 		$version_code = '';
 		$version_code = $this->input->post("version_code");
 		$data['result']=$this->apiandroidmodel->intro_video($version_code);

@@ -40,6 +40,17 @@ class Apiios extends CI_Controller {
 			return FALSE;
 		}
 
+		if($_POST == FALSE)
+		{
+			$res = array();
+			$res["opn"] = "Generate OTP";
+			$res["scode"] = 204;
+			$res["message"] = "Input error";
+
+			echo json_encode($res);
+			return;
+		}
+		
 		$version_code = '';
 		$version_code = $this->input->post("version_code");
 		$data['result']=$this->apiiosmodel->version_check($version_code);
@@ -60,6 +71,17 @@ class Apiios extends CI_Controller {
 			return FALSE;
 		}
 
+		if($_POST == FALSE)
+		{
+			$res = array();
+			$res["opn"] = "Generate OTP";
+			$res["scode"] = 204;
+			$res["message"] = "Input error";
+
+			echo json_encode($res);
+			return;
+		}
+		
 		$version_code = '';
 		$version_code = $this->input->post("version_code");
 		$data['result']=$this->apiiosmodel->intro_video($version_code);
