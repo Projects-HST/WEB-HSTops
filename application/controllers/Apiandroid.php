@@ -42,7 +42,7 @@ class Apiandroid extends CI_Controller {
 
 		$version_code = '';
 		$version_code = $this->input->post("version_code");
-		$data['result']=$this->apiandroidmodel->version_check($version_code);
+		$data['result']=$this->apiandroidmodel->Version_check($version_code);
 		$response = $data['result'];
 		echo json_encode($response);
 	}

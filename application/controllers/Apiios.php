@@ -31,7 +31,7 @@ class Apiios extends CI_Controller {
 
 //-----------------------------------------------//
 
-	public function version_check()
+	public function Version_check()
 	{
 		$_POST = json_decode(file_get_contents("php://input"), TRUE);
 		
