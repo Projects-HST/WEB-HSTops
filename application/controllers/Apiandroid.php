@@ -12,7 +12,7 @@ class Apiandroid extends CI_Controller {
         parent::__construct();
 		$this->load->model("apiandroidmodel");
 		$this->load->helper("url");
-		$this->load->library('session');
+		//$this->load->library('session');
     }
 
 	public function checkMethod()
