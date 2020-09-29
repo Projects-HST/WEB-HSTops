@@ -1,0 +1,19 @@
+.paginate_links{
+  padding-bottom:25px;
+}
+.badge-Active{
+    background-color: #27c30a;
+    color: #fff;
+    text-align: center;
+    border-radius: 25px;
+    width: 90px;
+
+}
+.badge-Inactive{
+    background-color: #e24949;
+    color: #fff;
+    text-align: center;
+    border-radius: 25px;
+    width: 90px;
+
+}
