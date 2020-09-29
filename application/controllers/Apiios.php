@@ -902,7 +902,7 @@ class Apiios extends CI_Controller {
 
 		$user_id = $this->input->post("user_id");
 		
-		$data['result']=$this->apiusermodel->Socialmedia($user_id);
+		$data['result']=$this->apiiosmodel->Socialmedia($user_id);
 
 		$response = $data['result'];
 		echo json_encode($response);
