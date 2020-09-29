@@ -3,3 +3,4 @@ INSERT INTO `news_category` (`id`, `category_name`, `status`) VALUES (NULL, 'Sto
 ALTER TABLE `user_master` CHANGE `otp` `otp` VARCHAR(6) NOT NULL;
 
 ALTER TABLE nf_comments ADD nf_id INT NOT NULL AFTER user_id;
+ALTER TABLE `news_feed` CHANGE `news_date` `news_date` DATE NOT NULL;

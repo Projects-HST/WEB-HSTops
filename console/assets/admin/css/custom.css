@@ -1,5 +1,5 @@
 .paginate_links{
-  padding-bottom:25px;
+  /* padding-bottom:25px; */
 }
 .badge-Active{
     background-color: #27c30a;
@@ -16,4 +16,7 @@
     border-radius: 25px;
     width: 90px;
 
+}
+svg{
+  width:10px;
 }

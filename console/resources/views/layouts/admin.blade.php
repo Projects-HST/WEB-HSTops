@@ -129,8 +129,8 @@
 															</a>
 															<div class="menu-submenu menu-submenu-classic menu-submenu-right">
 																<ul class="menu-subnav">
-																	<li class="menu-item menu-item-submenu" data-menu-toggle="hover" aria-haspopup="true">
-																		<a href="javascript:;" class="menu-link menu-toggle">
+																	<li class="menu-item menu-item-submenu">
+																		<a href="{{ url('/')}}/admin/list_stories" class="menu-link">
 																			<i class="menu-bullet menu-bullet-dot">
 																				<span></span>
 																			</i>
@@ -333,7 +333,7 @@
 												</div>
 												<div class="navi-text">
 													<div class="font-weight-bold">Logout</div>
-													
+
 												</div>
 											</div>
 										</a>

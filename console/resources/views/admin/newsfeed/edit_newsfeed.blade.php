@@ -10,7 +10,7 @@
                     <h5 class="text-dark font-weight-bold my-1 mr-5">Newsfeed</h5>
                     <ul class="breadcrumb breadcrumb-transparent breadcrumb-dot font-weight-bold p-0 my-2 font-size-sm">
                         <li class="breadcrumb-item">
-                            <a href="" class="text-muted">Create Newsfeed</a>
+                            <a href="" class="text-muted">Update Newsfeed</a>
                         </li>
                     </ul>
                 </div>
@@ -34,7 +34,7 @@
 
                         </div>
 
-                        <form action="{{ url('save_newsfeed')}}" method="post" enctype="multipart/form-data">
+                        <form action="{{ url('update_newsfeed')}}" method="post" enctype="multipart/form-data">
 													@csrf
                             <div class="card-body">
                               <div class="form-group row">
@@ -46,12 +46,12 @@
                                       <option value="{{ $rows->id}}">{{ $rows->category_name}}</option>
                                     <?php } ?>
                                   </select>
-                                  <script>$('#nf_category_id').val('{{Request::old("nf_category_id")}}')</script>
+                                  <script>$('#nf_category_id').val('{{ $data["nf_category_id"]}}')</script>
 																	<p class="error">@error('nf_category_id'){{$message}} @enderror</p>
                                 </div>
                                 <div class="col-md-6">
                                   <label>Newsfeed Date <span class="text-danger">*</span></label>
-                                  <input type="text" class="form-control" placeholder="Enter the Newsfeed Date" readonly='true' autocomplete="off" id="datepicker" value="{{Request::old('news_date')}}"  name="news_date"/>
+                                  <input type="text" class="form-control" placeholder="Enter the Newsfeed Date" readonly='true' autocomplete="off" id="datepicker" value="{{ $newDate = date('d-m-Y', strtotime($data['news_date']))}}"  name="news_date"/>
 																	<p class="error">@error('news_date'){{$message}} @enderror</p>
 
                                 </div>
@@ -59,25 +59,25 @@
 															<div class="form-group row">
                                 <div class="col-md-6">
                                   <label>English title <span class="text-danger">*</span></label>
-																	<input type="text" class="form-control" placeholder="Enter the English title" value="{{Request::old('title_en')}}"  name="title_en"/>
+																	<input type="text" class="form-control" placeholder="Enter the English title" value="{{ $data['title_en']}}"  name="title_en"/>
 																	<p class="error">@error('title_en'){{$message}} @enderror</p>
                                 </div>
                                 <div class="col-md-6">
                                   <label>Tamil title <span class="text-danger">*</span></label>
-																	<input type="text" class="form-control" placeholder="Enter the tamil title" value="{{Request::old('title_ta')}}"  name="title_ta"/>
+																	<input type="text" class="form-control" placeholder="Enter the tamil title" value="{{ $data['title_ta']}}"  name="title_ta"/>
 																	<p class="error">@error('title_ta'){{$message}} @enderror</p>
                                 </div>
 															</div>
                               <div class="form-group row">
                                 <div class="col-md-6">
                                   <label>English description <span class="text-danger">*</span></label>
-                                  <textarea name="description_en" class="form-control" rows="10" cols="80" id="description_en" placeholder="">{{Request::old("description_ta")}}</textarea>
+                                  <textarea name="description_en" class="form-control" rows="10" cols="80" id="description_en" placeholder="">{{ $data['description_en']}}</textarea>
                                   <script>CKEDITOR.replace( 'description_en' ); </script>
                                   <p class="error">@error('description_en'){{$message}} @enderror</p>
                                 </div>
                                 <div class="col-md-6">
                                   <label>Tamil description <span class="text-danger">*</span></label>
-                                  <textarea name="description_ta" class="form-control" rows="10" cols="80" id="description_ta" placeholder="">{{Request::old("description_ta")}}</textarea>
+                                  <textarea name="description_ta" class="form-control" rows="10" cols="80" id="description_ta" placeholder="">{{ $data['description_ta']}}</textarea>
                                   <script>CKEDITOR.replace( 'description_ta' ); </script>
                                   <p class="error">@error('description_ta'){{$message}} @enderror</p>
                                 </div>
@@ -91,35 +91,44 @@
                                     <option value="i">Image</option>
                                     <option value="v">Video</option>
                                   </select>
-                                  <script>$('#nf_profile_type').val('{{Request::old("nf_profile_type")}}')</script>
+                                  <script>$('#nf_profile_type').val("{{ $data['nf_profile_type']}}")</script>
                                   <p class="error">@error('nf_profile_type'){{$message}} @enderror</p>
 
                                 </div>
                                 <div class="col-md-6">
                                   <label>Cover image <span class="text-danger">*</span></label>
-                                  <input type="file" class="form-control" placeholder="Enter the Newsfeed Date" value="{{Request::old('nf_cover_image')}}"  name="nf_cover_image"/>
+                                  <input type="file" class="form-control" placeholder="Enter the Newsfeed Date" value=""  name="nf_cover_image"/>
+                                  <input type="hidden" class="form-control" placeholder="Enter the Newsfeed Date"   name="old_nf_cover_image" value="{{ $data['nf_cover_image']}}"/>
+                                  <input type="hidden" class="form-control" placeholder="Enter the Newsfeed Date"   name="nf_id" value="{{ $data['id']}}"/>
 																	<p class="error">@error('nf_cover_image'){{$message}} @enderror</p>
                                 </div>
 															</div>
                               <div class="form-group row">
-                                <div class="col-md-6" id="video_url">
-                                  <label>Video token id <span class="text-danger">*</span></label>
-                                  <input type="text" class="form-control" placeholder="Enter the Video Token" value="{{Request::old('nf_video_token_id')}}"  name="nf_video_token_id"/>
-																	<p class="error">@error('nf_video_token_id'){{$message}} @enderror</p>
-                                </div>
+
+                                  <div class="col-md-6" id="video_url">
+                                    <label>Video token id <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" placeholder="Enter the Video Token" value="{{ $data['nf_video_token_id']}}"  name="nf_video_token_id"/>
+                                    <p class="error">@error('nf_video_token_id'){{$message}} @enderror</p>
+                                  </div>
+
+
+
+
+
                                 <div class="col-md-6">
                                   <label>Status <span class="text-danger">*</span></label>
                                   <select class="form-control" name="status" id="status">
                                     <option value="Active">Active</option>
                                     <option value="Inactive">Inactive</option>
                                   </select>
+                                  <script>$('#status').val("{{ $data['status']}}");</script>
                                   <p class="error">@error('status'){{$message}} @enderror</p>
                                 </div>
 															</div>
 
                             </div>
                             <div class="card-footer">
-                                <button type="submit" class="btn btn-primary mr-2">Save</button>
+                                <button type="submit" class="btn btn-primary mr-2">Update</button>
                             </div>
                         </form>
                     </div>
@@ -128,8 +137,15 @@
               </div>
             </div>
           </div>
+<?php
+if($data['nf_profile_type']=='v'){ ?>
+<style>#video_url{display: block;}</style>
+<?php }else{ ?>
+  <style>#video_url{display: none;}</style>
+
+<?php } ?>
 <script type="text/javascript">
-$('#video_url').hide();
+
 $('#nf_profile_type').on('change', function() {
   var nf_type_id=this.value;
   if(nf_type_id=='v'){

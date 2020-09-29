@@ -44,8 +44,27 @@ Route::group(['middleware'=>['Customauth']],function(){
 
 
   ### Newsfeed Category ###
+
   Route::get('admin/create_newsfeed','App\Http\Controllers\Newsfeedcontroller@create_newsfeed');
   Route::post('save_newsfeed','App\Http\Controllers\Newsfeedcontroller@save_newsfeed');
+  Route::get('admin/list_stories','App\Http\Controllers\Newsfeedcontroller@list_stories');
+  Route::get('admin/get_edit_newsfeed/{id}','App\Http\Controllers\Newsfeedcontroller@get_edit_newsfeed');
+  Route::post('update_newsfeed','App\Http\Controllers\Newsfeedcontroller@update_newsfeed');
+
+
+  Route::get('admin/add_gallery_newfeed/{id}','App\Http\Controllers\Newsfeedcontroller@add_gallery_newfeed');
+  Route::post('save_gallery_image','App\Http\Controllers\Newsfeedcontroller@save_gallery_image');
+
+
+
+
+
+
+
+
+
+
+
 
 
 
