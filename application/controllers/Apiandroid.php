@@ -477,7 +477,7 @@ class Apiandroid extends CI_Controller {
 
 //-----------------------------------------------//
 
-//-----------------------------------------------//
+/* //-----------------------------------------------//
 
 	public function newsfeed_stories()
 	{
@@ -508,7 +508,7 @@ class Apiandroid extends CI_Controller {
 		echo json_encode($response);
 	}
 
-//-----------------------------------------------//
+//-----------------------------------------------// */
 
 //-----------------------------------------------//
 
@@ -731,6 +731,191 @@ class Apiandroid extends CI_Controller {
 	}
 
 //-----------------------------------------------//
+
+//-----------------------------------------------//
+
+	public function newsfeed_search()
+	{
+	   $_POST = json_decode(file_get_contents("php://input"), TRUE);
+
+		if(!$this->checkMethod())
+		{
+			return FALSE;
+		}
+
+		if($_POST == FALSE)
+		{
+			$res = array();
+			$res["opn"] = "Newsfeed search";
+			$res["scode"] = 204;
+			$res["message"] = "Input error";
+
+			echo json_encode($res);
+			return;
+		}
+
+		$user_id = '';
+		$search_text = '';
+		$offset = '';
+		$rowcount = '';
+		
+		$user_id = $this->input->post("user_id");
+		$search_text = $this->input->post("search_text");
+		$offset = $this->input->post("offset");
+		$rowcount = $this->input->post("rowcount");
+
+		$data['result']=$this->apiandroidmodel->Newsfeed_search($user_id,$search_text,$offset,$rowcount);
+
+		$response = $data['result'];
+		echo json_encode($response);
+	}
+
+//-----------------------------------------------//
+
+
+//-----------------------------------------------//
+
+	public function gallery()
+	{
+	   $_POST = json_decode(file_get_contents("php://input"), TRUE);
+
+		if(!$this->checkMethod())
+		{
+			return FALSE;
+		}
+
+		if($_POST == FALSE)
+		{
+			$res = array();
+			$res["opn"] = "Gallery";
+			$res["scode"] = 204;
+			$res["message"] = "Input error";
+
+			echo json_encode($res);
+			return;
+		}
+
+		$user_id = '';	
+		$user_id = $this->input->post("user_id");
+
+
+		$data['result']=$this->apiandroidmodel->Gallery($user_id);
+
+		$response = $data['result'];
+		echo json_encode($response);
+	}
+
+//-----------------------------------------------//
+
+//-----------------------------------------------//
+
+	public function images_all()
+	{
+	   $_POST = json_decode(file_get_contents("php://input"), TRUE);
+
+		if(!$this->checkMethod())
+		{
+			return FALSE;
+		}
+
+		if($_POST == FALSE)
+		{
+			$res = array();
+			$res["opn"] = "Gallery Images";
+			$res["scode"] = 204;
+			$res["message"] = "Input error";
+
+			echo json_encode($res);
+			return;
+		}
+
+		$user_id = '';	
+		$user_id = $this->input->post("user_id");
+
+		$data['result']=$this->apiandroidmodel->Images_all($user_id);
+
+		$response = $data['result'];
+		echo json_encode($response);
+	}
+
+//-----------------------------------------------//
+
+
+//-----------------------------------------------//
+
+	public function videos_all()
+	{
+	   $_POST = json_decode(file_get_contents("php://input"), TRUE);
+
+		if(!$this->checkMethod())
+		{
+			return FALSE;
+		}
+
+		if($_POST == FALSE)
+		{
+			$res = array();
+			$res["opn"] = "Gallery Videos";
+			$res["scode"] = 204;
+			$res["message"] = "Input error";
+
+			echo json_encode($res);
+			return;
+		}
+
+		$user_id = '';	
+		$user_id = $this->input->post("user_id");
+
+
+		$data['result']=$this->apiandroidmodel->Videos_all($user_id);
+
+		$response = $data['result'];
+		echo json_encode($response);
+	}
+
+//-----------------------------------------------//
+
+
+//-----------------------------------------------//
+
+	public function socialmedia()
+	{
+	   $_POST = json_decode(file_get_contents("php://input"), TRUE);
+
+		if(!$this->checkMethod())
+		{
+			return FALSE;
+		}
+
+		if($_POST == FALSE)
+		{
+			$res = array();
+			$res["opn"] = "OPS Social media";
+			$res["scode"] = 204;
+			$res["message"] = "Input error";
+
+			echo json_encode($res);
+			return;
+		}
+
+		$user_id = '';
+
+		$user_id = $this->input->post("user_id");
+		
+		$data['result']=$this->apiusermodel->Socialmedia($user_id);
+
+		$response = $data['result'];
+		echo json_encode($response);
+	}
+
+//-----------------------------------------------//
+
+
+
+
+
+
+
 
 
 
@@ -991,39 +1176,7 @@ class Apiandroid extends CI_Controller {
 
 //-----------------------------------------------//
 
-//-----------------------------------------------//
 
-	public function spv_socialmedia()
-	{
-	   $_POST = json_decode(file_get_contents("php://input"), TRUE);
-
-		if(!$this->checkMethod())
-		{
-			return FALSE;
-		}
-
-		if($_POST == FALSE)
-		{
-			$res = array();
-			$res["opn"] = "SPV Social media";
-			$res["scode"] = 204;
-			$res["message"] = "Input error";
-
-			echo json_encode($res);
-			return;
-		}
-
-		$user_id = '';
-
-		$user_id = $this->input->post("user_id");
-		
-		$data['result']=$this->apiandroidmodel->Spv_socialmedia($user_id);
-
-		$response = $data['result'];
-		echo json_encode($response);
-	}
-
-//-----------------------------------------------//
 
 //-----------------------------------------------//
 

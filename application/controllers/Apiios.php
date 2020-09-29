@@ -30,7 +30,7 @@ class Apiios extends CI_Controller {
 
 //-----------------------------------------------//
 
-	public function Version_check()
+	public function version_check()
 	{
 		$_POST = json_decode(file_get_contents("php://input"), TRUE);
 		
@@ -38,7 +38,7 @@ class Apiios extends CI_Controller {
 		{
 			return FALSE;
 		}
-
+		
 		if($_POST == FALSE)
 		{
 			$res = array();
@@ -49,7 +49,7 @@ class Apiios extends CI_Controller {
 			echo json_encode($res);
 			return;
 		}
-		
+
 		$version_code = '';
 		$version_code = $this->input->post("version_code");
 		$data['result']=$this->apiiosmodel->Version_check($version_code);
@@ -477,7 +477,7 @@ class Apiios extends CI_Controller {
 
 //-----------------------------------------------//
 
-//-----------------------------------------------//
+/* //-----------------------------------------------//
 
 	public function newsfeed_stories()
 	{
@@ -508,13 +508,13 @@ class Apiios extends CI_Controller {
 		echo json_encode($response);
 	}
 
-//-----------------------------------------------//
+//-----------------------------------------------// */
 
 //-----------------------------------------------//
 
 	public function newsfeeds_categoryid()
 	{
-	   //$_POST = json_decode(file_get_contents("php://input"), TRUE);
+	   $_POST = json_decode(file_get_contents("php://input"), TRUE);
 
 		if(!$this->checkMethod())
 		{
@@ -555,7 +555,7 @@ class Apiios extends CI_Controller {
 
 	public function newsfeed_details()
 	{
-	   //$_POST = json_decode(file_get_contents("php://input"), TRUE);
+	   $_POST = json_decode(file_get_contents("php://input"), TRUE);
 
 		if(!$this->checkMethod())
 		{
@@ -731,6 +731,192 @@ class Apiios extends CI_Controller {
 	}
 
 //-----------------------------------------------//
+
+//-----------------------------------------------//
+
+	public function newsfeed_search()
+	{
+	   $_POST = json_decode(file_get_contents("php://input"), TRUE);
+
+		if(!$this->checkMethod())
+		{
+			return FALSE;
+		}
+
+		if($_POST == FALSE)
+		{
+			$res = array();
+			$res["opn"] = "Newsfeed search";
+			$res["scode"] = 204;
+			$res["message"] = "Input error";
+
+			echo json_encode($res);
+			return;
+		}
+
+		$user_id = '';
+		$search_text = '';
+		$offset = '';
+		$rowcount = '';
+		
+		$user_id = $this->input->post("user_id");
+		$search_text = $this->input->post("search_text");
+		$offset = $this->input->post("offset");
+		$rowcount = $this->input->post("rowcount");
+
+		$data['result']=$this->apiiosmodel->Newsfeed_search($user_id,$search_text,$offset,$rowcount);
+
+		$response = $data['result'];
+		echo json_encode($response);
+	}
+
+//-----------------------------------------------//
+
+
+//-----------------------------------------------//
+
+	public function gallery()
+	{
+	   $_POST = json_decode(file_get_contents("php://input"), TRUE);
+
+		if(!$this->checkMethod())
+		{
+			return FALSE;
+		}
+
+		if($_POST == FALSE)
+		{
+			$res = array();
+			$res["opn"] = "Gallery";
+			$res["scode"] = 204;
+			$res["message"] = "Input error";
+
+			echo json_encode($res);
+			return;
+		}
+
+		$user_id = '';	
+		$user_id = $this->input->post("user_id");
+
+
+		$data['result']=$this->apiiosmodel->Gallery($user_id);
+
+		$response = $data['result'];
+		echo json_encode($response);
+	}
+
+//-----------------------------------------------//
+
+//-----------------------------------------------//
+
+	public function images_all()
+	{
+	   $_POST = json_decode(file_get_contents("php://input"), TRUE);
+
+		if(!$this->checkMethod())
+		{
+			return FALSE;
+		}
+
+		if($_POST == FALSE)
+		{
+			$res = array();
+			$res["opn"] = "Gallery Images";
+			$res["scode"] = 204;
+			$res["message"] = "Input error";
+
+			echo json_encode($res);
+			return;
+		}
+
+		$user_id = '';	
+		$user_id = $this->input->post("user_id");
+
+		$data['result']=$this->apiiosmodel->Images_all($user_id);
+
+		$response = $data['result'];
+		echo json_encode($response);
+	}
+
+//-----------------------------------------------//
+
+
+//-----------------------------------------------//
+
+	public function videos_all()
+	{
+	   $_POST = json_decode(file_get_contents("php://input"), TRUE);
+
+		if(!$this->checkMethod())
+		{
+			return FALSE;
+		}
+
+		if($_POST == FALSE)
+		{
+			$res = array();
+			$res["opn"] = "Gallery Videos";
+			$res["scode"] = 204;
+			$res["message"] = "Input error";
+
+			echo json_encode($res);
+			return;
+		}
+
+		$user_id = '';	
+		$user_id = $this->input->post("user_id");
+
+
+		$data['result']=$this->apiiosmodel->Videos_all($user_id);
+
+		$response = $data['result'];
+		echo json_encode($response);
+	}
+
+//-----------------------------------------------//
+
+
+//-----------------------------------------------//
+
+	public function socialmedia()
+	{
+	   $_POST = json_decode(file_get_contents("php://input"), TRUE);
+
+		if(!$this->checkMethod())
+		{
+			return FALSE;
+		}
+
+		if($_POST == FALSE)
+		{
+			$res = array();
+			$res["opn"] = "OPS Social media";
+			$res["scode"] = 204;
+			$res["message"] = "Input error";
+
+			echo json_encode($res);
+			return;
+		}
+
+		$user_id = '';
+
+		$user_id = $this->input->post("user_id");
+		
+		$data['result']=$this->apiusermodel->Socialmedia($user_id);
+
+		$response = $data['result'];
+		echo json_encode($response);
+	}
+
+//-----------------------------------------------//
+
+
+
+
+
+
+
+
 
 
 
@@ -991,39 +1177,7 @@ class Apiios extends CI_Controller {
 
 //-----------------------------------------------//
 
-//-----------------------------------------------//
 
-	public function spv_socialmedia()
-	{
-	   $_POST = json_decode(file_get_contents("php://input"), TRUE);
-
-		if(!$this->checkMethod())
-		{
-			return FALSE;
-		}
-
-		if($_POST == FALSE)
-		{
-			$res = array();
-			$res["opn"] = "SPV Social media";
-			$res["scode"] = 204;
-			$res["message"] = "Input error";
-
-			echo json_encode($res);
-			return;
-		}
-
-		$user_id = '';
-
-		$user_id = $this->input->post("user_id");
-		
-		$data['result']=$this->apiiosmodel->Spv_socialmedia($user_id);
-
-		$response = $data['result'];
-		echo json_encode($response);
-	}
-
-//-----------------------------------------------//
 
 //-----------------------------------------------//
 
