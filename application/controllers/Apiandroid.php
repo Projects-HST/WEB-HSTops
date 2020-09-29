@@ -878,6 +878,40 @@ class Apiandroid extends CI_Controller {
 
 //-----------------------------------------------//
 
+	public function live_events()
+	{
+	   $_POST = json_decode(file_get_contents("php://input"), TRUE);
+
+		if(!$this->checkMethod())
+		{
+			return FALSE;
+		}
+
+		if($_POST == FALSE)
+		{
+			$res = array();
+			$res["opn"] = "OPS Social media";
+			$res["scode"] = 204;
+			$res["message"] = "Input error";
+
+			echo json_encode($res);
+			return;
+		}
+
+		$user_id = '';
+		$user_id = $this->input->post("user_id");
+		
+		$data['result']=$this->apiandroidmodel->Live_events($user_id);
+
+		$response = $data['result'];
+		echo json_encode($response);
+	}
+
+//-----------------------------------------------//
+
+
+//-----------------------------------------------//
+
 	public function socialmedia()
 	{
 	   $_POST = json_decode(file_get_contents("php://input"), TRUE);
