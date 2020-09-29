@@ -84,7 +84,7 @@ class Apiandroid extends CI_Controller {
 		
 		$version_code = '';
 		$version_code = $this->input->post("version_code");
-		$data['result']=$this->apiandroidmodel->intro_video($version_code);
+		$data['result']=$this->apiandroidmodel->Intro_video($version_code);
 		$response = $data['result'];
 		echo json_encode($response);
 	}
@@ -515,7 +515,7 @@ class Apiandroid extends CI_Controller {
 
 	public function newsfeeds_categoryid()
 	{
-	   //$_POST = json_decode(file_get_contents("php://input"), TRUE);
+	   $_POST = json_decode(file_get_contents("php://input"), TRUE);
 
 		if(!$this->checkMethod())
 		{
@@ -556,7 +556,7 @@ class Apiandroid extends CI_Controller {
 
 	public function newsfeed_details()
 	{
-	   //$_POST = json_decode(file_get_contents("php://input"), TRUE);
+	   $_POST = json_decode(file_get_contents("php://input"), TRUE);
 
 		if(!$this->checkMethod())
 		{

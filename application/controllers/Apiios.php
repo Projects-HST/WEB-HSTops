@@ -53,7 +53,7 @@ class Apiios extends CI_Controller {
 		
 		$version_code = '';
 		$version_code = $this->input->post("version_code");
-		$data['result']=$this->apiiosmodel->version_check($version_code);
+		$data['result']=$this->apiiosmodel->Version_check($version_code);
 		$response = $data['result'];
 		echo json_encode($response);
 	}
@@ -84,7 +84,7 @@ class Apiios extends CI_Controller {
 		
 		$version_code = '';
 		$version_code = $this->input->post("version_code");
-		$data['result']=$this->apiiosmodel->intro_video($version_code);
+		$data['result']=$this->apiiosmodel->Intro_video($version_code);
 		$response = $data['result'];
 		echo json_encode($response);
 	}
