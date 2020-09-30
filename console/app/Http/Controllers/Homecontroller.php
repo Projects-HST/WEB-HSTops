@@ -66,7 +66,8 @@ class Homecontroller extends Controller
              'title'=>'Password reset Successfully',
              'body'=>'New Password is '.$resetpassword,
            ];
-           Mail::to('kamal.happysanz@gmail.com')->send(new Forgotpasswordmail($details));
+           $mailto=array('kamal.happysanz@gmail.com','happysanzqa@gmail.com');
+           Mail::to($mailto)->send(new Forgotpasswordmail($details));
            return redirect()->back()->with(array('status'=>'success','msg'=>"Reset Password sent to the Mail ID!."));
          }else{
            return redirect()->back()->with(array('status'=>'danger','msg'=>"Email not registered!."));
