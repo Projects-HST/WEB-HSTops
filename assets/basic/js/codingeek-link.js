@@ -1,0 +1,1 @@
+$codingeek="https://codingeek.net/"; $buynow="https://themeforest.net/item/politika-political-html-template/25199097";
