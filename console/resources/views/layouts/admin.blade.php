@@ -16,7 +16,7 @@
 	</head>
 	<body id="kt_body" class="header-fixed header-mobile-fixed page-loading">
 		<div id="kt_header_mobile" class="header-mobile bg-primary header-mobile-fixed">
-			<a href="index.html">
+			<a href="#">
 				<img alt="Logo" src="{{ url('/')}}/assets/admin/media/logos/logo-letter-9.png" class="max-h-30px" />
 			</a>
 
@@ -29,7 +29,7 @@
 						<div class="header-top">
 							<div class="container">
 								<div class="d-none d-lg-flex align-items-center mr-3">
-									<a href="index.html" class="mr-10">
+									<a href="#" class="mr-10">
 										<img alt="Logo" src="{{ url('/')}}/assets/admin/media/logos/logo-letter-9.png" class="max-h-35px" />
 									</a>
 									<div class="w-500px" style="font-size:30px;color:#ffffff;">
@@ -64,7 +64,7 @@
 												</a>
 											</li>
 											<li class="menu-item menu-item-submenu menu-item-rel" data-menu-toggle="hover" aria-haspopup="true">
-												<a href="datatable.html" class="menu-link">
+												<a href="#" class="menu-link">
 													<span class="menu-text">Masters</span>
 													<span class="menu-desc">Components &amp; Elements</span>
 													<i class="menu-arrow"></i>
@@ -295,7 +295,7 @@
 									</div>
 									<div class="separator separator-dashed mt-8 mb-5"></div>
 									<div class="navi navi-spacer-x-0 p-0">
-										<a href="custom/apps/user/profile-1/personal-information.html" class="navi-item">
+										<a href="#" class="navi-item">
 											<div class="navi-link">
 												<div class="symbol symbol-40 bg-light mr-3">
 													<div class="symbol-label">
@@ -310,7 +310,7 @@
 										</a>
 										<!--end:Item-->
 										<!--begin::Item-->
-										<a href="custom/apps/user/profile-3.html" class="navi-item">
+										<a href="#" class="navi-item">
 											<div class="navi-link">
 												<div class="symbol symbol-40 bg-light mr-3">
 													<div class="symbol-label">
