@@ -156,7 +156,7 @@
 																</ul>
 															</div>
 														</li>
-														<li class="menu-item menu-item-submenu" data-menu-toggle="hover" aria-haspopup="true">
+														<!-- <li class="menu-item menu-item-submenu" data-menu-toggle="hover" aria-haspopup="true">
 															<a href="javascript:;" class="menu-link menu-toggle">
 																<span class="menu-text">Comments</span>
 																<i class="menu-arrow"></i>
@@ -181,7 +181,7 @@
 																	</li>
 																</ul>
 															</div>
-														</li>
+														</li> -->
 
 
 													</ul>

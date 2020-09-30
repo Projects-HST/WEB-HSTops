@@ -30,13 +30,21 @@ class Homecontroller extends Controller
     {
         $email=$request->post('email');
         $password=md5($request->post('password'));
-        $user = Adminlogin::where('email_id', $email)
+        $check = Adminlogin::where('email_id', $email)
                   ->where('password',md5($request->password))
                   ->first();
-        if($user){
-            Auth::login($user);
-            $request->session()->put('user_session', $user);
-            return redirect('admin/dashboard');
+        if($check){
+          $user = Adminlogin::where('email_id', $email)
+                    ->where('password',md5($request->password))
+                    ->where('status','Active')
+                    ->first();
+            if($user){
+              Auth::login($user);
+              $request->session()->put('user_session', $user);
+              return redirect('admin/dashboard');
+            }else{
+              return redirect()->back()->with(array('status'=>'danger','msg'=>"Account is Inactive.Please contact the support!."));
+            }
         }else{
             return redirect()->back()->with(array('status'=>'danger','msg'=>"Invalid login credentials!."));
 
@@ -55,6 +63,7 @@ class Homecontroller extends Controller
 
        $email=$request->post('email');
        $user = Adminlogin::where('email_id', $email)
+                 ->where('status','Active')
                  ->first();
          if($user){
           $resetpassword=$this->rand_string(8);
