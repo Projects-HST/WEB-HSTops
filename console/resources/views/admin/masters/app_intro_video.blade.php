@@ -34,7 +34,20 @@
                 @endif
                         <div class="card-header">
                             <h3 class="card-title">App Intro Video</h3>
-                            <!-- <?php  foreach($res as $rows){}  ?> -->
+                            <?php
+                            if(count($data)==0){
+                              $video_title='';
+                              $video_details='';
+                              $video_url='';
+                            }else{
+                              foreach($data as $rows){}
+                                $video_title=$rows->video_title;
+                                $video_details=$rows->video_details;
+                                $video_url=$rows->video_url;
+
+                            }
+                               ?>
+
                         </div>
 
                         <form action="{{ url('save_intro_video')}}" method="post" enctype="multipart/form-data">
@@ -42,18 +55,18 @@
                             <div class="card-body">
 															<div class="form-group">
 																	<label>Video title <span class="text-danger">*</span></label>
-																	<input type="text" class="form-control" placeholder="Enter the video link" value="{{ $res->video_title }}"  name="video_title"/>
+																	<input type="text" class="form-control" placeholder="Enter the video link" value="{{ $video_title }}"  name="video_title"/>
 																	<p class="error">@error('video_title'){{$message}} @enderror</p>
 															</div>
 															<div class="form-group">
 																	<label>Video Link <span class="text-danger">*</span></label>
-																	<input type="text" class="form-control" placeholder="Enter the video link"  value="{{ $res->video_url }}" name="video_url"/>
+																	<input type="text" class="form-control" placeholder="Enter the video link"  value="{{ $video_url }}" name="video_url"/>
 																	<p class="error">@error('video_url'){{$message}} @enderror</p>
 															</div>
                                 <div class="form-group">
                                     <label>Video details <span class="text-danger">*</span></label>
                                     <!-- <textarea class="form-control" name="video_details"></textarea> -->
-                                    <textarea name="video_details" class="form-control" rows="10" cols="80" id="video_details" placeholder="Video details">{{ $res->video_details }}</textarea>
+                                    <textarea name="video_details" class="form-control" rows="10" cols="80" id="video_details" placeholder="Video details">{{ $video_details }}</textarea>
 					 <script>CKEDITOR.replace( 'video_details' ); </script>
 																		<p class="error">@error('video_details'){{$message}} @enderror</p>
                                 </div>

@@ -80,12 +80,12 @@
                         </tr>
                         </thead>
   											<tbody>
-                          <?php $i=1; foreach($res as $rows){
+                          <?php $i=0; foreach($res as $rows){
                             $parameter= Crypt::encrypt($rows->id);
 
                             ?>
   												<tr>
-  													<td>{{$i}}</td>
+                            <td>{{ $res->firstItem() + $i }}</td>
   													<td>{{ $rows->title_ta}}</td>
   													<td>{{ $rows->title_en}}</td>
   													<td><p class="badge-{{ $rows->status }}">{{ $rows->status}}</p></td>

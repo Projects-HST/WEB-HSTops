@@ -25,18 +25,10 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="card card-custom gutter-b ">
-                      @if (Session::has('status'))
-                    <div class="alert alert-{{ Session::get('status') }}">
-                        <div>
-                            <span>{{ Session::get('msg') }}</span>
-                        </div>
-                    </div>
-                @endif
+
                         <div class="card-header">
                             <h3 class="card-title">Add Gallery </h3>
-
                         </div>
-
                         <form action="{{ url('save_gallery_image')}}" method="post" enctype="multipart/form-data">
 													@csrf
                             <div class="card-body">
@@ -44,21 +36,53 @@
 																	<label>Add images <span class="text-danger">*</span></label>
 																	<input type="file" class="form-control"   name="filenames[]" multiple/>
                                   <input type="hidden" class="form-control"   name="nf_id" value="{{ $id }}"/>
-																	<p class="error">@error('filenames'){{$message}} @enderror</p>
+																	<p class="error">@foreach ($errors->all() as $message)
+                                            {{ $message }}
+                                            @endforeach</p>
 															</div>
-
                             </div>
                             <div class="card-footer">
                                 <button type="submit" class="btn btn-primary mr-2">Upload</button>
 
                             </div>
                         </form>
+                    </div>
+                </div>
+                </div>
+                <div class="row" id="list">
+                  <div class="col-md-12">
+                    @if (Session::has('status'))
+                  <div class="alert alert-{{ Session::get('status') }}">
+                      <div>
+                          <span>{{ Session::get('msg') }}</span>
+                      </div>
+                  </div>
+              @endif
+                    <div class="card card-custom gutter-b ">
+                      <div class="card-header">
+                          <h3 class="card-title">List of images uploaded </h3>
+                      </div>
+                      <div class="row" style="margin:10px;">
+                        <?php
 
+                          foreach($data as $image){
+                            $parameter= Crypt::encrypt($image->id);
+                            ?>
+                          <div class="col-md-3">
+                            <div class="img_box">
+                              <img src="{{ url('/storage/gallery')}}/{{ $image['nf_image']}}" class="img-responsive" style="width:250px;height:200px;">
+                            <div class="img_icon_box">
+                              <a href="{{ url('admin/delete_galley_image') }}/{{ $parameter }}"><i class="fas fa-trash-alt"></i></a>
+                            </div>
+                            </div>
+                          <!-- <?php echo $image['nf_image']; ?> -->
+                          </div>
+                        <?php } ?>
+
+                      </div>
                     </div>
 
-
-
-                </div>
+                  </div>
                 </div>
         </div>
 

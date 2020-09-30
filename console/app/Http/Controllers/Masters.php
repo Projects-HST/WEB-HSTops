@@ -15,8 +15,8 @@ class Masters extends Controller
     function app_intro_video(){
       $role_type = session('user_session')->admin_role_type;
       if($role_type=='1'){
-          $data=Introvideo::find(1);
-          return view('admin.masters.app_intro_video')->with('res',$data);
+          $data=Introvideo::where('id','1')->get();
+          return view('admin.masters.app_intro_video',compact('data'));
         }else{
           return redirect('/admin/login');
         }

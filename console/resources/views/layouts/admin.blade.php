@@ -137,22 +137,23 @@
 																			<span class="menu-text">Stories</span>
 																		</a>
 																	</li>
-																	<li class="menu-item menu-item-submenu" data-menu-toggle="hover" aria-haspopup="true">
-																		<a href="javascript:;" class="menu-link menu-toggle">
+																	<li class="menu-item menu-item-submenu">
+																		<a href="{{ url('/')}}/admin/list_posts" class="menu-link">
 																			<i class="menu-bullet menu-bullet-dot">
 																				<span></span>
 																			</i>
 																			<span class="menu-text">Posts</span>
 																		</a>
 																	</li>
-																	<li class="menu-item menu-item-submenu" data-menu-toggle="hover" aria-haspopup="true">
-																		<a href="javascript:;" class="menu-link menu-toggle">
+																	<li class="menu-item menu-item-submenu">
+																		<a href="{{ url('/')}}/admin/list_events" class="menu-link">
 																			<i class="menu-bullet menu-bullet-dot">
 																				<span></span>
 																			</i>
 																			<span class="menu-text">Events</span>
 																		</a>
 																	</li>
+
 																</ul>
 															</div>
 														</li>
@@ -195,13 +196,13 @@
 												</a>
 												<div class="menu-submenu menu-submenu-classic menu-submenu-left">
 													<ul class="menu-subnav">
-														<li class="menu-item menu-item-submenu" data-menu-toggle="hover" aria-haspopup="true">
-															<a href="javascript:;" class="menu-link menu-toggle">
+														<li class="menu-item menu-item-submenu">
+															<a href="{{ url('/admin/aboutops')}}" class="menu-link ">
 																<span class="menu-text">Personal Info</span>
 															</a>
 														</li>
-														<li class="menu-item menu-item-submenu" data-menu-toggle="hover" aria-haspopup="true">
-															<a href="javascript:;" class="menu-link menu-toggle">
+														<li class="menu-item menu-item-submenu">
+															<a href="{{ url('/admin/socialmedia')}}" class="menu-link">
 																<span class="menu-text">Social Media Info</span>
 															</a>
 														</li>

@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Crypt;
-
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
 
@@ -32,8 +31,30 @@ class Newsfeedcontroller extends Controller
   function list_stories(){
     $role_type = session('user_session')->admin_role_type;
     if($role_type=='1'){
-      $data=Newsfeed::orderBy('id', 'desc')->paginate(10);
+      $data=Newsfeed::where('nf_category_id','1')->orderBy('id', 'desc')->paginate(10);
       return view('admin.newsfeed.list_stories')->with('res',$data);
+    }else{
+      return redirect('/admin/login');
+
+    }
+  }
+
+  function list_posts(){
+    $role_type = session('user_session')->admin_role_type;
+    if($role_type=='1'){
+      $data=Newsfeed::where('nf_category_id','2')->orderBy('id', 'desc')->paginate(10);
+      return view('admin.newsfeed.list_post')->with('res',$data);
+    }else{
+      return redirect('/admin/login');
+
+    }
+  }
+
+  function list_events(){
+    $role_type = session('user_session')->admin_role_type;
+    if($role_type=='1'){
+      $data=Newsfeed::where('nf_category_id','3')->orderBy('id', 'desc')->paginate(10);
+      return view('admin.newsfeed.list_events')->with('res',$data);
     }else{
       return redirect('/admin/login');
 
@@ -229,7 +250,8 @@ class Newsfeedcontroller extends Controller
     $role_type = session('user_session')->admin_role_type;
     if($role_type=='1'){
         $id = Crypt::decrypt($nf_id);
-        return view('admin.newsfeed.gallery',compact('id'));
+        $data=Newsfeedgallery::where('nf_id',$id)->orderBy('id', 'desc')->get();
+        return view('admin.newsfeed.gallery',compact('id','data'));
       }else{
         return redirect('/admin/login');
       }
@@ -239,13 +261,26 @@ class Newsfeedcontroller extends Controller
   function save_gallery_image(Request $request){
     $role_type = session('user_session')->admin_role_type;
     if($role_type=='1'){
-      $this->validate($request, [
-              'filenames' => 'required',
-              'filenames.*' =>'image|mimes:jpeg,png,jpg|max:2048',
+        $validate_data=$request->validate([
+            'filenames' => 'required',
+            'filenames.*' => 'mimes:jpeg,png,jpg|max:1024'
+      ],[
+        'filenames.required' => 'Please upload an image',
+        'filenames.*.image' => 'Only jpeg,png allowed',
+        'filenames.*.mimes' => 'Only jpeg,png  are accepted',
+        'filenames.*.max' => 'Maximum allowed size for an image is 1MB!',
       ]);
       $nf_id=$request->input('nf_id');
       $input=$request->all();
         $images=array();
+
+        $data = Newsfeed::where('id',$nf_id)->update([
+          'gallery_status' =>'1',
+          "updated_at"=>NOW(),
+          "updated_by"=>session('user_session')->id,
+        ]);
+
+
         if($files=$request->file('filenames')){
             // $files = $request->file('filenames');
         foreach($files as $file){
@@ -253,17 +288,32 @@ class Newsfeedcontroller extends Controller
             $nfimage[]=$name;
             $destinationPath = storage_path('gallery/');
             $file->move($destinationPath,$name);
+            Newsfeedgallery::create([
+                'nf_id' =>$nf_id,
+                'nf_image' => $name,
+                'status'=>'Active',
+            ]);
           }
-          Newsfeedgallery::create([
-              'nf_id' =>$nf_id,
-              'nf_image' => $name
-          ]);
+
         }
-      // return back()->with('success', 'Gallery Uploaded successfully!.');
-        return back()->with(array('status'=>'success','msg'=>"Gallery Uploaded successfully!."));
+
+        return redirect()->to(url()->previous() . '#list')->with(array('status'=>'success','msg'=>"Gallery image  added successfully!."));
+
       }else{
         return redirect('/admin/login');
       }
+  }
+
+
+  function delete_galley_image($ng_id){
+    $role_type = session('user_session')->admin_role_type;
+    if($role_type=='1'){
+      $id = Crypt::decrypt($ng_id);
+      $res=Newsfeedgallery::where('id',$id)->delete();
+      return redirect()->to(url()->previous() . '#list')->with(array('status'=>'success','msg'=>"Image deleted successfully!."));
+    }else{
+
+    }
   }
 
 

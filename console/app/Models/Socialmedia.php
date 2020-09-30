@@ -5,13 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Newsfeedgallery extends Model
+class Socialmedia extends Model
 {
     use HasFactory;
 
-    protected $table='nf_image_gallery';
+    protected $table='social_media';
 
-    protected $fillable = ['nf_id', 'nf_image','status'];
-
+    protected $fillable = ['sm_title', 'sm_url','status'];
 
 }
