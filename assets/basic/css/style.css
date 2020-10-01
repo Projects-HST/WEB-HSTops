@@ -1411,17 +1411,18 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   background-size: cover; }
 
 .breadcrumb-style-02 {
-  min-height: 500px;
+  min-height: 300px;
   position: relative; }
   .breadcrumb-style-02::before {
     position: absolute;
     top: -6%;
     content: '';
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     background: transparent;
     border-radius: 50%;
-    border: 50px solid #1D478E;
+    border: 30px solid #ffffff;
+	 opacity: .1;
     left: 40%; }
   .breadcrumb-style-02::after {
     position: absolute;
@@ -1431,11 +1432,11 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     height: 400px;
     background: transparent;
     border-radius: 50%;
-    border: 1px solid #1D478E;
+    border: 1px solid #76b280;
     left: 37.3%;
     opacity: .5; }
   .breadcrumb-style-02 .breadcrumb-inner {
-    min-height: 502px; }
+    min-height: 302px; }
   .breadcrumb-style-02 .next-event {
     position: absolute;
     bottom: 30px; }
@@ -1478,7 +1479,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   .breadcrumb-style-02 .breadcrumb-icon {
     position: absolute;
     right: 500px;
-    top: 246px; }
+    top: 146px; }
     .breadcrumb-style-02 .breadcrumb-icon i:before {
       color: #fff;
       font-size: 122px;
@@ -2951,7 +2952,8 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.5); }
+    /*background: rgba(255, 255, 255, 0.5); */
+	}
   .banner-style-3 .title {
     font-size: 80px;
     color: #fff;
@@ -4783,18 +4785,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   position: relative;
   border-radius: 10px;
   margin-bottom: 50px; }
-  .ls-date-box:before {
-    position: absolute;
-    bottom: -30px;
-    content: '';
-    width: 80%;
-    left: 10%;
-    background: #fff;
-    height: 100%;
-    z-index: -1;
-    border-radius: 10px;
-    -webkit-box-shadow: 0 15px 23px 0 rgba(35, 49, 64, 0.09);
-    box-shadow: 0 15px 23px 0 rgba(35, 49, 64, 0.09); }
+ 
   .ls-date-box p {
     margin-bottom: 30px;
     font-family: var(--secondary-font); }
@@ -5948,7 +5939,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   left: 0;
   top: 0;
   z-index: 999999999999;
-  background-color: rgba(2, 48, 71, 0.8);
+  background-color: rgba(11, 148, 33, 0.8);
   width: 100%;
   height: 100%;
   display: -webkit-box;

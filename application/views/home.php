@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Politika - Political html template</title>
+    <title>O.P.S - Ottakarathevar Panneerselvam</title>
      <!-- favicon -->
      <link rel=icon href=<?php echo base_url(); ?>assets/basic/img/favicon.png sizes="20x20" type="image/png">
     <!-- animate -->
@@ -119,21 +119,21 @@
 						<li class="menu-item-has-children">
                             <a href="#">About</a>
                             <ul class="sub-menu">
-                                <li><a href="#"><i class="fa fa-long-arrow-right"></i>About OPS</a></li>
-                                <li><a href="#"><i class="fa fa-long-arrow-right"></i>About Party</a></li>
+                                <li><a href="<?php echo base_url(); ?>index/about_ops/"><i class="fa fa-long-arrow-right"></i>About OPS</a></li>
+                                <li><a href="<?php echo base_url(); ?>index/about_party/"><i class="fa fa-long-arrow-right"></i>About Party</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Posts</a></li>
-                        <li><a href="#">Events</a></li>
+                        <li><a href="<?php echo base_url(); ?>index/posts/">Posts</a></li>
+                        <li><a href="<?php echo base_url(); ?>index/events/">Events</a></li>
 						
                         <li class="menu-item-has-children">
                             <a href="#">Gallery</a>
                             <ul class="sub-menu">
-                                <li><a href="#"><i class="fa fa-long-arrow-right"></i>Photos</a></li>
-                                <li><a href="#"><i class="fa fa-long-arrow-right"></i>Videos</a></li>
+                                <li><a href="<?php echo base_url(); ?>index/photos/"><i class="fa fa-long-arrow-right"></i>Photos</a></li>
+                                <li><a href="<?php echo base_url(); ?>index/videos/"><i class="fa fa-long-arrow-right"></i>Videos</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Login</a></li>
                     </ul>
                 </div>
                 <div class="nav-right-part">
@@ -160,11 +160,8 @@
                         <h2 class="title" data-animation-in="fadeInLeft">It's our honour to be with you</h2>
                         <p class="description" data-animation-in="fadeInDown">Lorem ipsum dummy text are used in this section so replace your text here. Lorem ipsum dummy lorem ipsum dummy text are used in this section</p>
                         <div class="d-flex margin-top-50">
-                            <div class="btn-wrapper mr-4" data-animation-in="fadeInDown">
-                                <a class="btn btn-custom-default" href="#">Learn More</a>
-                            </div>
                             <div class="btn-wrapper" data-animation-in="fadeInDown">
-                                <a class="btn btn-custom-white" href="#">Become Volunteer</a>
+                                <a class="btn btn-custom-white" href="#">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -172,11 +169,8 @@
                         <h2 class="title" data-animation-in="fadeInLeft">Integrity, Prosperity of Country</h2>
                         <p class="description" data-animation-in="fadeInDown">Lorem ipsum dummy text are used in this section so replace your text here. Lorem ipsum dummy lorem ipsum dummy text are used in this section</p>
                         <div class="d-flex margin-top-50">
-                            <div class="btn-wrapper mr-4" data-animation-in="fadeInDown">
-                                <a class="btn btn-custom-default" href="#">Learn More</a>
-                            </div>
                             <div class="btn-wrapper" data-animation-in="fadeInDown">
-                                <a class="btn btn-custom-white" href="#">Become Volunteer</a>
+                                <a class="btn btn-custom-white" href="#">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -184,11 +178,8 @@
                         <h2 class="title" data-animation-in="fadeInLeft">We can make our city great again</h2>
                         <p class="description" data-animation-in="fadeInDown">Lorem ipsum dummy text are used in this section so replace your text here. Lorem ipsum dummy lorem ipsum dummy text are used in this section</p>
                         <div class="d-flex margin-top-50">
-                            <div class="btn-wrapper mr-4" data-animation-in="fadeInDown">
-                                <a class="btn btn-custom-default" href="#">Learn More</a>
-                            </div>
                             <div class="btn-wrapper" data-animation-in="fadeInDown">
-                                <a class="btn btn-custom-white" href="#">Become Volunteer</a>
+                                <a class="btn btn-custom-white" href="#">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -224,7 +215,7 @@
                         <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. turnkey incididunt applications<br>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
                         <div class="btn-wrapper padding-top-30">
-                            <a class="btn btn-custom-primary" href="#">Learn more</a>
+                            <a class="btn btn-custom-primary" href="<?php echo base_url(); ?>index/about_ops/">Learn more</a>
                         </div>
                     </div>
                 </div>
@@ -256,7 +247,7 @@
                     <div class="location-content">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in velit odio. Morbi sodales nisi nec tortor commodo, malesuada fermentum magna faucibus. Proin fringilla antio. Morbi sodale nisi nec tortor commodo. Lorem ipsum dolor sit amet, adipiscing elit. Morbi sodales nisi nec tortor commodo, malesuada fermentum magna sit amet, consectetur adipiscing elit. In in velit odio. Morbi sodales nisi nec tortor commodo.</p>
                         <div class="btn-wrapper">
-                            <a class="btn btn-custom-primary" href="#">Learn more</a>
+                            <a class="btn btn-custom-primary" href="<?php echo base_url(); ?>index/about_party/">Learn more</a>
                         </div>
                     </div>
                 </div>
@@ -283,7 +274,7 @@
                         <p class="subtitle">In Economy</p>
                         <h4 class="title">The publicity campaign</h4>
                         <div class="btn-wrapper">
-                            <a class="readMore" href="#">Read more</a> ➝
+                            <a class="readMore" href="<?php echo base_url(); ?>index/about_ops/">Read more</a> ➝
                         </div>
                     </div>
                 </div>
@@ -295,7 +286,7 @@
                         <p class="subtitle">In Citizen life</p>
                         <h4 class="title">Change your life style</h4>
                         <div class="btn-wrapper">
-                            <a class="readMore" href="#">Read more</a> ➝
+                            <a class="readMore" href="<?php echo base_url(); ?>index/about_ops/">Read more</a> ➝
                         </div>
                     </div>
                 </div>
@@ -307,7 +298,7 @@
                         <p class="subtitle">In Medical</p>
                         <h4 class="title">Rebuild health program</h4>
                         <div class="btn-wrapper">
-                            <a class="readMore" href="#">Read more</a> ➝
+                            <a class="readMore" href="<?php echo base_url(); ?>index/about_ops/">Read more</a> ➝
                         </div>
                     </div>
                 </div>
@@ -341,7 +332,7 @@
                         <h4 class="title">New Party Leadership Conference</h4>
                         <p>While openness and accountability are usually considere corners tones of a democratic system ballot.</p>
                         <div class="btn-wrapper align-self-center margin-top-30">
-                            <a class="btn btn-custom-primary" href="#">Join Now</a>
+                            <a class="btn btn-custom-primary" href="<?php echo base_url(); ?>index/post_details/">Read More..</a>
                         </div>
                     </div>
                 </div>
@@ -370,7 +361,7 @@
                             </div>
                         </div>
                         <div class="btn-wrapper">
-                            <a href="event.html">View all events</a> ➝
+                            <a href="<?php echo base_url(); ?>index/events/">View all events</a> ➝
                         </div>
                     </div>
                 </div>
@@ -396,13 +387,9 @@
                             <div class="news-item-style-03">
                                 <div class="thumb">
                                     <img src="<?php echo base_url(); ?>assets/basic/img/blog/b1.png" alt="news">
-                                    <div class="small-thumb">
-                                        <img src="<?php echo base_url(); ?>assets/basic/img/blog/sm1.png" alt="small thumb">
-                                    </div>
                                 </div>
                                 <div class="content">
-                                    <p class="subtitle">Politics</p>
-                                    <h4 class="title"><a href="blog-details.html">OMB and State department officials subpoenaed in House...</a></h4>
+                                    <h4 class="title"><a href="<?php echo base_url(); ?>index/post_details/">OMB and State department officials subpoenaed in House...</a></h4>
                                     <ul class="blog-meta d-flex flex-column flex-lg-row">
                                         <li><a href="#">25 December 2019</a></li>
                                         <li><a href="#">Read 4576</a></li>
@@ -414,13 +401,9 @@
                             <div class="news-item-style-03">
                                 <div class="thumb">
                                     <img src="<?php echo base_url(); ?>assets/basic/img/blog/b2.jpg" alt="news">
-                                    <div class="small-thumb">
-                                        <img src="<?php echo base_url(); ?>assets/basic/img/blog/sm2.png" alt="small thumb">
-                                    </div>
                                 </div>
                                 <div class="content">
-                                    <p class="subtitle">Politics</p>
-                                    <h4 class="title"><a href="blog-details.html">DNC raises qualifying thresholds for sixth Democratic debate.</a></h4>
+                                    <h4 class="title"><a href="<?php echo base_url(); ?>index/post_details/">DNC raises qualifying thresholds for sixth Democratic debate.</a></h4>
                                     <ul class="blog-meta d-flex flex-column flex-lg-row">
                                         <li><a href="#">23 August 2019</a></li>
                                         <li><a href="#">Read 4576</a></li>
@@ -432,13 +415,9 @@
                             <div class="news-item-style-03">
                                 <div class="thumb">
                                     <img src="<?php echo base_url(); ?>assets/basic/img/blog/b3.jpg" alt="news">
-                                    <div class="small-thumb">
-                                        <img src="<?php echo base_url(); ?>assets/basic/img/blog/sm3.png" alt="small thumb">
-                                    </div>
                                 </div>
                                 <div class="content">
-                                    <p class="subtitle">Politics</p>
-                                    <h4 class="title"><a href="blog-details.html">Key chairs call to cancel press conference on</a></h4>
+                                    <h4 class="title"><a href="<?php echo base_url(); ?>index/post_details/">Key chairs call to cancel press conference on</a></h4>
                                     <ul class="blog-meta d-flex flex-column flex-lg-row">
                                         <li><a href="#">20 January 2019</a></li>
                                         <li><a href="#">Read 4576</a></li>
@@ -451,13 +430,9 @@
                             <div class="news-item-style-03">
                                 <div class="thumb">
                                     <img src="<?php echo base_url(); ?>assets/basic/img/blog/b4.jpg" alt="news">
-                                    <div class="small-thumb">
-                                        <img src="<?php echo base_url(); ?>assets/basic/img/blog/sm1.png" alt="small thumb">
-                                    </div>
                                 </div>
                                 <div class="content">
-                                    <p class="subtitle">Politics</p>
-                                    <h4 class="title"><a href="blog-details.html">Graham announces resolution House impeachment inquiry</a></h4>
+                                    <h4 class="title"><a href="<?php echo base_url(); ?>index/post_details/">Graham announces resolution House impeachment inquiry</a></h4>
                                     <ul class="blog-meta d-flex flex-column flex-lg-row">
                                         <li><a href="#">10 February 2019</a></li>
                                         <li><a href="#">Read 4576</a></li>
@@ -469,13 +444,9 @@
                             <div class="news-item-style-03">
                                 <div class="thumb">
                                     <img src="<?php echo base_url(); ?>assets/basic/img/blog/b2.jpg" alt="news">
-                                    <div class="small-thumb">
-                                        <img src="<?php echo base_url(); ?>assets/basic/img/blog/sm2.png" alt="small thumb">
-                                    </div>
                                 </div>
                                 <div class="content">
-                                    <p class="subtitle">Politics</p>
-                                    <h4 class="title"><a href="blog-details.html">Key chairs call to cancel press conference on</a></h4>
+                                    <h4 class="title"><a href="<?php echo base_url(); ?>index/post_details/">Key chairs call to cancel press conference on</a></h4>
                                     <ul class="blog-meta d-flex flex-column flex-lg-row">
                                         <li><a href="#">25 September 2019</a></li>
                                         <li><a href="#">Read 4576</a></li>
