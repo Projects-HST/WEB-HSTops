@@ -1,5 +1,7 @@
 @extends('layouts.adminlogin')
 @section('content')
+<title>Login Page</title>
+
 <div class="login-form login-signin">
   <div class="text-center mb-10">
     <h3 class="font-size-h1">Sign In</h3>

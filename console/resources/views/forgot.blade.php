@@ -1,5 +1,7 @@
 @extends('layouts.adminlogin')
 @section('content')
+<title>Forgot Password</title>
+
 <div class="login-form login-forgot">
   <div class="text-center mb-10 mb-lg-20">
     <h3 class="font-size-h1">Forgotten Password ?</h3>
