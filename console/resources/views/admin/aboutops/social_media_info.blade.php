@@ -91,7 +91,7 @@
   												<tr>
   													<td>{{ $data->firstItem() + $i }}</td>
   													<td>
-                            <a href="{{ $rows->sm_url }}" target="_blank">{{ $rows->sm_title}}</a>
+                            <a href="<?php echo $rows->sm_url; ?>" target="_blank">{{ $rows->sm_title}}</a>
                           </td>
                             <td><p class="badge-{{ $rows->status }}">{{ $rows->status}}</p></td>
                             <td><a title="Edit" href="{{ url('/admin/get_edit_socialmedia')}}/{{ $parameter}}"> <i class="fas fa-edit"></i></a>

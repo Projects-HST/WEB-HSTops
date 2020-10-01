@@ -56,7 +56,7 @@ class Aboutopscontroller extends Controller
     function socialmedia(){
       $role_type = session('user_session')->admin_role_type;
       if($role_type=='1'){
-          $data=Socialmedia::orderBy('id', 'desc')->paginate(2);
+          $data=Socialmedia::orderBy('id', 'desc')->paginate(10);
           return view('admin.aboutops.social_media_info',compact('data'));
         }else{
           return redirect('/admin/login');
