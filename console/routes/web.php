@@ -78,6 +78,42 @@ Route::group(['middleware'=>['Customauth']],function(){
   Route::post('admin/update_social_media_link','App\Http\Controllers\Aboutopscontroller@update_social_media_link');
 
 
+  ### Awards  ###
+  Route::get('admin/awards','App\Http\Controllers\Aboutopscontroller@awards');
+  Route::post('admin/create_awards','App\Http\Controllers\Aboutopscontroller@create_awards');
+  Route::post('admin/update_awards','App\Http\Controllers\Aboutopscontroller@update_awards');
+  Route::get('admin/get_edit_awards/{id}','App\Http\Controllers\Aboutopscontroller@get_edit_awards');
+
+  ### About PAPRTY ###
+
+  Route::get('admin/aboutparty','App\Http\Controllers\Aboutopscontroller@aboutparty');
+  Route::post('save_party_info','App\Http\Controllers\Aboutopscontroller@save_party_info');
+
+
+  ### About Party state list ###
+
+  Route::get('admin/party_state_list','App\Http\Controllers\Aboutopscontroller@party_state_list');
+  Route::post('admin/create_state_list','App\Http\Controllers\Aboutopscontroller@create_state_list');
+  Route::get('admin/get_edit_state/{id}','App\Http\Controllers\Aboutopscontroller@get_edit_state');
+  Route::post('admin/update_state_list','App\Http\Controllers\Aboutopscontroller@update_state_list');
+
+
+  ### About Party election list ###
+
+  Route::get('admin/party_election_list','App\Http\Controllers\Aboutopscontroller@party_election_list');
+  Route::post('admin/create_party_election_list','App\Http\Controllers\Aboutopscontroller@create_party_election_list');
+  Route::get('admin/get_edit_party_election/{id}','App\Http\Controllers\Aboutopscontroller@get_edit_party_election');
+  Route::post('admin/update_party_election_list','App\Http\Controllers\Aboutopscontroller@update_party_election_list');
+
+
+
+
+
+
+
+
+
+
 
 
 

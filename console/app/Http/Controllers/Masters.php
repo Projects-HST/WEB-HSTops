@@ -58,7 +58,7 @@ class Masters extends Controller
     function app_live_events(){
       $role_type = session('user_session')->admin_role_type;
       if($role_type=='1'){
-          $data=Liveevent::orderBy('id', 'desc')->simplePaginate(10);
+          $data=Liveevent::orderBy('id', 'desc')->paginate(10);
           return view('admin.masters.app_live_events')->with('res',$data);
         }else{
           return redirect('/admin/login');

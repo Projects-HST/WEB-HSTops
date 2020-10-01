@@ -143,8 +143,8 @@ $(document).ready(function() {
 
 $( "#datepicker" ).datepicker({
   startDate: "dateToday",
-
-format: 'dd-mm-yyyy' });
+  format: 'dd-mm-yyyy'
+});
   });
 
 
