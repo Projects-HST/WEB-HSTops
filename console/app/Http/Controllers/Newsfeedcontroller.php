@@ -142,8 +142,16 @@ class Newsfeedcontroller extends Controller
             "created_by"=>session('user_session')->id,
       ]);
 
+    $cat_id=$request->input('nf_category_id');
     if($data){
-      return redirect('/admin/list_stories')->with(array('status'=>'success','msg'=>"Newsfeed created Successfully!."));
+      if($cat_id=='1'){
+        return redirect('/admin/list_stories')->with(array('status'=>'success','msg'=>"Stories created Successfully!."));
+      }else if($cat_id=='2'){
+        return redirect('/admin/list_posts')->with(array('status'=>'success','msg'=>"Post created Successfully!."));
+      }else{
+        return redirect('/admin/list_events')->with(array('status'=>'success','msg'=>"Events created Successfully!."));
+      }
+
     }else{
       return redirect()->back()->with(array('status'=>'danger','msg'=>"Something went wrong!."));
     }
@@ -232,12 +240,19 @@ class Newsfeedcontroller extends Controller
                 "nf_cover_image"=>$img,
                 "status"=>$request->input('status'),
                 'expiry_at'=>$expiry_at,
-                "created_at"=>NOW(),
-                "created_by"=>session('user_session')->id,
+                "updated_at"=>NOW(),
+                "updated_by"=>session('user_session')->id,
           ]);
-
+          $cat_id=$request->input('nf_category_id');
         if($data){
-          return redirect('/admin/list_stories')->with(array('status'=>'success','msg'=>"Newsfeed updated Successfully!."));
+          if($cat_id=='1'){
+            return redirect('/admin/list_stories')->with(array('status'=>'success','msg'=>"Stories updated Successfully!."));
+          }else if($cat_id=='2'){
+            return redirect('/admin/list_posts')->with(array('status'=>'success','msg'=>"Post updated Successfully!."));
+          }else{
+            return redirect('/admin/list_events')->with(array('status'=>'success','msg'=>"Events updated Successfully!."));
+          }
+
         }else{
           return redirect()->back()->with(array('status'=>'danger','msg'=>"Something went wrong!."));
         }
@@ -280,6 +295,7 @@ class Newsfeedcontroller extends Controller
           'gallery_status' =>'1',
           "updated_at"=>NOW(),
           "updated_by"=>session('user_session')->id,
+          "created_by"=>session('user_session')->id,
         ]);
 
 

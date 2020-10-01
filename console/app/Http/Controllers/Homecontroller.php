@@ -16,6 +16,9 @@ class Homecontroller extends Controller
     function login(){
       return view('login');
     }
+    function forgot(){
+      return view('forgot');
+    }
 
     function dashboard(){
       $role_type = session('user_session')->admin_role_type;
@@ -28,6 +31,13 @@ class Homecontroller extends Controller
 
     function checklogin(Request $request)
     {
+      $validate_data=$request->validate([
+      'email'=>'required',
+      'password'=>'required',
+    ],[
+      'email.required'=>'Email id is required',
+      'password.required'=>'Password is required',
+    ]);
         $email=$request->post('email');
         $password=md5($request->post('password'));
         $check = Adminlogin::where('email_id', $email)
@@ -60,8 +70,12 @@ class Homecontroller extends Controller
 
     function forgotpassword(Request $request){
        // echo "1";exit;
-
-       $email=$request->post('email');
+       $validate_data=$request->validate([
+       'email_id'=>'required',
+     ],[
+       'email_id.required'=>'Email id is required',
+     ]);
+       $email=$request->post('email_id');
        $user = Adminlogin::where('email_id', $email)
                  ->where('status','Active')
                  ->first();
@@ -77,9 +91,9 @@ class Homecontroller extends Controller
            ];
            $mailto=array('kamal.happysanz@gmail.com','happysanzqa@gmail.com');
            Mail::to($mailto)->send(new Forgotpasswordmail($details));
-           return redirect()->back()->with(array('status'=>'success','msg'=>"Reset Password sent to the Mail ID!."));
+           return redirect('/admin/login')->with(array('status'=>'success','msg'=>"Reset Password sent to the Mail ID!."));
          }else{
-           return redirect()->back()->with(array('status'=>'danger','msg'=>"Email not registered!."));
+            return redirect(url()->previous() .'.login-forgot')->with(array('status'=>'danger','msg'=>"Email not registered!."));
          }
 
 

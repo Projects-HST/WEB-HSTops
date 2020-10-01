@@ -91,7 +91,8 @@ class Masters extends Controller
         "created_by"=>session('user_session')->id,
       ]);
       if($data){
-        return redirect()->back()->with(array('status'=>'success','msg'=>"Live event created Successfully!."));
+        return redirect('/admin/app_live_events#list')->with(array('status'=>'success','msg'=>"Live event updated Successfully!."));
+
       }else{
         return redirect()->back()->with(array('status'=>'danger','msg'=>"Something went wrong!."));
       }
@@ -141,7 +142,9 @@ class Masters extends Controller
         "updated_by"=>session('user_session')->id,
       ]);
       if($data){
-        return redirect()->back()->with(array('status'=>'success','msg'=>"Live event updated Successfully!."));
+        // return redirect()->back()->with(array('status'=>'success','msg'=>"Live event updated Successfully!."));
+        return redirect('/admin/app_live_events#list')->with(array('status'=>'success','msg'=>"Live event updated Successfully!."));
+
       }else{
         return redirect()->back()->with(array('status'=>'danger','msg'=>"Something went wrong!."));
       }

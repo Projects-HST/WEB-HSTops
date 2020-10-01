@@ -20,6 +20,8 @@ Route::get('/','App\Http\Controllers\Homecontroller@login');
 
 Route::get('/admin/login','App\Http\Controllers\Homecontroller@login');
 
+Route::get('/admin/forgot','App\Http\Controllers\Homecontroller@forgot');
+
 Route::get('logout','App\Http\Controllers\Homecontroller@logout');
 Route::post('checklogin','App\Http\Controllers\Homecontroller@checklogin');
 Route::post('forgot','App\Http\Controllers\Homecontroller@forgotpassword');
@@ -72,7 +74,7 @@ Route::group(['middleware'=>['Customauth']],function(){
   ### Social media ###
   Route::get('admin/socialmedia','App\Http\Controllers\Aboutopscontroller@socialmedia');
   Route::post('admin/create_social_media_link','App\Http\Controllers\Aboutopscontroller@create_social_media_link');
-  Route::get('admin/get_edit_socialmedia/{id}','App\Http\Controllers\Aboutopscontroller@get_edit_socialmedia');  
+  Route::get('admin/get_edit_socialmedia/{id}','App\Http\Controllers\Aboutopscontroller@get_edit_socialmedia');
   Route::post('admin/update_social_media_link','App\Http\Controllers\Aboutopscontroller@update_social_media_link');
 
 

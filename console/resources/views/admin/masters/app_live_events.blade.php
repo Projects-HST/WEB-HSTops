@@ -20,13 +20,7 @@
             <div class="row">
                 <div class="col-md-8">
                     <div class="card card-custom gutter-b ">
-                      @if (Session::has('status'))
-                    <div class="alert alert-{{ Session::get('status') }}">
-                        <div>
-                            <span>{{ Session::get('msg') }}</span>
-                        </div>
-                    </div>
-                @endif
+
                         <div class="card-header">
                             <h3 class="card-title">Add Live Events</h3>
 
@@ -66,8 +60,16 @@
                     </div>
                 </div>
                 </div>
-                <div class="row">
+                <div class="row" id="list">
+
                   <div class="col-md-12">
+                    @if (Session::has('status'))
+                  <div class="alert alert-{{ Session::get('status') }}">
+                      <div>
+                          <span>{{ Session::get('msg') }}</span>
+                      </div>
+                  </div>
+              @endif
                     <div class="card card-body  gutter-b ">
 										<table class="table table-separate table-head-custom table-checkable" id="kt_datatable1">
                       <thead>
