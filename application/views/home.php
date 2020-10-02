@@ -217,7 +217,7 @@
                         </div>
                     </div>
                 </div>
-			<?php } ?>
+			<?php $i++; } ?>
             </div>
 		<?php } ?>
         </div>
