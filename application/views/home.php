@@ -222,7 +222,7 @@
                                     <span class="month"><?php echo date("M",strtotime($rows->news_date))?></span>
                                 </div>
                                 <div class="content">
-                                    <h4><a href="event-details.html"><?php echo $rows->title_en;?></a></h4>
+                                    <h4><a href="<?php echo base_url(); ?>post_details/<?php echo base64_encode($rows->id*98765); ?>/"><?php echo $rows->title_en;?></a></h4>
                                 </div>
                             </div>
                         </div>
