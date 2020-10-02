@@ -179,7 +179,7 @@
 				$news_date = strtotime($rows->news_date);
 				//$time=strtotime($news_date);
 					$month = date("F",$news_date);
-					$year=date("Y",$time);
+					$year=date("Y",$news_date);
 				?>
 					<div class="col-lg-6">
 					<div class="content-box-style-07">
