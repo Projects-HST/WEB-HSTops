@@ -177,6 +177,18 @@
             <div class="row">
 				<?php foreach($eventlist_single as $rows){  
 					
+				$string = strip_tags($rows->description_ta);
+					if (strlen($string) > 50) {
+
+						// truncate string
+						$stringCut = substr($string, 0, 50);
+						$endPoint = strrpos($stringCut, ' ');
+
+						//if the string doesn't contain any space then it will cut without word basis.
+						$string = $endPoint? substr($stringCut, 0, $endPoint) : substr($stringCut, 0);
+						$string .= '...';
+					}
+											
 				?>
 					<div class="col-lg-6">
 					<div class="content-box-style-07">
@@ -190,8 +202,8 @@
                             </div>
 
                         </div>
-                        <h4 class="title">New Party Leadership Conference</h4>
-                        <p>While openness and accountability are usually considere corners tones of a democratic system ballot.</p>
+                        <h4 class="title"><?php echo $rows->title_en;?></h4>
+                        <p><?php echo $string; ?></p>
                         <div class="btn-wrapper align-self-center margin-top-30">
                             <a class="btn btn-custom-primary" href="<?php echo base_url(); ?>post_details/">Read More..</a>
                         </div>
