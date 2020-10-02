@@ -171,11 +171,11 @@
                     <h2 class="title">Upcoming Events</h2>
                 </div>
             </div>
-			<?php if (count($home_get_event_list_single)>0){ 
+			<?php if (count($eventlist_single)>0){ 
 					$assets_url = $this->config->item("assets_url")."newsfeed/";
 			?>
             <div class="row">
-				<?php foreach($home_get_event_list_single as $rows){ ?>
+				<?php foreach($eventlist_single as $rows){ ?>
 					<div class="col-lg-6">
 					<div class="content-box-style-07">
                         <div class="d-flex margin-bottom-30">
@@ -199,7 +199,7 @@
                 
 				 <div class="col-lg-6">
                     <div class="event-list-style padding-top-50">
-					<?php foreach($home_get_event_list_doubles as $rows){ ?>
+					<?php foreach($eventlist_double as $rows){ ?>
 					
                         <div class="event-single-style-01">
                             <div class="d-flex">
