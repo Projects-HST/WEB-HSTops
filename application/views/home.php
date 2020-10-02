@@ -175,13 +175,16 @@
 					$assets_url = $this->config->item("assets_url")."newsfeed/";
 			?>
             <div class="row">
-				<?php foreach($eventlist_single as $rows){  $news_date = $rows->news_date;?>
+				<?php foreach($eventlist_single as $rows){  
+				$news_date = $rows->news_date;
+				echo date("M j", $news_date);
+				?>
 					<div class="col-lg-6">
 					<div class="content-box-style-07">
                         <div class="d-flex margin-bottom-30">
                             <div class="thumb">
                                 <div class="time"> 
-                                    <span class="date"><?php echo date("d",$news_date); ?></span> 
+                                    <span class="date"><?php //echo date("d",$news_date); ?></span> 
                                     <span class="month">Dec</span>
                                 </div>
                                 <img src="<?php echo $assets_url.$rows->nf_cover_image;?>" alt="">
