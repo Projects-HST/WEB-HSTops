@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Validation\Rule;
+
 
 
 use App\Models\Aboutops;
@@ -497,19 +499,21 @@ class Aboutopscontroller extends Controller
       $role_type = session('user_session')->admin_role_type;
       if($role_type=='1'){
         $id=$request->input('el_id');
+        $election_type=$request->input('election_type');
+        $election_year=$request->input('election_year');
+
         $validate_data=$request->validate([
           'party_leader_ta'=>'required',
           'party_leader_en'=>'required',
           'status'=>'required',
           'seats_won'=>'required',
           'election_type'=>'required',
-          // 'election_year' => 'required|unique:party_election_info,election_year,NULL,id,election_type,' . $request->input('election_type').$id,
-          'election_year' => 'unique:party_election_info,election_type,NULL,election_year,id,'.$id,
-
-          // 'election_year' => 'required|unique:party_election_info,election_year,' . $id . ',id,election_type,' . $id,
-          // 'election_year' => 'required|unique:party_election_info,election_year,NULL,.'$id'.,election_type,' . $request->input('election_type'),
-
-
+          'election_year' => [
+                            'required',
+                             Rule::unique('party_election_info')->where(function ($query) use($election_type,$election_year) {
+                               return $query->where('election_type', $election_type)->where('election_year', $election_year);
+                             })->ignore($id)
+                        ],
           'state_info_id'=>'required',
       ],[
         'party_leader_en.required'=>'State name tamil is required',
@@ -533,7 +537,7 @@ class Aboutopscontroller extends Controller
         "created_by"=>session('user_session')->id,
       ]);
       if($data){
-        return redirect('/admin/party_election_list#list')->with(array('status'=>'success','msg'=>"Party election list created Successfully!."));
+        return redirect('/admin/party_election_list#list')->with(array('status'=>'success','msg'=>"Party election list updated Successfully!."));
       }else{
         return redirect()->back()->with(array('status'=>'danger','msg'=>"Something went wrong!."));
       }

@@ -99,7 +99,7 @@
                 <div class="row" id="list">
 
                   <div class="col-md-12">
-                        <h3 class="">Party state list</h3>
+                        <h3 class="">Election info list</h3>
                     @if (Session::has('status'))
                   <div class="alert alert-{{ Session::get('status') }}">
                       <div>
@@ -147,6 +147,7 @@
                       </table>
 
                     </div>
+                    <br>
                     <div class="d-flex justify-content-end">
                       <p class="paginate_links">{{ $data->links() }}</p>
                     </div>
