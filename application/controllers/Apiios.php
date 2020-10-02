@@ -943,38 +943,9 @@ class Apiios extends CI_Controller {
 
 //-----------------------------------------------//
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //-----------------------------------------------//
 
-	public function spv_personal()
+	public function ops_biogrphy()
 	{
 	   $_POST = json_decode(file_get_contents("php://input"), TRUE);
 
@@ -986,7 +957,7 @@ class Apiios extends CI_Controller {
 		if($_POST == FALSE)
 		{
 			$res = array();
-			$res["opn"] = "SPV Personal";
+			$res["opn"] = "OPS biogrphy";
 			$res["scode"] = 204;
 			$res["message"] = "Input error";
 
@@ -995,10 +966,9 @@ class Apiios extends CI_Controller {
 		}
 
 		$user_id = '';
-
 		$user_id = $this->input->post("user_id");
 		
-		$data['result']=$this->apiiosmodel->Spv_personal($user_id);
+		$data['result']=$this->apiandroidmodel->Ops_biogrphy($user_id);
 
 		$response = $data['result'];
 		echo json_encode($response);
@@ -1006,9 +976,10 @@ class Apiios extends CI_Controller {
 
 //-----------------------------------------------//
 
+
 //-----------------------------------------------//
 
-	public function spv_political()
+	public function ops_achievements()
 	{
 	   $_POST = json_decode(file_get_contents("php://input"), TRUE);
 
@@ -1020,7 +991,7 @@ class Apiios extends CI_Controller {
 		if($_POST == FALSE)
 		{
 			$res = array();
-			$res["opn"] = "SPV Political";
+			$res["opn"] = "OPS achievements";
 			$res["scode"] = 204;
 			$res["message"] = "Input error";
 
@@ -1029,188 +1000,15 @@ class Apiios extends CI_Controller {
 		}
 
 		$user_id = '';
-
 		$user_id = $this->input->post("user_id");
 		
-		$data['result']=$this->apiiosmodel->Spv_political($user_id);
+		$data['result']=$this->apiandroidmodel->Ops_achievements($user_id);
 
 		$response = $data['result'];
 		echo json_encode($response);
 	}
 
 //-----------------------------------------------//
-
-//-----------------------------------------------//
-
-	public function spv_positionheld()
-	{
-	   $_POST = json_decode(file_get_contents("php://input"), TRUE);
-
-		if(!$this->checkMethod())
-		{
-			return FALSE;
-		}
-
-		if($_POST == FALSE)
-		{
-			$res = array();
-			$res["opn"] = "SPV Position held";
-			$res["scode"] = 204;
-			$res["message"] = "Input error";
-
-			echo json_encode($res);
-			return;
-		}
-
-		$user_id = '';
-
-		$user_id = $this->input->post("user_id");
-		
-		$data['result']=$this->apiiosmodel->Spv_positionheld($user_id);
-
-		$response = $data['result'];
-		echo json_encode($response);
-	}
-
-//-----------------------------------------------//
-
-//-----------------------------------------------//
-
-	public function spv_awards()
-	{
-	   $_POST = json_decode(file_get_contents("php://input"), TRUE);
-
-		if(!$this->checkMethod())
-		{
-			return FALSE;
-		}
-
-		if($_POST == FALSE)
-		{
-			$res = array();
-			$res["opn"] = "SPV awards";
-			$res["scode"] = 204;
-			$res["message"] = "Input error";
-
-			echo json_encode($res);
-			return;
-		}
-
-		$user_id = '';
-
-		$user_id = $this->input->post("user_id");
-		
-		$data['result']=$this->apiiosmodel->Spv_awards($user_id);
-
-		$response = $data['result'];
-		echo json_encode($response);
-	}
-
-//-----------------------------------------------//
-
-//-----------------------------------------------//
-
-	public function spv_notable()
-	{
-	   $_POST = json_decode(file_get_contents("php://input"), TRUE);
-
-		if(!$this->checkMethod())
-		{
-			return FALSE;
-		}
-
-		if($_POST == FALSE)
-		{
-			$res = array();
-			$res["opn"] = "SPV notable";
-			$res["scode"] = 204;
-			$res["message"] = "Input error";
-
-			echo json_encode($res);
-			return;
-		}
-
-		$user_id = '';
-
-		$user_id = $this->input->post("user_id");
-		
-		$data['result']=$this->apiiosmodel->Spv_notable($user_id);
-
-		$response = $data['result'];
-		echo json_encode($response);
-	}
-
-//-----------------------------------------------//
-
-//-----------------------------------------------//
-
-	public function spv_namakkaga()
-	{
-	   $_POST = json_decode(file_get_contents("php://input"), TRUE);
-
-		if(!$this->checkMethod())
-		{
-			return FALSE;
-		}
-
-		if($_POST == FALSE)
-		{
-			$res = array();
-			$res["opn"] = "SPV namakkaga";
-			$res["scode"] = 204;
-			$res["message"] = "Input error";
-
-			echo json_encode($res);
-			return;
-		}
-
-		$user_id = '';
-
-		$user_id = $this->input->post("user_id");
-		
-		$data['result']=$this->apiiosmodel->Spv_namakkaga($user_id);
-
-		$response = $data['result'];
-		echo json_encode($response);
-	}
-
-//-----------------------------------------------//
-
-//-----------------------------------------------//
-
-	public function spv_ias_academy()
-	{
-	   $_POST = json_decode(file_get_contents("php://input"), TRUE);
-
-		if(!$this->checkMethod())
-		{
-			return FALSE;
-		}
-
-		if($_POST == FALSE)
-		{
-			$res = array();
-			$res["opn"] = "SPV IAS academy";
-			$res["scode"] = 204;
-			$res["message"] = "Input error";
-
-			echo json_encode($res);
-			return;
-		}
-
-		$user_id = '';
-
-		$user_id = $this->input->post("user_id");
-		
-		$data['result']=$this->apiiosmodel->Spv_ias_academy($user_id);
-
-		$response = $data['result'];
-		echo json_encode($response);
-	}
-
-//-----------------------------------------------//
-
-
 
 //-----------------------------------------------//
 
@@ -1235,16 +1033,51 @@ class Apiios extends CI_Controller {
 		}
 
 		$user_id = '';
-
 		$user_id = $this->input->post("user_id");
 		
-		$data['result']=$this->apiiosmodel->About_party($user_id);
+		$data['result']=$this->apiandroidmodel->About_party($user_id);
 
 		$response = $data['result'];
 		echo json_encode($response);
 	}
 
 //-----------------------------------------------//
+
+
+
+//-----------------------------------------------//
+
+	public function party_states()
+	{
+	   $_POST = json_decode(file_get_contents("php://input"), TRUE);
+
+		if(!$this->checkMethod())
+		{
+			return FALSE;
+		}
+
+		if($_POST == FALSE)
+		{
+			$res = array();
+			$res["opn"] = "Party States";
+			$res["scode"] = 204;
+			$res["message"] = "Input error";
+
+			echo json_encode($res);
+			return;
+		}
+
+		$user_id = '';
+		$user_id = $this->input->post("user_id");
+		
+		$data['result']=$this->apiandroidmodel->Party_states($user_id);
+
+		$response = $data['result'];
+		echo json_encode($response);
+	}
+
+//-----------------------------------------------//
+
 
 //-----------------------------------------------//
 
@@ -1268,11 +1101,10 @@ class Apiios extends CI_Controller {
 			return;
 		}
 
-		$user_id = '';
+		$state_id = '';
+		$state_id = $this->input->post("state_id");
 
-		$user_id = $this->input->post("user_id");
-		
-		$data['result']=$this->apiiosmodel->Party_elections($user_id);
+		$data['result']=$this->apiandroidmodel->Party_elections($state_id);
 
 		$response = $data['result'];
 		echo json_encode($response);
