@@ -32,7 +32,7 @@ Class Websitemodel extends CI_Model
 		return $result=$res->result();
 	}
 	
-		function home_get_event_list_doubles(){
+	function home_get_event_list_doubles(){
 		$query="SELECT * FROM news_feed WHERE status = 'Active' AND nf_category_id ='2' ORDER BY id DESC LIMIT 1,2";
 		$res=$this->db->query($query);
 		return $result=$res->result();

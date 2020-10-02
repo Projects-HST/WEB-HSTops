@@ -205,7 +205,7 @@
                         <h4 class="title"><?php echo $rows->title_en;?></h4>
                         <p><?php echo $string; ?></p>
                         <div class="btn-wrapper align-self-center margin-top-30">
-                            <a class="btn btn-custom-primary" href="<?php echo base_url(); ?>post_details/">Read More..</a>
+                            <a class="btn btn-custom-primary" href="<?php echo base_url(); ?>post_details/<?php echo base64_encode($rows->id*98765); ?>/">Read More..</a>
                         </div>
                     </div>
 					</div>
