@@ -184,7 +184,7 @@
                                     <span class="date">28</span> 
                                     <span class="month">Dec</span>
                                 </div>
-                                <img src="<?php echo base_url(); ?>assets/basic/img/up-event1.png" alt="">
+                                <img src="<?php echo $assets_url()?><?php echo $rows->party_text_en;?>" alt="">
                             </div>
 
                         </div>
