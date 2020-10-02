@@ -214,11 +214,12 @@
                         </div>
 					<?php } ?>
 						 </div>
-						  </div>                      
-                   
-						<div class="btn-wrapper">
+						 <div class="btn-wrapper">
                             <a href="<?php echo base_url(); ?>events/">View all events</a> ➝
                         </div>
+						  </div>                      
+                   
+						
             </div>
 		<?php } ?>
         </div>
