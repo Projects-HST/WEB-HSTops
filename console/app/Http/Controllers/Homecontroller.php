@@ -3,8 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+
 use Illuminate\Support\Facades\Mail;
 use App\Models\Adminlogin;
+use App\Models\Usermastermodel;
+
 use App\Mail\Forgotpasswordmail;
 use Auth;
 use Session;
@@ -99,10 +102,111 @@ class Homecontroller extends Controller
 
      }
 
+     function profile(){
+       $id = session('user_session')->id;
+       $data=Adminlogin::find($id);
+       return view('admin.profile',compact('data'));
+     }
+
+     function changepassword(){
+       $id = session('user_session')->id;
+       $data=Adminlogin::find($id);
+       return view('admin.change_password',compact('data'));
+     }
+
+
+     function update_passsword(Request $request){
+       $id=$request->input('pf_id');
+       $user = Adminlogin::findOrFail($id);
+       $this->validate($request, [
+         'old_password' => 'required',
+         'new_password' => 'required|min:6',
+         'retype_password' => 'required_with:new_password|same:new_password|min:6',
+          ]);
+
+
+          if (md5($request->old_password)==$user->password) {
+             $user->fill([
+              'password' => md5($request->new_password)
+              ])->save();
+              return redirect()->back()->with(array('status'=>'success','msg'=>"password updated successfully"));
+          } else {
+            return redirect()->back()->with(array('status'=>'danger','msg'=>"old password does not match!"));
+          }
+     }
+
+     function update_profile(Request $request){
+       $pf_id=$request->input('pf_id');
+       $validate_data=$request->validate([
+       'email_id'=>'required|max:80|unique:admin_user_master,email_id,'.$pf_id,
+       'full_name'=>'required|max:40',
+       'qualification'=>'required|max:40',
+       'gender'=>'required',
+       'phone_number'=>'required|max:10|min:10|unique:admin_user_master,phone_number,'.$pf_id,
+       'address'=>'required|max:240',
+       'profile_pic'=>'image|mimes:jpeg,png,jpg|max:1024',
+     ],[
+       'email_id.required'=>'Email id is required',
+       'address.required'=>'Address is required',
+       'qualification.required'=>'Qualification is required',
+       'gender.required'=>'Gender is required',
+       'full_name.required'=>'Full name is required',
+       'profile_pic.image'=>'Profile picture is should be image',
+       'profile_pic.mimes'=>'Profile picture is should JPG,PNG',
+     ]);
+     $image = $request->file('profile_pic');
+     $nf_old_img=$request->input('old_profile_pic');
+     if(empty($image)){
+       $img=$nf_old_img;
+     }else{
+     $nfimage = time().'.'.$image->getClientOriginalExtension();
+     $destinationPath = storage_path('profile/');
+     $image->move($destinationPath, $nfimage);
+     $img=$nfimage;
+     }
+     $data = Adminlogin::where('id', $pf_id)->update([
+       'full_name' =>$request->full_name,
+       'email_id' =>$request->email_id,
+       'qualification' =>$request->qualification,
+       'gender' =>$request->gender,
+       'phone_number' =>$request->phone_number,
+       'address' =>$request->address,
+       'profile_pic' =>$img,
+       "updated_at"=>NOW(),
+       "updated_by"=>session('user_session')->id,
+     ]);
+     if($data){
+       return redirect()->back()->with(array('status'=>'success','msg'=>"Profile updated successfully"));
+     }else{
+       return redirect()->back()->with(array('status'=>'danger','msg'=>"Something went wrong!."));
+
+     }
+
+     }
+
+
+     function user_list(){
+       $data=Usermastermodel::orderBy('id', 'desc')->paginate(10);
+       return view('admin.users.user_list')->with('res',$data);
+       // return view('admin.users.user_list',compact(['res'=>$data]));
+
+     }
+
+     function search_data(){
+
+       $search_val  = Input::get('search_text') ;
+       echo $search_val;
+       exit;
+       // $search_val=$request->input('search_text');
+       $data=Usermastermodel::where('full_name',$search_val)->orWhere('phone_number',$search_val)->orderBy('id', 'desc')->paginate(10);
+       return view('admin.users.user_list')->with('res',$data);
+     }
+
+
+
      function logout(){
        // Session::flush();
        Session::forget('user_session');
-
        return redirect('admin/login');
 
      }

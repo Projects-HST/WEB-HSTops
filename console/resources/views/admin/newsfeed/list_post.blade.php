@@ -48,7 +48,7 @@
                             <td>{{ $res->firstItem() + $i }}</td>
   													<td>
                             {{ $rows->title_en}} <br>
-                            {{ $rows->title_en}}
+                            {{ $rows->title_ta}}
                           </td>
                             <td><img src="{{ url('/storage/newsfeed/')}}/{{ $rows->nf_cover_image }}" style="width:150px;height:100px;"></td>
   													<td>{{$newDate = date("d-m-Y", strtotime($rows->news_date))  }}</td>

@@ -16,4 +16,7 @@ class Adminlogin extends Model implements AuthenticatableContract
 
 
     protected $table='admin_user_master';
+
+    protected $fillable = ['full_name', 'email_id','password','phone_number','gender','address','qualification','profile_pic','id_proof_type','id_proof_file','last_login_info','login_count','status','created_by','created_at','updated_by','updated_at'];
+
 }

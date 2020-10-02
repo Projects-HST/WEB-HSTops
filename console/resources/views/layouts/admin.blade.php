@@ -36,15 +36,18 @@
 										Mr. O Panneerselvam
 									</div>
 								</div>
+								<?php
+								$details=DB::table('admin_user_master')->where('id',session('user_session')->id)->first();
+
+								?>
 								<div class="topbar">
 									<div class="topbar-item">
 										<div class="btn btn-icon btn-hover-transparent-white w-auto d-flex align-items-center btn-lg px-2" id="kt_quick_user_toggle">
 											<div class="d-flex flex-column text-right pr-3">
-												<span class="text-white opacity-50 font-weight-bold font-size-sm d-none d-md-inline">Sean</span>
-												<span class="text-white font-weight-bolder font-size-sm d-none d-md-inline">UX Designer</span>
+												<span class="text-white opacity-50 font-weight-bold font-size-sm d-none d-md-inline">{{ $details->full_name}}</span>
 											</div>
 											<span class="symbol symbol-35">
-												<span class="symbol-label font-size-h5 font-weight-bold text-white bg-white-o-30">S</span>
+												<span class="symbol-label font-size-h5 font-weight-bold text-white bg-white-o-30">A</span>
 											</span>
 										</div>
 									</div>
@@ -101,8 +104,8 @@
 																<span class="menu-text">News Category</span>
 															</a>
 														</li>
-														<li class="menu-item menu-item-submenu" data-menu-toggle="hover" aria-haspopup="true">
-															<a href="javascript:;" class="menu-link menu-toggle">
+														<li class="menu-item menu-item-submenu">
+															<a href="{{ url('admin/user_list')}}" class="menu-link ">
 																<span class="menu-text">User Management</span>
 															</a>
 														</li>
@@ -282,20 +285,24 @@
 								<div class="offcanvas-content pr-5 mr-n5">
 									<div class="d-flex align-items-center mt-5">
 										<div class="symbol symbol-100 mr-5">
-											<div class="symbol-label" style="background-image:url('{{ url('/')}}/assets/admin/media/users/300_21.jpg')"></div>
+											<?php
+											if(empty($details->profile_pic)){
+												$img='noimage.png';
+											}else{
+												$img=$details->profile_pic;
+											}
+											?>
+											<div class="symbol-label" style="background-image:url('{{ url('/')}}/storage/profile/{{$img}}')"></div>
 											<i class="symbol-badge bg-success"></i>
 										</div>
 										<div class="d-flex flex-column">
-											<a href="#" class="font-weight-bold font-size-h5 text-dark-75 text-hover-primary">James Jones</a>
-											<div class="text-muted mt-1">Application Developer</div>
-											<div class="navi mt-2">
-												<a href="{{ url('/')}}//admin/logout/" class="btn btn-sm btn-light-primary font-weight-bolder py-2 px-5">Sign Out</a>
-											</div>
+											<a href="#" class="font-weight-bold font-size-h5 text-dark-75 text-hover-primary">{{ $details->full_name}}</a>
+
 										</div>
 									</div>
 									<div class="separator separator-dashed mt-8 mb-5"></div>
 									<div class="navi navi-spacer-x-0 p-0">
-										<a href="#" class="navi-item">
+										<a href="{{ url('admin/profile')}}" class="navi-item">
 											<div class="navi-link">
 												<div class="symbol symbol-40 bg-light mr-3">
 													<div class="symbol-label">
@@ -310,7 +317,7 @@
 										</a>
 										<!--end:Item-->
 										<!--begin::Item-->
-										<a href="#" class="navi-item">
+										<a href="{{ url('admin/changepassword') }}" class="navi-item">
 											<div class="navi-link">
 												<div class="symbol symbol-40 bg-light mr-3">
 													<div class="symbol-label">

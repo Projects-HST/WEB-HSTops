@@ -28,7 +28,21 @@ Route::post('forgot','App\Http\Controllers\Homecontroller@forgotpassword');
 
 
 Route::group(['middleware'=>['Customauth']],function(){
+
   Route::get('admin/dashboard','App\Http\Controllers\Homecontroller@dashboard');
+  Route::get('admin/profile','App\Http\Controllers\Homecontroller@profile');
+  Route::get('admin/changepassword','App\Http\Controllers\Homecontroller@changepassword');
+  Route::post('admin/update_passsword','App\Http\Controllers\Homecontroller@update_passsword');
+  Route::post('admin/update_profile','App\Http\Controllers\Homecontroller@update_profile');
+
+
+  ### User Mgmt ####
+  Route::get('admin/user_list','App\Http\Controllers\Homecontroller@user_list');
+  Route::get('admin/search_data','App\Http\Controllers\Homecontroller@search_data');
+
+
+
+
 
   ### App Intro Video ###
 
