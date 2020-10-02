@@ -218,11 +218,11 @@
                         <div class="event-single-style-01">
                             <div class="d-flex">
                                 <div class="time"> 
-                                    <span class="date">28</span> 
-                                    <span class="month">Dec</span>
+                                    <span class="date"><?php echo date("d",strtotime($rows->news_date)) ?></span> 
+                                    <span class="month"><?php echo date("M",strtotime($rows->news_date))?></span>
                                 </div>
                                 <div class="content">
-                                    <h4><a href="event-details.html">New Party Leadership Conference</a></h4>
+                                    <h4><a href="event-details.html"><?php echo $rows->title_en;?></a></h4>
                                 </div>
                             </div>
                         </div>
