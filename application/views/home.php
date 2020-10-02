@@ -171,13 +171,12 @@
                     <h2 class="title">Upcoming Events</h2>
                 </div>
             </div>
-			<?php if (count($eventlist)>0){ 
+			<?php if (count($home_get_event_list_single)>0){ 
 					$assets_url = $this->config->item("assets_url")."newsfeed/";
 			?>
             <div class="row">
-			<?php $i=1; foreach($eventlist as $rows){ ?>
-                <div class="col-lg-6">
-                    <?php if ($i == 1){ ?>
+				<?php foreach($home_get_event_list_single as $rows){ ?>
+					<div class="col-lg-6">
 					<div class="content-box-style-07">
                         <div class="d-flex margin-bottom-30">
                             <div class="thumb">
@@ -195,11 +194,13 @@
                             <a class="btn btn-custom-primary" href="<?php echo base_url(); ?>post_details/">Read More..</a>
                         </div>
                     </div>
+					</div>
 					<?php } ?>
-                </div>
-                <div class="col-lg-6">
-				 <?php if ($i > 1){ ?>
+                
+				 <div class="col-lg-6">
                     <div class="event-list-style padding-top-50">
+					<?php foreach($home_get_event_list_doubles as $rows){ ?>
+					
                         <div class="event-single-style-01">
                             <div class="d-flex">
                                 <div class="time"> 
@@ -211,11 +212,15 @@
                                 </div>
                             </div>
                         </div>
+					<?php } ?>
+						 </div>
+						  </div>
 				 <?php } ?>
                         
-                    </div>
-                </div>
-			<?php $i++; } ?>
+                   
+						<div class="btn-wrapper">
+                            <a href="<?php echo base_url(); ?>events/">View all events</a> ➝
+                        </div>
             </div>
 		<?php } ?>
         </div>
