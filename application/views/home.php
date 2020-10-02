@@ -178,7 +178,7 @@
 				<?php foreach($eventlist_single as $rows){  
 				$news_date = strtotime($rows->news_date);
 				//$time=strtotime($news_date);
-					$month = date("F",$news_date);
+					$month = date("m",$news_date);
 					$year=date("Y",$news_date);
 				?>
 					<div class="col-lg-6">
