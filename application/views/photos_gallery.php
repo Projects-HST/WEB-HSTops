@@ -112,7 +112,7 @@
                     <a href="<?php echo base_url(); ?>"> <img src="<?php echo base_url(); ?>assets/basic/img/ops_web_logo.png" alt="logo"></a>
                 </div>
                 <div class="collapse navbar-collapse" id="billatrail_main_menu">
-                    <ul class="navbar-nav menu-open">
+                     <ul class="navbar-nav menu-open">
                         <li><a href="<?php echo base_url(); ?>">Home</a></li>
 						<li class="menu-item-has-children">
                             <a href="#">About</a>
@@ -155,10 +155,11 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumb-inner padding-top-150">
-                        <h1 class="page-title">Posts</h1>
+                        <h1 class="page-title">Gallery</h1>
                         <ul class="page-list">
                             <li><a href="<?php echo base_url(); ?>">Home /</a></li>
-                            <li><a href="<?php echo base_url(); ?>/index/posts/">Recent Posts</a></li>
+                            <li><a href="<?php echo base_url(); ?>/index/photos/">Photos /</a></li>
+							<li><a href="<?php echo base_url(); ?>/index/photos_gallery/">Photo Gallery</a></li>
                         </ul>
                     </div>
                 </div>
@@ -172,114 +173,55 @@
 
   
 
-    <div class="blog-area margin-top-100 padding-bottom-100">
+    <!-- service start -->
+    <div class="our-service-area margin-top-100 padding-bottom-100">
         <div class="container">
-            <div class="row blog-no-sidebar">
-                <div class="col-lg-8 offset-lg-4">
-                    <div class="blog-item-style-02 margin-top-120">
-                        <div class="b-img">
-                            <a href="#"><img src="<?php echo base_url(); ?>assets/basic/img/blog/blog1.png" alt=""></a>
-                        </div>
-                        <div class="b-content">
-                            <div class="blog-date-box">
-                                <h4>28<br><span>Dec</span></h4>
-                            </div>
-                            <h4 class="section-title"><a href="blog-details.html">Key chairs call to cancel the press conference</a></h4>
-                            <p>Completely synergize resource taxing relationships via premier niche Professionally cultivate one-to-one customer service with.</p>
-                        </div>
-                        
-                        <div class="blog-meta d-flex flex-column flex-lg-row">
-                            <div class="blog-social-share d-flex mr-4">
-                                <span>Share</span>
-                                <ul>
-                                    <li><a href=""><i class="fa fa-facebook-f"></i></a></li>
-                                    <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href=""><i class="fa fa-instagram"></i></a></li>
-                                </ul>
-                            </div>
-                            
-                            <div class="btn-wrapper">
-                                <a href="<?php echo base_url(); ?>index/post_details/">Read more</a> ➝
-                            </div>
-                        </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="icon-box-style-05 margin-bottom-30">
+                        <div class="causes-img">
+						<a href="<?php echo base_url(); ?>assets/basic/img/causes/1.png" class="image-popup" title="Blind tool: Braile Literacy tool for Blind people."><img src="<?php echo base_url(); ?>assets/basic/img/causes/1.png" alt=""></a></div>
                     </div>
-                    <div class="blog-item-style-02 margin-top-120">
-                        <div class="b-img">
-                            <a href="#"><img src="<?php echo base_url(); ?>assets/basic/img/blog/blog2.png" alt=""></a>
-                        </div>
-                        <div class="b-content">
-                            <div class="blog-date-box">
-                                <h4>28<br><span>Dec</span></h4>
-                            </div>
-                            <h4 class="section-title"><a href="blog-details.html">Key chairs call to cancel the press conference</a></h4>
-                            <p>Completely synergize resource taxing relationships via premier niche Professionally cultivate one-to-one customer service with.</p>
-                        </div>
-                        
-                        <div class="blog-meta d-flex flex-column flex-lg-row">
-                            <div class="blog-social-share d-flex mr-4">
-                                <span>Share</span>
-                                <ul>
-                                    <li><a href=""><i class="fa fa-facebook-f"></i></a></li>
-                                    <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href=""><i class="fa fa-instagram"></i></a></li>
-                                </ul>
-                            </div>
-                            
-                            <div class="btn-wrapper">
-                                <a href="<?php echo base_url(); ?>index/post_details/">Read more</a> ➝
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blog-item-style-02 margin-top-120">
-                        <div class="b-img">
-                            <a href="#"><img src="<?php echo base_url(); ?>assets/basic/img/blog/blog3.png" alt=""></a>
-                        </div>
-                        <div class="b-content">
-                            <div class="blog-date-box">
-                                <h4>28<br><span>Dec</span></h4>
-                            </div>
-                            <h4 class="section-title"><a href="blog-details.html">Key chairs call to cancel the press conference</a></h4>
-                            <p>Completely synergize resource taxing relationships via premier niche Professionally cultivate one-to-one customer service with.</p>
-                        </div>
-                        
-                        <div class="blog-meta d-flex flex-column flex-lg-row">
-                            <div class="blog-social-share d-flex mr-4">
-                                <span>Share</span>
-                                <ul>
-                                    <li><a href=""><i class="fa fa-facebook-f"></i></a></li>
-                                    <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href=""><i class="fa fa-instagram"></i></a></li>
-                                </ul>
-                            </div>
-                            
-                            <div class="btn-wrapper">
-                                <a href="<?php echo base_url(); ?>/index/post_details/">Read more</a> ➝
-                            </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="icon-box-style-05 margin-bottom-30">
+                        <div class="causes-img">
+						 <a href="<?php echo base_url(); ?>assets/basic/img/causes/2.png" class="image-popup" title="Blind tool: Braile Literacy tool for Blind people."><img src="<?php echo base_url(); ?>assets/basic/img/causes/2.png" alt=""></a>
                         </div>
                     </div>
                 </div>
-                
-                <div class="col-md-12">
-                    <div class="pagination-area d-flex justify-content-center margin-top-50 padding-bottom-50">
-                        <ul>
-                            <li>
-                                <span class="page-bumber current">01</span>
-                            </li>
-                            <li>
-                                <span class="page-bumber">02</span>
-                            </li>
-                            <li>
-                                <span class="page-bumber">03</span>
-                            </li>
-                            <li>
-                                <span class="next page-bumber"> <i class="fa fa-angle-right"></i></span>
-                            </li>
-                        </ul>
+                <div class="col-lg-4 col-md-6">
+                    <div class="icon-box-style-05 margin-bottom-30">
+                        <div class="causes-img">
+                            <a href="<?php echo base_url(); ?>assets/basic/img/causes/3.png" class="image-popup" title="Blind tool: Braile Literacy tool for Blind people."><img src="<?php echo base_url(); ?>assets/basic/img/causes/3.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="icon-box-style-05 margin-bottom-30">
+                        <div class="causes-img">
+                            <a href="<?php echo base_url(); ?>assets/basic/img/causes/4.png" class="image-popup" title="Blind tool: Braile Literacy tool for Blind people."><img src="<?php echo base_url(); ?>assets/basic/img/causes/4.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="icon-box-style-05 margin-bottom-30">
+                        <div class="causes-img">
+                          <a href="<?php echo base_url(); ?>assets/basic/img/causes/5.png" class="image-popup" title="Blind tool: Braile Literacy tool for Blind people."><img src="<?php echo base_url(); ?>assets/basic/img/causes/5.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="icon-box-style-05 margin-bottom-30">
+                        <div class="causes-img">
+                            <a href="<?php echo base_url(); ?>assets/basic/img/causes/1.png" class="image-popup" title="Blind tool: Braile Literacy tool for Blind people."><img src="<?php echo base_url(); ?>assets/basic/img/causes/1.png" alt=""></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- service end -->
 
 
    <!-- footer area start -->
@@ -299,9 +241,11 @@
                                 <div class="footer-widget widget widget_nav_menu">
                                     <h4 class="widget-title">Follow Us On</h4>
                                     <ul>
-                                        <li><a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Facebook</a></li>
-                                        <li><a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Twitter</a></li>
-                                        <li><a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Instagram</a></li>
+                                        <li><a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Home</a></li>
+                                        <li><a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Donate</a></li>
+                                        <li><a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Manifesto</a></li>
+                                        <li><a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Members</a></li>
+                                        <li><a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Call To Action</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -314,7 +258,7 @@
 										<div class="col-xl-5"><img src="<?php echo base_url(); ?>assets/basic/img/playstore.png" alt="news"></div>
 									</div>
                                 </div>
-								<div class="copyright-area-inner copyright-sm margin-top-20">
+								<div class="copyright-area-inner copyright-sm margin-top-75">
                                     Copyrights@All rights reserved. Developed by <a href="https://www.happysanztech.com/" target="_blank">Happy Sanz Tech</a>
                                 </div>
 
@@ -370,5 +314,6 @@
     <!-- main js -->
     <script src="<?php echo base_url(); ?>assets/basic/js/script.js"></script>
     <script src="<?php echo base_url(); ?>assets/basic/js/main.js"></script>
+
 </body>
 </html>

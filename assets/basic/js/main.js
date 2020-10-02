@@ -724,6 +724,19 @@
                 }
             }
         })
+		
+		
+		
+		$(".image-popup").magnificPopup({
+				type: "image",
+				closeOnContentClick: !0,
+				mainClass: "mfp-fade",
+				gallery: {
+					enabled: !0,
+					navigateByImgClick: !0,
+					preload: [0, 1]
+				}
+			})
 
         // check_number function
         function check_number(num) {

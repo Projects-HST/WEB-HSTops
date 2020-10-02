@@ -66,7 +66,7 @@
         <button class="sidebar-menu-close"><i class="flaticon-close"></i></button>
         <div class="sidebar-inner">
             <div class="sidebar-logo">
-                <img src="assets/img/logo.png" alt="logo"/>
+                <img src="<?php echo base_url(); ?>assets/basic/img/logo.png" alt="logo"/>
             </div>
             <div class="sidemenu-text">
                 <p>We believe brand interaction is key in commu- nication. Real inno vations and a positive customer experience are the heart of successful commu- nication.</p>
@@ -112,23 +112,23 @@
                     <a href="<?php echo base_url(); ?>"> <img src="<?php echo base_url(); ?>assets/basic/img/ops_web_logo.png" alt="logo"></a>
                 </div>
                 <div class="collapse navbar-collapse" id="billatrail_main_menu">
-                    <ul class="navbar-nav menu-open">
+                     <ul class="navbar-nav menu-open">
                         <li><a href="<?php echo base_url(); ?>">Home</a></li>
 						<li class="menu-item-has-children">
                             <a href="#">About</a>
                             <ul class="sub-menu">
-                                <li><a href="<?php echo base_url(); ?>index/about_ops/"><i class="fa fa-long-arrow-right"></i>About OPS</a></li>
-                                <li><a href="<?php echo base_url(); ?>index/about_party/"><i class="fa fa-long-arrow-right"></i>About Party</a></li>
+                                <li><a href="<?php echo base_url(); ?>aboutOPS/"><i class="fa fa-long-arrow-right"></i>About OPS</a></li>
+                                <li><a href="<?php echo base_url(); ?>about_party/"><i class="fa fa-long-arrow-right"></i>About Party</a></li>
                             </ul>
                         </li>
-                        <li><a href="<?php echo base_url(); ?>index/posts/">Posts</a></li>
-                        <li><a href="<?php echo base_url(); ?>index/events/">Events</a></li>
+                        <li><a href="<?php echo base_url(); ?>posts/">Posts</a></li>
+                        <li><a href="<?php echo base_url(); ?>events/">Events</a></li>
 						
                         <li class="menu-item-has-children">
                             <a href="#">Gallery</a>
                             <ul class="sub-menu">
-                                <li><a href="<?php echo base_url(); ?>index/photos/"><i class="fa fa-long-arrow-right"></i>Photos</a></li>
-                                <li><a href="<?php echo base_url(); ?>index/videos/"><i class="fa fa-long-arrow-right"></i>Videos</a></li>
+                                <li><a href="<?php echo base_url(); ?>photos/"><i class="fa fa-long-arrow-right"></i>Photos</a></li>
+                                <li><a href="<?php echo base_url(); ?>videos/"><i class="fa fa-long-arrow-right"></i>Videos</a></li>
                             </ul>
                         </li>
                         <li><a href="#">Login</a></li>
@@ -190,7 +190,7 @@
                         <h4>Orphan children's educational campaign</h4>
                         <p>Completely synergize resource taxing relationships via premier niche Professionally cultivate one-to-one customer service with. Completely synergize resource taxing relationships via premier niche Professionally cultivate one-to-one customer service with.</p>
                         <div class="btn-wrapper">
-                            <a class="btn btn-custom-primary" href="<?php echo base_url(); ?>/index/events/">More Details...</a>
+                            <a class="btn btn-custom-primary" href="<?php echo base_url(); ?>index/post_details/">More Details...</a>
 							
 							
                         </div>
@@ -215,8 +215,7 @@
                             <span class="month">Dec</span>
                         </div>
                         <div class="ub-content">
-                            <h4>Press conference about new tax reform</h4>
-                            <p><i class="fa fa-map-marker"></i> British King's College Canada</p>
+                            <h4><a href="<?php echo base_url(); ?>index/post_details/">Press conference about new tax reform</a></h4>
                         </div>
                     </div>
                 </div>
@@ -230,8 +229,7 @@
                             <span class="month">Dec</span>
                         </div>
                         <div class="ub-content">
-                            <h4>Press conference about new tax reform</h4>
-                            <p><i class="fa fa-map-marker"></i> British King's College Canada</p>
+                             <h4><a href="<?php echo base_url(); ?>index/post_details/">Press conference about new tax reform</a></h4>
                         </div>
                     </div>
                 </div>
@@ -245,8 +243,7 @@
                             <span class="month">Dec</span>
                         </div>
                         <div class="ub-content">
-                            <h4>Press conference about new tax reform</h4>
-                            <p><i class="fa fa-map-marker"></i> British King's College Canada</p>
+                             <h4><a href="<?php echo base_url(); ?>index/post_details/">Press conference about new tax reform</a></h4>
                         </div>
                     </div>
                 </div>
@@ -260,8 +257,7 @@
                             <span class="month">Dec</span>
                         </div>
                         <div class="ub-content">
-                            <h4>Press conference about new tax reform</h4>
-                            <p><i class="fa fa-map-marker"></i> British King's College Canada</p>
+                             <h4><a href="<?php echo base_url(); ?>index/post_details/">Press conference about new tax reform</a></h4>
                         </div>
                     </div>
                 </div>
@@ -310,7 +306,6 @@
                                         <li><a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Manifesto</a></li>
                                         <li><a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Members</a></li>
                                         <li><a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Call To Action</a></li>
-                                        <li><a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Volunteer</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -323,10 +318,9 @@
 										<div class="col-xl-5"><img src="<?php echo base_url(); ?>assets/basic/img/playstore.png" alt="news"></div>
 									</div>
                                 </div>
-								<div class="copyright-area-inner copyright-sm margin-top-35">
-                                    Copyrights@All rights reserved. Developed by Happy sanz tech</a>
+								<div class="copyright-area-inner copyright-sm margin-top-75">
+                                    Copyrights@All rights reserved. Developed by <a href="https://www.happysanztech.com/" target="_blank">Happy Sanz Tech</a>
                                 </div>
-
                             </div>
                             
                         </div>

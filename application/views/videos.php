@@ -66,7 +66,7 @@
         <button class="sidebar-menu-close"><i class="flaticon-close"></i></button>
         <div class="sidebar-inner">
             <div class="sidebar-logo">
-                <img src="assets/img/logo.png" alt="logo"/>
+               <img src="<?php echo base_url(); ?>assets/basic/img/logo.png" alt="logo"/>
             </div>
             <div class="sidemenu-text">
                 <p>We believe brand interaction is key in commu- nication. Real inno vations and a positive customer experience are the heart of successful commu- nication.</p>
@@ -112,23 +112,23 @@
                     <a href="<?php echo base_url(); ?>"> <img src="<?php echo base_url(); ?>assets/basic/img/ops_web_logo.png" alt="logo"></a>
                 </div>
                 <div class="collapse navbar-collapse" id="billatrail_main_menu">
-                    <ul class="navbar-nav menu-open">
+                     <ul class="navbar-nav menu-open">
                         <li><a href="<?php echo base_url(); ?>">Home</a></li>
 						<li class="menu-item-has-children">
                             <a href="#">About</a>
                             <ul class="sub-menu">
-                                <li><a href="<?php echo base_url(); ?>index/about_ops/"><i class="fa fa-long-arrow-right"></i>About OPS</a></li>
-                                <li><a href="<?php echo base_url(); ?>index/about_party/"><i class="fa fa-long-arrow-right"></i>About Party</a></li>
+                                <li><a href="<?php echo base_url(); ?>aboutOPS/"><i class="fa fa-long-arrow-right"></i>About OPS</a></li>
+                                <li><a href="<?php echo base_url(); ?>about_party/"><i class="fa fa-long-arrow-right"></i>About Party</a></li>
                             </ul>
                         </li>
-                        <li><a href="<?php echo base_url(); ?>index/posts/">Posts</a></li>
-                        <li><a href="<?php echo base_url(); ?>index/events/">Events</a></li>
+                        <li><a href="<?php echo base_url(); ?>posts/">Posts</a></li>
+                        <li><a href="<?php echo base_url(); ?>events/">Events</a></li>
 						
                         <li class="menu-item-has-children">
                             <a href="#">Gallery</a>
                             <ul class="sub-menu">
-                                <li><a href="<?php echo base_url(); ?>index/photos/"><i class="fa fa-long-arrow-right"></i>Photos</a></li>
-                                <li><a href="<?php echo base_url(); ?>index/videos/"><i class="fa fa-long-arrow-right"></i>Videos</a></li>
+                                <li><a href="<?php echo base_url(); ?>photos/"><i class="fa fa-long-arrow-right"></i>Photos</a></li>
+                                <li><a href="<?php echo base_url(); ?>videos/"><i class="fa fa-long-arrow-right"></i>Videos</a></li>
                             </ul>
                         </li>
                         <li><a href="#">Login</a></li>
@@ -178,19 +178,15 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="icon-box-style-05 margin-bottom-30">
-                        <div class="causes-img">
-                            <a href="#"><img src="<?php echo base_url(); ?>assets/basic/img/causes/1.png" alt=""></a>
-                        </div>
+                        <iframe src="http://www.youtube.com/embed/tgbNymZ7vqY" width="500" height="200" frameborder="0" allowfullscreen></iframe>
                         <div class="sb-content">
-                            <h4><a href="event.html">Blind tool: Braile Literacy tool for Blind people.</a></h4>
+                            <h4>Blind tool: Braile Literacy tool for Blind people.</h4>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="icon-box-style-05 margin-bottom-30">
-                        <div class="causes-img">
-                            <a href="#"><img src="<?php echo base_url(); ?>assets/basic/img/causes/2.png" alt=""></a>
-                        </div>
+						<iframe src="http://www.youtube.com/embed/M7lc1UVf-VE" width="500" height="200" frameborder="0" allowfullscreen></iframe>
                         <div class="sb-content">
                             <h4><a href="event.html">Literacy program: Primary education for all.</a></h4>
                         </div>
@@ -198,9 +194,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="icon-box-style-05 margin-bottom-30">
-                        <div class="causes-img">
-                            <a href="#"><img src="<?php echo base_url(); ?>assets/basic/img/causes/3.png" alt=""></a>
-                        </div>
+                        <iframe src="http://www.youtube.com/embed/tgbNymZ7vqY" width="500" height="200" frameborder="0" allowfullscreen></iframe>
                         <div class="sb-content">
                             <h4><a href="event.html">Make sure drinking pure water everybody.</a></h4>
                         </div>
@@ -284,7 +278,6 @@
                                         <li><a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Manifesto</a></li>
                                         <li><a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Members</a></li>
                                         <li><a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Call To Action</a></li>
-                                        <li><a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Volunteer</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -297,8 +290,8 @@
 										<div class="col-xl-5"><img src="<?php echo base_url(); ?>assets/basic/img/playstore.png" alt="news"></div>
 									</div>
                                 </div>
-								<div class="copyright-area-inner copyright-sm margin-top-35">
-                                    Copyrights@All rights reserved. Developed by Happy sanz tech</a>
+								<div class="copyright-area-inner copyright-sm margin-top-75">
+                                    Copyrights@All rights reserved. Developed by <a href="https://www.happysanztech.com/" target="_blank">Happy Sanz Tech</a>
                                 </div>
 
                             </div>

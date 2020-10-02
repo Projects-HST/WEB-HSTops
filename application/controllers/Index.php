@@ -44,6 +44,11 @@ class Index extends CI_Controller {
 			$this->load->view('photos');
 	}
 	
+	public function photos_gallery()
+	{
+			$this->load->view('photos_gallery');
+	}
+	
 	public function videos()
 	{
 			$this->load->view('videos');

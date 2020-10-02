@@ -2796,6 +2796,49 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     font-weight: 600;
     padding-left: 20px; }
 
+
+
+.video-btn-style-06 {
+  position: absolute;
+  top: 60%;
+  left: auto;
+  right: 5%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 45px;
+  height: 45px;
+  background: #fff;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-animation: ripple-white3 1s linear infinite;
+  animation: ripple-white3 1s linear infinite;
+  line-height: 40px;
+  z-index: 1; }
+  .video-btn-style-06 a {
+    font-size: 20px;
+    position: relative;
+    z-index: 9;
+    top: 5px;
+    color: #0B9421; }
+
+@-webkit-keyframes ripple-white3 {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 10px rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 10px rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1); }
+  100% {
+    -webkit-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 100px rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 100px rgba(255, 255, 255, 0); } }
+
+@keyframes ripple-white3 {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 10px rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 10px rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1); }
+  100% {
+    -webkit-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 100px rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 100px rgba(255, 255, 255, 0); } }
+	
+	
 .social-icon-style-01 {
   position: absolute;
   top: 35%;
@@ -3621,8 +3664,8 @@ ul.wp-block-latest-posts.is-grid.alignwide {
       .blog-item-style-02 .b-content .blog-date-box:before {
         position: absolute;
         content: '';
-        width: 65px;
-        height: 20px;
+        width: 0px;
+        height: 0px;
         background: #2E319233;
         bottom: -6px;
         border-radius: 5px;
@@ -4494,8 +4537,8 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     .event-box-content .date-box:before {
       position: absolute;
       content: '';
-      width: 78px;
-      height: 20px;
+      width: 0px;
+      height: 0px;
       background: rgba(46, 49, 146, 0.1);
       bottom: -8px;
       border-radius: 5px;
@@ -4785,7 +4828,18 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   position: relative;
   border-radius: 10px;
   margin-bottom: 50px; }
- 
+  .ls-date-box:before {
+    position: absolute;
+    bottom: 0px;
+    content: '';
+    width: 80%;
+    left: 10%;
+    background: #fff;
+    height: 100%;
+    z-index: -1;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 15px 23px 0 rgba(35, 49, 64, 0.09);
+    box-shadow: 0 15px 23px 0 rgba(35, 49, 64, 0.09); }
   .ls-date-box p {
     margin-bottom: 30px;
     font-family: var(--secondary-font); }
@@ -7489,17 +7543,17 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     left: 15px;
     bottom: 15px; }
   .icon-box-style-05 .sb-content {
-    padding: 30px; }
+    padding: 10px; }
     .icon-box-style-05 .sb-content h4 {
       color: #404040;
-      font-size: 24px;
+      font-size: 16px;
       letter-spacing: 0;
       font-weight: 500;
-      margin-bottom: 40px; }
+      /*margin-bottom: 40px;*/ }
       .icon-box-style-05 .sb-content h4:hover {
         color: #0B9421; }
     .icon-box-style-05 .sb-content p {
-      font-size: 16px;
+      font-size: 14px;
       letter-spacing: 0px;
       color: #666;
       font-weight: 400;
