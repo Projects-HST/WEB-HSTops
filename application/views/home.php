@@ -184,7 +184,7 @@
                                     <span class="date">28</span> 
                                     <span class="month">Dec</span>
                                 </div>
-                                <img src="<?php echo $assets_url()?><?php echo $rows->party_text_en;?>" alt="">
+                                <img src="<?php echo $assets_url()?><?php echo $rows->nf_cover_image;?>" alt="">
                             </div>
 
                         </div>
