@@ -184,7 +184,7 @@
                                     <span class="date"><?php echo $rows->nf_cover_image;?></span> 
                                     <span class="month">Dec</span>
                                 </div>
-                                <img src="<?php echo $assets_url();?><?php echo $rows->nf_cover_image;?>" alt="">
+                                <img src="<?php echo $rows->nf_cover_image;?>" alt="">
                             </div>
 
                         </div>
