@@ -37,5 +37,11 @@ Class Websitemodel extends CI_Model
 		$res=$this->db->query($query);
 		return $result=$res->result();
 	}
+	
+		function home_get_post_list(){
+		$query="SELECT * FROM news_feed WHERE status = 'Active' AND nf_category_id ='2' ORDER BY id DESC LIMIT 5";
+		$res=$this->db->query($query);
+		return $result=$res->result();
+	}
 }
 ?>

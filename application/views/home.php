@@ -251,15 +251,20 @@
                 </div>
             </div>
             <div class="row">
+			<?php if (count($postlist)>0){ 
+							$assets_url = $this->config->item("assets_url")."newsfeed/";
+					?>
                 <div class="swiper-slider swiper-container two">
                     <div class="swiper-wrapper">
+					
+					<?php foreach($eventlist_double as $rows){ ?>
                         <div class="swiper-slide image-overlay">
                             <div class="news-item-style-03">
                                 <div class="thumb">
-                                    <img src="<?php echo base_url(); ?>assets/basic/img/blog/b1.png" alt="news">
+                                    <img src="<?php echo $assets_url.$rows->nf_cover_image;?>" alt="news">
                                 </div>
                                 <div class="content">
-                                    <h4 class="title"><a href="<?php echo base_url(); ?>post_details/">OMB and State department officials subpoenaed in House...</a></h4>
+                                    <h4 class="title"><a href="<?php echo base_url(); ?>post_details/<?php echo base64_encode($rows->id*98765); ?>/"><?php echo $rows->title_en;?></a></h4>
                                     <ul class="blog-meta d-flex flex-column flex-lg-row">
                                         <li><a href="#">25 December 2019</a></li>
                                         <li><a href="#">Read 4576</a></li>
@@ -267,69 +272,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide image-overlay">
-                            <div class="news-item-style-03">
-                                <div class="thumb">
-                                    <img src="<?php echo base_url(); ?>assets/basic/img/blog/b2.jpg" alt="news">
-                                </div>
-                                <div class="content">
-                                    <h4 class="title"><a href="<?php echo base_url(); ?>post_details/">DNC raises qualifying thresholds for sixth Democratic debate.</a></h4>
-                                    <ul class="blog-meta d-flex flex-column flex-lg-row">
-                                        <li><a href="#">23 August 2019</a></li>
-                                        <li><a href="#">Read 4576</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide image-overlay">
-                            <div class="news-item-style-03">
-                                <div class="thumb">
-                                    <img src="<?php echo base_url(); ?>assets/basic/img/blog/b3.jpg" alt="news">
-                                </div>
-                                <div class="content">
-                                    <h4 class="title"><a href="<?php echo base_url(); ?>post_details/">Key chairs call to cancel press conference on</a></h4>
-                                    <ul class="blog-meta d-flex flex-column flex-lg-row">
-                                        <li><a href="#">20 January 2019</a></li>
-                                        <li><a href="#">Read 4576</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="swiper-slide image-overlay">
-                            <div class="news-item-style-03">
-                                <div class="thumb">
-                                    <img src="<?php echo base_url(); ?>assets/basic/img/blog/b4.jpg" alt="news">
-                                </div>
-                                <div class="content">
-                                    <h4 class="title"><a href="<?php echo base_url(); ?>post_details/">Graham announces resolution House impeachment inquiry</a></h4>
-                                    <ul class="blog-meta d-flex flex-column flex-lg-row">
-                                        <li><a href="#">10 February 2019</a></li>
-                                        <li><a href="#">Read 4576</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide image-overlay">
-                            <div class="news-item-style-03">
-                                <div class="thumb">
-                                    <img src="<?php echo base_url(); ?>assets/basic/img/blog/b2.jpg" alt="news">
-                                </div>
-                                <div class="content">
-                                    <h4 class="title"><a href="<?php echo base_url(); ?>post_details/">Key chairs call to cancel press conference on</a></h4>
-                                    <ul class="blog-meta d-flex flex-column flex-lg-row">
-                                        <li><a href="#">25 September 2019</a></li>
-                                        <li><a href="#">Read 4576</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                       <?php } ?>
+                       
+                       
+                       
                     </div>
                     <div class="swiper-button-next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
                     <div class="swiper-button-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
                     <!-- Add Pagination -->
                     <div class="swiper-pagination"></div>
                 </div>
+				<?php } ?>
             </div>
         </div>
     </div>
