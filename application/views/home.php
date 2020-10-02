@@ -172,7 +172,7 @@
                 </div>
             </div>
 			<?php if (count($eventlist_single)>0){ 
-					echo $assets_url = $this->config->item("assets_url")."newsfeed/";
+					$assets_url = $this->config->item("assets_url")."newsfeed/";
 			?>
             <div class="row">
 				<?php foreach($eventlist_single as $rows){ ?>
@@ -181,7 +181,7 @@
                         <div class="d-flex margin-bottom-30">
                             <div class="thumb">
                                 <div class="time"> 
-                                    <span class="date"><?php echo $rows->nf_cover_image;?></span> 
+                                    <span class="date"><?php echo date("d",$rows->news_date); ?></span> 
                                     <span class="month">Dec</span>
                                 </div>
                                 <img src="<?php echo $assets_url.$rows->nf_cover_image;?>" alt="">
