@@ -35,7 +35,7 @@
                           <th>S.No</th>
                           <th>title</th>
                           <th>Cover image</th>
-                          <th>Date</th>
+                          <th>Expiry at</th>
                           <th>Status</th>
                           <th>Action</th>
                         </tr>
@@ -51,7 +51,7 @@
                             {{ $rows->title_ta}}
                           </td>
                             <td><img src="{{ url('/storage/newsfeed/')}}/{{ $rows->nf_cover_image }}" style="width:150px;height:100px;"></td>
-  													<td>{{$newDate = date("d-m-Y", strtotime($rows->news_date))  }}</td>
+  													<td>{{$newDate = date("d-m-Y h:i a", strtotime($rows->expiry_at))  }}</td>
                             <td><p class="badge-{{ $rows->status }}">{{ $rows->status}}</p></td>
                             <td><a title="Edit" href="{{ url('/admin/get_edit_newsfeed')}}/{{ $parameter}}"> <i class="fas fa-edit"></i></a>
                             <!-- &nbsp; <a title="Gallery" href="{{ url('/admin/add_gallery_newfeed')}}/{{ $parameter}}"> <i class="far fa-images"></i></a> -->

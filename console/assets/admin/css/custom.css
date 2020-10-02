@@ -23,8 +23,20 @@ svg{
 .img_box{
   margin-bottom: 10px;
 }
+.mb_0{
+  margin-bottom: 0px;
+}
+.ml-12{
+  margin-left: -12px !important;
+}
 .img_icon_box{
   margin-top: 5px;
   margin-bottom: 5px;
   text-align: right;
+}
+.datepicker table tr td.disabled, .datepicker table tr td.disabled:hover{
+      color: #e4dada !important;
+}
+.datepicker tbody tr > td.day{
+  /* color:#000 !important; */
 }
