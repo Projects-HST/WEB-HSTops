@@ -266,8 +266,8 @@
                                 <div class="content">
                                     <h4 class="title"><a href="<?php echo base_url(); ?>post_details/<?php echo base64_encode($rows->id*98765); ?>/"><?php echo $rows->title_en;?></a></h4>
                                     <ul class="blog-meta d-flex flex-column flex-lg-row">
-                                        <li><?php echo date("d M Y",strtotime($rows->news_date)) ?></li>
-                                        <li>Views <?php echo $rows->view_count; ?></li>
+                                        <li><a href="<?php echo base_url(); ?>post_details/<?php echo base64_encode($rows->id*98765); ?>/"><?php echo date("d M Y",strtotime($rows->news_date)) ?></a></li>
+                                        <li><a href="<?php echo base_url(); ?>post_details/<?php echo base64_encode($rows->id*98765); ?>/">Read <?php echo $rows->view_count; ?></a></li>
                                     </ul>
                                 </div>
                             </div>
