@@ -11,6 +11,6 @@ class Socialmedia extends Model
 
     protected $table='social_media';
 
-    protected $fillable = ['sm_title', 'sm_url','status'];
+    protected $fillable = ['sm_title', 'sm_url','status','created_by','updated_by'];
 
 }

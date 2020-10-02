@@ -7,7 +7,7 @@
         <div class="container d-flex align-items-center justify-content-between flex-wrap flex-sm-nowrap">
             <div class="d-flex align-items-center flex-wrap mr-1">
                 <div class="d-flex align-items-baseline flex-wrap mr-5">
-                    <h5 class="text-dark font-weight-bold my-1 mr-5">Social media </h5>
+                    <h5 class="text-dark font-weight-bold my-1 mr-5">Party state list</h5>
                     <ul class="breadcrumb breadcrumb-transparent breadcrumb-dot font-weight-bold p-0 my-2 font-size-sm">
                         <li class="breadcrumb-item">
                             <a href="" class="text-muted"></a>
@@ -26,25 +26,31 @@
                 <div class="col-md-12">
                     <div class="card card-custom gutter-b ">
                         <div class="card-header">
-                            <h3 class="card-title">Create Social media links</h3>
+                            <h3 class="card-title">Create state list</h3>
                         </div>
 
-                        <form action="{{ url('admin/create_social_media_link')}}" method="post" enctype="multipart/form-data">
+                        <form action="{{ url('admin/create_state_list')}}" method="post" enctype="multipart/form-data">
 													@csrf
 
                             <div class="card-body">
 															<div class="form-group row">
                                 <div class="col-md-3">
-                                  <label>Media name</label>
-																	<input type="text" class="form-control" placeholder="Enter the title" value="{{Request::old('sm_title')}}"  name="sm_title"/>
-                                  <p class="error">@error('sm_title'){{$message}} @enderror</p>
+                                  <label>State name in tamil</label>
+																	<input type="text" class="form-control" placeholder="Enter the state name in tamil " value="{{Request::old('state_name_ta')}}"  name="state_name_ta"/>
+                                  <p class="error">@error('state_name_ta'){{$message}} @enderror</p>
                                 </div>
-                                <div class="col-md-7">
-                                  <label>Media link</label>
-																	<input type="text" class="form-control" placeholder="Enter the link" value="{{Request::old('sm_url')}}"  name="sm_url"/>
-                                  <p class="error">@error('sm_url'){{$message}} @enderror</p>
+                                <div class="col-md-3">
+                                  <label>State name in english</label>
+																	<input type="text" class="form-control" placeholder="Enter the state name in english" value="{{Request::old('state_name_en')}}"  name="state_name_en"/>
+                                  <p class="error">@error('state_name_en'){{$message}} @enderror</p>
                                 </div>
-                                <div class="col-md-2">
+                                <div class="col-md-3">
+                                  <label>State logo</label>
+																	<input type="file" class="form-control" placeholder="" value="{{Request::old('state_name_en')}}"  name="state_logo"/>
+                                  <p class="error">@error('state_logo'){{$message}} @enderror</p>
+                                </div>
+
+                                <div class="col-md-3">
                                   <label>Status</label>
                                   <select class="form-control" name="status" id="status">
                                     <option value="Active">Active</option>
@@ -64,7 +70,7 @@
                 <div class="row" id="list">
 
                   <div class="col-md-12">
-                        <h3 class="">Social media list</h3>
+                        <h3 class="">Party state list</h3>
                     @if (Session::has('status'))
                   <div class="alert alert-{{ Session::get('status') }}">
                       <div>
@@ -79,7 +85,8 @@
                       <thead>
                         <tr>
                           <th>S.No</th>
-                          <th>title</th>
+                          <th>State name</th>
+                          <th>Logo</th>
                           <th>Status</th>
                           <th>Action</th>
                         </tr>
@@ -91,10 +98,12 @@
   												<tr>
   													<td>{{ $data->firstItem() + $i }}</td>
   													<td>
-                            <a href="<?php echo $rows->sm_url; ?>" target="_blank">{{ $rows->sm_title}}</a>
+                            {{ $rows->state_name_ta }} <br>
+                            {{ $rows->state_name_en }}
                           </td>
+                          <td><img src="{{ url('/storage/state/')}}/{{ $rows->state_logo }}" style="width:100px;height:100px;"></td>
                             <td><p class="badge-{{ $rows->status }}">{{ $rows->status}}</p></td>
-                            <td><a title="Edit" href="{{ url('/admin/get_edit_socialmedia')}}/{{ $parameter}}"> <i class="fas fa-edit"></i></a>
+                            <td><a title="Edit" href="{{ url('/admin/get_edit_state')}}/{{ $parameter}}"> <i class="fas fa-edit"></i></a>
                           </td>
 
   													</tr>
@@ -104,7 +113,6 @@
                       </table>
 
                     </div>
-                    <br>
                     <div class="d-flex justify-content-end">
                       <p class="paginate_links">{{ $data->links() }}</p>
                     </div>

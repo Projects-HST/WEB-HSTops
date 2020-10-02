@@ -11,7 +11,7 @@ class Newsfeedgallery extends Model
 
     protected $table='nf_image_gallery';
 
-    protected $fillable = ['nf_id', 'nf_image','status'];
+    protected $fillable = ['nf_id', 'nf_image','status','created_by','updated_by'];
 
 
 }

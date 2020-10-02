@@ -91,7 +91,7 @@
   													<td>{{ $rows->title_ta}}</td>
   													<td>{{ $rows->title_en}}</td>
   													<td><p class="badge-{{ $rows->status }}">{{ $rows->status}}</p></td>
-  													<td><a href="{{ url('/admin/get_live_events_edit')}}/{{ $parameter}}"> <i class="fas fa-edit"></i></a></td>
+  													<td><a title="Edit" href="{{ url('/admin/get_live_events_edit')}}/{{ $parameter}}"> <i class="fas fa-edit"></i></a></td>
   												</tr>
                           <?php $i++; } ?>
 
