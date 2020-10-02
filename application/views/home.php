@@ -183,7 +183,7 @@
                         <div class="d-flex margin-bottom-30">
                             <div class="thumb">
                                 <div class="time"> 
-                                    <span class="date"><?php //echo date("d",$news_date); ?></span> 
+                                    <span class="date"><?php echo date("d",strtotime($rows->news_date)) ?></span> 
                                     <span class="month"><?php echo date("M",strtotime($rows->news_date))?></span>
                                 </div>
                                 <img src="<?php echo $assets_url.$rows->nf_cover_image;?>" alt="">
