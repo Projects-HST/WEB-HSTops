@@ -172,7 +172,7 @@
                 </div>
             </div>
 			<?php if (count($eventlist_single)>0){ 
-					$assets_url = $this->config->item("assets_url")."newsfeed/";
+					echo $assets_url = $this->config->item("assets_url")."newsfeed/";
 			?>
             <div class="row">
 				<?php foreach($eventlist_single as $rows){ ?>
