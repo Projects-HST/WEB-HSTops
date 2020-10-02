@@ -27,13 +27,13 @@ Class Websitemodel extends CI_Model
 	}
 	
 	function home_get_event_list_single(){
-		$query="SELECT * FROM news_feed WHERE status = 'Active' AND nf_category_id ='2' LIMIT 1";
+		$query="SELECT * FROM news_feed WHERE status = 'Active' AND nf_category_id ='2' ORDER BY id DESC LIMIT 1";
 		$res=$this->db->query($query);
 		return $result=$res->result();
 	}
 	
 		function home_get_event_list_doubles(){
-		$query="SELECT * FROM news_feed WHERE status = 'Active' AND nf_category_id ='2' LIMIT 1,2";
+		$query="SELECT * FROM news_feed WHERE status = 'Active' AND nf_category_id ='2' ORDER BY id DESC LIMIT 1,2";
 		$res=$this->db->query($query);
 		return $result=$res->result();
 	}
