@@ -212,9 +212,7 @@
                             </div>
                         </div>
 				 <?php } ?>
-                        <div class="btn-wrapper">
-                            <a href="<?php echo base_url(); ?>events/">View all events</a> ➝
-                        </div>
+                        
                     </div>
                 </div>
 			<?php $i++; } ?>
