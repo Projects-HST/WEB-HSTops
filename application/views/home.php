@@ -176,9 +176,9 @@
 			?>
             <div class="row">
 				<?php foreach($eventlist_single as $rows){  
-				$news_date = $rows->news_date;
-				$time=strtotime($news_date);
-					$month=date("F",$time);
+				$news_date = strtotime($rows->news_date);
+				//$time=strtotime($news_date);
+					$month = date("F",$news_date);
 					$year=date("Y",$time);
 				?>
 					<div class="col-lg-6">
@@ -187,7 +187,7 @@
                             <div class="thumb">
                                 <div class="time"> 
                                     <span class="date"><?php //echo date("d",$news_date); ?></span> 
-                                    <span class="month">Dec</span>
+                                    <span class="month"><?php echo $month;?></span>
                                 </div>
                                 <img src="<?php echo $assets_url.$rows->nf_cover_image;?>" alt="">
                             </div>
