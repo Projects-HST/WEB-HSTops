@@ -104,6 +104,7 @@
                       </table>
 
                     </div>
+                    <br>
                     <div class="d-flex justify-content-end">
                       <p class="paginate_links">{{ $data->links() }}</p>
                     </div>

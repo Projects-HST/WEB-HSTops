@@ -298,7 +298,6 @@ class Newsfeedcontroller extends Controller
           "created_by"=>session('user_session')->id,
         ]);
 
-
         if($files=$request->file('filenames')){
             // $files = $request->file('filenames');
         foreach($files as $file){
@@ -309,6 +308,7 @@ class Newsfeedcontroller extends Controller
             Newsfeedgallery::create([
                 'nf_id' =>$nf_id,
                 'nf_image' => $name,
+                'created_by'=>session('user_session')->id,
                 'status'=>'Active',
             ]);
           }

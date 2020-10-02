@@ -72,7 +72,7 @@
                             <div class="img_box">
                               <img src="{{ url('/storage/gallery')}}/{{ $image['nf_image']}}" class="img-responsive" style="width:250px;height:200px;">
                             <div class="img_icon_box">
-                              <a href="{{ url('admin/delete_galley_image') }}/{{ $parameter }}"><i class="fas fa-trash-alt"></i></a>
+                              <a title="Delete" href="{{ url('admin/delete_galley_image') }}/{{ $parameter }}"><i class="fas fa-trash-alt"></i></a>
                             </div>
                             </div>
                           <!-- <?php echo $image['nf_image']; ?> -->

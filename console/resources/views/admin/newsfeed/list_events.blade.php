@@ -50,7 +50,7 @@
                             {{ $rows->title_en}} <br>
                             {{ $rows->title_en}}
                           </td>
-                            <td><img src="{{ url('/storage/newsfeed/')}}/{{ $rows->nf_cover_image }}" style="width:100px;height:100px;"></td>
+                            <td><img src="{{ url('/storage/newsfeed/')}}/{{ $rows->nf_cover_image }}" style="width:150px;height:100px;"></td>
   													<td>{{$newDate = date("d-m-Y", strtotime($rows->news_date))  }}</td>
                             <td><p class="badge-{{ $rows->status }}">{{ $rows->status}}</p></td>
                             <td><a title="Edit" href="{{ url('/admin/get_edit_newsfeed')}}/{{ $parameter}}"> <i class="fas fa-edit"></i></a>
