@@ -257,7 +257,7 @@
                 <div class="swiper-slider swiper-container two">
                     <div class="swiper-wrapper">
 					
-					<?php foreach($eventlist_double as $rows){ ?>
+					<?php foreach($postlist as $rows){ ?>
                         <div class="swiper-slide image-overlay">
                             <div class="news-item-style-03">
                                 <div class="thumb">
