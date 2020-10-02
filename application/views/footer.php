@@ -14,14 +14,18 @@
                             <div class="col-lg-3 col-xl-3 offset-xl-1">
                                 <div class="footer-widget widget widget_nav_menu">
                                     <h4 class="widget-title">Follow Us On</h4>
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Facebook</a></li>
-                                        <li><a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Twitter</a></li>
-                                        <li><a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Instagram</a></li>
-                                    </ul>
+									<?php 
+									if (count($socialmedia)>0){ 
+										echo "<ul>";
+											foreach($socialmedia as $rows){ 
+												$sm_title = $rows->sm_title;
+												$sm_url = $rows->sm_url;
+												echo "<li><a href=".$sm_url."><i class='fa fa-long-arrow-right' aria-hidden='true'></i>".$sm_title."</a></li>";
+											} 
+										echo "</ul>";
+									 } ?>
                                 </div>
                             </div>
-
                             <div class="col-lg-8">
                                 <div class="footer-widget widget">
                                     <h4 class="widget-title">Download Our APP On</h4>

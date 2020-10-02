@@ -58,8 +58,13 @@
                     <div class="content-box-style-01">
                         <p class="section-subtitle">About OPS</p>
                         <h2 class="title">Organization for action</h2>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. turnkey incididunt applications<br>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                        <p class="description">
+							<?php 
+							if (count($personal)>0){ 
+									foreach($personal as $rows){ }
+										echo $rows->personal_life_text_en;
+							 } ?>
+						</p>
                         <div class="btn-wrapper padding-top-30">
                             <a class="btn btn-custom-primary" href="<?php echo base_url(); ?>about_ops/">Learn more</a>
                         </div>
@@ -91,7 +96,11 @@
                 </div>
                 <div class="col-lg-5 offset-lg-1 align-self-center">
                     <div class="location-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in velit odio. Morbi sodales nisi nec tortor commodo, malesuada fermentum magna faucibus. Proin fringilla antio. Morbi sodale nisi nec tortor commodo. Lorem ipsum dolor sit amet, adipiscing elit. Morbi sodales nisi nec tortor commodo, malesuada fermentum magna sit amet, consectetur adipiscing elit. In in velit odio. Morbi sodales nisi nec tortor commodo.</p>
+                        <p><?php 
+							if (count($partyhistory)>0){ 
+									foreach($partyhistory as $rows){ }
+										echo $rows->party_text_en;
+							 } ?></p>
                         <div class="btn-wrapper">
                             <a class="btn btn-custom-primary" href="<?php echo base_url(); ?>about_party/">Learn more</a>
                         </div>
@@ -162,9 +171,14 @@
                     <h2 class="title">Upcoming Events</h2>
                 </div>
             </div>
+			<?php if (count($eventlist)>0){ 
+					$assets_url = $this->config->item("assets_url")."newsfeed/";
+			?>
             <div class="row">
+			<?php $i=1; foreach($eventlist as $rows){ ?>
                 <div class="col-lg-6">
-                    <div class="content-box-style-07">
+                    <?php if ($i == 1){ ?>
+					<div class="content-box-style-07">
                         <div class="d-flex margin-bottom-30">
                             <div class="thumb">
                                 <div class="time"> 
@@ -181,8 +195,10 @@
                             <a class="btn btn-custom-primary" href="<?php echo base_url(); ?>post_details/">Read More..</a>
                         </div>
                     </div>
+					<?php } ?>
                 </div>
                 <div class="col-lg-6">
+				 <?php if ($i > 1){ ?>
                     <div class="event-list-style padding-top-50">
                         <div class="event-single-style-01">
                             <div class="d-flex">
@@ -195,23 +211,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="event-single-style-01">
-                            <div class="d-flex">
-                                <div class="time"> 
-                                    <span class="date">28</span> 
-                                    <span class="month">Dec</span>
-                                </div>
-                                <div class="content">
-                                    <h4><a href="event-details.html">New Party Leadership Conference</a></h4>
-                                </div>
-                            </div>
-                        </div>
+				 <?php } ?>
                         <div class="btn-wrapper">
                             <a href="<?php echo base_url(); ?>events/">View all events</a> ➝
                         </div>
                     </div>
                 </div>
+			<?php } ?>
             </div>
+		<?php } ?>
         </div>
     </div>
 	<!-- events end -->
@@ -309,4 +317,4 @@
             </div>
         </div>
     </div>
-    <!-- news area End -->
+<!-- news area End -->
