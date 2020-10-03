@@ -20,38 +20,48 @@
     </div>
     <!-- breadcrumb-area end -->
 
-  
 
-	<div class="leadership-area margin-top-100 padding-bottom-100">
+<?php if (count($postdetails)>0){ 
+		$assets_url = $this->config->item("assets_url")."newsfeed/";
+
+		foreach($postdetails as $rows){  }
+	}
+?>
+	<div class="leadership-area margin-top-100 padding-bottom-50">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
                     <div class="blog-details-style-01 margin-bottom-100">
-                        <div class="b-img">
-                            <a href="#"><img src="<?php echo base_url(); ?>assets/basic/img/blog/item1.png" alt=""></a>
+                        <div class="b-img" style="max-width:740px;border-radius: 10px;">
+                            <img src="<?php echo $assets_url.$rows->nf_cover_image;?>" alt="" style="border-radius: 10px 10px 0px 0px;">
                             <div class="blog-date-box">
-                                <h4>28<br><span>Dec</span></h4>
+                                <h4><?php echo date("d",strtotime($rows->news_date)) ?><br><span><?php echo date("M",strtotime($rows->news_date))?></span></h4>
                             </div>
                         </div>
-                        <div class="b-content">
-                            
-                            <h4 class="section-title"><a href="#">Key chairs call to cancel the press conference</a></h4>
-                            <p>Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas Completely synergize resource taxing relationships via premier niche markes. Professionally cultivate one-to-one customer service with robust ideas. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas</p>
-
-                            <p class="mb-4">Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas.</p>
-                           
-                            <p class="mb-4">Mesource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer.</p>
-                            <div class="details-mission margin-bottom-30">
-                                <h5>Tesource taxing relationships</h5>
-                                <p>Mesource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer.</p>
-                            </div>
-                            <div class="details-mission">
-                                <h5>Professionally cultivate one-to-one customer</h5>
-                                <p>Mesource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer. Mesource taxing relation ships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer.</p>
-                            </div>
+						<div class="b-content">
+                            <h4 class="section-title"><?php echo $rows->title_en;?></h4>
+                            <p><?php echo htmlspecialchars_decode(stripslashes($rows->description_en)); ?></p>
+							
+<?php if (count($postgallery)>0){ 
+		$assets_url = $this->config->item("assets_url")."gallery/";
+?>
+							
+							<h4 class="section-title">Gallery</h4>
+							<div class="row padding-top-20">
+							<?php foreach($eventlist_single as $rows){   ?>
+								<div class="col-lg-6 padding-bottom-20">
+                                   <a href="<?php echo $assets_url.$rows->nf_image;?>" class="image-popup" title=""><img src="<?php echo $assets_url.$rows->nf_image;?>"></a>
+                                </div>
+							<?php } ?>
+							</div>
+<?php } ?>
+							
+							</div>
                         </div>
                     </div>
-                    <div id="comments" class="comments-area comments-area-wrapper">
+					
+					
+                    <!--<div id="comments" class="comments-area comments-area-wrapper">
                         <h4 class="comments-title">5 Comments</h4>
                         <ul class="comment-list">
                             <li class="comment">
@@ -122,7 +132,7 @@
                             </form>
                         </div>
                     </div>
-                </div>
+                </div>-->
 				
                 <div class="col-lg-4 text-center">
                     <div class="ls-date-box">

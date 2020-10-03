@@ -225,14 +225,14 @@
                                     <span class="date"><?php echo date("d",strtotime($rows->news_date)) ?></span> 
                                     <span class="month"><?php echo date("M",strtotime($rows->news_date))?></span>
                                 </div>
-                                <img src="<?php echo $assets_url.$rows->nf_cover_image;?>" alt="">
+                                <img src="<?php echo $assets_url.$rows->nf_cover_image;?>" alt="" width="150" height="150">
                             </div>
 
                         </div>
                         <h4 class="title"><?php echo $rows->title_en;?></h4>
                         <p><?php echo $string; ?></p>
                         <div class="btn-wrapper align-self-center margin-top-30">
-                            <a class="btn btn-custom-primary" href="<?php echo base_url(); ?>post_details/<?php echo base64_encode($rows->id*98765); ?>/">Read More..</a>
+                            <a class="btn btn-custom-primary" href="<?php echo base_url(); ?>index/post_details/<?php echo base64_encode($rows->id*98765); ?>/">Read More..</a>
                         </div>
                     </div>
 					</div>
@@ -249,7 +249,7 @@
                                     <span class="month"><?php echo date("M",strtotime($rows->news_date))?></span>
                                 </div>
                                 <div class="content">
-                                    <h4><a href="<?php echo base_url(); ?>post_details/<?php echo base64_encode($rows->id*98765); ?>/"><?php echo $rows->title_en;?></a></h4>
+                                    <h4><a href="<?php echo base_url(); ?>index/post_details/<?php echo base64_encode($rows->id*98765); ?>/"><?php echo $rows->title_en;?></a></h4>
                                 </div>
                             </div>
                         </div>
@@ -292,10 +292,10 @@
                                     <img src="<?php echo $assets_url.$rows->nf_cover_image;?>" style="max-width:350px;">
                                 </div>
                                 <div class="content">
-                                    <h4 class="title"><a href="<?php echo base_url(); ?>post_details/<?php echo base64_encode($rows->id*98765); ?>/"><?php echo $rows->title_en;?></a></h4>
+                                    <h4 class="title"><a href="<?php echo base_url(); ?>index/post_details/<?php echo base64_encode($rows->id*98765); ?>/"><?php echo $rows->title_en;?></a></h4>
                                     <ul class="blog-meta d-flex flex-column flex-lg-row">
-                                        <li><a href="<?php echo base_url(); ?>post_details/<?php echo base64_encode($rows->id*98765); ?>/"><?php echo date("d M Y",strtotime($rows->news_date)) ?></a></li>
-                                        <li><a href="<?php echo base_url(); ?>post_details/<?php echo base64_encode($rows->id*98765); ?>/">Read <?php echo $rows->view_count; ?></a></li>
+                                        <li><a href="<?php echo base_url(); ?>index/post_details/<?php echo base64_encode($rows->id*98765); ?>/"><?php echo date("d M Y",strtotime($rows->news_date)) ?></a></li>
+                                        <li><a href="<?php echo base_url(); ?>index/post_details/<?php echo base64_encode($rows->id*98765); ?>/">Read <?php echo $rows->view_count; ?></a></li>
                                     </ul>
                                 </div>
                             </div>

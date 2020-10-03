@@ -24,11 +24,11 @@
         <div class="container">
             <div class="row">
                 <div class="event-box-wrapper col-lg-12">
-                    <div class="title-left-style margin-bottom-65">
+                    <div class="title-left-style">
                         <p class="section-subtitle">Next event</p>
                         <h2 class="section-title">Happening next</h2>
                     </div>
-                    <div class="img-wrapper">
+                    <!--<div class="img-wrapper">
                         <img src="<?php echo base_url(); ?>assets/basic/img/event/happen.png" alt="">
                     </div>
                     <div class="event-box-content">
@@ -40,94 +40,55 @@
                         <p>Completely synergize resource taxing relationships via premier niche Professionally cultivate one-to-one customer service with. Completely synergize resource taxing relationships via premier niche Professionally cultivate one-to-one customer service with.</p>
                         <div class="btn-wrapper">
                             <a class="btn btn-custom-primary" href="<?php echo base_url(); ?>index/post_details/">More Details...</a>
-							
-							
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>
     </div>
 
+<?php if (count($result)>0){ 
+		$assets_url = $this->config->item("assets_url")."newsfeed/";
+?>
     <!-- upcoming area -->
     <div class="upcoming-area">
         <div class="container">
-           
-            <div class="row padding-top-50">
+            <div class="row padding-top-20">
+
+				<?php foreach($result as $rows){  
+					$string = htmlspecialchars_decode(stripslashes($rows['description_en']));
+					if (strlen($string) > 120) {
+
+						// truncate string
+						$stringCut = substr($string, 0, 120);
+						$endPoint = strrpos($stringCut, ' ');
+
+						//if the string doesn't contain any space then it will cut without word basis.
+						$string = $endPoint? substr($stringCut, 0, $endPoint) : substr($stringCut, 0);
+						$string .= '...';
+					}
+					
+				?>
                 <div class="col-lg-6">
                     <div class="upcoming-box">
-                        <div class="ub-image">
-                            <img src="<?php echo base_url(); ?>assets/basic/img/event/h1.png" alt="">
+                        <div class="ub-image" style="width:440px;height:225px;">
+                             <img src="<?php echo $assets_url.$rows['nf_cover_image'];?>" alt="">
                         </div>
                         <div class="date-box">
-                            <span class="date">17</span>
-                            <span class="month">Dec</span>
+                            <span class="date"><?php echo date("d",strtotime($rows['news_date'])) ?></span>
+                            <span class="month"><?php echo date("M",strtotime($rows['news_date']))?></span>
                         </div>
                         <div class="ub-content">
-                            <h4><a href="<?php echo base_url(); ?>index/post_details/">Press conference about new tax reform</a></h4>
+                            <h4><a href="<?php echo base_url(); ?>index/post_details/<?php echo base64_encode($rows['id']*98765); ?>/"><?php echo $rows['title_en'];?></a></h4>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="upcoming-box">
-                        <div class="ub-image">
-                            <img src="<?php echo base_url(); ?>assets/basic/img/event/h2.png" alt="">
-                        </div>
-                        <div class="date-box">
-                            <span class="date">19</span>
-                            <span class="month">Dec</span>
-                        </div>
-                        <div class="ub-content">
-                             <h4><a href="<?php echo base_url(); ?>index/post_details/">Press conference about new tax reform</a></h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="upcoming-box">
-                        <div class="ub-image">
-                            <img src="<?php echo base_url(); ?>assets/basic/img/event/h3.png" alt="">
-                        </div>
-                        <div class="date-box">
-                            <span class="date">29</span>
-                            <span class="month">Dec</span>
-                        </div>
-                        <div class="ub-content">
-                             <h4><a href="<?php echo base_url(); ?>index/post_details/">Press conference about new tax reform</a></h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="upcoming-box">
-                        <div class="ub-image">
-                            <img src="<?php echo base_url(); ?>assets/basic/img/event/h4.png" alt="">
-                        </div>
-                        <div class="date-box">
-                            <span class="date">30</span>
-                            <span class="month">Dec</span>
-                        </div>
-                        <div class="ub-content">
-                             <h4><a href="<?php echo base_url(); ?>index/post_details/">Press conference about new tax reform</a></h4>
-                        </div>
-                    </div>
-                </div>
+				<?php } ?>
+
 				<div class="col-md-12">
-                    <div class="pagination-area d-flex justify-content-center padding-bottom-50">
-                        <ul>
-                            <li>
-                                <span class="page-bumber current">01</span>
-                            </li>
-                            <li>
-                                <span class="page-bumber">02</span>
-                            </li>
-                            <li>
-                                <span class="page-bumber">03</span>
-                            </li>
-                            <li>
-                                <span class="next page-bumber"> <i class="fa fa-angle-right"></i></span>
-                            </li>
-                        </ul>
-                    </div>
+                    <div class="pagination-area d-flex justify-content-center margin-top-50 padding-bottom-50"><?php echo $pagination; ?></div>
                 </div>
             </div>
         </div>
     </div>
+<?php } ?>

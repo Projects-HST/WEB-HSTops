@@ -19,11 +19,39 @@
     </div>
     <!-- breadcrumb-area end -->
 
+ <!-- event box area -->
+    <div class="event-box-area margin-top-100">
+        <div class="container">
+            <div class="row">
+                <div class="event-box-wrapper col-lg-12">
+                    <div class="title-left-style">
+                        <p class="section-subtitle">Latest</p>
+                        <h2 class="section-title">Latest Posts</h2>
+                    </div>
+                    <!--<div class="img-wrapper">
+                        <img src="<?php echo base_url(); ?>assets/basic/img/event/happen.png" alt="">
+                    </div>
+                    <div class="event-box-content">
+                        <div class="date-box">
+                            <span class="date">17</span>
+                            <span class="month">Dec</span>
+                        </div>
+                        <h4>Orphan children's educational campaign</h4>
+                        <p>Completely synergize resource taxing relationships via premier niche Professionally cultivate one-to-one customer service with. Completely synergize resource taxing relationships via premier niche Professionally cultivate one-to-one customer service with.</p>
+                        <div class="btn-wrapper">
+                            <a class="btn btn-custom-primary" href="<?php echo base_url(); ?>index/post_details/">More Details...</a>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+	
 <?php if (count($result)>0){ 
 		$assets_url = $this->config->item("assets_url")."newsfeed/";
 ?>
 
-    <div class="blog-area margin-top-100 padding-bottom-100">
+    <div class="blog-area padding-bottom-100">
         <div class="container">
             <div class="row blog-no-sidebar">
                 <div class="col-lg-8 offset-lg-4">
@@ -43,14 +71,14 @@
 					
 				?>
                     <div class="blog-item-style-02 margin-top-120">
-                        <div class="b-img" style="max-width:500px;">
+                        <div class="b-img" style="width:500px;height:300px;">
                             <img src="<?php echo $assets_url.$rows['nf_cover_image'];?>" alt="">
                         </div>
                         <div class="b-content">
                             <div class="blog-date-box">
                                 <h4><?php echo date("d",strtotime($rows['news_date'])) ?><br><span><?php echo date("M",strtotime($rows['news_date']))?></span></h4>
                             </div>
-                            <h4 class="section-title"><a href="<?php echo base_url(); ?>post_details/<?php echo base64_encode($rows['id']*98765); ?>/"><?php echo $rows['title_en'];?></a></h4>
+                            <h4 class="section-title"><a href="<?php echo base_url(); ?>index/post_details/<?php echo base64_encode($rows['id']*98765); ?>/"><?php echo $rows['title_en'];?></a></h4>
                             <p><?php echo $string; ?></p>
                         </div>
                         
@@ -65,7 +93,7 @@
                             </div>
                             
                             <div class="btn-wrapper">
-                                <a href="<?php echo base_url(); ?>post_details/<?php echo base64_encode($rows['id']*98765); ?>/">Read more</a> ➝
+                                <a href="<?php echo base_url(); ?>index/post_details/<?php echo base64_encode($rows['id']*98765); ?>/">Read more</a> ➝
                             </div>
                         </div>
                     </div>

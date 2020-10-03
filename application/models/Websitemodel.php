@@ -70,7 +70,115 @@ Class Websitemodel extends CI_Model
 	
 	
 // Select total records
-	 function getPostcount($search_text = '') {
+	 function getPostcount() {
+
+		$this->db->select('count(*) as allcount');
+		$this->db->from('news_feed');
+		$this->db->where('nf_category_id', '2');
+		$this->db->where('status', 'Active');
+		
+		//echo $this->db->get_compiled_select(); exit;
+		$query = $this->db->get();
+		$result = $query->result_array();
+		return $result[0]['allcount'];
+  }
+  
+	// Fetch records
+	function getPost($rowno,$rowperpage) {
+
+	$this->db->select ('id,news_date,title_en,description_en,nf_cover_image');
+	$this->db->from('news_feed');
+	$this->db->where('nf_category_id', '2');
+	$this->db->where('status', 'Active');
+	$this->db->order_by("id", "desc");
+	$this->db->limit($rowperpage,$rowno);
+	
+	// echo $this->db->get_compiled_select();	 exit;
+	$query = $this->db->get();
+	return $query->result_array();
+}
+
+// Select total records
+	 function getEventscount() {
+
+		$this->db->select('count(*) as allcount');
+		$this->db->from('news_feed');
+		$this->db->where('nf_category_id', '3');
+		$this->db->where('status', 'Active');
+		
+		//echo $this->db->get_compiled_select(); exit;
+		$query = $this->db->get();
+		$result = $query->result_array();
+		return $result[0]['allcount'];
+  }
+  
+// Fetch records
+	function getEvents($rowno,$rowperpage) {
+
+		$this->db->select ('id,news_date,title_en,description_en,nf_cover_image');
+		$this->db->from('news_feed');
+		$this->db->where('nf_category_id', '3');
+		$this->db->where('status', 'Active');
+		$this->db->order_by("id", "desc");
+		$this->db->limit($rowperpage,$rowno);
+		
+		// echo $this->db->get_compiled_select();	 exit;
+		$query = $this->db->get();
+		return $query->result_array();
+	}
+	
+	function get_postdetails($id){
+		$query="SELECT * FROM `news_feed` WHERE `id` = '$id'";
+		$res=$this->db->query($query);
+		return $result=$res->result();
+	}
+	
+	function get_postgallery($id){
+		$query="SELECT * FROM `nf_image_gallery` WHERE `nf_id` = '$id'";
+		$res=$this->db->query($query);
+		return $result=$res->result();
+	}
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Select total records
+	 function searchPostcount($search_text = '') {
 
 		$this->db->select('count(*) as allcount');
 		$this->db->from('news_feed');
@@ -90,7 +198,7 @@ Class Websitemodel extends CI_Model
   }
   
 	// Fetch records
-	function getPost($rowno,$rowperpage,$search_text="") {
+	function searchPost($rowno,$rowperpage,$search_text="") {
 
 	$this->db->select ('id,news_date,title_en,description_en,nf_cover_image');
 	$this->db->from('news_feed');
