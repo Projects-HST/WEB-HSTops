@@ -12,11 +12,10 @@
 
               </div>
               <div class="col-md-4">
-                <!-- <form method="get" action="{{ url('admin/search_data')}}">
+                <!-- <form method="post" action="{{ url('admin/search_data')}}">
                   @csrf
                   <div class="form-group row mb_0">
                     <div class="col-md-10" >
-
                       <input class="form-control" name="search_text" placeholder="Search name,phone number" value="">
 
                     </div>

@@ -66,3 +66,6 @@ svg{
 .fas{
   color:#949494;
 }
+.timeline.timeline-6 .timeline-item .timeline-label{
+  font-size: 12px !important;
+}
