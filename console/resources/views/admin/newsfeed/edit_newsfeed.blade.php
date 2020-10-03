@@ -159,6 +159,8 @@ $(document).ready(function() {
 
 $( "#datepicker" ).datepicker({
   startDate: '-1y',
+  endDate: '+10m',
+
 format: 'dd-mm-yyyy' });
   });
 

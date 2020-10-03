@@ -203,12 +203,12 @@ class Homecontroller extends Controller
 
      }
 
-     function search_data(){
+     function search_data(Request $request){
 
-       $search_val  = Input::get('search_text') ;
-       echo $search_val;
-       exit;
-       // $search_val=$request->input('search_text');
+       // $search_val  = Input::get('search_text') ;
+       // echo $search_val;
+       // exit;
+       $search_val=$request->input('search_text');
        $data=Usermastermodel::where('full_name',$search_val)->orWhere('phone_number',$search_val)->orderBy('id', 'desc')->paginate(10);
        return view('admin.users.user_list')->with('res',$data);
      }
