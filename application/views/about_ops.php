@@ -65,7 +65,7 @@
 						<?php 
 							if (count($personal)>0){ 
 									foreach($personal as $rows){ }
-										echo $rows->political_career_text_ta;
+										echo $rows->political_career_text_en;
 						} ?>
 						</p>
                     </div>
