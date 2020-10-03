@@ -8428,3 +8428,14 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     color: #fff; }
   .controler-wrapper-style-04 span {
     position: relative; }
+
+  .party-table {
+    font-family: var(--secondary-font);
+	background-color: #ffffff;
+   }
+   
+  .party-table td, .party-table th {
+	padding: .5em; }
+	
+  .party-table th {
+	 background-color: #ebeff2; }

@@ -44,6 +44,7 @@ class Index extends CI_Controller {
 	{
 		$datas['socialmedia'] = $this->websitemodel->get_socialmedia();
 		$datas['personal'] = $this->websitemodel->get_opslife();
+		$datas['achievements'] = $this->websitemodel->get_opsachievements();
 		
 		$this->load->view('header',$datas);
 		$this->load->view('about_ops',$datas);
@@ -52,9 +53,15 @@ class Index extends CI_Controller {
 
 	public function about_party()
 	{
-		$this->load->view('header');
-		$this->load->view('about_party');
-		$this->load->view('footer');
+		$datas['socialmedia'] = $this->websitemodel->get_socialmedia();
+		$datas['partyhistory'] = $this->websitemodel->get_party_history();
+		$datas['electioninfo1'] = $this->websitemodel->party_election_info_1();
+		$datas['electioninfo2'] = $this->websitemodel->party_election_info_2();
+		$datas['electioninfo3'] = $this->websitemodel->party_election_info_3();
+		
+		$this->load->view('header',$datas);
+		$this->load->view('about_party',$datas);
+		$this->load->view('footer',$datas);
 	}
 	
 	public function posts()
