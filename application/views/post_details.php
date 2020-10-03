@@ -48,9 +48,9 @@
 							
 							<h4 class="section-title">Gallery</h4>
 							<div class="row padding-top-20">
-							<?php foreach($postgallery as $rows){   ?>
+							<?php foreach($postgallery as $gallery){   ?>
 								<div class="col-lg-6 padding-bottom-20">
-                                   <a href="<?php echo $assets_url.$rows->nf_image;?>" class="image-popup" title=""><img src="<?php echo $assets_url.$rows->nf_image;?>"></a>
+                                   <a href="<?php echo $assets_url.$gallery->nf_image;?>" class="image-popup" title=""><img src="<?php echo $assets_url.$gallery->nf_image;?>"></a>
                                 </div>
 							<?php } ?>
 							</div>
@@ -137,7 +137,7 @@
                 <div class="col-lg-4 text-center">
                     <div class="ls-date-box">
                         <h4>Date</h4>
-							<p>Sat, October 12, 2019</p>
+							<p><?php echo date("D, M j Y",strtotime($rows->news_date)) ?></p>
                         <hr>
 						<div class="ls-social-share">
                         <ul>
