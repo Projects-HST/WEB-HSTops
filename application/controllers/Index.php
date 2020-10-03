@@ -125,7 +125,7 @@ class Index extends CI_Controller {
 			}
 
 			// Row per page
-			$rowperpage = 10;
+			$rowperpage = 3;
 			
 			// Row position
 			if($rowno != 0){
