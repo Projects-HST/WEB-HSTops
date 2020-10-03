@@ -88,8 +88,8 @@
                                   <label>Newsfeed type <span class="text-danger">*</span></label>
                                   <select class="form-control" name="nf_profile_type" id="nf_profile_type">
                                     <option value="">Select type</option>
-                                    <option value="i">Image</option>
-                                    <option value="v">Video</option>
+                                    <option value="I">Image</option>
+                                    <option value="V">Video</option>
                                   </select>
                                   <script>$('#nf_profile_type').val("{{ $data['nf_profile_type']}}")</script>
                                   <p class="error">@error('nf_profile_type'){{$message}} @enderror</p>
@@ -138,7 +138,7 @@
             </div>
           </div>
 <?php
-if($data['nf_profile_type']=='v'){ ?>
+if($data['nf_profile_type']=='V'){ ?>
 <style>#video_url{display: block;}</style>
 <?php }else{ ?>
   <style>#video_url{display: none;}</style>
@@ -148,7 +148,7 @@ if($data['nf_profile_type']=='v'){ ?>
 
 $('#nf_profile_type').on('change', function() {
   var nf_type_id=this.value;
-  if(nf_type_id=='v'){
+  if(nf_type_id=='V'){
     $('#video_url').show();
   }else{
     $('#video_url').hide();
@@ -158,8 +158,7 @@ $('#nf_profile_type').on('change', function() {
 $(document).ready(function() {
 
 $( "#datepicker" ).datepicker({
-  startDate: "dateToday",
-
+  startDate: '-1y',
 format: 'dd-mm-yyyy' });
   });
 
