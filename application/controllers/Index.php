@@ -66,9 +66,11 @@ class Index extends CI_Controller {
 	
 	public function posts()
 	{
-		$this->load->view('header');
-		$this->load->view('posts');
-		$this->load->view('footer');
+		$datas['socialmedia'] = $this->websitemodel->get_socialmedia();
+		
+		$this->load->view('header',$datas);
+		$this->load->view('posts',$datas);
+		$this->load->view('footer',$datas);
 	}
 	
 	public function post_details()
