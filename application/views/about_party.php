@@ -32,7 +32,7 @@
                         <p class="para"><?php 
 							if (count($partyhistory)>0){ 
 									foreach($partyhistory as $rows){ }
-										echo $rows->party_text_en;
+										echo htmlspecialchars_decode(stripslashes($rows->party_text_en));
 						} ?></p>
                         
                     </div>

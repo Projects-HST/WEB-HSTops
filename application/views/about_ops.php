@@ -33,7 +33,7 @@
 						<?php 
 							if (count($personal)>0){ 
 									foreach($personal as $rows){ }
-										echo $rows->personal_life_text_en;
+										echo htmlspecialchars_decode(stripslashes($rows->personal_life_text_en));
 						} ?>
 						</p>
                     </div>
@@ -65,7 +65,7 @@
 						<?php 
 							if (count($personal)>0){ 
 									foreach($personal as $rows){ }
-										echo $rows->political_career_text_en;
+										echo htmlspecialchars_decode(stripslashes($rows->political_career_text_en));
 						} ?>
 						</p>
                     </div>
@@ -82,8 +82,8 @@
         <div class="container">
             <div class="row candidate-slider">
 			<?php foreach($achievements as $rows){ 
-			
-				$string = strip_tags($rows->achievement_text_en);
+				$string = htmlspecialchars_decode(stripslashes($rows->achievement_text_en));
+				
 					if (strlen($string) > 300) {
 
 						// truncate string

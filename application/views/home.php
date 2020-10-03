@@ -59,10 +59,22 @@
                         <p class="section-subtitle">About OPS</p>
                         <h2 class="title">Organization for action</h2>
                         <p class="description">
-							<?php 
-							if (count($personal)>0){ 
-									foreach($personal as $rows){ }
-										echo $rows->personal_life_text_en;
+						<?php 
+						if (count($personal)>0){ 
+							 foreach($personal as $rows){  
+								$string = htmlspecialchars_decode(stripslashes($rows->personal_life_text_en));
+								if (strlen($string) > 500) {
+
+									// truncate string
+									$stringCut = substr($string, 0, 500);
+									$endPoint = strrpos($stringCut, ' ');
+
+									//if the string doesn't contain any space then it will cut without word basis.
+									$string = $endPoint? substr($stringCut, 0, $endPoint) : substr($stringCut, 0);
+									$string .= '...';
+								}
+							 }
+								echo $string;
 							 } ?>
 						</p>
                         <div class="btn-wrapper padding-top-30">
@@ -96,11 +108,25 @@
                 </div>
                 <div class="col-lg-5 offset-lg-1 align-self-center">
                     <div class="location-content">
-                        <p><?php 
-							if (count($partyhistory)>0){ 
-									foreach($partyhistory as $rows){ }
-										echo $rows->party_text_en;
-							 } ?></p>
+                        <p>
+						<?php 
+						if (count($partyhistory)>0){ 
+							 foreach($partyhistory as $rows){  
+								$string = htmlspecialchars_decode(stripslashes($rows->party_text_en));
+								if (strlen($string) > 500) {
+
+									// truncate string
+									$stringCut = substr($string, 0, 500);
+									$endPoint = strrpos($stringCut, ' ');
+
+									//if the string doesn't contain any space then it will cut without word basis.
+									$string = $endPoint? substr($stringCut, 0, $endPoint) : substr($stringCut, 0);
+									$string .= '...';
+								}
+							 }
+								echo $string;
+							 } ?>
+						</p>
                         <div class="btn-wrapper">
                             <a class="btn btn-custom-primary" href="<?php echo base_url(); ?>about_party/">Learn more</a>
                         </div>
@@ -178,8 +204,7 @@
 			
             <div class="row">
 				<?php foreach($eventlist_single as $rows){  
-					
-				$string = strip_tags($rows->description_ta);
+					$string = htmlspecialchars_decode(stripslashes($rows->description_en));
 					if (strlen($string) > 50) {
 
 						// truncate string
@@ -264,7 +289,7 @@
                         <div class="swiper-slide image-overlay">
                             <div class="news-item-style-03">
                                 <div class="thumb">
-                                    <img src="<?php echo $assets_url.$rows->nf_cover_image;?>" alt="news">
+                                    <img src="<?php echo $assets_url.$rows->nf_cover_image;?>">
                                 </div>
                                 <div class="content">
                                     <h4 class="title"><a href="<?php echo base_url(); ?>post_details/<?php echo base64_encode($rows->id*98765); ?>/"><?php echo $rows->title_en;?></a></h4>

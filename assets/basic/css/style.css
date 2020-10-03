@@ -8439,3 +8439,44 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 	
   .party-table th {
 	 background-color: #ebeff2; }
+	 
+.pagination-first-tag{
+border:1px solid #eeeeee;
+padding:20px;
+background:#fff;
+}
+.pagination-first-tag a{
+  color: #31aa15 !important;
+
+}
+.pagination-last-tag{
+border:1px solid #eeeeee;
+padding:20px;
+background:#fff;
+}
+.pagination-next-tag{
+padding:20px;
+border:1px solid #eeeeee;
+color:#31aa15;
+background:#fff;
+}
+.pagination-prev-tag{
+padding:20px;
+border:1px solid #eeeeee;
+background:#fff;
+}
+.pagination-current-tag{
+  color: #fff;
+  background-color:#31aa15 !important;
+font-weight:bold;
+padding:20px;
+border:1px solid #eeeeee;
+}
+.pagination-number a{
+padding:20px;
+border:1px solid #eeeeee;
+color:#31aa15;
+}
+.pagination-first-tag a, .pagination-next-tag a, .pagination-last-tag a, .pagination-prev-tag a{
+color:#31aa15;
+}

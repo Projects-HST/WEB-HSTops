@@ -68,5 +68,50 @@ Class Websitemodel extends CI_Model
 		return $result=$res->result();
 	}
 	
+	
+// Select total records
+	 function getPostcount($search_text = '') {
+
+		$this->db->select('count(*) as allcount');
+		$this->db->from('news_feed');
+
+		if($search_text != ''){
+				 $this->db->like('title_ta', $search_text,'after');
+				 $this->db->like('title_en', $search_text);
+		}
+		$this->db->where('nf_category_id', '2');
+		$this->db->where('status', 'Active');
+		
+		//echo $this->db->get_compiled_select(); exit;
+		$query = $this->db->get();
+		$result = $query->result_array();
+
+		return $result[0]['allcount'];
+  }
+  
+	// Fetch records
+	function getPost($rowno,$rowperpage,$search_text="") {
+
+	$this->db->select ('id,news_date,title_en,description_en,nf_cover_image');
+	$this->db->from('news_feed');
+
+	if($search_text != ''){
+
+		
+			 $this->db->like('title_ta', $search_text,'after');
+			 $this->db->like('title_en', $search_text);
+	}
+	$this->db->where('nf_category_id', '2');
+	$this->db->where('status', 'Active');
+	$this->db->order_by("id", "desc");
+	$this->db->limit($rowperpage,$rowno);
+	// echo $this->db->get_compiled_select();	 exit;
+	$query = $this->db->get();
+
+	return $query->result_array();
+}
+
+  
+	
 }
 ?>
