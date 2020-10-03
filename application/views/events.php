@@ -71,8 +71,8 @@
 				?>
                 <div class="col-lg-6">
                     <div class="upcoming-box">
-                        <div class="ub-image" style="width:440px;height:225px;">
-                             <img src="<?php echo $assets_url.$rows['nf_cover_image'];?>" alt="">
+                        <div class="ub-image">
+                             <img src="<?php echo $assets_url.$rows['nf_cover_image'];?>" alt="" style="width:440px;height:225px;">
                         </div>
                         <div class="date-box">
                             <span class="date"><?php echo date("d",strtotime($rows['news_date'])) ?></span>
