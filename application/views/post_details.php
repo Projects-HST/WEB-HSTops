@@ -48,7 +48,7 @@
 							
 							<h4 class="section-title">Gallery</h4>
 							<div class="row padding-top-20">
-							<?php foreach($eventlist_single as $rows){   ?>
+							<?php foreach($postgallery as $rows){   ?>
 								<div class="col-lg-6 padding-bottom-20">
                                    <a href="<?php echo $assets_url.$rows->nf_image;?>" class="image-popup" title=""><img src="<?php echo $assets_url.$rows->nf_image;?>"></a>
                                 </div>
