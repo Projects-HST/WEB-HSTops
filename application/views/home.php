@@ -112,7 +112,7 @@
     <!-- location area end -->
 	
     <!-- changes area start -->
-    <div class="action-soon-area">
+    <div class="action-soon-area padding-bottom-100">
         <div class="container">
             <div class="row margin-bottom-45">
                 <div class="col-lg-12">
@@ -161,9 +161,13 @@
         </div>
     </div>
 <!-- changes area end  -->
-    
+
+
+<?php if (count($eventlist_single)>0){ 
+		$assets_url = $this->config->item("assets_url")."newsfeed/";
+?>
 <!-- events start -->
-	<div class="upcoming-events-area padding-top-100">
+	<div class="upcoming-events-area">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -171,9 +175,7 @@
                     <h2 class="title">Upcoming Events</h2>
                 </div>
             </div>
-			<?php if (count($eventlist_single)>0){ 
-					$assets_url = $this->config->item("assets_url")."newsfeed/";
-			?>
+			
             <div class="row">
 				<?php foreach($eventlist_single as $rows){  
 					
@@ -235,11 +237,15 @@
                    
 						
             </div>
-		<?php } ?>
+		
         </div>
     </div>
 	<!-- events end -->
+<?php } ?>
 
+<?php if (count($postlist)>0){ 
+		$assets_url = $this->config->item("assets_url")."newsfeed/";
+?>
     <!-- news area Start -->
     <div class="home-news-area padding-top-100 padding-bottom-100">
         <div class="container">
@@ -251,9 +257,6 @@
                 </div>
             </div>
             <div class="row">
-			<?php if (count($postlist)>0){ 
-							$assets_url = $this->config->item("assets_url")."newsfeed/";
-					?>
                 <div class="swiper-slider swiper-container two">
                     <div class="swiper-wrapper">
 					
@@ -273,17 +276,16 @@
                             </div>
                         </div>
                        <?php } ?>
-                       
-                       
-                       
+
                     </div>
                     <div class="swiper-button-next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
                     <div class="swiper-button-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
                     <!-- Add Pagination -->
                     <div class="swiper-pagination"></div>
                 </div>
-				<?php } ?>
+				
             </div>
         </div>
     </div>
 <!-- news area End -->
+<?php } ?>

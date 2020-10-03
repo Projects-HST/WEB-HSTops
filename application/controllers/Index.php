@@ -42,9 +42,12 @@ class Index extends CI_Controller {
 	
 	public function about_ops()
 	{
-		$this->load->view('header');
-		$this->load->view('about_ops');
-		$this->load->view('footer');
+		$datas['socialmedia'] = $this->websitemodel->get_socialmedia();
+		$datas['personal'] = $this->websitemodel->get_opslife();
+		
+		$this->load->view('header',$datas);
+		$this->load->view('about_ops',$datas);
+		$this->load->view('footer',$datas);
 	}
 
 	public function about_party()
