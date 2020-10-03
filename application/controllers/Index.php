@@ -184,7 +184,7 @@ class Index extends CI_Controller {
 
 		$data['pagination'] = $this->pagination->create_links();
 		$data['result'] = $users_record;
-		print_r ($data['result']); exit;
+		//print_r ($data['result']); exit;
 		$data['row'] = $rowno;
 		$data['search'] = $search_text;
 		$data['allcount'] = $allcount;
