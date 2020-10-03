@@ -19,7 +19,7 @@
 				<div class="login-aside d-flex flex-row-auto bgi-size-cover bgi-no-repeat p-10 p-lg-10" style="background-image: url({{ url('/')}}/assets/admin/media/bg/bg-4.jpg);">
 					<div class="d-flex flex-row-fluid flex-column justify-content-between">
 						<a href="#" class="flex-column-auto mt-5 pb-lg-0 pb-10">
-							<img src="{{ url('/')}}/assets/admin/media/logos/logo-letter-1.png" class="max-h-70px" alt="" />
+							<img src="{{ url('/')}}/assets/admin/media/logos/logo.png" class="max-h-70px" alt="" />
 						</a>
 						<div class="flex-column-fluid d-flex flex-column justify-content-center">
 							<h3 class="font-size-h1 mb-5 text-white">Welcome to Metronic!</h3>
