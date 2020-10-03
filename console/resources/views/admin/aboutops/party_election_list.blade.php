@@ -35,7 +35,7 @@
 															<div class="form-group row">
                                 <div class="col-md-3">
                                   <label>Election year</label>
-																	<input type="text" class="form-control" placeholder="Election year " value="{{Request::old('election_year')}}"  name="election_year"/>
+																	<input type="text" class="form-control" placeholder="Election year " value="{{Request::old('election_year')}}"  name="election_year" id="datepicker" autocomplete="off" readonly='true'/>
                                   <p class="error">@error('election_year'){{$message}} @enderror</p>
                                 </div>
                                 <div class="col-md-3">
@@ -160,4 +160,20 @@
     </div>
 
 </div>
+<script>
+
+$(document).ready(function() {
+$( "#datepicker" ).datepicker({
+ endDate: "today",
+ startDate: '-80y',
+ minDate:0,
+ format: "yyyy",
+ viewMode: "years",
+ minViewMode: "years",
+ updateViewDate: true,
+ changeYear: true,
+ defaultViewDate: {year: '1970'}
+});
+  });
+</script>
 @endsection

@@ -84,6 +84,14 @@ Route::group(['middleware'=>['Customauth']],function(){
   Route::get('admin/aboutops','App\Http\Controllers\Aboutopscontroller@aboutops');
   Route::post('save_personal_info','App\Http\Controllers\Aboutopscontroller@save_personal_info');
 
+  ### About OPS ###
+
+  Route::get('admin/aboutops_political_career','App\Http\Controllers\Aboutopscontroller@aboutops_political_career');
+  Route::post('save_political_career_info','App\Http\Controllers\Aboutopscontroller@save_political_career_info');
+
+
+
+
 
   ### Social media ###
   Route::get('admin/socialmedia','App\Http\Controllers\Aboutopscontroller@socialmedia');

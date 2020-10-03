@@ -5,8 +5,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\DB;
+
 use App\Models\Adminlogin;
 use App\Models\Usermastermodel;
+use App\Models\Newsfeed;
 
 use App\Mail\Forgotpasswordmail;
 use Auth;
@@ -26,7 +29,15 @@ class Homecontroller extends Controller
     function dashboard(){
       $role_type = session('user_session')->admin_role_type;
       if($role_type=='1'){
-          return view('admin.dashboard');
+          $totalcount=Usermastermodel::count();
+          $malecount = Usermastermodel::where('Gender', 'Male')->count();
+          $femalecount = Usermastermodel::where('Gender', 'Female')->count();
+          $otherscount = Usermastermodel::where('Gender', 'Others')->count();
+          $post=Newsfeed::where('nf_category_id','2')->orderBy('news_date', 'desc')->take(10)->get();
+          $events=Newsfeed::where('nf_category_id','3')->orderBy('news_date', 'desc')->take(10)->get();
+          $postcount=Newsfeed::where('nf_category_id','2')->count();
+          $eventcount=Newsfeed::where('nf_category_id','3')->count();
+          return view('admin.dashboard',compact('totalcount','malecount','femalecount','otherscount','post','postcount','events','eventcount'));
         }else{
           echo "subadmin";
         }
@@ -120,7 +131,7 @@ class Homecontroller extends Controller
        $user = Adminlogin::findOrFail($id);
        $this->validate($request, [
          'old_password' => 'required',
-         'new_password' => 'required|min:6',
+         'new_password' => 'required|min:6|max:8',
          'retype_password' => 'required_with:new_password|same:new_password|min:6',
           ]);
 

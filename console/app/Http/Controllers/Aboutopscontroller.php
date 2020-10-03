@@ -59,6 +59,43 @@ class Aboutopscontroller extends Controller
       }
     }
 
+    function aboutops_political_career(){
+      $role_type = session('user_session')->admin_role_type;
+      if($role_type=='1'){
+          $data=Aboutops::where('id','1')->get();
+          return view('admin.aboutops.update_political_career',compact('data'));
+        }else{
+          return redirect('/admin/login');
+        }
+    }
+
+
+    function save_political_career_info(Request $request){
+      $role_type = session('user_session')->admin_role_type;
+      if($role_type=='1'){
+        $validate_data=$request->validate([
+        'political_career_text_ta'=>'required',
+        'political_career_text_en'=>'required',
+      ],[
+        'political_career_text_ta.required'=>'Political career info tamil text is required',
+        'political_career_text_en.required'=>'Political career info english text is required',
+      ]);
+      $data = Aboutops::where('id', 1)->update([
+        'political_career_text_ta' =>$request->political_career_text_ta,
+        'political_career_text_en'=>$request->political_career_text_en,
+        "updated_at"=>NOW(),
+        "updated_by"=>session('user_session')->id,
+      ]);
+      if($data){
+        return redirect()->back()->with(array('status'=>'success','msg'=>"Updated Successfully!."));
+      }else{
+        return redirect()->back()->with(array('status'=>'danger','msg'=>"Something went wrong!."));
+      }
+      }else{
+        return redirect('/admin/login');
+      }
+    }
+
 
     function aboutparty(){
       $role_type = session('user_session')->admin_role_type;
@@ -457,7 +494,7 @@ class Aboutopscontroller extends Controller
           'party_leader_ta'=>'required',
           'party_leader_en'=>'required',
           'status'=>'required',
-          'seats_won'=>'required',
+          'seats_won'=>'required|digits_between:1,3',
           'election_type'=>'required',
           'election_year' => 'required|unique:party_election_info,election_year,NULL,id,election_type,' . $request->input('election_type'),
           'state_info_id'=>'required',
@@ -465,6 +502,8 @@ class Aboutopscontroller extends Controller
         'party_leader_en.required'=>'State name tamil is required',
         'party_leader_ta.required'=>'State name english is required',
         'status.required'=>'Status  is required',
+        'seats_won.digits_between'=>'Seats digit not more than 3 digits',
+
         'seats_won.required'=>'Enter the no seats won',
         'election_type.required'=>'Select the type',
         'election_year.required'=>'Select the election year',
@@ -506,7 +545,7 @@ class Aboutopscontroller extends Controller
           'party_leader_ta'=>'required',
           'party_leader_en'=>'required',
           'status'=>'required',
-          'seats_won'=>'required',
+          'seats_won'=>'required|digits_between:1,3',
           'election_type'=>'required',
           'election_year' => [
                             'required',
@@ -520,6 +559,7 @@ class Aboutopscontroller extends Controller
         'party_leader_ta.required'=>'State name english is required',
         'status.required'=>'Status  is required',
         'seats_won.required'=>'Enter the no seats won',
+        'seats_won.digits_between'=>'Seats digit not more than 3 digits',
         'election_type.required'=>'Select the type',
         'election_year.required'=>'Select the election year',
         'state_info_id.required'=>'select the state ',
