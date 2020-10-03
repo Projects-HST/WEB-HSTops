@@ -2,20 +2,25 @@
   /* padding-bottom:25px; */
 }
 .badge-Active{
-    background-color: #27c30a;
-    color: #fff;
-    text-align: center;
-    border-radius: 25px;
+    /* background-color: #27c30a; */
+    color: #27c30a;
+    font-weight: bold;
+    text-align: left;
+    /* border-radius: 25px; */
     width: 90px;
 
 }
 .badge-Inactive{
-    background-color: #e24949;
-    color: #fff;
-    text-align: center;
-    border-radius: 25px;
+    /* background-color: #e24949; */
+    color: #e24949;
+    font-weight: bold;
+    text-align: left;
+    /* border-radius: 25px; */
     width: 90px;
 
+}
+th{
+  text-align: left;
 }
 svg{
   width:10px;
@@ -39,4 +44,25 @@ svg{
 }
 .datepicker tbody tr > td.day{
   /* color:#000 !important; */
+}
+.event_details p{
+  overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width:900px;
+}
+.btn.btn-primary{
+  width:100px;
+}
+.btn-viewmore{
+  color:#0B9421;
+}
+.btn-viewmore:hover{
+  color:#0B9421;
+}
+.table.table-head-custom thead tr, .table.table-head-custom thead th{
+  color:#2d2d2d !important;
+}
+.fas{
+  color:#949494;
 }

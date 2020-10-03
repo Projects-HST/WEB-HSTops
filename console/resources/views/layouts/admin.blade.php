@@ -17,7 +17,7 @@
 	<body id="kt_body" class="header-fixed header-mobile-fixed page-loading">
 		<div id="kt_header_mobile" class="header-mobile bg-primary header-mobile-fixed">
 			<a href="#">
-				<img alt="Logo" src="{{ url('/')}}/assets/admin/media/logos/logo-letter-9.png" class="max-h-30px" />
+				<img alt="Logo" src="{{ url('/')}}/assets/admin/media/logos/logo.png" class="max-h-30px" />
 			</a>
 
 		</div>
@@ -30,7 +30,7 @@
 							<div class="container">
 								<div class="d-none d-lg-flex align-items-center mr-3">
 									<a href="#" class="mr-10">
-										<img alt="Logo" src="{{ url('/')}}/assets/admin/media/logos/logo-letter-9.png" class="max-h-35px" />
+										<img alt="Logo" src="{{ url('/')}}/assets/admin/media/logos/logo.png" class="max-h-35px" />
 									</a>
 									<div class="w-500px" style="font-size:30px;color:#ffffff;">
 										Mr. O Panneerselvam
@@ -205,6 +205,13 @@
 															</a>
 														</li>
 														<li class="menu-item menu-item-submenu">
+															<a href="{{ url('/admin/aboutops_political_career')}}" class="menu-link ">
+																<span class="menu-text">Political career Info</span>
+															</a>
+														</li>
+
+
+														<li class="menu-item menu-item-submenu">
 															<a href="{{ url('/admin/socialmedia')}}" class="menu-link">
 																<span class="menu-text">Social Media Info</span>
 															</a>
@@ -349,15 +356,13 @@
 								</div>
 							</div>
 
+</body>
+<script src="{{ url('/')}}/assets/admin/js/plugins.bundle.js"></script>
+<script src="{{ url('/')}}/assets/admin/js/prismjs.bundle.js"></script>
+<script src="{{ url('/')}}/assets/admin/js/scripts.bundle.js"></script>
+<script src="{{ url('/')}}/assets/admin/js/widgets.js"></script>
+<script>
+$('.alert').delay(5000).fadeOut('slow');
 
-
-
-
-
-
-						</body>
-						<script src="{{ url('/')}}/assets/admin/js/plugins.bundle.js"></script>
-						<script src="{{ url('/')}}/assets/admin/js/prismjs.bundle.js"></script>
-						<script src="{{ url('/')}}/assets/admin/js/scripts.bundle.js"></script>
-						<script src="{{ url('/')}}/assets/admin/js/widgets.js"></script>
-					</html>
+</script>
+</html>
