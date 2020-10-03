@@ -289,7 +289,7 @@
                         <div class="swiper-slide image-overlay">
                             <div class="news-item-style-03">
                                 <div class="thumb">
-                                    <img src="<?php echo $assets_url.$rows->nf_cover_image;?>">
+                                    <img src="<?php echo $assets_url.$rows->nf_cover_image;?>" style="max-width:350px;">
                                 </div>
                                 <div class="content">
                                     <h4 class="title"><a href="<?php echo base_url(); ?>post_details/<?php echo base64_encode($rows->id*98765); ?>/"><?php echo $rows->title_en;?></a></h4>
