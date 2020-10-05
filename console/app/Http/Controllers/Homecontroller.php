@@ -204,6 +204,7 @@ class Homecontroller extends Controller
      }
 
      function search_data(){
+       
        $search_val=request('search_text');
        $data=Usermastermodel::where('full_name','LIKE','%'.$search_val.'%')->orWhere('phone_number','LIKE','%'.$search_val.'%')->orderBy('id', 'desc')->paginate(10);
        return view('admin.users.user_list',compact('data','search_val'));

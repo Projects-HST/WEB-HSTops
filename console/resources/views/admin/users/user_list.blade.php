@@ -56,7 +56,8 @@
                         </tr>
                         </thead>
   											<tbody>
-                          <?php $i=0; foreach($data as $rows){
+                          <?php
+                          $i=0; foreach($data as $rows){
                             $parameter= Crypt::encrypt($rows->id);
                             ?>
   												<tr>
@@ -69,7 +70,8 @@
                             <td>{{  date("d-m-Y", strtotime($rows->dob))}}</td>
   													<td><a title="Change Status" href="#" class="badge-{{ $rows->status }}" onclick="change_status('{{$parameter}}')">{{ $rows->status}}</a></td>
   													</tr>
-                          <?php $i++; } ?>
+                          <?php $i++; }
+                         ?>
 
                         </tbody>
                       </table>
