@@ -179,6 +179,7 @@
             }
         });
 
+        
 
         $(".video-btn-style-05").magnificPopup({
             items: {

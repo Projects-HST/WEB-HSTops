@@ -54,6 +54,7 @@
     </div>
     <!-- back to top area end -->
 
+
 	<!-- popper -->
     <script src="<?php echo base_url(); ?>assets/basic/js/popper.min.js"></script>
     <!-- wow -->

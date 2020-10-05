@@ -34,14 +34,14 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/basic/css/style.css">
     <!-- responsive Stylesheet -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/basic/css/responsive.css">
-    
-	 <!-- jquery -->
+	
+	<!-- jquery -->
     <script src="<?php echo base_url(); ?>assets/basic/js/jquery-2.2.4.min.js"></script>
     <!-- bootstrap -->
     <script src="<?php echo base_url(); ?>assets/basic/js/bootstrap.min.js"></script>
     <!-- magnific popup -->
     <script src="<?php echo base_url(); ?>assets/basic/js/jquery.magnific-popup.js"></script>
-	
+    
 </head>
 <body>
 
@@ -76,10 +76,10 @@
         <button class="sidebar-menu-close"><i class="flaticon-close"></i></button>
         <div class="sidebar-inner">
             <div class="sidebar-logo">
-                <img src="<?php echo base_url(); ?>assets/basic/img/logo.png" alt="logo"/>
+                <img src="<?php echo base_url(); ?>assets/basic/img/ops_logo-green.png" alt="logo"/>
             </div>
             <div class="sidemenu-text">
-                <p>We believe brand interaction is key in commu- nication. Real inno vations and a positive customer experience are the heart of successful commu- nication.</p>
+                <p>O.P.S. is an Indian politician serving as the 2nd and current Deputy Chief Minister of Tamil Nadu since 21 August 2017</p>
             </div>
             <div class="sidebar-contact">
                 <h4>Contact Us</h4>
@@ -88,10 +88,6 @@
                     <li><i class="fa fa-envelope"></i>email@evha.com</li>
                     <li><i class="fa fa-phone"></i>(+880) 172570051</li>
                 </ul>
-            </div>
-            <div class="sidebar-subscribe">
-                <input type="text" placeholder="Email">
-                <button><i class="fa fa-long-arrow-right"></i></button>
             </div>
             <div class="social-link">
                 <ul>
