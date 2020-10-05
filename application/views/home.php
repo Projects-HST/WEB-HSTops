@@ -97,7 +97,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="section-title">All India Anna Dravida Munnetra Kazhagam <br>(AIADMK)</h2>
+                    <h2 class="section-title">All India<br>Anna Dravida Munnetra Kazhagam</h2>
                 </div>
             </div>
             <div class="row margin-top-55 margin-bottom-100">
