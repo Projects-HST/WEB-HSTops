@@ -1,3 +1,4 @@
+<?php $search_value = $this->session->userdata('search'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,6 +35,13 @@
     <!-- responsive Stylesheet -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/basic/css/responsive.css">
     
+	 <!-- jquery -->
+    <script src="<?php echo base_url(); ?>assets/basic/js/jquery-2.2.4.min.js"></script>
+    <!-- bootstrap -->
+    <script src="<?php echo base_url(); ?>assets/basic/js/bootstrap.min.js"></script>
+    <!-- magnific popup -->
+    <script src="<?php echo base_url(); ?>assets/basic/js/jquery.magnific-popup.js"></script>
+	
 </head>
 <body>
 
@@ -54,11 +62,11 @@
     <!-- search Popup -->
     <div class="body-overlay" id="body-overlay"></div>
     <div class="search-popup" id="search-popup">
-        <form action="index.html" class="search-form">
+        <form action="<?php echo base_url(); ?>index/search_posts/"  method="post" type class="search-form">
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search.....">
+                <input type="text" class="form-control" name="search" id="search" placeholder="Search....." <?php if ($search_value!='') { echo "value='$search_value'"; } ?>>
             </div>
-            <button type="submit" class="submit-btn"><i class="fa fa-search"></i></button>
+            <button type="submit" name='submit' value='Search' class="submit-btn"><i class="fa fa-search"></i></button>
         </form>
     </div>
     <!-- //. search Popup -->

@@ -6,7 +6,7 @@
                     <div class="col-xl-3 margin-xlt-80">
 						<div class="row">
 							<img src="<?php echo base_url(); ?>assets/basic/img/ops_web_logo.png" alt="logo">
-							<p style="padding-top:20px;color:#ffffff;">Ottakarathevar Panneerselvam is an Indian politician serving as the 2nd and current Deputy Chief Minister of Tamil Nadu since 21 August 2017. He is the coordinator of All India Anna Dravida Munnetra Kazhagam.</p>
+							<p style="padding-top:20px;color:#ffffff;font-family: var(--secondary-font);font-size:14px;">Ottakarathevar Panneerselvam is an Indian politician serving as the 2nd and current Deputy Chief Minister of Tamil Nadu since 21 August 2017. He is the coordinator of All India Anna Dravida Munnetra Kazhagam.</p>
 						</div>
                     </div>
                     <div class="col-xl-9 margin-xlt-80">
@@ -20,7 +20,7 @@
 											foreach($socialmedia as $rows){ 
 												$sm_title = $rows->sm_title;
 												$sm_url = $rows->sm_url;
-												echo "<li><a href=".$sm_url."><i class='fa fa-long-arrow-right' aria-hidden='true'></i>".$sm_title."</a></li>";
+												echo "<li><a href=".$sm_url." target='_blank'><i class='fa fa-long-arrow-right' aria-hidden='true'></i>".$sm_title."</a></li>";
 											} 
 										echo "</ul>";
 									 } ?>
@@ -54,14 +54,8 @@
     </div>
     <!-- back to top area end -->
 
-    <!-- jquery -->
-    <script src="<?php echo base_url(); ?>assets/basic/js/jquery-2.2.4.min.js"></script>
-    <!-- popper -->
+	<!-- popper -->
     <script src="<?php echo base_url(); ?>assets/basic/js/popper.min.js"></script>
-    <!-- bootstrap -->
-    <script src="<?php echo base_url(); ?>assets/basic/js/bootstrap.min.js"></script>
-    <!-- magnific popup -->
-    <script src="<?php echo base_url(); ?>assets/basic/js/jquery.magnific-popup.js"></script>
     <!-- wow -->
     <script src="<?php echo base_url(); ?>assets/basic/js/wow.min.js"></script>
     <!-- animated slider -->
@@ -91,6 +85,5 @@
     <script src="<?php echo base_url(); ?>assets/basic/js/script.js"></script>
     <script src="<?php echo base_url(); ?>assets/basic/js/main.js"></script>
 
-  
 </body>
 </html>

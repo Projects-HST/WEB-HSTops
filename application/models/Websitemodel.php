@@ -44,6 +44,18 @@ Class Websitemodel extends CI_Model
 		return $result=$res->result();
 	}
 	
+	function home_live_event(){
+		$query="SELECT * FROM live_events WHERE status = 'Active' ORDER BY id DESC LIMIT 1";
+		$res=$this->db->query($query);
+		return $result=$res->result();
+	}
+	
+	function get_home_achievements(){
+		$query="SELECT * FROM `ops_achievements` WHERE `status` = 'Active' ORDER BY id DESC LIMIT 3";
+		$res=$this->db->query($query);
+		return $result=$res->result();
+	}
+	
 	function get_opsachievements(){
 		$query="SELECT * FROM `ops_achievements` WHERE `status` = 'Active' ORDER BY id DESC";
 		$res=$this->db->query($query);
@@ -139,43 +151,67 @@ Class Websitemodel extends CI_Model
 		return $result=$res->result();
 	}
 	
+	// Select total records
+	 function getPhotocount() {
+
+		$this->db->select('count(*) as allcount');
+		$this->db->from('news_feed');
+		$this->db->where('nf_profile_type', 'I');
+		$this->db->where('gallery_status', '1');
+		$this->db->where('status', 'Active');
+		
+		//echo $this->db->get_compiled_select(); exit;
+		$query = $this->db->get();
+		$result = $query->result_array();
+		return $result[0]['allcount'];
+  }
+  
+	// Fetch records
+	function getPhoto($rowno,$rowperpage) {
+
+		$this->db->select ('id,news_date,title_en,description_en,nf_cover_image');
+		$this->db->from('news_feed');
+		$this->db->where('nf_profile_type', 'I');
+		$this->db->where('gallery_status', '1');
+		$this->db->where('status', 'Active');
+		$this->db->order_by("id", "desc");
+		$this->db->limit($rowperpage,$rowno);
+		
+		 //echo $this->db->get_compiled_select();	 exit;
+		$query = $this->db->get();
+		return $query->result_array();
+	}
 	
+	// Select total records
+	 function getVideocount() {
+
+		$this->db->select('count(*) as allcount');
+		$this->db->from('news_feed');
+		$this->db->where('nf_profile_type', 'I');
+		$this->db->where('gallery_status', '1');
+		$this->db->where('status', 'Active');
+		
+		//echo $this->db->get_compiled_select(); exit;
+		$query = $this->db->get();
+		$result = $query->result_array();
+		return $result[0]['allcount'];
+  }
+  
+	// Fetch records
+	function getVideo($rowno,$rowperpage) {
+
+		$this->db->select ('id,news_date,title_en,nf_video_token_id,description_en,nf_cover_image');
+		$this->db->from('news_feed');
+		$this->db->where('nf_profile_type', 'V');
+		$this->db->where('status', 'Active');
+		$this->db->order_by("id", "desc");
+		$this->db->limit($rowperpage,$rowno);
+		
+		 //echo $this->db->get_compiled_select();	 exit;
+		$query = $this->db->get();
+		return $query->result_array();
+	}
 	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // Select total records
 	 function searchPostcount($search_text = '') {
@@ -184,10 +220,9 @@ Class Websitemodel extends CI_Model
 		$this->db->from('news_feed');
 
 		if($search_text != ''){
-				 $this->db->like('title_ta', $search_text,'after');
-				 $this->db->like('title_en', $search_text);
+				 $this->db->or_like('title_ta', $search_text,'after');
+				 $this->db->or_like('title_en', $search_text);
 		}
-		$this->db->where('nf_category_id', '2');
 		$this->db->where('status', 'Active');
 		
 		//echo $this->db->get_compiled_select(); exit;
@@ -205,15 +240,13 @@ Class Websitemodel extends CI_Model
 
 	if($search_text != ''){
 
-		
-			 $this->db->like('title_ta', $search_text,'after');
-			 $this->db->like('title_en', $search_text);
+			$this->db->or_like('title_ta', $search_text,'after');
+			$this->db->or_like('title_en', $search_text);
 	}
-	$this->db->where('nf_category_id', '2');
 	$this->db->where('status', 'Active');
 	$this->db->order_by("id", "desc");
 	$this->db->limit($rowperpage,$rowno);
-	// echo $this->db->get_compiled_select();	 exit;
+	 //echo $this->db->get_compiled_select();	 exit;
 	$query = $this->db->get();
 
 	return $query->result_array();

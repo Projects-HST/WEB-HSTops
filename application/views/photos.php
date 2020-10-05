@@ -19,94 +19,33 @@
     </div>
     <!-- breadcrumb-area end -->
 
-  
+ <?php if (count($result)>0){ 
+		$assets_url = $this->config->item("assets_url")."newsfeed/";
+?> 
 
     <!-- service start -->
     <div class="our-service-area margin-top-100 padding-bottom-100">
         <div class="container">
             <div class="row">
+			
+			<?php foreach($result as $rows){ ?>
                 <div class="col-lg-4 col-md-6">
                     <div class="icon-box-style-05 margin-bottom-30">
                         <div class="causes-img">
-                            <a href="<?php echo base_url(); ?>index/photos_gallery/"><img src="<?php echo base_url(); ?>assets/basic/img/causes/1.png" alt=""></a>
+                            <a href="<?php echo base_url(); ?>index/photos_gallery/<?php echo base64_encode($rows['id']*98765); ?>/"><img src="<?php echo $assets_url.$rows['nf_cover_image'];?>" alt=""></a>
                         </div>
                         <div class="sb-content">
-                            <h4><a href="event.html">Blind tool: Braile Literacy tool for Blind people.</a></h4>
+                            <h4><a href="<?php echo base_url(); ?>index/photos_gallery/<?php echo base64_encode($rows['id']*98765); ?>/"><?php echo $rows['title_en'];?></a></h4>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="icon-box-style-05 margin-bottom-30">
-                        <div class="causes-img">
-                            <a href="#"><img src="<?php echo base_url(); ?>assets/basic/img/causes/2.png" alt=""></a>
-                        </div>
-                        <div class="sb-content">
-                            <h4><a href="event.html">Literacy program: Primary education for all.</a></h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="icon-box-style-05 margin-bottom-30">
-                        <div class="causes-img">
-                            <a href="#"><img src="<?php echo base_url(); ?>assets/basic/img/causes/3.png" alt=""></a>
-                        </div>
-                        <div class="sb-content">
-                            <h4><a href="event.html">Make sure drinking pure water everybody.</a></h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="icon-box-style-05 margin-bottom-30">
-                        <div class="causes-img">
-                            <a href="#"><img src="<?php echo base_url(); ?>assets/basic/img/causes/4.png" alt=""></a>
-                        </div>
-                        <div class="sb-content">
-                            <h4><a href="event.html">Built safe house for Houseless people.</a></h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="icon-box-style-05 margin-bottom-30">
-                        <div class="causes-img">
-                            <a href="#"><img src="<?php echo base_url(); ?>assets/basic/img/causes/5.png" alt=""></a>
-                        </div>
-                        <div class="sb-content">
-                            <h4><a href="event.html">First Bionic wireless water technology.</a></h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="icon-box-style-05 margin-bottom-30">
-                        <div class="causes-img">
-                            <a href="#"><img src="<?php echo base_url(); ?>assets/basic/img/causes/1.png" alt=""></a>
-                        </div>
-                        <div class="sb-content">
-                            <h4><a href="event.html">Political Commitment for Deportation Issue</a></h4>
-                        </div>
-                    </div>
+			<?php } ?>
+			<div class="col-md-12">
+                    <div class="pagination-area d-flex justify-content-center margin-top-50 padding-bottom-50"><?php echo $pagination; ?></div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="pagination-area d-flex justify-content-center margin-top-20">
-                        <ul>
-                            <li>
-                                <span class="page-bumber current">01</span>
-                            </li>
-                            <li>
-                                <span class="page-bumber">02</span>
-                            </li>
-                            <li>
-                                <span class="page-bumber">03</span>
-                            </li>
-                            <li>
-                                <span class="next page-bumber"> <i class="fa fa-angle-right"></i></span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
     <!-- service end -->
-
+  <?php } ?>

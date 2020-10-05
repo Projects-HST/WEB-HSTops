@@ -78,13 +78,13 @@
 							 } ?>
 						</p>
                         <div class="btn-wrapper padding-top-30">
-                            <a class="btn btn-custom-primary" href="<?php echo base_url(); ?>about_ops/">Learn more</a>
+                            <a class="btn btn-custom-primary" href="<?php echo base_url(); ?>aboutOPS/">Learn more</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-5 offset-lg-1">
                     <div class="ab-thumb">
-                        <img src="<?php echo base_url(); ?>assets/basic/img/organization.png" alt="">
+                        <img src="<?php echo base_url(); ?>assets/basic/img/ops_home_img.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -103,7 +103,7 @@
             <div class="row margin-top-55 margin-bottom-100">
                 <div class="col-lg-6">
                     <div class="map-img">
-                        <img src="<?php echo base_url(); ?>assets/basic/img/map.png" alt="">
+                        <img src="<?php echo base_url(); ?>assets/basic/img/tamilnadu_map.png" alt="">
                     </div>
                 </div>
                 <div class="col-lg-5 offset-lg-1 align-self-center">
@@ -137,6 +137,9 @@
     </div>
     <!-- location area end -->
 	
+	<?php if (count($achievements)>0){ 
+				$assets_url = $this->config->item("assets_url")."awards/";
+	?>
     <!-- changes area start -->
     <div class="action-soon-area padding-bottom-100">
         <div class="container">
@@ -147,45 +150,26 @@
                 </div>
             </div>
             <div class="row">
+			<?php foreach($achievements as $rows){ ?>
+			
                 <div class="col-xl-4 col-lg-6 align-self-center">
                     <div class="action-soon-content">
                         <div class="act-img">
-                            <img src="<?php echo base_url(); ?>assets/basic/img/action/1.png" alt="">
+                            <img src="<?php echo $assets_url.$rows->achievement_image;?>" alt="">
                         </div>
-                        <p class="subtitle">In Economy</p>
-                        <h4 class="title">The publicity campaign</h4>
+                        <p class="subtitle">Achievement</p>
+                        <h4 class="title"><?php echo $rows->achievement_title_en;?></h4>
                         <div class="btn-wrapper">
-                            <a class="readMore" href="<?php echo base_url(); ?>about_ops/">Read more</a> ➝
+                            <a class="readMore" href="<?php echo base_url(); ?>aboutOPS/">Read more</a> ➝
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-6 align-self-center">
-                    <div class="action-soon-content">
-                        <div class="act-img">
-                            <img src="<?php echo base_url(); ?>assets/basic/img/action/2.png" alt="">
-                        </div>
-                        <p class="subtitle">In Citizen life</p>
-                        <h4 class="title">Change your life style</h4>
-                        <div class="btn-wrapper">
-                            <a class="readMore" href="<?php echo base_url(); ?>about_ops/">Read more</a> ➝
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 align-self-center">
-                    <div class="action-soon-content">
-                        <div class="act-img">
-                            <img src="<?php echo base_url(); ?>assets/basic/img/action/3.png" alt="">
-                        </div>
-                        <p class="subtitle">In Medical</p>
-                        <h4 class="title">Rebuild health program</h4>
-                        <div class="btn-wrapper">
-                            <a class="readMore" href="<?php echo base_url(); ?>about_ops/">Read more</a> ➝
-                        </div>
-                    </div>
-                </div>
+                <?php } ?>
+
             </div>
         </div>
     </div>
+	 <?php } ?>
 <!-- changes area end  -->
 
 
@@ -314,3 +298,27 @@
     </div>
 <!-- news area End -->
 <?php } ?>
+
+<script>
+$(".video-btn-style-04").magnificPopup({
+            items: {
+                src: "https://www.youtube.com/watch?v=7snAIwahysw"
+            },
+            type: "iframe",
+            iframe: {
+                markup:
+                    '<div class="mfp-iframe-scaler">' +
+                    '<div class="mfp-close"></div>' +
+                    '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
+                    "</div>",
+                patterns: {
+                    youtube: {
+                        index: "youtube.com/",
+                        id: "v=",
+                        src: "https://www.youtube.com/embed/7snAIwahysw"
+                    }
+                },
+                srcAction: "iframe_src"
+            }
+        });
+ </script>
