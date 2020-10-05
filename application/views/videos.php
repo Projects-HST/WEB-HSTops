@@ -30,7 +30,7 @@
 			<?php foreach($result as $rows){ ?>
                 <div class="col-lg-4 col-md-6">
                     <div class="icon-box-style-05 margin-bottom-30">
-                        <iframe src="http://www.youtube.com/embed/l-861c2B2Es" width="500" height="200" frameborder="0" allowfullscreen></iframe>
+                        <iframe src="http://www.youtube.com/embed/<?php echo $rows['nf_video_token_id'];?>" width="500" height="200" frameborder="0" allowfullscreen></iframe>
                         <div class="sb-content">
                             <h4><?php echo $rows['title_en'];?></h4>
                         </div>
