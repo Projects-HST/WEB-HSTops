@@ -10,7 +10,7 @@
 		<link href="{{ url('/')}}/assets/admin/css/prismjs.bundle.css" rel="stylesheet" type="text/css" />
 		<link href="{{ url('/')}}/assets/admin/css/style.bundle.css" rel="stylesheet" type="text/css" />
 		<script src="{{ url('/')}}/assets/admin/js/jquery/jquery.min.js"></script>
-		<link rel="shortcut icon" href="{{ url('/')}}/assets/admin/media/logos/favicon.ico" />
+		<link rel="shortcut icon" href="{{ url('/')}}/assets/admin/media/logos/favicon.png" />
 	</head>
 	<body id="kt_body" class="header-fixed header-mobile-fixed subheader-enabled page-loading">
 

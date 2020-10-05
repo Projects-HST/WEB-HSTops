@@ -12,6 +12,8 @@
 		<link href="{{ url('/')}}/assets/admin/css/font_awesome.css" rel="stylesheet" type="text/css" />
 		<link href="{{ url('/')}}/assets/admin/css/custom.css" rel="stylesheet" type="text/css" />
 		<script src="{{ url('/assets')}}/jquery.js"></script>
+		<link rel="shortcut icon" href="{{ url('/')}}/assets/admin/media/logos/favicon.png" />
+
 
 	</head>
 	<body id="kt_body" class="header-fixed header-mobile-fixed page-loading">

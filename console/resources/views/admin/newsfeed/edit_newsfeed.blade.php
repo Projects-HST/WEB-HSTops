@@ -58,29 +58,31 @@
 															</div>
 															<div class="form-group row">
                                 <div class="col-md-6">
-                                  <label>English title <span class="text-danger">*</span></label>
-																	<input type="text" class="form-control" placeholder="Enter the English title" value="{{ $data['title_en']}}"  name="title_en"/>
-																	<p class="error">@error('title_en'){{$message}} @enderror</p>
-                                </div>
-                                <div class="col-md-6">
                                   <label>Tamil title <span class="text-danger">*</span></label>
 																	<input type="text" class="form-control" placeholder="Enter the tamil title" value="{{ $data['title_ta']}}"  name="title_ta"/>
 																	<p class="error">@error('title_ta'){{$message}} @enderror</p>
                                 </div>
+                                <div class="col-md-6">
+                                  <label>English title <span class="text-danger">*</span></label>
+																	<input type="text" class="form-control" placeholder="Enter the English title" value="{{ $data['title_en']}}"  name="title_en"/>
+																	<p class="error">@error('title_en'){{$message}} @enderror</p>
+                                </div>
+
 															</div>
                               <div class="form-group row">
-                                <div class="col-md-6">
-                                  <label>English description <span class="text-danger">*</span></label>
-                                  <textarea name="description_en" class="form-control" rows="10" cols="80" id="description_en" placeholder="">{{ $data['description_en']}}</textarea>
-                                  <script>CKEDITOR.replace( 'description_en' ); </script>
-                                  <p class="error">@error('description_en'){{$message}} @enderror</p>
-                                </div>
                                 <div class="col-md-6">
                                   <label>Tamil description <span class="text-danger">*</span></label>
                                   <textarea name="description_ta" class="form-control" rows="10" cols="80" id="description_ta" placeholder="">{{ $data['description_ta']}}</textarea>
                                   <script>CKEDITOR.replace( 'description_ta' ); </script>
                                   <p class="error">@error('description_ta'){{$message}} @enderror</p>
                                 </div>
+                                <div class="col-md-6">
+                                  <label>English description <span class="text-danger">*</span></label>
+                                  <textarea name="description_en" class="form-control" rows="10" cols="80" id="description_en" placeholder="">{{ $data['description_en']}}</textarea>
+                                  <script>CKEDITOR.replace( 'description_en' ); </script>
+                                  <p class="error">@error('description_en'){{$message}} @enderror</p>
+                                </div>
+
 															</div>
 
                               <div class="form-group row">

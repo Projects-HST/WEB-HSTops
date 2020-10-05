@@ -75,10 +75,10 @@ class Masters extends Controller
         'live_url'=>'required',
         'status'=>'required',
       ],[
-        'title_ta.required'=>'title tamil is required',
-        'title_en.required'=>'title english is required',
-        'live_url.required'=>'link  is required',
-        'status.required'=>'status  is required',
+        'title_ta.required'=>'Title tamil is required',
+        'title_en.required'=>'Title english is required',
+        'live_url.required'=>'Link  is required',
+        'status.required'=>'Status  is required',
         'title_ta.unique'=>'Title tamil is already exists!',
         'title_en.unique'=>'Title english is already exists!',
       ]);
@@ -126,10 +126,10 @@ class Masters extends Controller
         'live_url'=>'required',
         'status'=>'required',
       ],[
-        'title_ta.required'=>'title tamil is required',
-        'title_en.required'=>'title english is required',
-        'live_url.required'=>'link  is required',
-        'status.required'=>'status  is required',
+        'title_ta.required'=>'Title tamil is required',
+        'title_en.required'=>'Title english is required',
+        'live_url.required'=>'Link  is required',
+        'status.required'=>'Status  is required',
         'title_ta.unique'=>'Title tamil is already exists!',
         'title_en.unique'=>'Title english is already exists!',
       ]);
