@@ -496,7 +496,8 @@ class Aboutopscontroller extends Controller
           'status'=>'required',
           'seats_won'=>'required|digits_between:1,3',
           'election_type'=>'required',
-          'election_year' => 'required|unique:party_election_info,election_year,NULL,id,election_type,' . $request->input('election_type'),
+          // 'election_year' => 'required|unique:party_election_info,election_year,NULL,id,election_type,' . $request->input('election_type'),
+          'election_year'=>'required',
           'state_info_id'=>'required',
       ],[
         'party_leader_en.required'=>'State name tamil is required',
@@ -547,12 +548,13 @@ class Aboutopscontroller extends Controller
           'status'=>'required',
           'seats_won'=>'required|digits_between:1,3',
           'election_type'=>'required',
-          'election_year' => [
-                            'required',
-                             Rule::unique('party_election_info')->where(function ($query) use($election_type,$election_year) {
-                               return $query->where('election_type', $election_type)->where('election_year', $election_year);
-                             })->ignore($id)
-                        ],
+          'election_year'=>'required',
+          // 'election_year' => [
+          //                   'required',
+          //                    Rule::unique('party_election_info')->where(function ($query) use($election_type,$election_year) {
+          //                      return $query->where('election_type', $election_type)->where('election_year', $election_year);
+          //                    })->ignore($id)
+          //               ],
           'state_info_id'=>'required',
       ],[
         'party_leader_en.required'=>'State name tamil is required',
