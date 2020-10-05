@@ -108,7 +108,7 @@
                         <div class="col-lg-7">
                             <div class="content-box-style-04">
                                 <p class="section-subtitle">Achievements</p>
-                                <h2 class="section-title" style="font-size:35px;"><?php echo $rows->achievement_title_en;?></h2>
+                                <h2 class="section-title" style="font-size:35px;line-height:30px;"><?php echo $rows->achievement_title_en;?></h2>
                                 <p class="description"><?php echo $string; ?></p>
                             </div>
                         </div>
