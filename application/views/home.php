@@ -63,10 +63,10 @@
 						if (count($personal)>0){ 
 							 foreach($personal as $rows){  
 								$string = htmlspecialchars_decode(stripslashes($rows->personal_life_text_en));
-								if (strlen($string) > 480) {
+								if (strlen($string) > 450) {
 
 									// truncate string
-									$stringCut = substr($string, 0, 480);
+									$stringCut = substr($string, 0, 450);
 									$endPoint = strrpos($stringCut, ' ');
 
 									//if the string doesn't contain any space then it will cut without word basis.
