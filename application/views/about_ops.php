@@ -32,8 +32,10 @@
                         <p class="description">
 						<?php 
 							if (count($personal)>0){ 
-									foreach($personal as $rows){ }
-										echo htmlspecialchars_decode(stripslashes($rows->personal_life_text_en));
+									foreach($personal as $rows){ 
+											$string = htmlspecialchars_decode(stripslashes($rows->personal_life_text_en));
+									}
+							echo $string;
 						} ?>
 						</p>
                     </div>

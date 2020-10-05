@@ -43,6 +43,7 @@
                 <div class="col-lg-8 offset-lg-4">
 
 				<?php foreach($result as $rows){  
+					$category_id = $rows['nf_category_id'];
 					$string = htmlspecialchars_decode(stripslashes($rows['description_en']));
 					if (strlen($string) > 120) {
 
@@ -61,7 +62,14 @@
                             <img src="<?php echo $assets_url.$rows['nf_cover_image'];?>" alt="">
                         </div>
                         <div class="b-content">
-						<span class="causes-tag mr-3"><a href="#">Politics</a></span>
+						<span class="causes-tag mr-3">
+						<?php if ($category_id == '2'){ ?>
+							<a href="<?php echo base_url(); ?>posts/">Posts</a>
+						<?php } ?>
+						<?php if ($category_id == '3'){ ?>
+							<a href="<?php echo base_url(); ?>events/">Events</a>
+						<?php } ?>
+						</span>
                             <div class="blog-date-box">
                                 <h4><?php echo date("d",strtotime($rows['news_date'])) ?><br><span><?php echo date("M",strtotime($rows['news_date']))?></span></h4>
                             </div>

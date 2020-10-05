@@ -241,7 +241,7 @@ Class Websitemodel extends CI_Model
 	// Fetch records
 	function searchPost($rowno,$rowperpage,$search_text="") {
 
-	$this->db->select ('id,news_date,title_en,description_en,nf_cover_image');
+	$this->db->select ('id,nf_category_id,news_date,title_en,description_en,nf_cover_image');
 	$this->db->from('news_feed');
 
 	if($search_text != ''){
