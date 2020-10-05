@@ -231,7 +231,7 @@ p {
   hyphens: auto;
   font-family: var(--secondary-font);
   line-height: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 
@@ -5190,7 +5190,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   font-family: var(--secondary-font);
   color: #666;
   line-height: 30px;
-  margin-bottom: 50px; }
+  margin-bottom: 20px; }
 
 .wealfer-area {
   background: url(../img/wealfer.png);
