@@ -56,6 +56,12 @@ Class Websitemodel extends CI_Model
 		return $result=$res->result();
 	}
 	
+		function home_get_intro_video(){
+		$query="SELECT * FROM `intro_video` WHERE `status` = 'Active' ORDER BY id DESC LIMIT 1";
+		$res=$this->db->query($query);
+		return $result=$res->result();
+	}
+	
 	function get_opsachievements(){
 		$query="SELECT * FROM `ops_achievements` WHERE `status` = 'Active' ORDER BY id DESC";
 		$res=$this->db->query($query);

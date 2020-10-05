@@ -299,10 +299,14 @@
 <!-- news area End -->
 <?php } ?>
 
+<?php if (count($introvideo)>0){
+		foreach($introvideo as $rows){ }
+?>
+
 <script>
 $(".video-btn-style-04").magnificPopup({
             items: {
-                src: "https://www.youtube.com/watch?v=7snAIwahysw"
+                src: "https://www.youtube.com/watch?v=<?php echo $rows->video_url; ?>"
             },
             type: "iframe",
             iframe: {
@@ -315,10 +319,11 @@ $(".video-btn-style-04").magnificPopup({
                     youtube: {
                         index: "youtube.com/",
                         id: "v=",
-                        src: "https://www.youtube.com/embed/7snAIwahysw"
+                        src: "https://www.youtube.com/embed/<?php echo $rows->video_url; ?>"
                     }
                 },
                 srcAction: "iframe_src"
             }
         });
  </script>
+<?php } ?>

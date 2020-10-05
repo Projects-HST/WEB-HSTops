@@ -36,6 +36,7 @@ class Index extends CI_Controller {
 		$datas['eventlist_single'] = $this->websitemodel->home_get_event_list_single();
 		$datas['eventlist_double'] = $this->websitemodel->home_get_event_list_doubles();
 		$datas['postlist'] = $this->websitemodel->home_get_post_list();
+		$datas['introvideo'] = $this->websitemodel->home_get_intro_video();
 
 		$this->load->view('header',$datas);
 		$this->load->view('home',$datas);
