@@ -33,7 +33,7 @@
                       <thead>
                         <tr>
                           <th>S.No</th>
-                          <th>title</th>
+                          <th style="width:300px;">title</th>
                           <th>Cover image</th>
                           <th>Expiry at</th>
                           <th>Status</th>
