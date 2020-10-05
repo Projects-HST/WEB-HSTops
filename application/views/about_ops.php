@@ -105,7 +105,7 @@
                                 <img src="<?php echo $assets_url.$rows->achievement_image;?>" alt="">
                             </div>
                         </div>
-                        <div class="col-lg-7 offset-lg-1 align-self-center">
+                        <div class="col-lg-7">
                             <div class="content-box-style-04">
                                 <p class="section-subtitle">Achievement</p>
                                 <h2 class="section-title"><?php echo $rows->achievement_title_en;?></h2>
