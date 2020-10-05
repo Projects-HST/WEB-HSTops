@@ -27,8 +27,8 @@
             <div class="row">
                 <div class="col-lg-5 align-self-center">
                     <div class="content-box-style-01">
-                        <p class="section-subtitle">Action for</p>
-                        <h2 class="title">About Party</h2>
+                        <p class="section-subtitle">About Party</p>
+                        <h3 >All India Anna Dravida Munnetra Kazhagam</h3>
                         <p class="para"><?php 
 							if (count($partyhistory)>0){ 
 									foreach($partyhistory as $rows){ }
@@ -82,8 +82,8 @@
                 <div class="col-lg-8 align-self-center">
                     <div class="content-box-style-06">
                         <p class="section-subtitle">Success stories</p>
-                        <h2 class="title">Achievement of Party</h2>
-                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do<br>eiusmod tempor incididunt ut labore</p>
+                        <h3>Achievement of Party</h3>
+                        <p class="para">AIADMK is a Dravidian party founded by M. G. Ramachandran </p>
                         <div class="row margin-top-50">
                             <div class="col-md-4">
                                 <ul class="nav nav-tabs">

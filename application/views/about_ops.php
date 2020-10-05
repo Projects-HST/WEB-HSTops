@@ -28,7 +28,7 @@
                 <div class="col-lg-6 align-self-center">
                     <div class="content-box-style-01">
                         <p class="section-subtitle">About OPS</p>
-                        <h2 class="title">Deputy Chief Minister of Tamil Nadu</h2>
+                        <h3>Deputy Chief Minister of Tamil Nadu</h3>
                         <p class="description">
 						<?php 
 							if (count($personal)>0){ 
@@ -62,7 +62,7 @@
                 <div class="col-lg-8 align-self-center">
                     <div class="content-box-style-01">
                         <p class="section-subtitle">Success stories</p>
-                        <h2 class="title">Political Career</h2>
+                        <h3>Political Career</h3>
 						<p class="description">
 						<?php 
 							if (count($personal)>0){ 
