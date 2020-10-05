@@ -320,7 +320,7 @@
 												</div>
 												<div class="navi-text">
 													<div class="font-weight-bold">My Profile</div>
-													<div class="text-muted">Account settings and more</div>
+													
 												</div>
 											</div>
 										</a>
@@ -335,7 +335,7 @@
 												</div>
 												<div class="navi-text">
 													<div class="font-weight-bold">Change Password</div>
-													<div class="text-muted">Inbox and tasks</div>
+
 												</div>
 											</div>
 										</a>
