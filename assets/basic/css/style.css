@@ -230,8 +230,10 @@ p {
   -ms-hyphens: auto;
   hyphens: auto;
   font-family: var(--secondary-font);
-  margin-bottom: 10px;
-  font-size: 15px; }
+  line-height: 30px;
+  margin-bottom: 50px;
+}
+
 
 a {
   color: inherit;
@@ -5187,7 +5189,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .location-content p {
   font-family: var(--secondary-font);
   color: #666;
-  line-height: 35px;
+  line-height: 30px;
   margin-bottom: 50px; }
 
 .wealfer-area {
