@@ -170,7 +170,7 @@
 											<div class="card-body d-flex p-0">
 												<div class="flex-grow-1 bg-info   card-rounded flex-grow-1 bgi-no-repeat" style="background-position: right bottom; background-size: 55% auto;">
 
-													<p class="text-inverse-info pb-5 font-size-h6 p-12">O Panneerselvam is an Indian politician serving as 2nd and current Deputy Minister of Tamil Nadu since 21 August 2017</p>
+													<p class="text-inverse-info pb-5 font-size-h6 p-12"><b>O Panneerselvam </b>is an Indian politician serving as 2nd and current Deputy Minister of Tamil Nadu since 21 August 2017</p>
 
 													<img src="{{ url('/')}}/assets/admin/media/bg/bg_2.png" class="img-responsive" style="width:260px;margin-left:50px;margin-top:80px;">
 												</div>
