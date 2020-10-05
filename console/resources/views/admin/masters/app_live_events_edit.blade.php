@@ -41,7 +41,7 @@
 																	<p class="error">@error('title_ta'){{$message}} @enderror</p>
 															</div>
 															<div class="form-group">
-																	<label>English Link <span class="text-danger">*</span></label>
+																	<label>English Title <span class="text-danger">*</span></label>
 																	<input type="text" class="form-control" placeholder="Enter the english title"  value="{{ $res->title_en}}" name="title_en"/>
 																	<p class="error">@error('title_en'){{$message}} @enderror</p>
 															</div>

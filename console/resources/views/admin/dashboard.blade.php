@@ -35,8 +35,8 @@
 														<div class="col">
 															<div class="d-flex align-items-center mr-2">
 
-																<div class="symbol symbol-45 symbol-light-box mr-4 flex-shrink-0">
-																	<div class="symbol-label">
+																<div class="symbol symbol-45  mr-4 flex-shrink-0">
+																	<div class="symbol-label symbol-light-total">
 																		<span class="svg-icon svg-icon-lg svg-icon-danger">
 																			<i class="fa fa-users" aria-hidden="true"></i>
 																		</span>
@@ -54,8 +54,8 @@
 														<div class="col">
 															<div class="d-flex align-items-center mr-2">
 																<!--begin::Symbol-->
-																<div class="symbol symbol-45 symbol-light-box mr-4 flex-shrink-0">
-																	<div class="symbol-label">
+																<div class="symbol symbol-45  mr-4 flex-shrink-0">
+																	<div class="symbol-label symbol-light-male">
 																		<span class="svg-icon svg-icon-lg svg-icon-danger">
 																			<i class="fa fa-male" aria-hidden="true"></i>
 																		</span>
@@ -77,8 +77,8 @@
 														<div class="col">
 															<div class="d-flex align-items-center mr-2">
 																<!--begin::Symbol-->
-																<div class="symbol symbol-45 symbol-light-box mr-4 flex-shrink-0">
-																	<div class="symbol-label">
+																<div class="symbol symbol-45  mr-4 flex-shrink-0">
+																	<div class="symbol-label symbol-light-female">
 																		<span class="svg-icon svg-icon-lg svg-icon-success">
 																			<i class="fa fa-female" aria-hidden="true"></i>
 																		</span>
@@ -98,10 +98,10 @@
 														<div class="col">
 															<div class="d-flex align-items-center mr-2">
 																<!--begin::Symbol-->
-																<div class="symbol symbol-45 symbol-light-box mr-4 flex-shrink-0">
-																	<div class="symbol-label">
+																<div class="symbol symbol-45  mr-4 flex-shrink-0">
+																	<div class="symbol-label symbol-light-user">
 																		<span class="svg-icon svg-icon-lg svg-icon-primary">
-																			<i class="fa fa-user" aria-hidden="true"></i>
+																			<i class="fa fa-user fauser" aria-hidden="true"></i>
 																		</span>
 																	</div>
 																</div>
@@ -173,7 +173,7 @@
 													<br />online a store can loyalty
 													<br />weapon into driving</p>
 
-													<img src="{{ url('/')}}/assets/admin/media/bg/bg_2.png" class="img-responsive" style="width:260px;margin-left:50px;margin-top:14px;">
+													<img src="{{ url('/')}}/assets/admin/media/bg/bg_2.png" class="img-responsive" style="width:260px;margin-left:50px;margin-top:80px;">
 												</div>
 											</div>
 										</div>
@@ -214,7 +214,7 @@
 																		<td class="pl-0 py-5">
 																			<div class="symbol symbol-50 symbol-light mr-2">
 																				<span class="symbol-label">
-																					<img src="{{ url('/storage/newsfeed/')}}/{{ $rows_events->nf_cover_image }}" class="align-self-center" alt="" style="width:50px;height:50px;">
+																					<img src="{{ url('/storage/newsfeed/')}}/{{ $rows_events->nf_cover_image }}" class="align-self-center" alt="" style="width:80px;height:80px;">
 																				</span>
 																			</div>
 																		</td>
@@ -260,11 +260,7 @@
 	display: inline;
 	left: 700px;
 }
-.fa{
-	color:#317BD3;
-}
-.symbol-light-box{
-	background-color: #AAD1FF;
-}
+
+
 </style>
 @endsection
