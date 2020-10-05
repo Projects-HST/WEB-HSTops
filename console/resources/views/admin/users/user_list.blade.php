@@ -67,7 +67,7 @@
                             <td>{{ $rows->email_id}}</td>
                             <td>{{ $rows->gender}}</td>
                             <td>{{  date("d-m-Y", strtotime($rows->dob))}}</td>
-  													<td><a href="#" class="badge-{{ $rows->status }}" onclick="change_status('{{$parameter}}')">{{ $rows->status}}</a></td>
+  													<td><a title="Change Status" href="#" class="badge-{{ $rows->status }}" onclick="change_status('{{$parameter}}')">{{ $rows->status}}</a></td>
   													</tr>
                           <?php $i++; } ?>
 
