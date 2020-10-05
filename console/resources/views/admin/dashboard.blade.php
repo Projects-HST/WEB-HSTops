@@ -253,7 +253,7 @@
 		overflow: hidden;
 		white-space: nowrap;
 		text-overflow: ellipsis;
-		width:900px;
+		width:500px;
 }
 .event_date{
 	position: relative;
