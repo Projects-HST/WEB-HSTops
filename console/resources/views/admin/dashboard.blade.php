@@ -9,7 +9,7 @@
 }
 </style>					<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
 						<!--begin::Entry-->
-						<div class="d-flex flex-column-fluid">
+						<div class="d-flex flex-column-fluid" style="background-color: #F0F7F1;">
 							<!--begin::Container-->
 							<div class="container">
 								<!--begin::Dashboard-->
@@ -155,7 +155,7 @@
 														<div class="timeline-badge">
 															<i class="fa fa-genderless text-{{ $colors[$x%3] }}  icon-xl"></i>
 														</div>
-														<div class="timeline-content font-weight-mormal font-size-lg text-muted pl-3">{{ $rows_post->title_en}}</div>
+														<div class="timeline-content font-weight-mormal font-size-lg text-muted pl-3 text_overlap">{{ $rows_post->title_en}}</div>
 													</div>
 													<?php
  } ?>
@@ -220,7 +220,7 @@
 																		</td>
 																		<td class="pl-0">
 																			<p class="text-dark font-weight-bolder text-hover-primary mb-1 font-size-lg">{{ $rows_events->title_en  }}
-																				<span class="event_date">{{   date("d-m-Y", strtotime($rows_events->news_date)) }}</span></p>
+																			</p><small class="">{{   date("d-m-Y", strtotime($rows_events->news_date)) }}</small>
 																			<!-- <span class="text-muted font-weight-bold d-block">{{ stripslashes($rows_events->description_en)  }}</span> -->
 																			<p class="event_details"><?php echo htmlspecialchars_decode(stripslashes($rows_events->description_en));	 ?></p>
 																		</td>

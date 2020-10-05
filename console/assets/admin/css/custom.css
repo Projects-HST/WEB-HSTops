@@ -51,6 +51,11 @@ svg{
     text-overflow: ellipsis;
     width:900px;
 }
+.text_overlap{
+  overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
 .btn.btn-primary{
   width:100px;
 }
