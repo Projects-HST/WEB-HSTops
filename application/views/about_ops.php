@@ -106,7 +106,7 @@
                             </div>
                         </div>
                         <div class="col-lg-7 offset-lg-1 align-self-center">
-                            <div class="content-box-style-07">
+                            <div class="content-box-style-04">
                                 <p class="section-subtitle">Achievement</p>
                                 <h2 class="section-title"><?php echo $rows->achievement_title_en;?></h2>
                                 <p class="description"><?php echo $string; ?></p>
