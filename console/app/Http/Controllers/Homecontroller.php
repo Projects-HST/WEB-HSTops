@@ -36,7 +36,7 @@ class Homecontroller extends Controller
           $femalecount = Usermastermodel::where('Gender', 'Female')->count();
           $otherscount = Usermastermodel::where('Gender', 'Others')->count();
           $post=Newsfeed::where('nf_category_id','2')->orderBy('news_date', 'desc')->take(10)->get();
-          $events=Newsfeed::where('nf_category_id','3')->orderBy('news_date', 'desc')->take(10)->get();
+          $events=Newsfeed::where('nf_category_id','3')->orderBy('news_date', 'desc')->take(5)->get();
           $postcount=Newsfeed::where('nf_category_id','2')->count();
           $eventcount=Newsfeed::where('nf_category_id','3')->count();
           return view('admin.dashboard',compact('totalcount','malecount','femalecount','otherscount','post','postcount','events','eventcount'));
