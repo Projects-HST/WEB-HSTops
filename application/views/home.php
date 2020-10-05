@@ -57,7 +57,7 @@
                 <div class="col-lg-6 align-self-center">
                     <div class="content-box-style-01">
                         <p class="section-subtitle">About OPS</p>
-                        <h2 class="title">Organization for action</h2>
+                        <h2 class="title">Deputy Chief Minister of Tamil Nadu</h2>
                         <p class="description">
 						<?php 
 						if (count($personal)>0){ 
