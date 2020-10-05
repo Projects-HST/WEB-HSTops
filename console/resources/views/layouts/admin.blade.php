@@ -35,7 +35,7 @@
 										<img alt="Logo" src="{{ url('/')}}/assets/admin/media/logos/logo.png" class="max-h-35px" />
 									</a>
 									<div class="w-500px" style="font-size:30px;color:#ffffff;">
-										Mr. O Panneerselvam
+										O Panneerselvam
 									</div>
 								</div>
 								<?php
@@ -71,7 +71,7 @@
 											<li class="menu-item menu-item-submenu menu-item-rel" data-menu-toggle="hover" aria-haspopup="true">
 												<a href="#" class="menu-link">
 													<span class="menu-text">Masters</span>
-													<span class="menu-desc">Components &amp; Elements</span>
+													<span class="menu-desc">Create a master here</span>
 													<i class="menu-arrow"></i>
 												</a>
 												<div class="menu-submenu menu-submenu-classic menu-submenu-left">
@@ -117,7 +117,7 @@
 											<li class="menu-item menu-item-submenu menu-item-rel" data-menu-toggle="hover" aria-haspopup="true">
 												<a href="javascript:;" class="menu-link menu-toggle">
 													<span class="menu-text">News Feed</span>
-													<span class="menu-desc">Records &amp; Form Entries</span>
+													<span class="menu-desc">Add or update the newsfeed</span>
 													<i class="menu-arrow"></i>
 												</a>
 												<div class="menu-submenu menu-submenu-classic menu-submenu-left">
@@ -196,7 +196,7 @@
 											<li class="menu-item menu-item-submenu menu-item-rel" data-menu-toggle="hover" aria-haspopup="true">
 												<a href="javascript:;" class="menu-link menu-toggle">
 													<span class="menu-text">About OPS</span>
-													<span class="menu-desc">Starter Applications</span>
+													<span class="menu-desc">Know more about OPS</span>
 													<i class="menu-arrow"></i>
 												</a>
 												<div class="menu-submenu menu-submenu-classic menu-submenu-left">
@@ -231,7 +231,7 @@
 											<li class="menu-item menu-item-submenu menu-item-rel" data-menu-toggle="hover" aria-haspopup="true">
 												<a href="javascript:;" class="menu-link menu-toggle">
 													<span class="menu-text">Party Info</span>
-													<span class="menu-desc">Starter Applications</span>
+													<span class="menu-desc">Know more about party</span>
 													<i class="menu-arrow"></i>
 												</a>
 												<div class="menu-submenu menu-submenu-classic menu-submenu-left">
@@ -320,7 +320,7 @@
 												</div>
 												<div class="navi-text">
 													<div class="font-weight-bold">My Profile</div>
-													
+
 												</div>
 											</div>
 										</a>

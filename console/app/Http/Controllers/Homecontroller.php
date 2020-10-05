@@ -35,7 +35,7 @@ class Homecontroller extends Controller
           $malecount = Usermastermodel::where('Gender', 'Male')->count();
           $femalecount = Usermastermodel::where('Gender', 'Female')->count();
           $otherscount = Usermastermodel::where('Gender', 'Others')->count();
-          $post=Newsfeed::where('nf_category_id','2')->orderBy('news_date', 'desc')->take(10)->get();
+          $post=Newsfeed::where('nf_category_id','2')->orderBy('news_date', 'desc')->take(8)->get();
           $events=Newsfeed::where('nf_category_id','3')->orderBy('news_date', 'desc')->take(5)->get();
           $postcount=Newsfeed::where('nf_category_id','2')->count();
           $eventcount=Newsfeed::where('nf_category_id','3')->count();
@@ -204,7 +204,7 @@ class Homecontroller extends Controller
      }
 
      function search_data(){
-       
+
        $search_val=request('search_text');
        $data=Usermastermodel::where('full_name','LIKE','%'.$search_val.'%')->orWhere('phone_number','LIKE','%'.$search_val.'%')->orderBy('id', 'desc')->paginate(10);
        return view('admin.users.user_list',compact('data','search_val'));
