@@ -229,8 +229,9 @@ p {
   -moz-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;
+  font-family: var(--secondary-font);
   margin-bottom: 10px;
-  font-size: 16px; }
+  font-size: 15px; }
 
 a {
   color: inherit;
