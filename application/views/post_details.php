@@ -39,7 +39,7 @@
                             </div>
                         </div>
 						<div class="b-content">
-                            <h4 class="section-title"><?php echo $rows->title_en;?></h4>
+                            <h4><?php echo $rows->title_en;?></h4>
                             <p><?php echo htmlspecialchars_decode(stripslashes($rows->description_en)); ?></p>
 							
 <?php if (count($postgallery)>0){ 
