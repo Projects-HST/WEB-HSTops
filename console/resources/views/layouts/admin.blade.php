@@ -282,7 +282,7 @@
 
 							<div id="kt_quick_user" class="offcanvas offcanvas-right p-10">
 								<div class="offcanvas-header d-flex align-items-center justify-content-between pb-5" kt-hidden-height="40" style="">
-									<h3 class="font-weight-bold m-0"></h3>
+									<h3 class="font-weight-bold m-0">User Profile</h3>
 									<a href="#" class="btn btn-xs btn-icon btn-light btn-hover-primary" id="kt_quick_user_close">
 										<i class="ki ki-close icon-xs text-muted"></i>
 									</a>
@@ -313,7 +313,7 @@
 											<div class="navi-link">
 												<div class="symbol symbol-40 bg-light mr-3">
 													<div class="symbol-label">
-
+														<i class="fa fa-user" aria-hidden="true"></i>
 													</div>
 												</div>
 												<div class="navi-text">
@@ -328,7 +328,7 @@
 											<div class="navi-link">
 												<div class="symbol symbol-40 bg-light mr-3">
 													<div class="symbol-label">
-
+														 <i class="fa fa-lock" aria-hidden="true"></i>
 													</div>
 												</div>
 												<div class="navi-text">
@@ -343,6 +343,7 @@
 											<div class="navi-link">
 												<div class="symbol symbol-40 bg-light mr-3">
 													<div class="symbol-label">
+														<i class="fas fa-sign-out-alt"></i>
 
 													</div>
 												</div>

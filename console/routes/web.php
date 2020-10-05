@@ -38,7 +38,10 @@ Route::group(['middleware'=>['Customauth']],function(){
 
   ### User Mgmt ####
   Route::get('admin/user_list','App\Http\Controllers\Homecontroller@user_list');
-  Route::post('admin/search_data','App\Http\Controllers\Homecontroller@search_data');
+  Route::get('admin/search_data','App\Http\Controllers\Homecontroller@search_data');
+  Route::get('admin/change_status','App\Http\Controllers\Homecontroller@change_status');
+
+
 
 
 

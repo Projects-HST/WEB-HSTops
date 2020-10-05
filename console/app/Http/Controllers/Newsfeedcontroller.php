@@ -184,7 +184,7 @@ class Newsfeedcontroller extends Controller
           'title_en'=>'required|max:80|unique:news_feed,title_en,'.$nf_id,
           'description_en'=>'required',
           'description_ta'=>'required',
-          'nf_profile_type'=>'required|in:v,i',
+          'nf_profile_type'=>'required|in:V,I',
           'nf_video_token_id'=>'required_if:nf_profile_type,==,V',
           'nf_cover_image'=>'image|mimes:jpeg,png,jpg|max:1024',
           'nf_category_id'=>'required',

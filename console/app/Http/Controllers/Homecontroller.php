@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Crypt;
+
 
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\DB;
@@ -34,7 +36,7 @@ class Homecontroller extends Controller
           $femalecount = Usermastermodel::where('Gender', 'Female')->count();
           $otherscount = Usermastermodel::where('Gender', 'Others')->count();
           $post=Newsfeed::where('nf_category_id','2')->orderBy('news_date', 'desc')->take(10)->get();
-          $events=Newsfeed::where('nf_category_id','3')->orderBy('news_date', 'desc')->take(10)->get();
+          $events=Newsfeed::where('nf_category_id','3')->orderBy('news_date', 'desc')->take(5)->get();
           $postcount=Newsfeed::where('nf_category_id','2')->count();
           $eventcount=Newsfeed::where('nf_category_id','3')->count();
           return view('admin.dashboard',compact('totalcount','malecount','femalecount','otherscount','post','postcount','events','eventcount'));
@@ -198,19 +200,36 @@ class Homecontroller extends Controller
 
      function user_list(){
        $data=Usermastermodel::orderBy('id', 'desc')->paginate(10);
-       return view('admin.users.user_list')->with('res',$data);
-       // return view('admin.users.user_list',compact(['res'=>$data]));
-
+       return view('admin.users.user_list',compact('data'));
      }
 
-     function search_data(Request $request){
+     function search_data(){
+       $search_val=request('search_text');
+       $data=Usermastermodel::where('full_name','LIKE','%'.$search_val.'%')->orWhere('phone_number','LIKE','%'.$search_val.'%')->orderBy('id', 'desc')->paginate(10);
+       return view('admin.users.user_list',compact('data','search_val'));
+     }
 
-       // $search_val  = Input::get('search_text') ;
-       // echo $search_val;
-       // exit;
-       $search_val=$request->input('search_text');
-       $data=Usermastermodel::where('full_name',$search_val)->orWhere('phone_number',$search_val)->orderBy('id', 'desc')->paginate(10);
-       return view('admin.users.user_list')->with('res',$data);
+     function change_status(Request $request){
+         $en_id=request('id');
+         $id = Crypt::decrypt($en_id);
+          $data=Usermastermodel::find($id);
+          if($data->status=='Active'){
+            $status='Inactive';
+          }else{
+            $status='Active';
+          }
+          $res = Usermastermodel::where('id', $id)->update([
+            'status' =>$status,
+            "updated_at"=>NOW(),
+            "updated_by"=>session('user_session')->id,
+          ]);
+          if($res){
+            echo "Status updated successfully!.";
+          }else{
+            echo "Something weent wrong!.";
+          }
+
+
      }
 
 

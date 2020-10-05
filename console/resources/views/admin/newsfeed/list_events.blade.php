@@ -33,9 +33,12 @@
                       <thead>
                         <tr>
                           <th>S.No</th>
-                          <th>title</th>
+                          <th style="width:300px;">title</th>
                           <th>Cover image</th>
                           <th>Date</th>
+                          <th>Views</th>
+                          <th>Like</th>
+                          <th>Share</th>
                           <th>Status</th>
                           <th>Action</th>
                         </tr>
@@ -52,6 +55,9 @@
                           </td>
                             <td><img src="{{ url('/storage/newsfeed/')}}/{{ $rows->nf_cover_image }}" style="width:150px;height:100px;"></td>
   													<td>{{$newDate = date("d-m-Y", strtotime($rows->news_date))  }}</td>
+                            <td>{{ $rows->likes_count}}</td>
+                            <td>{{ $rows->view_count}}</td>
+                            <td>{{ $rows->share_count}}</td>
                             <td><p class="badge-{{ $rows->status }}">{{ $rows->status}}</p></td>
                             <td><a title="Edit" href="{{ url('/admin/get_edit_newsfeed')}}/{{ $parameter}}"> <i class="fas fa-edit"></i></a>
                             &nbsp; <a title="Gallery" href="{{ url('/admin/add_gallery_newfeed')}}/{{ $parameter}}"> <i class="far fa-images"></i></a></td>

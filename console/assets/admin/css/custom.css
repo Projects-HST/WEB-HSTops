@@ -51,14 +51,26 @@ svg{
     text-overflow: ellipsis;
     width:900px;
 }
+.text_overlap{
+  overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
 .btn.btn-primary{
   width:100px;
+}
+.btn.btn-danger{
+  width:94px;
 }
 .btn-viewmore{
   color:#0B9421;
 }
 .btn-viewmore:hover{
   color:#0B9421;
+}
+.symbol.symbol-50 .symbol-label{
+  width: 100px;
+  height: 100px;
 }
 .table.table-head-custom thead tr, .table.table-head-custom thead th{
   color:#2d2d2d !important;
@@ -68,4 +80,30 @@ svg{
 }
 .timeline.timeline-6 .timeline-item .timeline-label{
   font-size: 12px !important;
+}
+.fa-users{
+	color:#8B71BD;
+}
+
+.fa-male{
+	color:#E4606d;
+}
+
+.fa-female{
+	color:#1E9893;
+}
+.fauser{
+	color:#317BD3;
+}
+.symbol-light-total{
+	background-color: #EEE5FF !important;
+}
+.symbol-light-male{
+	background-color: #FFE2E5 !important;
+}
+.symbol-light-female{
+	background-color: #C9F7F5 !important;
+}
+.symbol-light-user{
+	background-color: #AAD1FF !important;
 }

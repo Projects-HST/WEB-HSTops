@@ -9,7 +9,7 @@
 }
 </style>					<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
 						<!--begin::Entry-->
-						<div class="d-flex flex-column-fluid">
+						<div class="d-flex flex-column-fluid" style="background-color: #F0F7F1;">
 							<!--begin::Container-->
 							<div class="container">
 								<!--begin::Dashboard-->
@@ -35,8 +35,8 @@
 														<div class="col">
 															<div class="d-flex align-items-center mr-2">
 
-																<div class="symbol symbol-45 symbol-light-box mr-4 flex-shrink-0">
-																	<div class="symbol-label">
+																<div class="symbol symbol-45  mr-4 flex-shrink-0">
+																	<div class="symbol-label symbol-light-total">
 																		<span class="svg-icon svg-icon-lg svg-icon-danger">
 																			<i class="fa fa-users" aria-hidden="true"></i>
 																		</span>
@@ -54,8 +54,8 @@
 														<div class="col">
 															<div class="d-flex align-items-center mr-2">
 																<!--begin::Symbol-->
-																<div class="symbol symbol-45 symbol-light-box mr-4 flex-shrink-0">
-																	<div class="symbol-label">
+																<div class="symbol symbol-45  mr-4 flex-shrink-0">
+																	<div class="symbol-label symbol-light-male">
 																		<span class="svg-icon svg-icon-lg svg-icon-danger">
 																			<i class="fa fa-male" aria-hidden="true"></i>
 																		</span>
@@ -77,8 +77,8 @@
 														<div class="col">
 															<div class="d-flex align-items-center mr-2">
 																<!--begin::Symbol-->
-																<div class="symbol symbol-45 symbol-light-box mr-4 flex-shrink-0">
-																	<div class="symbol-label">
+																<div class="symbol symbol-45  mr-4 flex-shrink-0">
+																	<div class="symbol-label symbol-light-female">
 																		<span class="svg-icon svg-icon-lg svg-icon-success">
 																			<i class="fa fa-female" aria-hidden="true"></i>
 																		</span>
@@ -98,10 +98,10 @@
 														<div class="col">
 															<div class="d-flex align-items-center mr-2">
 																<!--begin::Symbol-->
-																<div class="symbol symbol-45 symbol-light-box mr-4 flex-shrink-0">
-																	<div class="symbol-label">
+																<div class="symbol symbol-45  mr-4 flex-shrink-0">
+																	<div class="symbol-label symbol-light-user">
 																		<span class="svg-icon svg-icon-lg svg-icon-primary">
-																			<i class="fa fa-user" aria-hidden="true"></i>
+																			<i class="fa fa-user fauser" aria-hidden="true"></i>
 																		</span>
 																	</div>
 																</div>
@@ -155,7 +155,7 @@
 														<div class="timeline-badge">
 															<i class="fa fa-genderless text-{{ $colors[$x%3] }}  icon-xl"></i>
 														</div>
-														<div class="timeline-content font-weight-mormal font-size-lg text-muted pl-3">{{ $rows_post->title_en}}</div>
+														<div class="timeline-content font-weight-mormal font-size-lg text-muted pl-3 text_overlap">{{ $rows_post->title_en}}</div>
 													</div>
 													<?php
  } ?>
@@ -173,7 +173,7 @@
 													<br />online a store can loyalty
 													<br />weapon into driving</p>
 
-													<img src="{{ url('/')}}/assets/admin/media/bg/bg_2.png" class="img-responsive" style="width:260px;margin-left:50px;margin-top:14px;">
+													<img src="{{ url('/')}}/assets/admin/media/bg/bg_2.png" class="img-responsive" style="width:260px;margin-left:50px;margin-top:80px;">
 												</div>
 											</div>
 										</div>
@@ -182,7 +182,7 @@
 								</div>
 								<!--end::Row-->
 								<div class="row">
-									<div class="col-md-12">
+									<div class="col-md-8">
 										<div class="card card-custom card-stretch gutter-b">
 											<!--begin::Header-->
 											<div class="card-header border-0 pt-5">
@@ -214,13 +214,13 @@
 																		<td class="pl-0 py-5">
 																			<div class="symbol symbol-50 symbol-light mr-2">
 																				<span class="symbol-label">
-																					<img src="{{ url('/storage/newsfeed/')}}/{{ $rows_events->nf_cover_image }}" class="h-50 align-self-center" alt="">
+																					<img src="{{ url('/storage/newsfeed/')}}/{{ $rows_events->nf_cover_image }}" class="align-self-center" alt="" style="width:80px;height:80px;">
 																				</span>
 																			</div>
 																		</td>
 																		<td class="pl-0">
 																			<p class="text-dark font-weight-bolder text-hover-primary mb-1 font-size-lg">{{ $rows_events->title_en  }}
-																				<span class="event_date">{{   date("d-m-Y", strtotime($rows_events->news_date)) }}</span></p>
+																			</p><small class="">{{   date("d-m-Y", strtotime($rows_events->news_date)) }}</small>
 																			<!-- <span class="text-muted font-weight-bold d-block">{{ stripslashes($rows_events->description_en)  }}</span> -->
 																			<p class="event_details"><?php echo htmlspecialchars_decode(stripslashes($rows_events->description_en));	 ?></p>
 																		</td>
@@ -253,18 +253,14 @@
 		overflow: hidden;
 		white-space: nowrap;
 		text-overflow: ellipsis;
-		width:900px;
+		width:500px;
 }
 .event_date{
 	position: relative;
 	display: inline;
 	left: 700px;
 }
-.fa{
-	color:#317BD3;
-}
-.symbol-light-box{
-	background-color: #AAD1FF;
-}
+
+
 </style>
 @endsection
