@@ -8,22 +8,28 @@
               <div class="col-md-4">
                 <h5 class="text-dark font-weight-bold my-1 mr-5">User list</h5>
               </div>
-              <div class="col-md-4">
-
-              </div>
-              <div class="col-md-4">
-                <!-- <form method="post" action="{{ url('admin/search_data')}}">
+              <div class="col-md-1"></div>
+              <div class="col-md-7">
+                <form method="get" action="{{ url('admin/search_data')}}">
                   @csrf
                   <div class="form-group row mb_0">
-                    <div class="col-md-10" >
-                      <input class="form-control" name="search_text" placeholder="Search name,phone number" value="">
+                    <div class="col-md-8" >
+                      <?php if(empty($search_val)){
+                        $search='';
+                      }else{
+                        $search=$search_val;
+                      } ?>
+                      <input class="form-control" name="search_text" placeholder="Search name,phone number" value="{{ $search }}">
 
                     </div>
                     <div class="col-md-2">
                       <input type="submit" class="btn btn-primary ml-12" value="Go">
                     </div>
+                    <div class="col-md-1">
+                      <a href="{{ url('admin/user_list')}}" class="btn btn-danger ml-12">Clear</a>
+                    </div>
                   </div>
-                </form> -->
+                </form>
               </div>
             </div>
 
@@ -50,18 +56,18 @@
                         </tr>
                         </thead>
   											<tbody>
-                          <?php $i=0; foreach($res as $rows){
-
+                          <?php $i=0; foreach($data as $rows){
+                            $parameter= Crypt::encrypt($rows->id);
                             ?>
   												<tr>
   													<!-- <td>{{$i}}</td> -->
-                            <td>{{ $res->firstItem() + $i }}</td>
+                            <td>{{ $data->firstItem() + $i }}</td>
   													<td>{{ $rows->full_name}}</td>
                             <td>{{ $rows->phone_number}}</td>
                             <td>{{ $rows->email_id}}</td>
                             <td>{{ $rows->gender}}</td>
                             <td>{{  date("d-m-Y", strtotime($rows->dob))}}</td>
-  													<td><p class="badge-{{ $rows->status }}">{{ $rows->status}}</p></td>
+  													<td><a href="#" class="badge-{{ $rows->status }}" onclick="change_status('{{$parameter}}')">{{ $rows->status}}</a></td>
   													</tr>
                           <?php $i++; } ?>
 
@@ -70,7 +76,9 @@
 
                     </div>
                     <div class="d-flex justify-content-end">
-                      <p class="paginate_links">{{ $res->links() }}</p>
+                      @if(!empty($data))
+             {{ $data->appends(request()->except('page'))->links() }}
+         @endif
                     </div>
 
 
@@ -79,4 +87,18 @@
               </div>
             </div>
           </div>
+<script>
+function change_status(id){
+  $.ajax({
+        url: "{{ url('/')}}/admin/change_status",
+        type: "GET",
+        data: {id:id},
+        success: function(d) {
+            alert(d);
+            window.location.reload();
+
+        }
+    });
+}
+</script>
 @endsection

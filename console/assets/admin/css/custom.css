@@ -54,6 +54,9 @@ svg{
 .btn.btn-primary{
   width:100px;
 }
+.btn.btn-danger{
+  width:94px;
+}
 .btn-viewmore{
   color:#0B9421;
 }
