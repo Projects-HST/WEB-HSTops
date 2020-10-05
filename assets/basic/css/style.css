@@ -200,7 +200,7 @@ h1 {
   font-size: 80px; }
 
 h2 {
-  font-size: 55px; }
+  font-size: 50px; }
 
 h3 {
   font-size: 30px; }
@@ -6526,7 +6526,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   font-family: var(--body-font); }
 
 .section-title {
-  font-size: 55px;
+  font-size: 45px;
   letter-spacing: 0px;
   font-weight: 700;
   text-transform: none;

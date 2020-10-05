@@ -28,7 +28,7 @@
                 <div class="col-lg-6 align-self-center">
                     <div class="content-box-style-01">
                         <p class="section-subtitle">About OPS</p>
-                        <h2 class="title">We'll be success when your need fill</h2>
+                        <h2 class="title">Deputy Chief Minister of Tamil Nadu</h2>
                         <p class="description">
 						<?php 
 							if (count($personal)>0){ 
@@ -107,7 +107,7 @@
                         </div>
                         <div class="col-lg-7">
                             <div class="content-box-style-04">
-                                <p class="section-subtitle">Achievement</p>
+                                <p class="section-subtitle">Achievements</p>
                                 <h2 class="section-title" style="font-size:35px;"><?php echo $rows->achievement_title_en;?></h2>
                                 <p class="description"><?php echo $string; ?></p>
                             </div>
