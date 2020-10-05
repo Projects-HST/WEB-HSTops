@@ -182,7 +182,7 @@
 								</div>
 								<!--end::Row-->
 								<div class="row">
-									<div class="col-md-12">
+									<div class="col-md-8">
 										<div class="card card-custom card-stretch gutter-b">
 											<!--begin::Header-->
 											<div class="card-header border-0 pt-5">
@@ -214,7 +214,7 @@
 																		<td class="pl-0 py-5">
 																			<div class="symbol symbol-50 symbol-light mr-2">
 																				<span class="symbol-label">
-																					<img src="{{ url('/storage/newsfeed/')}}/{{ $rows_events->nf_cover_image }}" class="h-50 align-self-center" alt="">
+																					<img src="{{ url('/storage/newsfeed/')}}/{{ $rows_events->nf_cover_image }}" class="align-self-center" alt="" style="width:50px;height:50px;">
 																				</span>
 																			</div>
 																		</td>

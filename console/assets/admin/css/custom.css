@@ -68,6 +68,10 @@ svg{
 .btn-viewmore:hover{
   color:#0B9421;
 }
+.symbol.symbol-50 .symbol-label{
+  width: 100px;
+  height: 100px;
+}
 .table.table-head-custom thead tr, .table.table-head-custom thead th{
   color:#2d2d2d !important;
 }
