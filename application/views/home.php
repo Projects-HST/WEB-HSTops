@@ -1,3 +1,11 @@
+<style>
+@media only screen and (max-width: 767px){
+.video-btn-style-04 {
+    display: block;
+    margin-top: 133px;
+}
+}
+</style>
 <!-- banner start -->
     <div class="banner-style-3 banner-bg-1 d-flex align-items-center">
         <div class="container-fluid">
@@ -47,8 +55,8 @@
     </div>
 <!-- banner end -->
 
-        
-    
+
+
 
     <!-- organization area start -->
     <div class="politx-content-area padding-top-100">
@@ -59,9 +67,9 @@
                         <p class="section-subtitle">About OPS</p>
                         <h2 class="title">Deputy Chief Minister of Tamil Nadu</h2>
                         <p class="description">
-						<?php 
-						if (count($personal)>0){ 
-							 foreach($personal as $rows){  
+						<?php
+						if (count($personal)>0){
+							 foreach($personal as $rows){
 								$string = htmlspecialchars_decode(stripslashes($rows->personal_life_text_en));
 								if (strlen($string) > 410) {
 
@@ -109,9 +117,9 @@
                 <div class="col-lg-5 offset-lg-1 align-self-center">
                     <div class="location-content">
                         <p>
-						<?php 
-						if (count($partyhistory)>0){ 
-							 foreach($partyhistory as $rows){  
+						<?php
+						if (count($partyhistory)>0){
+							 foreach($partyhistory as $rows){
 								$string = htmlspecialchars_decode(stripslashes($rows->party_text_en));
 								if (strlen($string) > 500) {
 
@@ -136,8 +144,8 @@
         </div>
     </div>
     <!-- location area end -->
-	
-	<?php if (count($achievements)>0){ 
+
+	<?php if (count($achievements)>0){
 				$assets_url = $this->config->item("assets_url")."awards/";
 	?>
     <!-- changes area start -->
@@ -151,7 +159,7 @@
             </div>
             <div class="row">
 			<?php foreach($achievements as $rows){ ?>
-			
+
                 <div class="col-xl-4 col-lg-6 align-self-center">
                     <div class="action-soon-content">
                         <div class="act-img">
@@ -173,7 +181,7 @@
 <!-- changes area end  -->
 
 
-<?php if (count($eventlist_single)>0){ 
+<?php if (count($eventlist_single)>0){
 		$assets_url = $this->config->item("assets_url")."newsfeed/";
 ?>
 <!-- events start -->
@@ -185,9 +193,9 @@
                     <h2 class="title">Upcoming Events</h2>
                 </div>
             </div>
-			
+
             <div class="row">
-				<?php foreach($eventlist_single as $rows){  
+				<?php foreach($eventlist_single as $rows){
 					$string = htmlspecialchars_decode(stripslashes($rows->description_en));
 					if (strlen($string) > 50) {
 
@@ -199,14 +207,14 @@
 						$string = $endPoint? substr($stringCut, 0, $endPoint) : substr($stringCut, 0);
 						$string .= '...';
 					}
-											
+
 				?>
 					<div class="col-lg-6">
 					<div class="content-box-style-07">
                         <div class="d-flex margin-bottom-30">
                             <div class="thumb">
-                                <div class="time"> 
-                                    <span class="date"><?php echo date("d",strtotime($rows->news_date)) ?></span> 
+                                <div class="time">
+                                    <span class="date"><?php echo date("d",strtotime($rows->news_date)) ?></span>
                                     <span class="month"><?php echo date("M",strtotime($rows->news_date))?></span>
                                 </div>
                                 <img src="<?php echo $assets_url.$rows->nf_cover_image;?>" alt="" width="150" height="150">
@@ -221,15 +229,15 @@
                     </div>
 					</div>
 					<?php } ?>
-                
+
 				 <div class="col-lg-6">
                     <div class="event-list-style padding-top-50">
 					<?php foreach($eventlist_double as $rows){ ?>
-					
+
                         <div class="event-single-style-01">
                             <div class="d-flex">
-                                <div class="time"> 
-                                    <span class="date"><?php echo date("d",strtotime($rows->news_date)) ?></span> 
+                                <div class="time">
+                                    <span class="date"><?php echo date("d",strtotime($rows->news_date)) ?></span>
                                     <span class="month"><?php echo date("M",strtotime($rows->news_date))?></span>
                                 </div>
                                 <div class="content">
@@ -242,17 +250,17 @@
 						 <div class="btn-wrapper">
                             <a href="<?php echo base_url(); ?>events/">View all events</a> ➝
                         </div>
-						  </div>                      
-                   
-						
+						  </div>
+
+
             </div>
-		
+
         </div>
     </div>
 	<!-- events end -->
 <?php } ?>
 
-<?php if (count($postlist)>0){ 
+<?php if (count($postlist)>0){
 		$assets_url = $this->config->item("assets_url")."newsfeed/";
 ?>
     <!-- news area Start -->
@@ -268,7 +276,7 @@
             <div class="row">
                 <div class="swiper-slider swiper-container two">
                     <div class="swiper-wrapper">
-					
+
 					<?php foreach($postlist as $rows){ ?>
                         <div class="swiper-slide image-overlay">
                             <div class="news-item-style-03">
@@ -292,7 +300,7 @@
                     <!-- Add Pagination -->
                     <div class="swiper-pagination"></div>
                 </div>
-				
+
             </div>
         </div>
     </div>
