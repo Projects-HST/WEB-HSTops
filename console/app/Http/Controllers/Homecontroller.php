@@ -22,7 +22,11 @@ class Homecontroller extends Controller
 {
 
     function login(){
-      return view('login');
+      if(!session()->has('user_session')){
+        return view('login');
+      }
+      return redirect('/admin/dashboard');
+
     }
     function forgot(){
       return view('forgot');
