@@ -101,4 +101,12 @@
             </div>
         </div>
     </div>
-  <?php } ?>
+  <?php } else { ?>
+  
+   <div class="blog-area padding-bottom-100">
+        <div class="container padding-top-50">
+            <h4 style="text-align: center;">Sorry!.. No Results Found.</h4>
+			
+		</div>
+	</div>
+<?php }?>

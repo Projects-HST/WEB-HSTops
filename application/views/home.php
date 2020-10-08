@@ -2,7 +2,7 @@
     <div class="banner-style-3 banner-bg-1 d-flex align-items-center">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-7 offset-md-2 col-xl-5 offset-xl-2 banner-slider-4">
+                <div class="col-md-7 offset-md-2 offset-xl-2 banner-slider-4">
                     <div class="banner-content-style-3">
                         <h2 class="title" data-animation-in="fadeInLeft">It's our honour to be with you</h2>
                         <p class="description" data-animation-in="fadeInDown">Lorem ipsum dummy text are used in this section so replace your text here. Lorem ipsum dummy lorem ipsum dummy text are used in this section</p>
