@@ -1,11 +1,3 @@
-<style>
-@media only screen and (max-width: 767px){
-.video-btn-style-04 {
-    display: block;
-    margin-top: 133px;
-}
-}
-</style>
 <!-- banner start -->
     <div class="banner-style-3 banner-bg-1 d-flex align-items-center">
         <div class="container-fluid">
