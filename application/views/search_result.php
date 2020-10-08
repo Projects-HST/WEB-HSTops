@@ -103,8 +103,8 @@
     </div>
   <?php } else { ?>
   
-   <div class="blog-area padding-bottom-100">
-        <div class="container padding-top-50">
+   <div class="blog-area">
+        <div class="container padding-top-50 padding-bottom-200">
             <h4 style="text-align: center;">Sorry!.. No Results Found.</h4>
 			
 		</div>
