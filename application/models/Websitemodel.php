@@ -104,7 +104,7 @@ Class Websitemodel extends CI_Model
 	// Fetch records
 	function getPost($rowno,$rowperpage) {
 
-	$this->db->select ('id,news_date,title_en,description_en,nf_cover_image');
+	$this->db->select ('id,news_date,title_en,description_en,title_ta,description_ta,nf_cover_image');
 	$this->db->from('news_feed');
 	$this->db->where('nf_category_id', '2');
 	$this->db->where('status', 'Active');
@@ -133,7 +133,7 @@ Class Websitemodel extends CI_Model
 // Fetch records
 	function getEvents($rowno,$rowperpage) {
 
-		$this->db->select ('id,news_date,title_en,description_en,nf_cover_image');
+		$this->db->select ('id,news_date,title_en,description_en,title_ta,description_ta,nf_cover_image');
 		$this->db->from('news_feed');
 		$this->db->where('nf_category_id', '3');
 		$this->db->where('status', 'Active');
@@ -175,7 +175,7 @@ Class Websitemodel extends CI_Model
 	// Fetch records
 	function getPhoto($rowno,$rowperpage) {
 
-		$this->db->select ('id,news_date,title_en,description_en,nf_cover_image');
+		$this->db->select ('id,news_date,title_en,description_en,title_ta,description_ta,nf_cover_image');
 		$this->db->from('news_feed');
 		$this->db->where('nf_profile_type', 'I');
 		$this->db->where('gallery_status', '1');

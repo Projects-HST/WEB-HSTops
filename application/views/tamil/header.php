@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>O.P.S - Ottakarathevar Panneerselvam</title>
+    <title>O.P.S - ஓ.பன்னீர்செல்வம்</title>
      <!-- favicon -->
      <link rel=icon href=<?php echo base_url(); ?>assets/basic/img/favicon.png sizes="20x20" type="image/png">
     <!-- animate -->
@@ -61,10 +61,12 @@
 
     <!-- search Popup -->
     <div class="body-overlay" id="body-overlay"></div>
+	
+	
     <div class="search-popup" id="search-popup">
-        <form action="<?php echo base_url(); ?>index/search_posts/"  method="post" type class="search-form">
+        <form action="<?php echo base_url(); ?>tamil/search_posts/"  method="post" type class="search-form">
             <div class="form-group">
-                <input type="text" class="form-control" name="search" id="search" placeholder="Search....." <?php if ($search_value!='') { echo "value='$search_value'"; } ?>>
+                <input type="text" class="form-control" name="search" id="search" placeholder="தேடல்....." <?php if ($search_value!='') { echo "value='$search_value'"; } ?>>
             </div>
             <button type="submit" name='submit' value='Search' class="submit-btn"><i class="fa fa-search"></i></button>
         </form>
@@ -79,10 +81,10 @@
                 <img src="<?php echo base_url(); ?>assets/basic/img/ops_logo-green.png" alt="logo"/>
             </div>
             <div class="sidemenu-text">
-                <p>O.P.S. is an Indian politician serving as the 2nd and current Deputy Chief Minister of Tamil Nadu since 21 August 2017</p>
+                <p>அஇஅதிமுக-வின் கழக ஒருங்கிணைப்பாளரும், மாண்புமிகு தமிழ்நாடு துணை முதலமைச்சருமான திரு.ஓ பன்னீர்செல்வம் அவர்கள் தமிழ்நாட்டின் மிக முக்கியமான அரசியல் தலைவர் ஆவார்.</p>
             </div>
             <div class="sidebar-contact">
-                <h4>Contact Us</h4>
+                <h4>தொடர்பு கொள்ள</h4>
                 <ul>
                     <li><i class="fa fa-map-marker"></i>Lavaca Street, Suite 2000</li>
                     <li><i class="fa fa-envelope"></i>email@evha.com</li>
@@ -114,37 +116,37 @@
                     </button>
                 </div>
                 <div class="logo">
-                    <a href="<?php echo base_url(); ?>"> <img src="<?php echo base_url(); ?>assets/basic/img/ops_web_logo.png" alt="logo"></a>
+                    <a href="<?php echo base_url(); ?>tamil/"> <img src="<?php echo base_url(); ?>assets/basic/img/ops_web_logo.png" alt="logo"></a>
                 </div>
                 <div class="collapse navbar-collapse" id="billatrail_main_menu">
                     <ul class="navbar-nav menu-open">
-                        <li><a href="<?php echo base_url(); ?>">Home</a></li>
+                        <li><a href="<?php echo base_url(); ?>/tamil/">முகப்பு</a></li>
 						<li class="menu-item-has-children">
-                            <a href="#">About</a>
+                            <a href="#">ஓ.பி.எஸ் பற்றி</a>
                             <ul class="sub-menu">
-                                <li><a href="<?php echo base_url(); ?>aboutOPS/"><i class="fa fa-long-arrow-right"></i>About OPS</a></li>
-                                <li><a href="<?php echo base_url(); ?>about_party/"><i class="fa fa-long-arrow-right"></i>About Party</a></li>
+                                <li><a href="<?php echo base_url(); ?>tamil/aboutOPS/"><i class="fa fa-long-arrow-right"></i>ஓ.பி.எஸ் பற்றி</a></li>
+                                <li><a href="<?php echo base_url(); ?>tamil/about_party/"><i class="fa fa-long-arrow-right"></i>கட்சி பற்றி</a></li>
                             </ul>
                         </li>
-                        <li><a href="<?php echo base_url(); ?>posts/">Posts</a></li>
-                        <li><a href="<?php echo base_url(); ?>events/">Events</a></li>
+                        <li><a href="<?php echo base_url(); ?>tamil/posts/">பதிவுகள்</a></li>
+                        <li><a href="<?php echo base_url(); ?>tamil/events/">நிகழ்வுகள்</a></li>
 						
                         <li class="menu-item-has-children">
-                            <a href="#">Gallery</a>
+                            <a href="#">கேலரி</a>
                             <ul class="sub-menu">
-                                <li><a href="<?php echo base_url(); ?>photos/"><i class="fa fa-long-arrow-right"></i>Photos</a></li>
-                                <li><a href="<?php echo base_url(); ?>videos/"><i class="fa fa-long-arrow-right"></i>Videos</a></li>
+                                <li><a href="<?php echo base_url(); ?>tamil/photos/"><i class="fa fa-long-arrow-right"></i>புகைப்படம்</a></li>
+                                <li><a href="<?php echo base_url(); ?>tamil/videos/"><i class="fa fa-long-arrow-right"></i>வீடியோ</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Login</a></li>
+                        <li><a href="#">உள்நுழை</a></li>
                     </ul>
                 </div>
                 <div class="nav-right-part">
                     <ul>
 						<li>
                             <select id="selectbox" name="" onchange="javascript:location.href = this.value;">
-								<option value="<?php echo base_url(); ?>" selected>EN</option>
-								<option value="<?php echo base_url(); ?>tamil/">TA</option>
+								<option value="<?php echo base_url(); ?>">EN</option>
+								<option value="<?php echo base_url(); ?>tamil/" selected>TA</option>
 							</select>
                         </li>
                         <li class="search" id="search">

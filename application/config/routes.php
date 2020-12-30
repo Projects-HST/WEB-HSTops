@@ -62,3 +62,13 @@ $route['events'] = 'index/events';
 $route['photos'] = 'index/photos';
 $route['videos'] = 'index/videos';
 $route['forgot_password'] = 'home/forgot_password';
+
+
+$route['tamil/aboutOPS'] = 'tamil/about_ops';
+$route['tamil/about_party'] = 'tamil/about_party';
+$route['tamil/posts'] = 'tamil/posts';
+$route['tamil/events'] = 'tamil/events';
+//$route['post_details'] = 'index/post_details';
+$route['tamil/photos'] = 'tamil/photos';
+$route['tamil/videos'] = 'tamil/videos';
+$route['tamil/forgot_password'] = 'tamil/forgot_password';
