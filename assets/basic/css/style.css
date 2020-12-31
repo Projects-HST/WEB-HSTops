@@ -7958,6 +7958,12 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   margin-bottom: 20px;
   font-size:25px;
   font-weight: 700; }
+  
+ .ta_title_med {
+  line-height: 20px;
+  margin-bottom: 10px;
+  font-size:20px;
+  font-weight: 600; }
 
 .content-box-style-01 .para {
   font-size: 16px;

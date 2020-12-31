@@ -120,7 +120,7 @@
                 </div>
                 <div class="collapse navbar-collapse" id="billatrail_main_menu">
                     <ul class="navbar-nav menu-open">
-                        <li class="navbar-area-tamil"><a href="<?php echo base_url(); ?>/tamil/">முகப்பு</a></li>
+                        <li class="navbar-area-tamil"><a href="<?php echo base_url(); ?>tamil/">முகப்பு</a></li>
 						<li class="menu-item-has-children navbar-area-tamil">
                             <a href="#">ஓ.பி.எஸ் பற்றி</a>
                             <ul class="sub-menu">
@@ -145,8 +145,8 @@
                     <ul>
 						<li class="language" id="language">
                             <select name="language" id="language" class="sel_lang"  onchange="javascript:location.href = this.value;">
-								<option value="<?php echo base_url(); ?>">EN</option>
-								<option value="<?php echo base_url(); ?>tamil/" selected>TA</option>
+								<option value="<?php echo base_url(); ?>">ENG</option>
+								<option value="<?php echo base_url(); ?>tamil/" selected>தமிழ்</option>
 							</select>
                         </li>
                         <li class="search" id="search">

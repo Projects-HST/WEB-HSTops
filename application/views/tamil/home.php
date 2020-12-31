@@ -63,10 +63,10 @@
 						if (count($personal)>0){
 							 foreach($personal as $rows){
 								$string = htmlspecialchars_decode(stripslashes($rows->personal_life_text_ta));
-								if (strlen($string) > 500) {
+								if (strlen($string) > 900) {
 
 									// truncate string
-									$stringCut = substr($string, 0, 500);
+									$stringCut = substr($string, 0, 900);
 									$endPoint = strrpos($stringCut, ' ');
 
 									//if the string doesn't contain any space then it will cut without word basis.
@@ -113,10 +113,10 @@
 						if (count($partyhistory)>0){
 							 foreach($partyhistory as $rows){
 								$string = htmlspecialchars_decode(stripslashes($rows->party_text_ta));
-								if (strlen($string) > 500) {
+								if (strlen($string) > 900) {
 
 									// truncate string
-									$stringCut = substr($string, 0, 500);
+									$stringCut = substr($string, 0, 900);
 									$endPoint = strrpos($stringCut, ' ');
 
 									//if the string doesn't contain any space then it will cut without word basis.
@@ -158,7 +158,7 @@
                             <img src="<?php echo $assets_url.$rows->achievement_image;?>" alt="">
                         </div>
                         <p class="subtitle">சாதனைகள்</p>
-                        <h4 class="title"><?php echo $rows->achievement_title_ta;?></h4>
+                        <h4 class="ta_title_med"><?php echo $rows->achievement_title_ta;?></h4>
                         <div class="btn-wrapper">
                             <a class="readMoreta" href="<?php echo base_url(); ?>tamil/aboutOPS/">மேலும்</a> ➝
                         </div>
@@ -213,7 +213,7 @@
                             </div>
 
                         </div>
-                        <h4><?php echo $rows->title_ta;?></h4>
+                        <h4 class="ta_title_med"><?php echo $rows->title_ta;?></h4>
                         <p><?php echo $string; ?></p>
                         <div class="btn-wrapper align-self-center margin-top-30">
                             <a class="btn btn-custom-primary-ta" href="<?php echo base_url(); ?>tamil/post_details/<?php echo base64_encode($rows->id*98765); ?>/">மேலும்..</a>
@@ -276,7 +276,7 @@
                                     <img src="<?php echo $assets_url.$rows->nf_cover_image;?>" style="max-width:350px;">
                                 </div>
                                 <div class="content">
-                                    <h4 class="title"><a href="<?php echo base_url(); ?>tamil/post_details/<?php echo base64_encode($rows->id*98765); ?>/"><?php echo $rows->title_ta;?></a></h4>
+                                    <h4 class="ta_title_med"><a href="<?php echo base_url(); ?>tamil/post_details/<?php echo base64_encode($rows->id*98765); ?>/"><?php echo $rows->title_ta;?></a></h4>
                                     <ul class="blog-meta d-flex flex-column flex-lg-row">
                                         <li><a href="<?php echo base_url(); ?>tamil/post_details/<?php echo base64_encode($rows->id*98765); ?>/"><?php echo date("d M Y",strtotime($rows->news_date)) ?></a></li>
                                         <li><a href="<?php echo base_url(); ?>tamil/post_details/<?php echo base64_encode($rows->id*98765); ?>/">Read <?php echo $rows->view_count; ?></a></li>
