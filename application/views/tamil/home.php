@@ -63,10 +63,10 @@
 						if (count($personal)>0){
 							 foreach($personal as $rows){
 								$string = htmlspecialchars_decode(stripslashes($rows->personal_life_text_ta));
-								if (strlen($string) > 900) {
+								if (strlen($string) > 1000) {
 
 									// truncate string
-									$stringCut = substr($string, 0, 900);
+									$stringCut = substr($string, 0, 1000);
 									$endPoint = strrpos($stringCut, ' ');
 
 									//if the string doesn't contain any space then it will cut without word basis.
@@ -113,10 +113,10 @@
 						if (count($partyhistory)>0){
 							 foreach($partyhistory as $rows){
 								$string = htmlspecialchars_decode(stripslashes($rows->party_text_ta));
-								if (strlen($string) > 900) {
+								if (strlen($string) > 1000) {
 
 									// truncate string
-									$stringCut = substr($string, 0, 900);
+									$stringCut = substr($string, 0, 1000);
 									$endPoint = strrpos($stringCut, ' ');
 
 									//if the string doesn't contain any space then it will cut without word basis.
@@ -213,7 +213,7 @@
                             </div>
 
                         </div>
-                        <h4 class="ta_title_med"><?php echo $rows->title_ta;?></h4>
+                        <h2 class="ta_title_med"><?php echo $rows->title_ta;?></h4>
                         <p><?php echo $string; ?></p>
                         <div class="btn-wrapper align-self-center margin-top-30">
                             <a class="btn btn-custom-primary-ta" href="<?php echo base_url(); ?>tamil/post_details/<?php echo base64_encode($rows->id*98765); ?>/">மேலும்..</a>
@@ -233,7 +233,7 @@
                                     <span class="month"><?php echo date("M",strtotime($rows->news_date))?></span>
                                 </div>
                                 <div class="content">
-                                    <h4><a href="<?php echo base_url(); ?>tamil/post_details/<?php echo base64_encode($rows->id*98765); ?>/"><?php echo $rows->title_ta;?></a></h4>
+                                    <h2 class="ta_title_med"><a href="<?php echo base_url(); ?>tamil/post_details/<?php echo base64_encode($rows->id*98765); ?>/"><?php echo $rows->title_ta;?></a></h4>
                                 </div>
                             </div>
                         </div>
