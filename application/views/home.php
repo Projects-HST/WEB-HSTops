@@ -4,8 +4,8 @@
             <div class="row">
                 <div class="col-md-7 offset-md-2 offset-xl-2 banner-slider-4">
                     <div class="banner-content-style-3">
-                        <h2 class="title" data-animation-in="fadeInLeft">It's our honour to be with you</h2>
-                        <p class="description" data-animation-in="fadeInDown">Lorem ipsum dummy text are used in this section so replace your text here. Lorem ipsum dummy lorem ipsum dummy text are used in this section</p>
+                        <h2 class="title" data-animation-in="fadeInLeft">Achievements</h2>
+                        <p class="description" data-animation-in="fadeInDown">Thiru O.Paneerselvam is the only leader who has delivered too many budget speeches. Until now, he has presented financial statements in the legislative assembly 10 times.</p>
                         <div class="d-flex margin-top-50">
                             <div class="btn-wrapper" data-animation-in="fadeInDown">
                                 <a class="btn btn-custom-white" href="#">Learn More</a>
@@ -13,8 +13,8 @@
                         </div>
                     </div>
                     <div class="banner-content-style-3">
-                        <h2 class="title" data-animation-in="fadeInLeft">Integrity, Prosperity of Country</h2>
-                        <p class="description" data-animation-in="fadeInDown">Lorem ipsum dummy text are used in this section so replace your text here. Lorem ipsum dummy lorem ipsum dummy text are used in this section</p>
+                        <h2 class="title" data-animation-in="fadeInLeft">Achievements</h2>
+                        <p class="description" data-animation-in="fadeInDown">He lifted the ban on conducting Jallikattu, Tamil Nadu’s traditional sport, by passing an emergency ordinance.</p>
                         <div class="d-flex margin-top-50">
                             <div class="btn-wrapper" data-animation-in="fadeInDown">
                                 <a class="btn btn-custom-white" href="#">Learn More</a>
@@ -22,8 +22,8 @@
                         </div>
                     </div>
                     <div class="banner-content-style-3">
-                        <h2 class="title" data-animation-in="fadeInLeft">We can make our city great again</h2>
-                        <p class="description" data-animation-in="fadeInDown">Lorem ipsum dummy text are used in this section so replace your text here. Lorem ipsum dummy lorem ipsum dummy text are used in this section</p>
+                        <h2 class="title" data-animation-in="fadeInLeft">Achievements</h2>
+                        <p class="description" data-animation-in="fadeInDown">•	He met the Chief Minister of Andhra Pradesh and smoothly resolved the dispute regarding the sharing of Krishna river water, the most important source of drinking water in Chennai.</p>
                         <div class="d-flex margin-top-50">
                             <div class="btn-wrapper" data-animation-in="fadeInDown">
                                 <a class="btn btn-custom-white" href="#">Learn More</a>

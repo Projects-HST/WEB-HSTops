@@ -4,29 +4,29 @@
             <div class="row">
                 <div class="col-md-7 offset-md-2 offset-xl-2 banner-slider-4">
                     <div class="banner-content-style-3">
-                        <h2 class="title" data-animation-in="fadeInLeft">It's our honour to be with you</h2>
-                        <p class="description" data-animation-in="fadeInDown">Lorem ipsum dummy text are used in this section so replace your text here. Lorem ipsum dummy lorem ipsum dummy text are used in this section</p>
+                       <h2 class="title-ta" data-animation-in="fadeInLeft">சாதனைத் துளிகள்</h2>
+                        <p class="description" data-animation-in="fadeInDown">தமிழ்நாட்டில் அதிகமுறை நிதித்தாக்கல் செய்த சிறப்பிற்குரியவர் திரு.ஓ.பன்னீர்செல்வம் அவர்கள். இதுவரை 11 முறை தமிழ்நாடு சட்டமன்ற பேரவையில் நிதிநிலை அறிக்கையை தாக்கல் செய்துள்ளார்..</p>
                         <div class="d-flex margin-top-50">
                             <div class="btn-wrapper" data-animation-in="fadeInDown">
-                                <a class="btn btn-custom-white" href="#">Learn More</a>
+                                <a class="btn btn-custom-white" href="#">மேலும் </a>
                             </div>
                         </div>
                     </div>
                     <div class="banner-content-style-3">
-                        <h2 class="title" data-animation-in="fadeInLeft">Integrity, Prosperity of Country</h2>
-                        <p class="description" data-animation-in="fadeInDown">Lorem ipsum dummy text are used in this section so replace your text here. Lorem ipsum dummy lorem ipsum dummy text are used in this section</p>
+                       <h2 class="title-ta" data-animation-in="fadeInLeft">சாதனைத் துளிகள்</h2>
+                        <p class="description" data-animation-in="fadeInDown">தமிழர்களின் பாரம்பரிய விளையாட்டான ஜல்லிகட்டுக்கு எதிரான தடையை நீக்க அவசரச் சட்டம் பிரப்பித்த் தீர்வு கண்டுள்ளார். </p>
                         <div class="d-flex margin-top-50">
                             <div class="btn-wrapper" data-animation-in="fadeInDown">
-                                <a class="btn btn-custom-white" href="#">Learn More</a>
+                                <a class="btn btn-custom-white" href="#">மேலும் </a>
                             </div>
                         </div>
                     </div>
                     <div class="banner-content-style-3">
-                        <h2 class="title" data-animation-in="fadeInLeft">We can make our city great again</h2>
-                        <p class="description" data-animation-in="fadeInDown">Lorem ipsum dummy text are used in this section so replace your text here. Lorem ipsum dummy lorem ipsum dummy text are used in this section</p>
+                        <h2 class="title-ta" data-animation-in="fadeInLeft">சாதனைத் துளிகள்</h2>
+                        <p class="description" data-animation-in="fadeInDown">சென்னையின் குடிநீர் தேவையை பூர்த்தி செய்யும் மிக முக்கிய நீர்வள ஆதாரமான “கிருஷ்ணா நதி நீர் பங்கீடு” குறித்து ஆந்திர முதல்வரை நேரில் சென்று சந்தித்து பேசி சுமூக தீர்வு கண்டுள்ளார்.</p>
                         <div class="d-flex margin-top-50">
                             <div class="btn-wrapper" data-animation-in="fadeInDown">
-                                <a class="btn btn-custom-white" href="#">Learn More</a>
+                                <a class="btn btn-custom-white" href="#">மேலும் </a>
                             </div>
                         </div>
                     </div>
