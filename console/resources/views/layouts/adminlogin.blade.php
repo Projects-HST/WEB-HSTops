@@ -19,14 +19,14 @@
 				<div class="login-aside d-flex flex-row-auto bgi-size-cover bgi-no-repeat p-10 p-lg-10" style="background-image: url({{ url('/')}}/assets/admin/media/bg/bg-4.jpg);">
 					<div class="d-flex flex-row-fluid flex-column justify-content-between">
 						<a href="#" class="flex-column-auto mt-5 pb-lg-0 pb-10">
-							<img src="{{ url('/')}}/assets/admin/media/logos/logo.png" class="max-h-70px" alt="" />
+							<img src="{{ url('/')}}/assets/admin/media/logos/ops_web_logo.png" class="max-h-70px" alt="" />
 						</a>
 						<div class="flex-column-fluid d-flex flex-column justify-content-center">
-							<h3 class="font-size-h1 mb-5 text-white">Welcome to Metronic!</h3>
-							<p class="font-weight-lighter text-white opacity-80">The ultimate Bootstrap, Angular 8, React &amp; VueJS admin theme framework for next generation web apps.</p>
+							<h3 class="font-size-h1 mb-5 text-white">Welcome to Admin!</h3>
+							<!--<p class="font-weight-lighter text-white opacity-80">The ultimate Bootstrap, Angular 8, React &amp; VueJS admin theme framework for next generation web apps.</p>-->
 						</div>
 						<div class="d-none flex-column-auto d-lg-flex justify-content-between mt-10">
-							<div class="opacity-70 font-weight-bold text-white">© 2020 Metronic</div>
+							<div class="opacity-70 font-weight-bold text-white">© www.opanneerselvam.com</div>
 						</div>
 					</div>
 				</div>
