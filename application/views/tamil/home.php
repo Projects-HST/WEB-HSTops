@@ -57,7 +57,7 @@
                 <div class="col-lg-6 align-self-center">
                     <div class="content-box-style-01">
                         <p class="section-subtitle">ஓ.பி.எஸ் பற்றி</p>
-                        <h2 class="title">தமிழக துணை முதல்வர்</h2>
+                        <h2 class="ta_title">தமிழக துணை முதல்வர்</h2>
                         <p class="description">
 						<?php
 						if (count($personal)>0){
@@ -78,7 +78,7 @@
 							 } ?>
 						</p>
                         <div class="btn-wrapper padding-top-30">
-                            <a class="btn btn-custom-primary" href="<?php echo base_url(); ?>aboutOPS/">மேலும்</a>
+                            <a class="btn btn-custom-primary-ta" href="<?php echo base_url(); ?>tamil/aboutOPS/">மேலும்</a>
                         </div>
                     </div>
                 </div>
@@ -97,7 +97,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="section-title">அனைத்திந்திய <br>அண்ணா திராவிட முன்னேற்றக் கழகம்</h2>
+                    <h2 class="ta_title">அனைத்திந்திய <br>அண்ணா திராவிட முன்னேற்றக் கழகம்</h2>
                 </div>
             </div>
             <div class="row margin-top-55 margin-bottom-100">
@@ -128,7 +128,7 @@
 							 } ?>
 						</p>
                         <div class="btn-wrapper">
-                            <a class="btn btn-custom-primary" href="<?php echo base_url(); ?>about_party/">மேலும்</a>
+                            <a class="btn btn-custom-primary-ta" href="<?php echo base_url(); ?>tamil/about_party/">மேலும்</a>
                         </div>
                     </div>
                 </div>
@@ -146,7 +146,7 @@
             <div class="row margin-bottom-45">
                 <div class="col-lg-12">
                     <p class="section-subtitle">ஓ.பி.எஸ் சாதனைகள்</p>
-                    <h2 class="title">சாதனைகள்</h2>
+                    <h2 class="ta_title">சாதனைகள்</h2>
                 </div>
             </div>
             <div class="row">
@@ -160,7 +160,7 @@
                         <p class="subtitle">சாதனைகள்</p>
                         <h4 class="title"><?php echo $rows->achievement_title_ta;?></h4>
                         <div class="btn-wrapper">
-                            <a class="readMore" href="<?php echo base_url(); ?>aboutOPS/">மேலும்</a> ➝
+                            <a class="readMoreta" href="<?php echo base_url(); ?>tamil/aboutOPS/">மேலும்</a> ➝
                         </div>
                     </div>
                 </div>
@@ -182,7 +182,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <p class="section-subtitle">நிகழ்வுகள்</p>
-                    <h2 class="title">எதிர்வரும் நிகழ்வுகள்</h2>
+                    <h2 class="ta_title">எதிர்வரும் நிகழ்வுகள்</h2>
                 </div>
             </div>
 
@@ -216,7 +216,7 @@
                         <h4 class="title"><?php echo $rows->title_ta;?></h4>
                         <p><?php echo $string; ?></p>
                         <div class="btn-wrapper align-self-center margin-top-30">
-                            <a class="btn btn-custom-primary" href="<?php echo base_url(); ?>tamil/post_details/<?php echo base64_encode($rows->id*98765); ?>/">Read More..</a>
+                            <a class="btn btn-custom-primary-ta" href="<?php echo base_url(); ?>tamil/post_details/<?php echo base64_encode($rows->id*98765); ?>/">மேலும்..</a>
                         </div>
                     </div>
 					</div>
@@ -240,7 +240,7 @@
 					<?php } ?>
 						 </div>
 						 <div class="btn-wrapper">
-                            <a href="<?php echo base_url(); ?>events/">அனைத்து நிகழ்வுகளும்</a> ➝
+                            <a href="<?php echo base_url(); ?>tamil/events/">அனைத்து நிகழ்வுகளும்</a> ➝
                         </div>
 						  </div>
 
@@ -261,7 +261,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-12">
                     <div class="text-center padding-bottom-40">
-                        <h2 class="section-title">சமீபத்திய பதிவுகள்</h2>
+                        <h2 class="ta_title">சமீபத்திய பதிவுகள்</h2>
                     </div>
                 </div>
             </div>

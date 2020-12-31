@@ -1389,7 +1389,13 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   font-size: 55px;
   letter-spacing: 0;
   font-weight: 700; }
-
+.page-title-ta{
+  color: #fff;
+  font-family: var(--body-font);
+  font-size: 30px;
+  letter-spacing: 0;
+  font-weight: 700;
+}
 .breadcrumb-area .breadcrumb-inner .page-list {
   margin: 0;
   padding: 0; }
@@ -1680,6 +1686,16 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   letter-spacing: 0px;
   font-family: var(--body-font); }
 
+.widget .widget-title-ta {
+  font-size: 18px;
+  font-weight: 400;
+  color:#ffffff;
+  line-height: 30px;
+  margin-bottom: 10px;
+  position: relative;
+  letter-spacing: 0px;
+  font-family: var(--body-font); }
+  
 .widget.widget_calendar {
   padding-right: 24px;
   padding-left: 24px; }
@@ -2102,6 +2118,10 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   -webkit-transition: all .4s;
   -o-transition: all .4s;
   transition: all .4s; }
+  
+ .navbar-area-tamil{
+      font-size: 15px !important;
+ }
   .navbar-area.nav-absolute {
     position: absolute;
     left: 0;
@@ -2124,7 +2144,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
       text-align: right; }
       .navbar-area .nav-container .navbar-collapse .navbar-nav li {
         display: inline-block;
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 400;
         line-height: 50px;
         text-transform: capitalize; }
@@ -2394,15 +2414,20 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     margin-right: 25px; }
     .nav-right-part ul li:last-child {
       margin-right: 0px; }
-    .nav-right-part ul li.search {
-      position: relative;
-      padding: 10px 0px 10px 20px;
-      -webkit-transition: all .4s;
-      -o-transition: all .4s;
-      transition: all .4s; }
-      .nav-right-part ul li.search a {
-        font-size: 20px;
-        color: #0B9421; }
+	.nav-right-part ul li.search {
+		position: relative;
+		padding: 10px 0px 10px 20px;
+		-webkit-transition: all .4s;
+		-o-transition: all .4s;
+		transition: all .4s; }
+	.nav-right-part ul li.language {
+		position: relative;
+		padding: 10px 0px 10px 20px;
+		margin-right: 0px;
+	}
+	.nav-right-part ul li.search a {
+		font-size: 20px;
+		color: #0B9421; }
     .nav-right-part ul li.heart {
       width: 45px;
       height: 45px;
@@ -5673,6 +5698,9 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   .action-soon-content .readMore {
     font-size: 18px;
     color: #666; }
+ .action-soon-content .readMoreta {
+    font-size: 15px;
+    color: #666; }
   .action-soon-content:hover .title, .action-soon-content:hover .subtitle {
     color: #fff; }
   .action-soon-content:hover:before {
@@ -6342,6 +6370,21 @@ ul.wp-block-latest-posts.is-grid.alignwide {
       border: 1px solid #fff;
       color: #fff !important;
       background: #0B9421; }
+	  
+	.btn-custom-primary-ta {
+    color: rgba(0, 0, 0, 0.8);
+    background: rgba(166, 226, 175, 0.2);
+    font-size: 15px;
+    letter-spacing: 0px;
+    line-height: 26px;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-weight: 500; }
+    .btn-custom-primary-ta:hover {
+      border: 1px solid #fff;
+      color: #fff !important;
+      background: #0B9421; }
+	  
   .btn-red {
     color: #fff;
     background: #B22234;
@@ -7909,6 +7952,12 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   line-height: 60px;
   margin-bottom: 30px;
   font-weight: 700; }
+  
+ .ta_title {
+  line-height: 30px;
+  margin-bottom: 20px;
+  font-size:25px;
+  font-weight: 700; }
 
 .content-box-style-01 .para {
   font-size: 16px;
@@ -8173,6 +8222,12 @@ ul.wp-block-latest-posts.is-grid.alignwide {
         border-radius: 10px;
         top: 0px; }
     .content-box-style-06 .nav-tabs li a {
+      font-size: 15px;
+      color: #404040;
+      font-weight: 400;
+      padding: 10px;
+      position: relative; }
+	.content-box-style-06 .nav-tabs-ta li a {
       font-size: 24px;
       color: #404040;
       font-weight: 400;
@@ -8455,7 +8510,12 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 	
   .party-table th {
 	 background-color: #ebeff2; }
-	 
+
+   .sel_lang {
+		font-family: var(--secondary-font);
+   }
+
+
 .pagination-first-tag{
 border:1px solid #eeeeee;
 padding:20px;

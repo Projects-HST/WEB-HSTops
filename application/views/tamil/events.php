@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumb-inner padding-top-150">
-                        <h1 class="page-title">நிகழ்வுகள்</h1>
+                        <h1 class="page-title-ta">நிகழ்வுகள்</h1>
                         <ul class="page-list">
                             <li><a href="<?php echo base_url(); ?>tamil/">முகப்பு /</a></li>
                             <li><a href="<?php echo base_url(); ?>tamil/events/">நிகழ்வுகள்</a></li>
@@ -26,7 +26,7 @@
                 <div class="event-box-wrapper col-lg-12">
                     <div class="title-left-style">
                         <p class="section-subtitle">நிகழ்வுகள்</p>
-                        <h2 class="section-title">அடுத்து நடக்கிறது</h2>
+                        <h2 class="ta_title">அடுத்து நடக்கிறது</h2>
                     </div>
                     <!--<div class="img-wrapper">
                         <img src="<?php echo base_url(); ?>assets/basic/img/event/happen.png" alt="">

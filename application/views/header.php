@@ -141,8 +141,8 @@
                 </div>
                 <div class="nav-right-part">
                     <ul>
-						<li>
-                            <select id="selectbox" name="" onchange="javascript:location.href = this.value;">
+						<li class="language" id="language">
+                            <select name="language" id="language" class="sel_lang"  onchange="javascript:location.href = this.value;">
 								<option value="<?php echo base_url(); ?>" selected>EN</option>
 								<option value="<?php echo base_url(); ?>tamil/">TA</option>
 							</select>

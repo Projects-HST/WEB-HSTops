@@ -120,31 +120,31 @@
                 </div>
                 <div class="collapse navbar-collapse" id="billatrail_main_menu">
                     <ul class="navbar-nav menu-open">
-                        <li><a href="<?php echo base_url(); ?>/tamil/">முகப்பு</a></li>
-						<li class="menu-item-has-children">
+                        <li class="navbar-area-tamil"><a href="<?php echo base_url(); ?>/tamil/">முகப்பு</a></li>
+						<li class="menu-item-has-children navbar-area-tamil">
                             <a href="#">ஓ.பி.எஸ் பற்றி</a>
                             <ul class="sub-menu">
-                                <li><a href="<?php echo base_url(); ?>tamil/aboutOPS/"><i class="fa fa-long-arrow-right"></i>ஓ.பி.எஸ் பற்றி</a></li>
-                                <li><a href="<?php echo base_url(); ?>tamil/about_party/"><i class="fa fa-long-arrow-right"></i>கட்சி பற்றி</a></li>
+                                <li class="navbar-area-tamil"><a href="<?php echo base_url(); ?>tamil/aboutOPS/"><i class="fa fa-long-arrow-right"></i>ஓ.பி.எஸ் பற்றி</a></li>
+                                <li class="navbar-area-tamil"><a href="<?php echo base_url(); ?>tamil/about_party/"><i class="fa fa-long-arrow-right"></i>கட்சி பற்றி</a></li>
                             </ul>
                         </li>
-                        <li><a href="<?php echo base_url(); ?>tamil/posts/">பதிவுகள்</a></li>
-                        <li><a href="<?php echo base_url(); ?>tamil/events/">நிகழ்வுகள்</a></li>
+                        <li class="navbar-area-tamil"><a href="<?php echo base_url(); ?>tamil/posts/">பதிவுகள்</a></li>
+                        <li class="navbar-area-tamil"><a href="<?php echo base_url(); ?>tamil/events/">நிகழ்வுகள்</a></li>
 						
-                        <li class="menu-item-has-children">
+                        <li class="menu-item-has-children navbar-area-tamil">
                             <a href="#">கேலரி</a>
                             <ul class="sub-menu">
-                                <li><a href="<?php echo base_url(); ?>tamil/photos/"><i class="fa fa-long-arrow-right"></i>புகைப்படம்</a></li>
-                                <li><a href="<?php echo base_url(); ?>tamil/videos/"><i class="fa fa-long-arrow-right"></i>வீடியோ</a></li>
+                                <li class="navbar-area-tamil"><a href="<?php echo base_url(); ?>tamil/photos/"><i class="fa fa-long-arrow-right"></i>புகைப்படம்</a></li>
+                                <li class="navbar-area-tamil"><a href="<?php echo base_url(); ?>tamil/videos/"><i class="fa fa-long-arrow-right"></i>வீடியோ</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">உள்நுழை</a></li>
+                        <li class="navbar-area-tamil"><a href="#">உள்நுழை</a></li>
                     </ul>
                 </div>
                 <div class="nav-right-part">
                     <ul>
-						<li>
-                            <select id="selectbox" name="" onchange="javascript:location.href = this.value;">
+						<li class="language" id="language">
+                            <select name="language" id="language" class="sel_lang"  onchange="javascript:location.href = this.value;">
 								<option value="<?php echo base_url(); ?>">EN</option>
 								<option value="<?php echo base_url(); ?>tamil/" selected>TA</option>
 							</select>

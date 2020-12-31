@@ -13,7 +13,7 @@
                         <div class="row">
                             <div class="col-lg-3 col-xl-3 offset-xl-1">
                                 <div class="footer-widget widget widget_nav_menu">
-                                    <h4 class="widget-title">எங்களைப் பின்தொடரவும்</h4>
+                                    <h4 class="widget-title-ta">எங்களை தொடர</h4>
 									<?php 
 									if (count($socialmedia)>0){ 
 										echo "<ul>";
@@ -28,7 +28,7 @@
                             </div>
                             <div class="col-lg-8">
                                 <div class="footer-widget widget">
-                                    <h4 class="widget-title">எங்கள் APP ஐ பதிவிறக்கவும்</h4>
+                                    <h4 class="widget-title-ta">எங்கள் APP ஐ பதிவிறக்கவும்</h4>
 									 <div class="row">
 										<div class="col-xl-5"><img src="<?php echo base_url(); ?>assets/basic/img/app_store.png" alt="news"></div>
 										<div class="col-xl-5"><img src="<?php echo base_url(); ?>assets/basic/img/playstore.png" alt="news"></div>

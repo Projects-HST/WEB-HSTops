@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumb-inner padding-top-150">
-                        <h1 class="page-title">பதிவுகள் / நிகழ்வுகள்</h1>
+                        <h1 class="page-title-ta">பதிவுகள் / நிகழ்வுகள்</h1>
                         <ul class="page-list">
                             <li><a href="<?php echo base_url(); ?>tamil/">முகப்பு /</a></li>
                             <li><a href="<?php echo base_url(); ?>tamil/posts/">பதிவுகள் /</a></li>

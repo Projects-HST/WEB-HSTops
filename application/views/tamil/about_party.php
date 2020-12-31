@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumb-inner padding-top-150">
-                        <h1 class="page-title">கட்சி பற்றி</h1>
+                        <h1 class="page-title-ta">கட்சி பற்றி</h1>
                         <ul class="page-list">
                             <li><a href="<?php echo base_url(); ?>tamil/">முகப்பு /</a></li>
                             <li><a href="<?php echo base_url(); ?>tamil/about_party/">கட்சி பற்றி</a></li>
@@ -28,7 +28,7 @@
                 <div class="col-lg-5 align-self-center">
                     <div class="content-box-style-01">
                         <p class="section-subtitle">கட்சி பற்றி</p>
-                        <h3>அனைத்திந்திய அண்ணா திராவிட முன்னேற்றக் கழகம்</h3>
+                        <h3 class="ta_title">அனைத்திந்திய அண்ணா திராவிட முன்னேற்றக் கழகம்</h3>
                         <p class="para"><?php 
 							if (count($partyhistory)>0){ 
 									foreach($partyhistory as $rows){ }
@@ -82,11 +82,11 @@
                 <div class="col-lg-8 align-self-center">
                     <div class="content-box-style-06">
                         <p class="section-subtitle">வெற்றிக் கதைகள்</p>
-                        <h3>கட்சியின் சாதனை</h3>
+                        <h3 class="ta_title">கட்சியின் சாதனை</h3>
                         <p class="para">பாரத ரத்னா புரட்சித்தலைவர் எம்.ஜி.ஆர் அவர்கள் திமுக-விலிருந்து விலகி 1972 ஆம் ஆண்டு அஇஅதிமுக கட்சியைத் தோற்றுவித்தார்.</p>
                         <div class="row margin-top-50">
                             <div class="col-md-4">
-                                <ul class="nav nav-tabs">
+                                <ul class="nav nav-tabs" style="font-size:18px;">
                                     <li><a class="active" data-toggle="tab" href="#home">தமிழ்நாடு</a></li>
                                     <li><a data-toggle="tab" href="#menu1">புதுச்சேரி</a></li>
                                     <li><a data-toggle="tab" href="#menu2">கர்நாடகா</a></li>

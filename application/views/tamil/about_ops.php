@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumb-inner padding-top-150">
-                        <h1 class="page-title">ஓ.பி.எஸ் பற்றி</h1>
+                        <h1 class="page-title-ta">ஓ.பி.எஸ் பற்றி</h1>
                         <ul class="page-list">
                             <li><a href="<?php echo base_url(); ?>tamil/">முகப்பு /</a></li>
                             <li><a href="<?php echo base_url(); ?>tamil/about_ops/">About</a></li>
@@ -28,7 +28,7 @@
                 <div class="col-lg-6 align-self-center">
                     <div class="content-box-style-01">
                         <p class="section-subtitle">ஓ.பி.எஸ் பற்றி</p>
-                        <h3>தமிழக துணை முதல்வர்</h3>
+                        <h3 class="ta_title">தமிழக துணை முதல்வர்</h3>
                         <p class="description">
 						<?php 
 							if (count($personal)>0){ 
@@ -62,7 +62,7 @@
                 <div class="col-lg-8 align-self-center">
                     <div class="content-box-style-01">
                         <p class="section-subtitle">வெற்றிக் கதைகள்</p>
-                        <h3>அரசியல் வாழ்க்கை</h3>
+                        <h3 class="ta_title">அரசியல் வாழ்க்கை</h3>
 						<p class="description">
 						<?php 
 							if (count($personal)>0){ 
