@@ -46,7 +46,7 @@
 		$assets_url = $this->config->item("assets_url")."gallery/";
 ?>
 							
-							<h2 class="ta_title">புகைப்படங்கள்</h4>
+							<h2 class="ta_title_med">புகைப்படங்கள்</h4>
 							<div class="row padding-top-20">
 							<?php foreach($postgallery as $gallery){   ?>
 								<div class="col-lg-6 padding-bottom-20">
