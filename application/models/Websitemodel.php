@@ -206,7 +206,7 @@ Class Websitemodel extends CI_Model
 	// Fetch records
 	function getVideo($rowno,$rowperpage) {
 
-		$this->db->select ('id,news_date,title_en,nf_video_token_id,description_en,nf_cover_image');
+		$this->db->select ('id,news_date,title_en,title_ta,nf_video_token_id,description_en,description_ta,nf_cover_image');
 		$this->db->from('news_feed');
 		$this->db->where('nf_profile_type', 'V');
 		$this->db->where('status', 'Active');
