@@ -119,7 +119,7 @@
                     </button>
                 </div>
                 <div class="logo">
-                    <a href="<?php echo base_url(); ?>tamil/"> <img src="<?php echo base_url(); ?>assets/basic/img/ops_web_logo.png" alt="logo"></a>
+                    <a href="<?php echo base_url(); ?>tamil/"> <img src="<?php echo base_url(); ?>assets/basic/img/ops_tamillogo-white.png" alt="logo"></a>
                 </div>
                 <div class="collapse navbar-collapse" id="billatrail_main_menu">
                     <ul class="navbar-nav menu-open">

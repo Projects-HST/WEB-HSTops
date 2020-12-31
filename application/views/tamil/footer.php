@@ -5,7 +5,7 @@
                 <div class="row">
                     <div class="col-xl-3 margin-xlt-80">
 						<div class="row">
-							<img src="<?php echo base_url(); ?>assets/basic/img/ops_web_logo.png" alt="logo">
+							<img src="<?php echo base_url(); ?>assets/basic/img/ops_tamillogo-white.png" alt="logo">
 							<p style="padding-top:20px;color:#ffffff;font-family: var(--secondary-font);font-size:14px;">மக்களால் நான், மக்களுக்காகவே நான்” என்று முழங்கிய மாண்புமிகு அம்மா அவர்களைப் போல, மக்கள் எவ்வழியோ அதுவே என் வழி என முன்மொழிபவர் மாண்புமிகு தமிழக துணை முதல்வர் அவர்கள்.</p>
 						</div>
                     </div>
