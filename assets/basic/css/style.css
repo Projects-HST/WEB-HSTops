@@ -7607,6 +7607,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
       color: #404040;
       font-size: 16px;
       letter-spacing: 0;
+	  line-height:25px;
       font-weight: 500;
       /*margin-bottom: 40px;*/ }
       .icon-box-style-05 .sb-content h4:hover {
