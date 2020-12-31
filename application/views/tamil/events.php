@@ -20,7 +20,7 @@
     <!-- breadcrumb-area end -->
 
     <!-- event box area -->
-    <div class="event-box-area margin-top-80 padding-bottom-100">
+    <div class="event-box-area margin-top-100">
         <div class="container">
             <div class="row">
                 <div class="event-box-wrapper col-lg-12">
