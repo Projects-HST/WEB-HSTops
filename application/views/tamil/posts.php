@@ -78,7 +78,7 @@
                             <div class="blog-date-box">
                                 <h4><?php echo date("d",strtotime($rows['news_date'])) ?><br><span><?php echo date("M",strtotime($rows['news_date']))?></span></h4>
                             </div>
-                            <h4 class="section-title"><a href="<?php echo base_url(); ?>tamil/post_details/<?php echo base64_encode($rows['id']*98765); ?>/"><?php echo $rows['title_en'];?></a></h4>
+                            <h4 class="section-title"><a href="<?php echo base_url(); ?>tamil/post_details/<?php echo base64_encode($rows['id']*98765); ?>/"><?php echo $rows['title_ta'];?></a></h4>
                             <p><?php echo $string; ?></p>
                         </div>
                         
