@@ -141,7 +141,7 @@
                         <hr>
 						<div class="ls-social-share">
                         <ul>
-                            <li><span>Share On</span></li>
+                            <li><span>பகிர்</span></li>
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                             <li><a href="#"><i class="fa fa-instagram"></i></a></li>
