@@ -39,14 +39,14 @@
                             </div>
                         </div>
 						<div class="b-content">
-                            <h4><?php echo $rows->title_ta;?></h4>
+                            <h2 class="ta_title"><?php echo $rows->title_ta;?></h2>
                             <p><?php echo htmlspecialchars_decode(stripslashes($rows->description_ta)); ?></p>
 							
 <?php if (count($postgallery)>0){ 
 		$assets_url = $this->config->item("assets_url")."gallery/";
 ?>
 							
-							<h4 class="section-title">புகைப்படங்கள்</h4>
+							<h2 class="ta_title">புகைப்படங்கள்</h4>
 							<div class="row padding-top-20">
 							<?php foreach($postgallery as $gallery){   ?>
 								<div class="col-lg-6 padding-bottom-20">

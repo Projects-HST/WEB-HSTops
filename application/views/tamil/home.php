@@ -189,10 +189,10 @@
             <div class="row">
 				<?php foreach($eventlist_single as $rows){
 					$string = htmlspecialchars_decode(stripslashes($rows->description_ta));
-					if (strlen($string) > 100) {
+					if (strlen($string) > 400) {
 
 						// truncate string
-						$stringCut = substr($string, 0, 100);
+						$stringCut = substr($string, 0, 400);
 						$endPoint = strrpos($stringCut, ' ');
 
 						//if the string doesn't contain any space then it will cut without word basis.
