@@ -279,7 +279,7 @@
                                     <h4 class="ta_title_med"><a href="<?php echo base_url(); ?>tamil/post_details/<?php echo base64_encode($rows->id*98765); ?>/"><?php echo $rows->title_ta;?></a></h4>
                                     <ul class="blog-meta d-flex flex-column flex-lg-row">
                                         <li><a href="<?php echo base_url(); ?>tamil/post_details/<?php echo base64_encode($rows->id*98765); ?>/"><?php echo date("d M Y",strtotime($rows->news_date)) ?></a></li>
-                                        <li><a href="<?php echo base_url(); ?>tamil/post_details/<?php echo base64_encode($rows->id*98765); ?>/">Read <?php echo $rows->view_count; ?></a></li>
+                                        <li><a href="<?php echo base_url(); ?>tamil/post_details/<?php echo base64_encode($rows->id*98765); ?>/">வாசிப்பு  <?php echo $rows->view_count; ?></a></li>
                                     </ul>
                                 </div>
                             </div>
