@@ -20,7 +20,7 @@
     <!-- breadcrumb-area end -->
 
     <!-- event box area -->
-    <div class="event-box-area margin-top-100 padding-bottom-100">
+    <div class="event-box-area margin-top-80 padding-bottom-100">
         <div class="container">
             <div class="row">
                 <div class="event-box-wrapper col-lg-12">
@@ -79,7 +79,7 @@
                             <span class="month"><?php echo date("M",strtotime($rows['news_date']))?></span>
                         </div>
                         <div class="ub-content">
-                            <h4><a href="<?php echo base_url(); ?>tamil/post_details/<?php echo base64_encode($rows['id']*98765); ?>/"><?php echo $rows['title_ta'];?></a></h4>
+                            <h2 class="ta_title_med"><a href="<?php echo base_url(); ?>tamil/post_details/<?php echo base64_encode($rows['id']*98765); ?>/"><?php echo $rows['title_ta'];?></a></h2>
                         </div>
                     </div>
                 </div>
