@@ -32,7 +32,7 @@
                     <div class="icon-box-style-05 margin-bottom-30">
                         <iframe src="http://www.youtube.com/embed/<?php echo $rows['nf_video_token_id'];?>" width="500" height="200" frameborder="0" allowfullscreen></iframe>
                         <div class="sb-content">
-                            <h4><?php echo $rows['title_en'];?></h4>
+                            <h4><?php echo $rows['title_ta'];?></h4>
                         </div>
                     </div>
                 </div>
