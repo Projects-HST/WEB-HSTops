@@ -108,7 +108,7 @@
                         <div class="col-lg-7">
                             <div class="content-box-style-04">
                                 <p class="section-subtitle">சாதனைகள்</p>
-                                <h2 class="ta_title_med" style="font-size:35px;line-height:30px;"><?php echo $rows->achievement_title_ta;?></h2>
+                                <h2 class="ta_title_med"><?php echo $rows->achievement_title_ta;?></h2>
                                 <p class="description"><?php echo $string; ?></p>
                             </div>
                         </div>
