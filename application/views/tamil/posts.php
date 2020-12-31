@@ -58,10 +58,10 @@
 
 				<?php foreach($result as $rows){  
 					$string = htmlspecialchars_decode(stripslashes($rows['description_ta']));
-					if (strlen($string) > 120) {
+					if (strlen($string) > 400) {
 
 						// truncate string
-						$stringCut = substr($string, 0, 120);
+						$stringCut = substr($string, 0, 400);
 						$endPoint = strrpos($stringCut, ' ');
 
 						//if the string doesn't contain any space then it will cut without word basis.
@@ -78,7 +78,7 @@
                             <div class="blog-date-box">
                                 <h4><?php echo date("d",strtotime($rows['news_date'])) ?><br><span><?php echo date("M",strtotime($rows['news_date']))?></span></h4>
                             </div>
-                            <h4 class="ta_title"><a href="<?php echo base_url(); ?>tamil/post_details/<?php echo base64_encode($rows['id']*98765); ?>/"><?php echo $rows['title_ta'];?></a></h4>
+                            <h2 class="ta_title"><a href="<?php echo base_url(); ?>tamil/post_details/<?php echo base64_encode($rows['id']*98765); ?>/"><?php echo $rows['title_ta'];?></a></h4>
                             <p><?php echo $string; ?></p>
                         </div>
                         
