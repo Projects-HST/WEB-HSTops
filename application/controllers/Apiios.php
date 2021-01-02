@@ -947,7 +947,7 @@ class Apiios extends CI_Controller {
 
 	public function ops_biogrphy()
 	{
-	   $_POST = json_decode(file_get_contents("php://input"), TRUE);
+	   //$_POST = json_decode(file_get_contents("php://input"), TRUE);
 
 		if(!$this->checkMethod())
 		{
@@ -968,7 +968,7 @@ class Apiios extends CI_Controller {
 		$user_id = '';
 		$user_id = $this->input->post("user_id");
 		
-		$data['result']=$this->apiandroidmodel->Ops_biogrphy($user_id);
+		$data['result']=$this->apiiosmodel->Ops_biogrphy($user_id);
 
 		$response = $data['result'];
 		echo json_encode($response);
@@ -1002,7 +1002,7 @@ class Apiios extends CI_Controller {
 		$user_id = '';
 		$user_id = $this->input->post("user_id");
 		
-		$data['result']=$this->apiandroidmodel->Ops_achievements($user_id);
+		$data['result']=$this->apiiosmodel->Ops_achievements($user_id);
 
 		$response = $data['result'];
 		echo json_encode($response);
@@ -1035,7 +1035,7 @@ class Apiios extends CI_Controller {
 		$user_id = '';
 		$user_id = $this->input->post("user_id");
 		
-		$data['result']=$this->apiandroidmodel->About_party($user_id);
+		$data['result']=$this->apiiosmodel->About_party($user_id);
 
 		$response = $data['result'];
 		echo json_encode($response);
@@ -1070,7 +1070,7 @@ class Apiios extends CI_Controller {
 		$user_id = '';
 		$user_id = $this->input->post("user_id");
 		
-		$data['result']=$this->apiandroidmodel->Party_states($user_id);
+		$data['result']=$this->apiiosmodel->Party_states($user_id);
 
 		$response = $data['result'];
 		echo json_encode($response);
@@ -1104,7 +1104,7 @@ class Apiios extends CI_Controller {
 		$state_id = '';
 		$state_id = $this->input->post("state_id");
 
-		$data['result']=$this->apiandroidmodel->Party_elections($state_id);
+		$data['result']=$this->apiiosmodel->Party_elections($state_id);
 
 		$response = $data['result'];
 		echo json_encode($response);
