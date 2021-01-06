@@ -137,7 +137,7 @@
                                 <li><a href="<?php echo base_url(); ?>videos/"><i class="fa fa-long-arrow-right"></i>Videos</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Login</a></li>
+                        <!--<li><a href="#">Login</a></li>-->
                     </ul>
                 </div>
                 <div class="nav-right-part">

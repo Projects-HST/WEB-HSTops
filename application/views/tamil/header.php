@@ -141,7 +141,7 @@
                                 <li class="navbar-area-tamil"><a href="<?php echo base_url(); ?>tamil/videos/"><i class="fa fa-long-arrow-right"></i>வீடியோ</a></li>
                             </ul>
                         </li>
-                        <li class="navbar-area-tamil"><a href="#">உள்நுழை</a></li>
+                        <!--<li class="navbar-area-tamil"><a href="#">உள்நுழை</a></li>-->
                     </ul>
                 </div>
                 <div class="nav-right-part">
