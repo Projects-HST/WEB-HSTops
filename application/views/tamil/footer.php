@@ -6,7 +6,7 @@
                     <div class="col-xl-3 margin-xlt-80">
 						<div class="row">
 							<img src="<?php echo base_url(); ?>assets/basic/img/ops_tamillogo-white.png" alt="logo">
-							<p style="padding-top:20px;color:#ffffff;font-family: var(--secondary-font);font-size:14px;">மக்களால் நான், மக்களுக்காகவே நான்” என்று முழங்கிய மாண்புமிகு அம்மா அவர்களைப் போல, மக்கள் எவ்வழியோ அதுவே என் வழி என முன்மொழிபவர் மாண்புமிகு தமிழக துணை முதல்வர் அவர்கள்.</p>
+							<p style="padding-top:20px;color:#ffffff;font-family: var(--secondary-font);font-size:12px;">மூன்று முறை தமிழ்நாட்டின் முதலமைச்சராக மக்கள் பணியாற்றிய திரு.ஓ.பன்னீர்செல்வம் அவர்கள் தற்போது, தமிழ்நாட்டின் துணை முதலமைச்சராகவும், அஇஅதிமுகவின் கழக ஒருங்கிணைப்பாளர் மற்றும் பொருளாளராகவும் பொதுப்பணி ஆற்றி வருகிறார்.</p>
 						</div>
                     </div>
                     <div class="col-xl-9 margin-xlt-80">

@@ -6,7 +6,7 @@
                     <div class="col-xl-3 margin-xlt-80">
 						<div class="row">
 							<img src="<?php echo base_url(); ?>assets/basic/img/ops_web_logo.png" alt="logo">
-							<p style="padding-top:20px;color:#ffffff;font-family: var(--secondary-font);font-size:14px;">Ottakarathevar Panneerselvam is an Indian politician serving as the 2nd and current Deputy Chief Minister of Tamil Nadu since 21 August 2017. He is the coordinator of All India Anna Dravida Munnetra Kazhagam.</p>
+							<p style="padding-top:20px;color:#ffffff;font-family: var(--secondary-font);font-size:14px;">Thiru. O. Paneerselvam, who had served three times as the chief minister of Tamil Nadu, is now serving as the deputy chief minister of Tamil Nadu and AIADMK's coordinator and treasurer.</p>
 						</div>
                     </div>
                     <div class="col-xl-9 margin-xlt-80">

@@ -79,22 +79,22 @@
                 <img src="<?php echo base_url(); ?>assets/basic/img/ops_logo-green.png" alt="logo"/>
             </div>
             <div class="sidemenu-text">
-                <p>O.P.S. is an Indian politician serving as the 2nd and current Deputy Chief Minister of Tamil Nadu since 21 August 2017</p>
+                <p>Thiru. O. Paneerselvam, who had served three times as the chief minister of Tamil Nadu, is now serving as the deputy chief minister of Tamil Nadu and AIADMK's coordinator and treasurer.</p>
             </div>
-            <div class="sidebar-contact">
+            <!--<div class="sidebar-contact">
                 <h4>Contact Us</h4>
                 <ul>
                     <li><i class="fa fa-map-marker"></i>Lavaca Street, Suite 2000</li>
                     <li><i class="fa fa-envelope"></i>email@evha.com</li>
                     <li><i class="fa fa-phone"></i>(+880) 172570051</li>
                 </ul>
-            </div>
+            </div>-->
             <div class="social-link">
                 <ul>
-                    <li><a href="https://www.facebook.com/OfficeOfOPS/"><i class="fa fa-facebook-f"></i></a></li>
-                 <li><a href="https://twitter.com/OfficeOfOPS/"><i class="fa fa-twitter"></i></a></li>
-                 <li><a href="https://www.instagram.com/officeof_ops/"><i class="fa fa-instagram"></i></a></li>
-				 <li><a href="https://www.linkedin.com/in/panneerselvam-o-033762192/"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://www.facebook.com/OfficeOfOPS/" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
+                 <li><a href="https://twitter.com/OfficeOfOPS/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                 <li><a href="https://www.instagram.com/officeof_ops/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+				 <li><a href="https://www.linkedin.com/in/panneerselvam-o-033762192/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
                 </ul>
             </div>
         </div>

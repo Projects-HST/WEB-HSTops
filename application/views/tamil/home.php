@@ -35,10 +35,10 @@
         </div>
         <div class="banner3-social">
             <ul>
-                <li><a href="https://www.facebook.com/OfficeOfOPS/"><i class="fa fa-facebook-f"></i></a></li>
-                <li><a href="https://twitter.com/OfficeOfOPS/"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="https://www.instagram.com/officeof_ops/"><i class="fa fa-instagram"></i></a></li>
-				<li><a href="https://www.linkedin.com/in/panneerselvam-o-033762192/"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.facebook.com/OfficeOfOPS/" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
+                <li><a href="https://twitter.com/OfficeOfOPS/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/officeof_ops/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+				<li><a href="https://www.linkedin.com/in/panneerselvam-o-033762192/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
             </ul>
         </div>
         <!-- video button -->

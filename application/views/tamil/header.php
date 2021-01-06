@@ -81,22 +81,22 @@
                 <img src="<?php echo base_url(); ?>assets/basic/img/ops_logo-green.png" alt="logo"/>
             </div>
             <div class="sidemenu-text">
-                <p>அஇஅதிமுக-வின் கழக ஒருங்கிணைப்பாளரும், மாண்புமிகு தமிழ்நாடு துணை முதலமைச்சருமான திரு.ஓ பன்னீர்செல்வம் அவர்கள் தமிழ்நாட்டின் மிக முக்கியமான அரசியல் தலைவர் ஆவார்.</p>
+                <p style="font-family: var(--secondary-font);font-size:12px;">மூன்று முறை தமிழ்நாட்டின் முதலமைச்சராக மக்கள் பணியாற்றிய திரு.ஓ.பன்னீர்செல்வம் அவர்கள் தற்போது, தமிழ்நாட்டின் துணை முதலமைச்சராகவும், அஇஅதிமுகவின் கழக ஒருங்கிணைப்பாளர் மற்றும் பொருளாளராகவும் பொதுப்பணி ஆற்றி வருகிறார்.</p>
             </div>
-            <div class="sidebar-contact">
+           <!-- <div class="sidebar-contact">
                 <h4>தொடர்பு கொள்ள</h4>
                 <ul>
                     <li><i class="fa fa-map-marker"></i>Lavaca Street, Suite 2000</li>
                     <li><i class="fa fa-envelope"></i>email@evha.com</li>
                     <li><i class="fa fa-phone"></i>(+880) 172570051</li>
                 </ul>
-            </div>
+            </div>-->
             <div class="social-link">
                 <ul>
-				 <li><a href="https://www.facebook.com/OfficeOfOPS/"><i class="fa fa-facebook-f"></i></a></li>
-                 <li><a href="https://twitter.com/OfficeOfOPS/"><i class="fa fa-twitter"></i></a></li>
-                 <li><a href="https://www.instagram.com/officeof_ops/"><i class="fa fa-instagram"></i></a></li>
-				 <li><a href="https://www.linkedin.com/in/panneerselvam-o-033762192/"><i class="fa fa-linkedin"></i></a></li>
+				 <li><a href="https://www.facebook.com/OfficeOfOPS/" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
+                 <li><a href="https://twitter.com/OfficeOfOPS/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                 <li><a href="https://www.instagram.com/officeof_ops/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+				 <li><a href="https://www.linkedin.com/in/panneerselvam-o-033762192/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
 				
                    
                 </ul>

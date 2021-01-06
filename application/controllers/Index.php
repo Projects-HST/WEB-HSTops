@@ -255,7 +255,6 @@ class Index extends CI_Controller {
 		$datas['postdetails'] = $this->websitemodel->get_postdetails($id);
 		$datas['postgallery'] = $this->websitemodel->get_postgallery($id);
 		
-		
 		$this->load->view('header',$datas);
 		$this->load->view('post_details',$datas);
 		$this->load->view('footer',$datas);

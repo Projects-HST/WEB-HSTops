@@ -1,6 +1,7 @@
 @extends('layouts.admin')
 @section('content')
-<script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
+<!--<script src="https://cdn.ckeditor.com/4.15.1/standard/ckeditor.js"></script>-->
+<script src="https://cdn.ckeditor.com/4.15.1/full/ckeditor.js"></script>
 
   <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
     <div class="subheader py-2 py-lg-6 subheader-transparent" id="kt_subheader">
