@@ -88,8 +88,8 @@
                             <div class="col-md-4">
                                 <ul class="nav nav-tabs" style="font-size:18px;">
                                     <li><a class="active" data-toggle="tab" href="#home">தமிழ்நாடு</a></li>
-                                    <li><a data-toggle="tab" href="#menu1">புதுச்சேரி</a></li>
-                                    <li><a data-toggle="tab" href="#menu2">கர்நாடகா</a></li>
+                                    <!--<li><a data-toggle="tab" href="#menu1">புதுச்சேரி</a></li>
+                                    <li><a data-toggle="tab" href="#menu2">கர்நாடகா</a></li>-->
                                 </ul>
                             </div>
                             <div class="col-md-8">
