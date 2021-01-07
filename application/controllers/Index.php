@@ -72,7 +72,7 @@ class Index extends CI_Controller {
 			$datas['socialmedia'] = $this->websitemodel->get_socialmedia();
 	
 			// Row per page
-			$rowperpage = 10;
+			$rowperpage = 9;
 			// Row position
 			if($rowno != 0){
 			  $rowno = ($rowno-1) * $rowperpage;
@@ -138,6 +138,18 @@ class Index extends CI_Controller {
 			$this->load->view('achievements',$data);
 			$this->load->view('footer',$datas);
 
+	}
+	
+	public function achievement_details($post_id)
+	{
+		$id=base64_decode($post_id)/98765;
+		
+		$datas['socialmedia'] = $this->websitemodel->get_socialmedia();
+		$datas['achievementdetails'] = $this->websitemodel->get_achievementdetails($id);
+		
+		$this->load->view('header',$datas);
+		$this->load->view('achievement_details',$datas);
+		$this->load->view('footer',$datas);
 	}
 	
 	public function posts_old()

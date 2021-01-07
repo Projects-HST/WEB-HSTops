@@ -160,7 +160,7 @@
                         <p class="subtitle">Achievement</p>
                         <h4 class="title"><?php echo $rows->achievement_title_en;?></h4>
                         <div class="btn-wrapper">
-                            <a class="readMore" href="<?php echo base_url(); ?>aboutOPS/">Read more</a> ➝
+                            <a class="readMore" href="<?php echo base_url(); ?>index/achievement_details/<?php echo base64_encode($rows->id*98765); ?>/">Read more</a> ➝
                         </div>
                     </div>
                 </div>

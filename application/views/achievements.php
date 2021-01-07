@@ -39,6 +39,7 @@
 		
 		foreach($result as $rows){  
 			$string = htmlspecialchars_decode(stripslashes($rows['achievement_text_en']));
+			$yrdata= strtotime($rows['achievement_date']);
 				
 ?>
                 <div class="col-lg-4 padding-top-50 ">
@@ -47,10 +48,10 @@
 							<img src="<?php echo $assets_url.$rows['achievement_image'];?>" alt="">
                         </div>
                         <div class="content" style="min-height:200px;">
-							<h4 class="title"><a href="blog-details.html"><?php echo $rows['achievement_title_en'];?></a></h4>
+							<h4 class="title"><a href="<?php echo base_url(); ?>index/achievement_details/<?php echo base64_encode($rows['id']*98765); ?>/"><?php echo $rows['achievement_title_en'];?></a></h4>
                              <ul class="blog-meta d-flex flex-column flex-lg-row">
-                                <li><a href="#">05 December 2019</a></li>
-                                <li><a href="#">Read More</a></li>
+                                <li><a href="<?php echo base_url(); ?>index/achievement_details/<?php echo base64_encode($rows['id']*98765); ?>/"><?php echo date('d F Y', $yrdata); ?></a></li>
+                                <li><a href="<?php echo base_url(); ?>index/achievement_details/<?php echo base64_encode($rows['id']*98765); ?>/">Read More</a></li>
                             </ul>
                         </div>
                     </div>

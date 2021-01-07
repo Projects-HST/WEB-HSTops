@@ -113,6 +113,11 @@ Class Websitemodel extends CI_Model
 	return $query->result_array();
 }
 
+	function get_achievementdetails($id){
+		$query="SELECT * FROM `ops_achievements` WHERE `id` = '$id'";
+		$res=$this->db->query($query);
+		return $result=$res->result();
+	}
 	
 	
 // Select total records
