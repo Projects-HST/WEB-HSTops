@@ -19,7 +19,7 @@ button {
 .timeline ol {
   font-size: 0;
   width: 100vw;
-  padding: 250px 0;
+  padding: 150px 0;
   transition: all 1s;
 }
 
@@ -29,7 +29,7 @@ button {
   list-style-type: none;
   width: 160px;
   height: 3px;
-  background: #fff;
+  background: #b2b1b1;
 }
 
 .timeline ol li:last-child {
@@ -61,7 +61,7 @@ button {
   font-size: 1rem;
   white-space: normal;
   color: black;
-  background: white;
+  background: #f6f6f6;
 }
 
 .timeline ol li div::before {
@@ -82,7 +82,7 @@ button {
 .timeline ol li:nth-child(odd) div::before {
   top: 100%;
   border-width: 8px 8px 0 0;
-  border-color: white transparent transparent transparent;
+  border-color: #f6f6f6 transparent transparent transparent;
 }
 
 .timeline ol li:nth-child(even) div {
@@ -98,7 +98,6 @@ button {
 .timeline time {
   display: block;
   font-size: 1.2rem;
-
   margin-bottom: 8px;
 }
 
@@ -121,8 +120,8 @@ button {
 }
 
 .timeline .arrows img {
-  width: 45px;
-  height: 45px;
+  width: 55px;
+  height: 55px;
 }
 
 
@@ -239,7 +238,7 @@ button {
     <!-- politx-content-area end -->
 
 
-	<div class="stories-area">
+	<div class="stories-area padding-bottom-20">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
@@ -262,86 +261,147 @@ button {
                 </div>
             </div>
         </div>
-
-<section class="timeline">
-  <ol>
-    <li>
-      <div>
-        <time>1934</time> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-      </div>
-    </li>
-    <li>
-      <div>
-        <time>1937</time> Proin quam velit, efficitur vel neque vitae, rhoncus commodo mi. Suspendisse finibus mauris et bibendum molestie. Aenean ex augue, varius et pulvinar in, pretium non nisi.
-      </div>
-    </li>
-    <li>
-      <div>
-        <time>1940</time> Proin iaculis, nibh eget efficitur varius, libero tellus porta dolor, at pulvinar tortor ex eget ligula. Integer eu dapibus arcu, sit amet sollicitudin eros.
-      </div>
-    </li>
-    <li>
-      <div>
-        <time>1943</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-      </div>
-    </li>
-    <li>
-      <div>
-        <time>1946</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-      </div>
-    </li>
-    <li>
-      <div>
-        <time>1956</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-      </div>
-    </li>
-    <li>
-      <div>
-        <time>1957</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-      </div>
-    </li>
-    <li>
-      <div>
-        <time>1967</time> Aenean condimentum odio a bibendum rhoncus. Ut mauris felis, volutpat eget porta faucibus, euismod quis ante.
-      </div>
-    </li>
-    <li>
-      <div>
-        <time>1977</time> Vestibulum porttitor lorem sed pharetra dignissim. Nulla maximus, dui a tristique iaculis, quam dolor convallis enim, non dignissim ligula ipsum a turpis.
-      </div>
-    </li>
-    <li>
-      <div>
-        <time>1985</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-      </div>
-    </li>
-    <li>
-      <div>
-        <time>2000</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-      </div>
-    </li>
-    <li>
-      <div>
-        <time>2005</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-      </div>
-    </li>
-    <li></li>
-  </ol>
-  
-  <div class="arrows">
-    <button class="arrow arrow__prev disabled" disabled>
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_prev.svg" alt="prev timeline arrow">
-    </button>
-    <button class="arrow arrow__next">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_next.svg" alt="next timeline arrow">
-    </button>
-  </div>
-  
-</section>
-
     </div>
 	
+<div class="politx-content-area padding-top-50">
+	<section class="timeline">
+	  <ol>
+		<li>
+		  <div>
+			<time>2017 </time> Present - AIADMK’s coordinator and Tamil Nadu’s Deputy Chief Minister
+		  </div>
+		</li>
+		<li>
+		  <div>
+			<time>2016 </time> Tamil Nadu’s Chief Minister for the third time
+		  </div>
+		</li>
+		<li>
+		  <div>
+			<time>2016 </time> Re-elected as an assembly member for the fourth time from Bodinayakanur constituency
+		  </div>
+		</li>
+		<li>
+		  <div>
+			<time>2014 </time> Tamil Nadu’s Chief Minister for the second time
+		  </div>
+		</li>
+		<li>
+		  <div>
+			<time>2011 </time> Leader of the house
+		  </div>
+		</li>
+		<li>
+		  <div>
+			<time>2011 </time> Re-elected as an assembly member for the third time from Bodinayakanur constituency
+		  </div>
+		</li>
+		<li>
+		  <div>
+			<time>2007 </time> Party’s treasurer
+		  </div>
+		</li>
+		<li>
+		  <div>
+			<time>2006 - 2011 </time> Deputy leader of the opposition in the assembly
+		  </div>
+		</li>
+		<li>
+		  <div>
+			<time>2006 </time> Re-elected as an assembly member for the third time from Periyakulam constituency
+		  </div>
+		</li>
+		<li>
+		  <div>
+			<time>2004 </time> Secretary of the constituency’s electoral division
+		  </div>
+		</li>
+		<li>
+		  <div>
+			<time>2001 </time> Tamil Nadu’s Chief Minister for the first time
+		  </div>
+		</li>
+		<li>
+		  <div>
+			<time>2001 </time> Made his debut as assembly member from Periyakulam constituency
+		  </div>
+		</li>
+		
+		
+		<li>
+		  <div>
+			<time>2000 </time> Theni district corporation secretary
+		  </div>
+		</li>
+		<li>
+		  <div>
+			<time>1998 </time> Periyakulam Corporation Secretary for the second time
+		  </div>
+		</li>
+		<li>
+		  <div>
+			<time>1997 </time> Secretary of MGR youth party, Theni District
+		  </div>
+		</li>
+		<li>
+		  <div>
+			<time>1996 </time> Chairman of the Periyakulam Municipality
+		  </div>
+		</li>
+		<li>
+		  <div>
+			<time>1993 </time> Periyakulam Corporation Secretary
+		  </div>
+		</li>
+		<li>
+		  <div>
+			<time>1991 </time> Director of Periyakulam’s Cooperative Bank
+		  </div>
+		</li>
+		<li>
+		  <div>
+			<time>1989 </time> Corporation Joint Secretary, Periyakulam 
+		  </div>
+		</li>
+		<li>
+		  <div>
+			<time>1984 </time> Deputy Secretary of MGR youth party, Periyakulam
+		  </div>
+		</li>
+		<li>
+		  <div>
+			<time>1984 </time> Corporation Secretary of 18th ward, Periyakulam
+		  </div>
+		</li>
+		<li>
+		  <div>
+			<time>1980 </time> Corporation administrative representative of 18th ward, Periyakulam
+		  </div>
+		</li>
+		<li>
+		  <div>
+			<time>1977 </time> AIADMK’s member
+		  </div>
+		</li>
+		<li>
+		  <div>
+			<time>1969 </time> Beginning of his political life
+		  </div>
+		</li>
+		<li></li>
+	  </ol>
+	  
+	  <div class="arrows">
+		<button class="arrow arrow__prev disabled" disabled>
+		  <img src="<?php echo base_url(); ?>assets/basic/img/left.svg" alt="prev timeline arrow">
+		</button>
+		<button class="arrow arrow__next">
+		  <img src="<?php echo base_url(); ?>assets/basic/img/right.svg" alt="Next timeline arrow">
+		</button>
+	  </div>
 
+	</section>
+</div>
 
 <script src="<?php echo base_url(); ?>assets/basic/js/scrool.js"></script>
 <script src="<?php echo base_url(); ?>assets/basic/js/hammer.min.js"></script>
