@@ -128,6 +128,7 @@
                             <a href="#">ஓ.பி.எஸ் பற்றி</a>
                             <ul class="sub-menu">
                                 <li class="navbar-area-tamil"><a href="<?php echo base_url(); ?>tamil/aboutOPS/"><i class="fa fa-long-arrow-right"></i>ஓ.பி.எஸ் பற்றி</a></li>
+								<li class="navbar-area-tamil"><a href="<?php echo base_url(); ?>tamil/ops_achievements/"><i class="fa fa-long-arrow-right"></i>ஓ.பி.எஸ் சாதனைகள்</a></li>
                                 <li class="navbar-area-tamil"><a href="<?php echo base_url(); ?>tamil/about_party/"><i class="fa fa-long-arrow-right"></i>கட்சி பற்றி</a></li>
                             </ul>
                         </li>

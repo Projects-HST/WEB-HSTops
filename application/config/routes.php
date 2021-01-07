@@ -56,6 +56,7 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['aboutOPS'] = 'index/about_ops';
 $route['about_party'] = 'index/about_party';
+$route['ops_achievements'] = 'index/ops_achievements';
 $route['posts'] = 'index/posts';
 $route['events'] = 'index/events';
 //$route['post_details'] = 'index/post_details';
@@ -66,6 +67,7 @@ $route['forgot_password'] = 'home/forgot_password';
 
 $route['tamil/aboutOPS'] = 'tamil/about_ops';
 $route['tamil/about_party'] = 'tamil/about_party';
+$route['tamil/ops_achievements'] = 'tamil/ops_achievements';
 $route['tamil/posts'] = 'tamil/posts';
 $route['tamil/events'] = 'tamil/events';
 //$route['post_details'] = 'index/post_details';

@@ -145,8 +145,6 @@
 							<li><a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo base_url(); ?>index/post_details/<?php echo base64_encode($rows->id*98765); ?>" target="_blank"><i class="fa fa-facebook"></i></a></li>
 							<li><a href="https://twitter.com/share?&text=<?php echo base_url(); ?>index/post_details/<?php echo base64_encode($rows->id*98765); ?>" target="_blank"><i class="fa fa-twitter"></i></a></li>
 							<li><a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php echo base_url(); ?>index/post_details/<?php echo base64_encode($rows->id*98765); ?>" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-									
-                            
                         </ul>
                     </div>
 

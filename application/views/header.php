@@ -124,6 +124,7 @@
                             <a href="#">About</a>
                             <ul class="sub-menu">
                                 <li><a href="<?php echo base_url(); ?>aboutOPS/"><i class="fa fa-long-arrow-right"></i>About OPS</a></li>
+								<li><a href="<?php echo base_url(); ?>ops_achievements/"><i class="fa fa-long-arrow-right"></i>OPS Achievements</a></li>
                                 <li><a href="<?php echo base_url(); ?>about_party/"><i class="fa fa-long-arrow-right"></i>About Party</a></li>
                             </ul>
                         </li>

@@ -85,6 +85,34 @@ Class Websitemodel extends CI_Model
 		$res=$this->db->query($query);
 		return $result=$res->result();
 	}
+
+// Select total records
+	 function getAchievementcount() {
+
+		$this->db->select('count(*) as allcount');
+		$this->db->from('ops_achievements');
+		$this->db->where('status', 'Active');
+		
+		//echo $this->db->get_compiled_select(); exit;
+		$query = $this->db->get();
+		$result = $query->result_array();
+		return $result[0]['allcount'];
+  }
+  
+	// Fetch records
+	function getAchievement($rowno,$rowperpage) {
+
+	$this->db->select ('id,achievement_date,achievement_title_ta,achievement_title_en,achievement_text_ta,achievement_text_en,achievement_image');
+	$this->db->from('ops_achievements');
+	$this->db->where('status', 'Active');
+	$this->db->order_by("id", "desc");
+	$this->db->limit($rowperpage,$rowno);
+	
+	// echo $this->db->get_compiled_select();	 exit;
+	$query = $this->db->get();
+	return $query->result_array();
+}
+
 	
 	
 // Select total records
