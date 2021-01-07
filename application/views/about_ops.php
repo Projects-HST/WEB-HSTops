@@ -308,7 +308,7 @@ button {
 		</li>
 		<li>
 		  <div>
-			<time>2006 </time> Re-elected as an assembly member for the third time from Periyakulam constituency
+			<time>2006 </time> Re-elected as an assembly member for the second time from Periyakulam constituency
 		  </div>
 		</li>
 		<li>
