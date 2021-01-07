@@ -46,7 +46,7 @@
                         <div class="thumb">
 							<img src="<?php echo $assets_url.$rows['achievement_image'];?>" alt="">
                         </div>
-                        <div class="content" style="min-height:200px;">
+                        <div class="content" style="min-height:400px;">
                              <p><?php echo $string; ?></p>
                         </div>
                     </div>
