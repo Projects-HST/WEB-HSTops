@@ -48,7 +48,7 @@
 							<img src="<?php echo $assets_url.$rows['achievement_image'];?>" alt="">
                         </div>
                         <div class="content" style="min-height:200px;">
-							<h4 class="title"><a href="<?php echo base_url(); ?>tamil/achievement_details/<?php echo base64_encode($rows['id']*98765); ?>/"><?php echo $rows['achievement_title_ta'];?></a></h4>
+							<h4 class="ta_title_med"><a href="<?php echo base_url(); ?>tamil/achievement_details/<?php echo base64_encode($rows['id']*98765); ?>/"><?php echo $rows['achievement_title_ta'];?></a></h4>
                              <ul class="blog-meta d-flex flex-column flex-lg-row">
                                 <li><a href="<?php echo base_url(); ?>tamil/achievement_details/<?php echo base64_encode($rows['id']*98765); ?>/"><?php echo date('d F Y', $yrdata); ?></a></li>
                                 <li><a href="<?php echo base_url(); ?>tamil/achievement_details/<?php echo base64_encode($rows['id']*98765); ?>/">மேலும்</a></li>
