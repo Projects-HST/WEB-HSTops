@@ -210,7 +210,7 @@ button {
   
 
     <!-- politx-content-area start -->
-    <div class="politx-content-area padding-top-30">
+    <div class="politx-content-area padding-top-20">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 align-self-center">
