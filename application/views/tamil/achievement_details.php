@@ -4,11 +4,10 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumb-inner padding-top-150">
-                        <h1 class="page-title-ta">பதிவுகள் / நிகழ்வுகள்</h1>
+                        <h1 class="page-title">சாதனைகள்</h1>
                         <ul class="page-list">
-                            <li><a href="<?php echo base_url(); ?>tamil/">முகப்பு /</a></li>
-                            <li><a href="<?php echo base_url(); ?>tamil/posts/">பதிவுகள் /</a></li>
-							<li><a href="<?php echo base_url(); ?>tamil/events/">நிகழ்வுகள்</a></li>
+                            <li><a href="<?php echo base_url(); ?>">முகப்பு /</a></li>
+                            <li><a href="<?php echo base_url(); ?>/index/ops_achievements/">ஓ.பி.எஸ் சாதனைகள்</a></li>
                         </ul>
                     </div>
                 </div>
@@ -21,10 +20,10 @@
     <!-- breadcrumb-area end -->
 
 
-<?php if (count($postdetails)>0){ 
-		$assets_url = $this->config->item("assets_url")."newsfeed/";
+<?php if (count($achievementdetails)>0){ 
+		$assets_url = $this->config->item("assets_url")."awards/";
 
-		foreach($postdetails as $rows){  }
+		foreach($achievementdetails as $rows){ }
 	}
 ?>
 	<div class="leadership-area margin-top-100 padding-bottom-50">
@@ -33,29 +32,14 @@
                 <div class="col-lg-8">
                     <div class="blog-details-style-01 margin-bottom-100">
                         <div class="b-img" style="max-width:740px;border-radius: 10px;">
-                            <img src="<?php echo $assets_url.$rows->nf_cover_image;?>" alt="" style="border-radius: 10px 10px 0px 0px;">
+                            <img src="<?php echo $assets_url.$rows->achievement_image;?>" alt="" style="border-radius: 10px 10px 0px 0px;">
                             <div class="blog-date-box">
-                                <h4><?php echo date("d",strtotime($rows->news_date)) ?><br><span><?php echo date("M",strtotime($rows->news_date))?></span></h4>
+                                <h4><?php echo date("d",strtotime($rows->achievement_date)) ?><br><span><?php echo date("M",strtotime($rows->achievement_date))?></span></h4>
                             </div>
                         </div>
 						<div class="b-content">
-                            <h2 class="ta_title"><?php echo $rows->title_ta;?></h2>
-                            <p><?php echo htmlspecialchars_decode(stripslashes($rows->description_ta)); ?></p>
-							
-<?php if (count($postgallery)>0){ 
-		$assets_url = $this->config->item("assets_url")."gallery/";
-?>
-							
-							<h2 class="ta_title_med">புகைப்படங்கள்</h4>
-							<div class="row padding-top-20">
-							<?php foreach($postgallery as $gallery){   ?>
-								<div class="col-lg-6 padding-bottom-20">
-                                   <a href="<?php echo $assets_url.$gallery->nf_image;?>" class="image-popup" title=""><img src="<?php echo $assets_url.$gallery->nf_image;?>"></a>
-                                </div>
-							<?php } ?>
-							</div>
-<?php } ?>
-							
+                            <h4><?php echo $rows->achievement_title_ta;?></h4>
+                            <p><?php echo htmlspecialchars_decode(stripslashes($rows->achievement_text_ta)); ?></p>						
 							</div>
                         </div>
                     </div>
@@ -136,15 +120,15 @@
 				
                 <div class="col-lg-4 text-center">
                     <div class="ls-date-box">
-                        <h4>தேதி</h4>
-							<p><?php echo date("D, M j Y",strtotime($rows->news_date)) ?></p>
+                        <h4>Date</h4>
+							<p><?php echo date("D, M j Y",strtotime($rows->achievement_date)) ?></p>
                         <hr>
 						<div class="ls-social-share">
                         <ul>
-                            <li><span>பகிர்</span></li>
-                            <li><a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo base_url(); ?>tamil/post_details/<?php echo base64_encode($rows->id*98765); ?>" target="_blank"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="https://twitter.com/share?&text=<?php echo base_url(); ?>tamil/post_details/<?php echo base64_encode($rows->id*98765); ?>" target="_blank"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php echo base_url(); ?>tamil/post_details/<?php echo base64_encode($rows->id*98765); ?>" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li><span>Share On</span></li>
+							<li><a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo base_url(); ?>tamil/achievement_details/<?php echo base64_encode($rows->id*98765); ?>" target="_blank"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://twitter.com/share?&text=<?php echo base_url(); ?>tamil/achievement_details/<?php echo base64_encode($rows->id*98765); ?>" target="_blank"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php echo base_url(); ?>tamil/achievement_details/<?php echo base64_encode($rows->id*98765); ?>" target="_blank"><i class="fa fa-linkedin"></i></a></li>
                         </ul>
                     </div>
 

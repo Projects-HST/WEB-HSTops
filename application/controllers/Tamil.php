@@ -67,6 +67,93 @@ class Tamil extends CI_Controller {
 		$this->load->view('tamil/footer',$datas);
 	}
 	
+	public function ops_achievements($rowno=0)
+	{
+			$datas['socialmedia'] = $this->websitemodel->get_socialmedia();
+	
+			// Row per page
+			$rowperpage = 9;
+			// Row position
+			if($rowno != 0){
+			  $rowno = ($rowno-1) * $rowperpage;
+			}
+
+			// All records count
+			$allcount = $this->websitemodel->getAchievementcount();
+
+			// Get records
+			$post_list = $this->websitemodel->getAchievement($rowno,$rowperpage);
+
+			// Pagination Configuration
+			$config['base_url'] = base_url().'index/ops_achievements';
+			$config['use_page_numbers'] = TRUE;
+			$config['total_rows'] = $allcount;
+			$config['per_page'] = $rowperpage;
+
+
+			//Pagination Container tag
+			$config['full_tag_open'] = '<ul>';
+			$config['full_tag_close'] = '</ul>';
+
+			//First and last Link Text
+			$config['first_link'] = '<i class="fa fa-angle-double-left">';
+			$config['last_link'] = '<i class="fa fa-angle-double-right">';
+
+			//First tag
+			$config['first_tag_open'] = '<li><span class="page-bumber">';
+			$config['first_tag_close'] = '</i></li></span>';
+
+			//Last tag
+			$config['last_tag_open'] = '<li><span class="page-bumber">';
+			$config['last_tag_close'] = '</i></li></span>';
+
+			//Next and Prev Link
+			$config['next_link'] = '<i class="fa fa-angle-right">';
+			$config['prev_link'] = '<i class="fa fa-angle-left">';
+
+			//Next and Prev Link Styling
+			$config['next_tag_open'] = '<li><span class="page-bumber">';
+			$config['next_tag_close'] = '</i></span></li>';
+
+			$config['prev_tag_open'] = '<li><span class="page-bumber">';
+			$config['prev_tag_close'] = '</i></span></li>';
+
+			//Current page tag
+			$config['cur_tag_open'] = '<li><span class="page-bumber current">';
+			$config['cur_tag_close'] = '</span></li>';
+
+			$config['num_tag_open'] = '<li><span class="page-bumber">';
+			$config['num_tag_close'] = '</span></li>';
+
+		// Initialize
+		$this->pagination->initialize($config);
+
+		$data['pagination'] = $this->pagination->create_links();
+		$data['result'] = $post_list;
+		$data['row'] = $rowno;
+		$data['allcount'] = $allcount;
+
+		// Load view
+			$this->load->view('tamil/header',$datas);
+			$this->load->view('tamil/achievements',$data);
+			$this->load->view('tamil/footer',$datas);
+
+	}
+	
+	public function achievement_details($post_id)
+	{
+		$id=base64_decode($post_id)/98765;
+		
+		$datas['socialmedia'] = $this->websitemodel->get_socialmedia();
+		$datas['achievementdetails'] = $this->websitemodel->get_achievementdetails($id);
+		
+		$this->load->view('tamil/header',$datas);
+		$this->load->view('tamil/achievement_details',$datas);
+		$this->load->view('tamil/footer',$datas);
+	}
+	
+	
+	
 	public function posts_old()
 	{
 		$datas['socialmedia'] = $this->websitemodel->get_socialmedia();
