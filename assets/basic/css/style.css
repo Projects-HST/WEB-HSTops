@@ -5708,11 +5708,11 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     color: #fff; }
  .action-soon-content .readMoreta {
     font-size: 15px;
-    color: #fff; }
+    color: #404040; }
 .action-soon-content .ta_title_med {
     font-size: 15px;
-    color: #fff; }
-  .action-soon-content:hover .title, .action-soon-content:hover .subtitle {
+    color: #404040; }
+  .action-soon-content:hover .title, .action-soon-content:hover .subtitle, .action-soon-content:hover .ta_title_med, .action-soon-content:hover .readMoreta {
     color: #fff; }
   .action-soon-content:hover:before {
     background: #0B9421; }
