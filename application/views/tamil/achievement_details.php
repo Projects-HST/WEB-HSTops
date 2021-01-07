@@ -7,7 +7,7 @@
                         <h1 class="page-title">சாதனைகள்</h1>
                         <ul class="page-list">
                             <li><a href="<?php echo base_url(); ?>">முகப்பு /</a></li>
-                            <li><a href="<?php echo base_url(); ?>/index/ops_achievements/">ஓ.பி.எஸ் சாதனைகள்</a></li>
+                            <li><a href="<?php echo base_url(); ?>/tamil/ops_achievements/">ஓ.பி.எஸ் சாதனைகள்</a></li>
                         </ul>
                     </div>
                 </div>
