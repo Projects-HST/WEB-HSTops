@@ -30,7 +30,7 @@
                         <h2 class="section-title">Achievements</h2>
                     </div>
 					
-	<div class="home-news-area padding-top-50 padding-bottom-100">
+	<div class="home-news-area padding-bottom-100">
         <div class="container">
             <div class="row">
 
@@ -41,7 +41,7 @@
 			$string = htmlspecialchars_decode(stripslashes($rows['achievement_text_en']));
 				
 ?>
-                <div class="col-lg-4">
+                <div class="col-lg-4 padding-top-50 ">
                     <div class="news-item-style-03">
                         <div class="thumb">
 							<img src="<?php echo $assets_url.$rows['achievement_image'];?>" alt="">
