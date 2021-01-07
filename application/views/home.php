@@ -2,7 +2,7 @@
     <div class="banner-style-3 banner-bg-1 d-flex align-items-center">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-7 offset-md-2 offset-xl-2 banner-slider-4">
+                <!--<div class="col-md-7 offset-md-2 offset-xl-2 banner-slider-4">
                     <div class="banner-content-style-3">
                         <h2 class="title" data-animation-in="fadeInLeft">Achievements</h2>
                         <p class="description" data-animation-in="fadeInDown">Thiru O.Paneerselvam is the only leader who has delivered too many budget speeches. Until now, he has presented financial statements in the legislative assembly 10 times.</p>
@@ -30,7 +30,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
         <div class="banner3-social">
