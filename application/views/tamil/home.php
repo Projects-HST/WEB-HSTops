@@ -161,7 +161,7 @@
                         <p class="subtitle">சாதனைகள்</p>
                         <h4 class="ta_title_med"><?php echo $rows->achievement_title_ta;?></h4>
                         <div class="btn-wrapper">
-                            <a class="readMoreta" href="<?php echo base_url(); ?>tamil/aboutOPS/">மேலும்</a> ➝
+                            <a class="readMoreta" href="<?php echo base_url(); ?>tamil/achievement_details/<?php echo base64_encode($rows->id*98765); ?>/">மேலும்</a> ➝
                         </div>
                     </div>
                 </div>

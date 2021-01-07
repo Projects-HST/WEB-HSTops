@@ -5705,15 +5705,18 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     transition: all .3s; }
   .action-soon-content .readMore {
     font-size: 18px;
-    color: #666; }
+    color: #fff; }
  .action-soon-content .readMoreta {
     font-size: 15px;
-    color: #666; }
+    color: #fff; }
+.action-soon-content .ta_title_med {
+    font-size: 15px;
+    color: #fff; }
   .action-soon-content:hover .title, .action-soon-content:hover .subtitle {
     color: #fff; }
   .action-soon-content:hover:before {
     background: #0B9421; }
-  .action-soon-content:hover .btn-wrapper, .action-soon-content:hover .readMore {
+  .action-soon-content:hover .btn-wrapper, .action-soon-content:hover .readMore .readMoreta .ta_title_med {
     color: #fff; }
 
 .choose-box {
