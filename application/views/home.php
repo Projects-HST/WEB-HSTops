@@ -103,7 +103,7 @@
             <div class="row margin-top-55 margin-bottom-100">
                 <div class="col-lg-6">
                     <div class="map-img">
-                        <img src="<?php echo base_url(); ?>assets/basic/img/tamilnadu_map.png" alt="">
+                        <img src="<?php echo base_url(); ?>assets/basic/img/home_party_logo.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-lg-5 offset-lg-1 align-self-center">
