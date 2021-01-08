@@ -32,7 +32,7 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="blog-details-style-01 margin-bottom-100">
-                        <div class="b-img" style="max-width:740px;border-radius: 10px;">
+                        <div class="b-img">
                             <img src="<?php echo $assets_url.$rows->nf_cover_image;?>" alt="" style="border-radius: 10px 10px 0px 0px;">
                             <div class="blog-date-box">
                                 <h4><?php echo date("d",strtotime($rows->news_date)) ?><br><span><?php echo date("M",strtotime($rows->news_date))?></span></h4>
