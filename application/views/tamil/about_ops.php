@@ -391,10 +391,10 @@ button {
 	  
 	  <div class="arrows">
 		<button class="arrow arrow__prev disabled" disabled>
-		  <img src="<?php echo base_url(); ?>assets/basic/img/left.svg" alt="prev timeline arrow">
+		  <img src="<?php echo base_url(); ?>assets/basic/img/left_arrow.png" alt="prev timeline arrow">
 		</button>
 		<button class="arrow arrow__next">
-		  <img src="<?php echo base_url(); ?>assets/basic/img/right.svg" alt="Next timeline arrow">
+		  <img src="<?php echo base_url(); ?>assets/basic/img/right_arrow.png" alt="Next timeline arrow">
 		</button>
 	  </div>
 

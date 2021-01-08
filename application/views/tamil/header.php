@@ -78,7 +78,7 @@
         <button class="sidebar-menu-close"><i class="flaticon-close"></i></button>
         <div class="sidebar-inner">
             <div class="sidebar-logo">
-                <img src="<?php echo base_url(); ?>assets/basic/img/ops_logo-green.png" alt="logo"/>
+                <img src="<?php echo base_url(); ?>assets/basic/img/ops_logo-green_tamil.png" alt="logo"/>
             </div>
             <div class="sidemenu-text">
                 <p style="font-family: var(--secondary-font);font-size:12px;">மூன்று முறை தமிழ்நாட்டின் முதலமைச்சராக மக்கள் பணியாற்றிய திரு.ஓ.பன்னீர்செல்வம் அவர்கள் தற்போது, தமிழ்நாட்டின் துணை முதலமைச்சராகவும், அஇஅதிமுகவின் கழக ஒருங்கிணைப்பாளர் மற்றும் பொருளாளராகவும் பொதுப்பணி ஆற்றி வருகிறார்.</p>
