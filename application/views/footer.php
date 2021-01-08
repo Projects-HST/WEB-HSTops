@@ -34,7 +34,7 @@
 										<div class="col-xl-5"><img src="<?php echo base_url(); ?>assets/basic/img/playstore.png" alt="news"></div>
 									</div>
                                 </div>
-								<div class="copyright-area-inner copyright-sm margin-top-20">
+								<div class="copyright-area-inner copyright-sm margin-top-120">
                                     Copyrights@All rights reserved. Developed by <a href="https://www.happysanztech.com/" target="_blank">Happy Sanz Tech</a>
                                 </div>
 
