@@ -2756,7 +2756,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   position: absolute;
   top: 69%;
   left: auto;
-  right: 12%;
+  right: 50%;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -3162,7 +3162,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
       margin-bottom: 15px;
       width: 40px;
       height: 40px;
-      background: #0B9421;
+      background: #fff;
       -webkit-transition: all .3s;
       -o-transition: all .3s;
       transition: all .3s;
@@ -3170,7 +3170,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
       line-height: 40px;
       text-align: center; }
       .banner3-social ul li a {
-        color: #fff;
+        color: #0B9421;
         font-family: var(--secondary-font);
         font-size: 14px;
         text-transform: uppercase;

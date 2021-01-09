@@ -76,7 +76,7 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="stories-thumb mr-4">
-                        <img src="<?php echo base_url(); ?>assets/basic/img/party_achievements.jpg" alt="">
+                        <img src="<?php echo base_url(); ?>assets/basic/img/party_achievements.png" alt="">
                     </div>
                 </div>
                 <div class="col-lg-8 align-self-center">
