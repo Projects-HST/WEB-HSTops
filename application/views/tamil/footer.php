@@ -11,9 +11,9 @@
                     </div>
                     <div class="col-xl-9 margin-xlt-80">
                         <div class="row">
-                            <div class="col-lg-3 col-xl-3 offset-xl-1">
+                            <div class="col-lg-5 offset-xl-1">
                                 <div class="footer-widget widget widget_nav_menu">
-                                    <h4 class="widget-title-ta">எங்களை தொடர</h4>
+                                    <h4 class="widget-title-ta">எங்களை பின்தொடர</h4>
 									<?php 
 									if (count($socialmedia)>0){ 
 										echo "<ul>";
@@ -26,16 +26,16 @@
 									 } ?>
                                 </div>
                             </div>
-                            <div class="col-lg-8">
+                            <div class="col-lg-6">
                                 <div class="footer-widget widget">
-                                    <h4 class="widget-title-ta">எங்கள் APP ஐ பதிவிறக்கவும்</h4>
+                                    <h4 class="widget-title-ta">எங்கள் APP-ஐ பதிவிறக்கம் செய்ய</h4>
 									 <div class="row">
 										<div class="col-xl-5"><img src="<?php echo base_url(); ?>assets/basic/img/app_store.png" alt="news"></div>
 										<div class="col-xl-5"><img src="<?php echo base_url(); ?>assets/basic/img/playstore.png" alt="news"></div>
 									</div>
                                 </div>
 								<div class="copyright-area-inner copyright-sm margin-top-100">
-                                    Copyrights@All rights reserved. Developed by <a href="https://www.happysanztech.com/" target="_blank">Happy Sanz Tech</a>
+                                    Copyrights@All rights reserved. <br>Developed by <a href="https://www.happysanztech.com/" target="_blank">Happy Sanz Tech</a>
                                 </div>
 
                             </div>
