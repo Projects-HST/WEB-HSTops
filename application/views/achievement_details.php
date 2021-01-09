@@ -121,7 +121,7 @@
                 <div class="col-lg-4 text-center">
                     <div class="ls-date-box">
                         <h4>Date</h4>
-							<p><?php echo date("D, M j Y",strtotime($rows->achievement_date)) ?></p>
+							<p class="text-center"><?php echo date("D, M j Y",strtotime($rows->achievement_date)) ?></p>
                         <hr>
 						<div class="ls-social-share">
                         <ul>
