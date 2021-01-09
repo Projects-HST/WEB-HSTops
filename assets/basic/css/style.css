@@ -5699,6 +5699,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     margin-top: 24px; }
   .action-soon-content .title {
     font-size: 24px;
+	margin-right: 30px;
     color: #404040;
     font-weight: 500;
     -webkit-transition: all .3s;
