@@ -254,7 +254,7 @@
 		$assets_url = $this->config->item("assets_url")."newsfeed/";
 ?>
     <!-- news area Start -->
-    <div class="home-news-area padding-top-100 padding-bottom-100">
+    <div class="home-news-area padding-top-50 padding-bottom-100">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-12">
