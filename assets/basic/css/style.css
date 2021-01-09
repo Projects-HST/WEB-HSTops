@@ -4041,7 +4041,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
       content: '';
       width: 50px;
       height: 20px;
-      background: #2E319233;
+      /*background: #2E319233;*/
       bottom: -6px;
       border-radius: 5px;
       left: 7px; }
