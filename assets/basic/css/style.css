@@ -3673,7 +3673,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
       .blog-item-style-02 .blog-meta .btn-wrapper a:hover {
         color: #0B9421; }
   .blog-item-style-02 .b-content {
-    padding: 30px;
+    /*padding: 30px;*/
     position: relative;
     padding-top: 80px;
     padding-left: 27%; }
