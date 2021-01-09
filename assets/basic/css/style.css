@@ -5716,7 +5716,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     font-size: 15px;
 	margin-right: 30px;
     color: #404040; }
-  .action-soon-content:hover .title, .action-soon-content:hover .subtitle, .action-soon-content:hover .ta_title_med, .action-soon-content:hover .readMoreta {
+  .action-soon-content:hover .title, .action-soon-content:hover .subtitle, .action-soon-content:hover .ta_title_med, .action-soon-content:hover .readMore, .action-soon-content:hover .readMoreta {
     color: #fff; }
   .action-soon-content:hover:before {
     background: #0B9421; }
