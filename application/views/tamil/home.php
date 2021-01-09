@@ -2,35 +2,32 @@
     <div class="banner-style-3 banner-bg-1 d-flex align-items-center">
         <div class="container-fluid">
             <div class="row">
-                <!--<div class="col-md-7 offset-md-2 offset-xl-2 banner-slider-4">
+                <div class="col-md-5 offset-md-2 offset-xl-2 banner-slider-4">
                     <div class="banner-content-style-3">
-                       <h2 class="title-ta" data-animation-in="fadeInLeft">சாதனைத் துளிகள்</h2>
-                        <p class="description" data-animation-in="fadeInDown">தமிழ்நாட்டில் அதிகமுறை நிதித்தாக்கல் செய்த சிறப்பிற்குரியவர் திரு.ஓ.பன்னீர்செல்வம் அவர்கள். இதுவரை 11 முறை தமிழ்நாடு சட்டமன்ற பேரவையில் நிதிநிலை அறிக்கையை தாக்கல் செய்துள்ளார்..</p>
-                        <div class="d-flex margin-top-50">
+					   <h2 class="title" data-animation-in="fadeInLeft" style="font-size:28px;line-height:40px;">தமிழக அரசியல் வரலாற்றில் தொடர்ந்து 10 முறை நிதி தாக்கல் செய்த சிறப்பிற்குரியவர்.</h2>
+                        <div class="d-flex margin-top-10">
                             <div class="btn-wrapper" data-animation-in="fadeInDown">
-                                <a class="btn btn-custom-white" href="#">மேலும் </a>
+                                <a class="btn btn-custom-white" href="<?php echo base_url(); ?>tamil/ops_achievements/">மேலும்</a>
                             </div>
                         </div>
                     </div>
                     <div class="banner-content-style-3">
-                       <h2 class="title-ta" data-animation-in="fadeInLeft">சாதனைத் துளிகள்</h2>
-                        <p class="description" data-animation-in="fadeInDown">தமிழர்களின் பாரம்பரிய விளையாட்டான ஜல்லிகட்டுக்கு எதிரான தடையை நீக்க அவசரச் சட்டம் பிரப்பித்த் தீர்வு கண்டுள்ளார். </p>
-                        <div class="d-flex margin-top-50">
+                        <h2 class="title" data-animation-in="fadeInDown" style="font-size:28px;line-height:40px;">அனைவருக்கும் வீடு திட்டத்தின் கீழ் ரூ.27,080 கோடியில் 5,93,341 குடியிருப்புகள் கட்டித் தரப்பட்டுள்ளன.</h2>
+                        <div class="d-flex margin-top-10">
                             <div class="btn-wrapper" data-animation-in="fadeInDown">
-                                <a class="btn btn-custom-white" href="#">மேலும் </a>
+                                <a class="btn btn-custom-white" href="<?php echo base_url(); ?>tamil/ops_achievements/">மேலும்</a>
                             </div>
                         </div>
                     </div>
                     <div class="banner-content-style-3">
-                        <h2 class="title-ta" data-animation-in="fadeInLeft">சாதனைத் துளிகள்</h2>
-                        <p class="description" data-animation-in="fadeInDown">சென்னையின் குடிநீர் தேவையை பூர்த்தி செய்யும் மிக முக்கிய நீர்வள ஆதாரமான “கிருஷ்ணா நதி நீர் பங்கீடு” குறித்து ஆந்திர முதல்வரை நேரில் சென்று சந்தித்து பேசி சுமூக தீர்வு கண்டுள்ளார்.</p>
-                        <div class="d-flex margin-top-50">
+                        <h2 class="title" data-animation-in="fadeInLeft" style="font-size:28px;line-height:40px;">ஜல்லிக்கட்டிற்கான தடையை நீக்கி அவசரசட்டம் மூலம் நிரந்தரத்தீர்வு கண்டுள்ளார்.</h2>
+                        <div class="d-flex margin-top-10">
                             <div class="btn-wrapper" data-animation-in="fadeInDown">
-                                <a class="btn btn-custom-white" href="#">மேலும் </a>
+                                <a class="btn btn-custom-white" href="<?php echo base_url(); ?>tamil/ops_achievements/">மேலும்</a>
                             </div>
                         </div>
                     </div>
-                </div>-->
+                </div>
             </div>
         </div>
         <div class="banner3-social">

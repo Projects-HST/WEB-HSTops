@@ -85,14 +85,35 @@
                         <h3 class="ta_title">கட்சியின் சாதனை</h3>
                         <p class="para">பாரத ரத்னா புரட்சித்தலைவர் எம்.ஜி.ஆர் அவர்கள் திமுக-விலிருந்து விலகி 1972 ஆம் ஆண்டு அஇஅதிமுக கட்சியைத் தோற்றுவித்தார்.</p>
                         <div class="row margin-top-50">
-                            <div class="col-md-4">
+						<?php if (count($electioninfo1)>0){ ?>
+                                   
+                                        <table width="100%" border="0" cellspacing="2" cellpadding="2" class="party-table">
+											<tr>
+												<th width="15%">ஆண்டு</th>
+												<th width="15%">வகை</th>
+												<th width="55%">கட்சித் தலைவர்</th>
+												<th width="15%">வென்றது</th>
+									<?php foreach($electioninfo1 as $rows){ ?>
+											<tr>
+												<td><?php echo $rows->election_year;?></td>
+												<td><?php echo $rows->election_type;?></td>
+												<td><?php echo $rows->party_leader_ta?></td>
+												<td><?php echo $rows->seats_won?></td>
+											</tr>
+								<?php } ?>
+										  </tr>
+										</table>
+                                   
+						<?php } ?>
+						
+                            <!--<div class="col-md-4">
                                 <ul class="nav nav-tabs" style="font-size:18px;">
                                     <li><a class="active" data-toggle="tab" href="#home">தமிழ்நாடு</a></li>
-                                    <!--<li><a data-toggle="tab" href="#menu1">புதுச்சேரி</a></li>
-                                    <li><a data-toggle="tab" href="#menu2">கர்நாடகா</a></li>-->
+                                    <li><a data-toggle="tab" href="#menu1">புதுச்சேரி</a></li>
+                                    <li><a data-toggle="tab" href="#menu2">கர்நாடகா</a></li>
                                 </ul>
-                            </div>
-                            <div class="col-md-8">
+                            </div>-->
+                            <!--<div class="col-md-8">
                                 <div class="tab-content">
 						<?php if (count($electioninfo1)>0){ ?>
                                     <div id="home" class="tab-pane fade in active show">
@@ -158,7 +179,7 @@
 							<?php } ?>
 
                                 </div>
-                            </div>
+                            </div>-->
                         </div>
                     </div>
                 </div>

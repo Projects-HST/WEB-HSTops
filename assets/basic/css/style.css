@@ -3243,7 +3243,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
           color: #F12552; }
 
 .banner-content-style-3 {
-  margin-top: 3%; }
+  margin-top: 2%; }
 
 .news-item-style-01 {
   border-bottom: 2px solid rgba(4, 51, 129, 0.05);
@@ -8534,7 +8534,8 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 	 background-color: #ebeff2; }
 
    .sel_lang {
-		font-family: var(--secondary-font);
+	 font-family: var(--secondary-font);
+
    }
 
 

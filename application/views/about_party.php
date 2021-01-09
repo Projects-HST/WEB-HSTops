@@ -85,14 +85,36 @@
                         <h3>Achievement of Party</h3>
                         <p class="para">AIADMK is a Dravidian party founded by M. G. Ramachandran </p>
                         <div class="row margin-top-50">
-                            <div class="col-md-4">
+						
+						<?php if (count($electioninfo1)>0){ ?>
+                                   
+                                        <table width="100%" border="0" cellspacing="2" cellpadding="2" class="party-table">
+											<tr>
+												<th width="15%">Year</th>
+												<th width="15%">Type</th>
+												<th width="55%">Party Leader</th>
+												<th width="15%">Seats Won</th>
+									<?php foreach($electioninfo1 as $rows){ ?>
+											<tr>
+												<td><?php echo $rows->election_year;?></td>
+												<td><?php echo $rows->election_type;?></td>
+												<td><?php echo $rows->party_leader_en?></td>
+												<td><?php echo $rows->seats_won?></td>
+											</tr>
+								<?php } ?>
+										  </tr>
+										</table>
+                                   
+						<?php } ?>
+						
+                            <!--<div class="col-md-4">
                                 <ul class="nav nav-tabs">
                                     <li><a class="active" data-toggle="tab" href="#home">Tamilnadu</a></li>
-                                    <!--<li><a data-toggle="tab" href="#menu1">Puducherry</a></li>
-                                    <li><a data-toggle="tab" href="#menu2">Karnataka</a></li>-->
+                                    <li><a data-toggle="tab" href="#menu1">Puducherry</a></li>
+                                    <li><a data-toggle="tab" href="#menu2">Karnataka</a></li>
                                 </ul>
-                            </div>
-                            <div class="col-md-8">
+                            </div>-->
+                            <!--<div class="col-md-8">
                                 <div class="tab-content">
 						<?php if (count($electioninfo1)>0){ ?>
                                     <div id="home" class="tab-pane fade in active show">
@@ -158,7 +180,7 @@
 							<?php } ?>
 
                                 </div>
-                            </div>
+                            </div>-->
                         </div>
                     </div>
                 </div>

@@ -2,35 +2,32 @@
     <div class="banner-style-3 banner-bg-1 d-flex align-items-center">
         <div class="container-fluid">
             <div class="row">
-                <!--<div class="col-md-7 offset-md-2 offset-xl-2 banner-slider-4">
+                <div class="col-md-5 offset-md-2 offset-xl-2 banner-slider-4">
                     <div class="banner-content-style-3">
-                        <h2 class="title" data-animation-in="fadeInLeft">Achievements</h2>
-                        <p class="description" data-animation-in="fadeInDown">Thiru O.Paneerselvam is the only leader who has delivered too many budget speeches. Until now, he has presented financial statements in the legislative assembly 10 times.</p>
-                        <div class="d-flex margin-top-50">
+					   <h2 class="title" data-animation-in="fadeInLeft" style="font-size:30px;line-height:40px;">The only leader in political history of TamilNadu has presented the State Budget in Assembly for 10 consecutive times.</h2>
+                        <div class="d-flex margin-top-10">
                             <div class="btn-wrapper" data-animation-in="fadeInDown">
-                                <a class="btn btn-custom-white" href="#">Learn More</a>
+                                <a class="btn btn-custom-white" href="<?php echo base_url(); ?>ops_achievements/">Learn More</a>
                             </div>
                         </div>
                     </div>
                     <div class="banner-content-style-3">
-                        <h2 class="title" data-animation-in="fadeInLeft">Achievements</h2>
-                        <p class="description" data-animation-in="fadeInDown">He lifted the ban on conducting Jallikattu, Tamil Nadu’s traditional sport, by passing an emergency ordinance.</p>
-                        <div class="d-flex margin-top-50">
+                        <h2 class="title" data-animation-in="fadeInDown" style="font-size:30px;line-height:40px;">Under the "Housing for All" scheme 5,93,341 tenements were built at a cost of Rs.27,080 crores.</h2>
+                        <div class="d-flex margin-top-10">
                             <div class="btn-wrapper" data-animation-in="fadeInDown">
-                                <a class="btn btn-custom-white" href="#">Learn More</a>
+                                <a class="btn btn-custom-white" href="<?php echo base_url(); ?>ops_achievements/">Learn More</a>
                             </div>
                         </div>
                     </div>
                     <div class="banner-content-style-3">
-                        <h2 class="title" data-animation-in="fadeInLeft">Achievements</h2>
-                        <p class="description" data-animation-in="fadeInDown">•	He met the Chief Minister of Andhra Pradesh and smoothly resolved the dispute regarding the sharing of Krishna river water, the most important source of drinking water in Chennai.</p>
-                        <div class="d-flex margin-top-50">
+                        <h2 class="title" data-animation-in="fadeInLeft" style="font-size:30px;line-height:40px;">The predicament regarding the traditional bull-taming Sport of Tamil Nadu, Jallikattu, has been resolved by passing an emergency ordinance.</h2>
+                        <div class="d-flex margin-top-10">
                             <div class="btn-wrapper" data-animation-in="fadeInDown">
-                                <a class="btn btn-custom-white" href="#">Learn More</a>
+                                <a class="btn btn-custom-white" href="<?php echo base_url(); ?>ops_achievements/">Learn More</a>
                             </div>
                         </div>
                     </div>
-                </div>-->
+                </div>
             </div>
         </div>
         <div class="banner3-social">
