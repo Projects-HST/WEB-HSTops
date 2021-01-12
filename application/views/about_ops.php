@@ -263,7 +263,7 @@ button {
             </div>
         </div>
     </div>
-	<div class="stories-area padding-bottom-100" style="padding-top:0px;">
+	<div class="stories-area padding-bottom-100" style="padding-top:20px;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4"></div>
