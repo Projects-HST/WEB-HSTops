@@ -238,7 +238,7 @@ button {
     <!-- politx-content-area end -->
 
 
-	<div class="stories-area padding-bottom-20">
+	<div class="stories-area" style="padding-bottom:0px;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
@@ -259,149 +259,120 @@ button {
 						</p>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
-	
-<div class="politx-content-area padding-top-50">
-	<section class="timeline">
-	  <ol>
-		<li>
-		  <div>
-			<time>2017 </time> Present - AIADMK’s coordinator and Tamil Nadu’s Deputy Chief Minister
-		  </div>
-		</li>
-		<li>
-		  <div>
-			<time>2016 </time> Tamil Nadu’s Chief Minister for the third time
-		  </div>
-		</li>
-		<li>
-		  <div>
-			<time>2016 </time> Re-elected as an assembly member for the fourth time from Bodinayakanur constituency
-		  </div>
-		</li>
-		<li>
-		  <div>
-			<time>2014 </time> Tamil Nadu’s Chief Minister for the second time
-		  </div>
-		</li>
-		<li>
-		  <div>
-			<time>2011 </time> Leader of the house
-		  </div>
-		</li>
-		<li>
-		  <div>
-			<time>2011 </time> Re-elected as an assembly member for the third time from Bodinayakanur constituency
-		  </div>
-		</li>
-		<li>
-		  <div>
-			<time>2007 </time> Party’s treasurer
-		  </div>
-		</li>
-		<li>
-		  <div>
-			<time>2006 - 2011 </time> Deputy leader of the opposition in the assembly
-		  </div>
-		</li>
-		<li>
-		  <div>
-			<time>2006 </time> Re-elected as an assembly member for the second time from Periyakulam constituency
-		  </div>
-		</li>
-		<li>
-		  <div>
-			<time>2004 </time> Secretary of the constituency’s electoral division
-		  </div>
-		</li>
-		<li>
-		  <div>
-			<time>2001 </time> Tamil Nadu’s Chief Minister for the first time
-		  </div>
-		</li>
-		<li>
-		  <div>
-			<time>2001 </time> Made his debut as assembly member from Periyakulam constituency
-		  </div>
-		</li>
-		
-		
-		<li>
-		  <div>
-			<time>2000 </time> Theni district corporation secretary
-		  </div>
-		</li>
-		<li>
-		  <div>
-			<time>1998 </time> Periyakulam Corporation Secretary for the second time
-		  </div>
-		</li>
-		<li>
-		  <div>
-			<time>1997 </time> Secretary of MGR youth party, Theni District
-		  </div>
-		</li>
-		<li>
-		  <div>
-			<time>1996 </time> Chairman of the Periyakulam Municipality
-		  </div>
-		</li>
-		<li>
-		  <div>
-			<time>1993 </time> Periyakulam Corporation Secretary
-		  </div>
-		</li>
-		<li>
-		  <div>
-			<time>1991 </time> Director of Periyakulam’s Cooperative Bank
-		  </div>
-		</li>
-		<li>
-		  <div>
-			<time>1989 </time> Corporation Joint Secretary, Periyakulam 
-		  </div>
-		</li>
-		<li>
-		  <div>
-			<time>1984 </time> Deputy Secretary of MGR youth party, Periyakulam
-		  </div>
-		</li>
-		<li>
-		  <div>
-			<time>1984 </time> Corporation Secretary of 18th ward, Periyakulam
-		  </div>
-		</li>
-		<li>
-		  <div>
-			<time>1980 </time> Corporation administrative representative of 18th ward, Periyakulam
-		  </div>
-		</li>
-		<li>
-		  <div>
-			<time>1977 </time> AIADMK’s member
-		  </div>
-		</li>
-		<li>
-		  <div>
-			<time>1969 </time> Beginning of his political life
-		  </div>
-		</li>
-		<li></li>
-	  </ol>
-	  
-	  <div class="arrows">
-		<button class="arrow arrow__prev disabled" disabled>
-		  <img src="<?php echo base_url(); ?>assets/basic/img/left_arrow.png" alt="prev timeline arrow">
-		</button>
-		<button class="arrow arrow__next">
-		  <img src="<?php echo base_url(); ?>assets/basic/img/right_arrow.png" alt="Next timeline arrow">
-		</button>
-	  </div>
+	<div class="stories-area padding-bottom-100" style="padding-top:0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-8 align-self-center">
+                    <div class="content-box-style-06">
+                        
+                        <div class="row">
 
-	</section>
-</div>
+                           <div class="col-md-3">
+                                <ul class="nav nav-tabs">
+                                    <li><a class="active" data-toggle="tab" href="#home">2010 - 2020</a></li>
+                                    <li><a data-toggle="tab" href="#menu1">2000 - 2010</a></li>
+                                    <li><a data-toggle="tab" href="#menu2">1990 - 2000</a></li>
+									<li><a data-toggle="tab" href="#menu3">1980 - 1990</a></li>
+									<li><a data-toggle="tab" href="#menu4">1973</a></li>
+                                </ul>
+                            </div>
+                           <div class="col-md-9">
+                                <div class="tab-content">
+                                    <div id="home" class="tab-pane fade in active show">
+									<table width="100%" border="0" cellspacing="2" cellpadding="2" class="party-table">
+											<tr>
+												<td>2017 - Tamil Nadu’s Deputy Chief Minister</td>
+											</tr>
+											<tr>
+												<td>2016 - Tamil Nadu’s Chief Minister for the third time</td>
+											</tr>
+											<tr>
+												<td>2016 - Re-elected as an assembly member for the fourth time from Bodinayakanur constituency</td>
+											</tr>
+											<tr>
+												<td>2014 - Tamil Nadu’s Chief Minister for the second time</td>
+											</tr>
+											<tr>
+												<td>2011 - Leader of the house</td>
+											</tr>
+											<tr>
+												<td>2011 - Re-elected as an assembly member for the third time from Bodinayakanur constituency</td>
+											</tr>
+										</table>
+                                    </div>
+									<div id="menu1" class="tab-pane fade in">
+                                      <table width="100%" border="0" cellspacing="2" cellpadding="2" class="party-table">
+											<tr>
+												<td>2007 - Party’s treasurer</td>
+											</tr>
+											<tr>
+												<td>2006 - 2011 - Deputy leader of the opposition in the assembly</td>
+											</tr>
+											<tr>
+												<td>2006 - Re-elected as an assembly member for the second time from Periyakulam constituency</td>
+											</tr>
+											<tr>
+												<td>2001 - Tamil Nadu’s Chief Minister for the first time</td>
+											</tr>
+											<tr>
+												<td>2001 - Made his debut as assembly member from Periyakulam constituency</td>
+											</tr>
+										</table>
+                                    </div>
+									<div id="menu2" class="tab-pane fade in">
+                                      <table width="100%" border="0" cellspacing="2" cellpadding="2" class="party-table">
+											<tr>
+												<td>2000 - Corporation secretary, Theni district</td>
+											</tr>
+											<tr>
+												<td>1998 –Elected as the Periyakulam Corporation Secretary for the second time</td>
+											</tr>
+											<tr>
+												<td>1997 - Secretary of MGR youth party, Theni District</td>
+											</tr>
+											<tr>
+												<td>1996 - Chairman of the Periyakulam Municipality</td>
+											</tr>
+											<tr>
+												<td>1993 - Periyakulam Corporation Secretary</td>
+											</tr>
+										</table>
+                                    </div>
+									<div id="menu3" class="tab-pane fade in">
+                                      <table width="100%" border="0" cellspacing="2" cellpadding="2" class="party-table">
+											<tr>
+												<td>1984 - Deputy Secretary of MGR youth party, Periyakulam</td>
+											</tr>
+											<tr>
+												<td>1984 - Corporation Secretary of 18th ward, Periyakulam</td>
+											</tr>
+											<tr>
+												<td>1980 - Corporation administrative representative of 18th ward, Periyakulam</td>
+											</tr>
+										</table>
+                                    </div>
+									<div id="menu4" class="tab-pane fade in">
+                                      <table width="100%" border="0" cellspacing="2" cellpadding="2" class="party-table">
+											
+											<tr>
+												<td>1973 - AIADMK member</td>
+											</tr>
+										</table>
+                                    </div>
+                                </div>
+                            </div>
+					</div>
+				</div>
+				</div>			
+		</div>
+	</div>
+	</div>
+
 
 <script src="<?php echo base_url(); ?>assets/basic/js/scrool.js"></script>
 <script src="<?php echo base_url(); ?>assets/basic/js/hammer.min.js"></script>

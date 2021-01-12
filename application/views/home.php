@@ -157,7 +157,8 @@
                         <p class="subtitle">Achievement</p>
                         <h4 class="title"><?php echo $rows->achievement_title_en;?></h4>
                         <div class="btn-wrapper">
-                            <a class="readMore" href="<?php echo base_url(); ?>index/achievement_details/<?php echo base64_encode($rows->id*98765); ?>/">Read more</a> ➝
+                           <!-- <a class="readMore" href="<?php echo base_url(); ?>index/achievement_details/<?php echo base64_encode($rows->id*98765); ?>/">Read more</a> ➝-->
+						  <a class="readMore" href="<?php echo base_url(); ?>ops_achievements/" target="_blank">Read more</a> ➝
                         </div>
                     </div>
                 </div>
@@ -273,11 +274,16 @@
                                     <img src="<?php echo $assets_url.$rows->nf_cover_image;?>" style="max-width:350px;">
                                 </div>
                                 <div class="content">
-                                    <h4 class="title"><a href="<?php echo base_url(); ?>index/post_details/<?php echo base64_encode($rows->id*98765); ?>/"><?php echo $rows->title_en;?></a></h4>
+									<h4 class="title"><a href="<?php echo base_url(); ?>posts/" target="_blank"><?php echo $rows->title_en;?></a></h4>
+                                    <ul class="blog-meta d-flex flex-column flex-lg-row">
+                                        <li><a href="<?php echo base_url(); ?>posts/" target="_blank"><?php echo date("d M Y",strtotime($rows->news_date)) ?></a></li>
+                                        <li><a href="<?php echo base_url(); ?>posts/" target="_blank">Read <?php echo $rows->view_count; ?></a></li>
+                                    </ul>
+                                    <!--<h4 class="title"><a href="<?php echo base_url(); ?>index/post_details/<?php echo base64_encode($rows->id*98765); ?>/"><?php echo $rows->title_en;?></a></h4>
                                     <ul class="blog-meta d-flex flex-column flex-lg-row">
                                         <li><a href="<?php echo base_url(); ?>index/post_details/<?php echo base64_encode($rows->id*98765); ?>/"><?php echo date("d M Y",strtotime($rows->news_date)) ?></a></li>
                                         <li><a href="<?php echo base_url(); ?>index/post_details/<?php echo base64_encode($rows->id*98765); ?>/">Read <?php echo $rows->view_count; ?></a></li>
-                                    </ul>
+                                    </ul>-->
                                 </div>
                             </div>
                         </div>

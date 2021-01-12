@@ -158,7 +158,8 @@
                         <p class="subtitle">சாதனைகள்</p>
                         <h4 class="ta_title_med"><?php echo $rows->achievement_title_ta;?></h4>
                         <div class="btn-wrapper">
-                            <a class="readMoreta" href="<?php echo base_url(); ?>tamil/achievement_details/<?php echo base64_encode($rows->id*98765); ?>/">மேலும்</a> ➝
+                            <!--<a class="readMoreta" href="<?php echo base_url(); ?>tamil/achievement_details/<?php echo base64_encode($rows->id*98765); ?>/">மேலும்</a> ➝-->
+							<a class="readMoreta" href="<?php echo base_url(); ?>tamil/ops_achievements/" target="_blank">மேலும்</a> ➝
                         </div>
                     </div>
                 </div>
@@ -274,11 +275,16 @@
                                     <img src="<?php echo $assets_url.$rows->nf_cover_image;?>" style="max-width:350px;">
                                 </div>
                                 <div class="content">
-                                    <h4 class="ta_title_med"><a href="<?php echo base_url(); ?>tamil/post_details/<?php echo base64_encode($rows->id*98765); ?>/"><?php echo $rows->title_ta;?></a></h4>
+									<h4 class="ta_title_med"><a href="<?php echo base_url(); ?>tamil/posts" target="_blank"><?php echo $rows->title_ta;?></a></h4>
+                                    <ul class="blog-meta d-flex flex-column flex-lg-row">
+                                        <li><a href="<?php echo base_url(); ?>tamil/posts" target="_blank"><?php echo date("d M Y",strtotime($rows->news_date)) ?></a></li>
+                                        <li><a href="<?php echo base_url(); ?>tamil/posts" target="_blank">வாசிப்பு  <?php echo $rows->view_count; ?></a></li>
+                                    </ul>
+                                    <!--<h4 class="ta_title_med"><a href="<?php echo base_url(); ?>tamil/post_details/<?php echo base64_encode($rows->id*98765); ?>/"><?php echo $rows->title_ta;?></a></h4>
                                     <ul class="blog-meta d-flex flex-column flex-lg-row">
                                         <li><a href="<?php echo base_url(); ?>tamil/post_details/<?php echo base64_encode($rows->id*98765); ?>/"><?php echo date("d M Y",strtotime($rows->news_date)) ?></a></li>
                                         <li><a href="<?php echo base_url(); ?>tamil/post_details/<?php echo base64_encode($rows->id*98765); ?>/">வாசிப்பு  <?php echo $rows->view_count; ?></a></li>
-                                    </ul>
+                                    </ul>-->
                                 </div>
                             </div>
                         </div>
