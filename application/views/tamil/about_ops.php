@@ -238,7 +238,7 @@ button {
     <!-- politx-content-area end -->
 
 
-	<div class="stories-area">
+	<div class="stories-area" style="padding-bottom:0px;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
@@ -262,7 +262,119 @@ button {
             </div>
         </div>
     </div>
-	
+	<div class="stories-area padding-bottom-100" style="padding-top:20px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-8 align-self-center">
+                    <div class="content-box-style-06">
+                        
+                        <div class="row">
+
+                           <div class="col-md-3">
+                                <ul class="nav nav-tabs">
+                                    <li><a class="active" data-toggle="tab" href="#home">2010 - 2020</a></li>
+                                    <li><a data-toggle="tab" href="#menu1">2000 - 2010</a></li>
+                                    <li><a data-toggle="tab" href="#menu2">1990 - 2000</a></li>
+									<li><a data-toggle="tab" href="#menu3">1980 - 1990</a></li>
+									<li><a data-toggle="tab" href="#menu4">1973</a></li>
+                                </ul>
+                            </div>
+                           <div class="col-md-9">
+                                <div class="tab-content">
+                                    <div id="home" class="tab-pane fade in active show">
+									<table width="100%" border="0" cellspacing="2" cellpadding="2" class="party-table">
+											<tr>
+												<td>2017 – தமிழ்நாடு துணை முதலமைச்சர் </td>
+											</tr>
+											<tr>
+												<td>2017 – கழக ஒருங்கிணைப்பாளர் </td>
+											</tr>
+											<tr>
+												<td>2016 - மூன்றாவது முறை தமிழ்நாடு முதலமைச்சர்</td>
+											</tr>
+											<tr>
+												<td>2016 – நான்காவது முறை சட்டமன்ற உறுப்பினர் (போடிநாயக்கனூர் தொகுதி)</td>
+											</tr>
+											<tr>
+												<td>2014 -இரண்டாவது முறை தமிழ்நாடு முதலமைச்சர் </td>
+											</tr>
+											<tr>
+												<td>2011 – அவை முன்னவர் </td>
+											</tr>
+											<tr>
+												<td>2011 – மூன்றாவது முறை சட்டமன்ற உறுப்பினர் (போடிநாயக்கனூர் தொகுதி)</td>
+											</tr>
+										</table>
+                                    </div>
+									<div id="menu1" class="tab-pane fade in">
+                                      <table width="100%" border="0" cellspacing="2" cellpadding="2" class="party-table">
+											<tr>
+												<td>2007 – கழக பொருளாளர் </td>
+											</tr>
+											<tr>
+												<td>2006 – 2011 – சட்டமன்ற எதிர்க்கட்சித் துணைத்தலைவர்</td>
+											</tr>
+											<tr>
+												<td>2006 – இரண்டாவது முறை சட்டமன்ற உறுப்பினர் (பெரியகுளம் தொகுதி)</td>
+											</tr>
+											<tr>
+												<td>2001 – முதல் முறை தமிழ்நாடு முதலமைச்சர்</td>
+											</tr>
+											<tr>
+												<td>2001 – முதல் முறை சட்டமன்ற உறுப்பினர் (பெரியகுளம் தொகுதி)</td>
+											</tr>
+										</table>
+                                    </div>
+									<div id="menu2" class="tab-pane fade in">
+                                      <table width="100%" border="0" cellspacing="2" cellpadding="2" class="party-table">
+											<tr>
+												<td>2000 – தேனி மாவட்ட கழக செயலாளர்</td>
+											</tr>
+											<tr>
+												<td>1998 - பெரியகுளம் நகர கழக செயலாளராக இரண்டாவது முறை தேர்வு</td>
+											</tr>
+											<tr>
+												<td>1997 - தேனி மாவட்ட எம்.ஜி.ஆர் இளைஞரணி செயலாளர் </td>
+											</tr>
+											<tr>
+												<td>1996 - பெரியகுளம் நகர மன்றத் தலைவர்</td>
+											</tr>
+											<tr>
+												<td>1993 – பெரியகுளம் நகர கழக செயலாளர் </td>
+											</tr>
+										</table>
+                                    </div>
+									<div id="menu3" class="tab-pane fade in">
+                                      <table width="100%" border="0" cellspacing="2" cellpadding="2" class="party-table">
+											<tr>
+												<td>1984 – பெரியகுளம் நகர எம்.ஜி.ஆர் இளைஞரணி துணை செயலாளர் </td>
+											</tr>
+											<tr>
+												<td>1984 – பெரியகுளம் நகர 18 வது வார்டு கழக செயலாளர் </td>
+											</tr>
+											<tr>
+												<td>1980 – பெரியகுளம் நகர 18 வது வார்டு கழக மேலமைப்பு பிரதிநிதி </td>
+											</tr>
+										</table>
+                                    </div>
+									<div id="menu4" class="tab-pane fade in">
+                                      <table width="100%" border="0" cellspacing="2" cellpadding="2" class="party-table">
+											
+											<tr>
+												<td>1973 - அஇஅதிமுக உறுப்பினர்</td>
+											</tr>
+										</table>
+                                    </div>
+                                </div>
+                            </div>
+					</div>
+				</div>
+				</div>			
+		</div>
+	</div>
+	</div>
+<!--	
 <div class="politx-content-area padding-top-50">
 	<section class="timeline">
 	  <ol>
@@ -400,7 +512,7 @@ button {
 
 	</section>
 </div>
-
+-->
 <script src="<?php echo base_url(); ?>assets/basic/js/scrool.js"></script>
 <script src="<?php echo base_url(); ?>assets/basic/js/hammer.min.js"></script>
 
