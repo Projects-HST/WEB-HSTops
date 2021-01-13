@@ -69,19 +69,19 @@ Class Websitemodel extends CI_Model
 	}
 	
 	function party_election_info_1(){
-		$query="SELECT * FROM `party_election_info` WHERE `state_info_id` = '1' ORDER BY election_year, election_type";
+		$query="SELECT * FROM `party_election_info` WHERE `state_info_id` = '1' AND status='Y' ORDER BY election_year, election_type";
 		$res=$this->db->query($query);
 		return $result=$res->result();
 	}
 	
 	function party_election_info_2(){
-		$query="SELECT * FROM `party_election_info` WHERE `state_info_id` = '2' ORDER BY election_year, election_type";
+		$query="SELECT * FROM `party_election_info` WHERE `state_info_id` = '2' AND status='Y' ORDER BY election_year, election_type";
 		$res=$this->db->query($query);
 		return $result=$res->result();
 	}
 	
 	function party_election_info_3(){
-		$query="SELECT * FROM `party_election_info` WHERE `state_info_id` = '3' ORDER BY election_year, election_type";
+		$query="SELECT * FROM `party_election_info` WHERE `state_info_id` = '3' AND status='Y' ORDER BY election_year, election_type";
 		$res=$this->db->query($query);
 		return $result=$res->result();
 	}
