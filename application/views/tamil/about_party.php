@@ -43,22 +43,22 @@
                             <li>
                                 <div class="icon"><i class="flaticon-financial"></i></div>
                                 <div class="content">
-                                    <h4 class="title">Economic Viability</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmod tempor incididunt.</p>
+                                    <!--<h4 class="title">Economic Viability</h4>-->
+                                    <p>தமிழக அரசியல் வரலாற்றில் 30 ஆண்டுகளாக ஆட்சி புரிந்து கொண்டிருக்கும் ஒரே கட்சி எனும் வரலாற்றுச் சரித்திரம் படைத்துள்ள கட்சி அஇஅதிமுக.</p>
                                 </div>
                             </li>
                             <li>
                                 <div class="icon"><i class="flaticon-hospital"></i></div>
                                 <div class="content">
-                                    <h4 class="title">Good Governance</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmod tempor incididunt.</p>
+                                    <!--<h4 class="title">Good Governance</h4>-->
+                                    <p>தமிழக அரசியல் வரலாற்றில் ஆண்ட கட்சியே தொடர்ந்து மீண்டும் ஆட்சிக்கு வந்த பெருமைக்குரிய ஒரே கட்சி அஇஅதிமுக. இரண்டு முறை இச்சாதனையை படைத்துள்ளது அஇஅதிமுக.</p>
                                 </div>
                             </li>
                             <li>
                                 <div class="icon"><i class="flaticon-earth-globe"></i></div>
                                 <div class="content">
-                                    <h4 class="title">Foreign Policy</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmod tempor incididunt.</p>
+                                    <!--<h4 class="title">Foreign Policy</h4>-->
+                                    <p>2014 - நாடாளுமன்றத் தேர்தலில் போட்டியிட்ட 37 தொகுதிகளிலும் தனிப்பெரும்பான்மையுடன்வெற்றி வாகை சூடி, மூன்றாவது பெரிய தேசியக் கட்சி எனும் பெரும்புகழைப் பெற்றுள்ளது அஇஅதிமுக.</p>
                                 </div>
                             </li>
                         </ul>

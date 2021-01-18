@@ -43,22 +43,22 @@
                             <li>
                                 <div class="icon"><i class="flaticon-financial"></i></div>
                                 <div class="content">
-                                    <h4 class="title">Economic Viability</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmod tempor incididunt.</p>
+                                    <!--<h4 class="title">Economic Viability</h4>-->
+                                    <p>In the political history of Tamil Nadu, AIADMK has made a historical record of being the only party to have governed Tamil Nadu for 30 years.</p>
                                 </div>
                             </li>
                             <li>
                                 <div class="icon"><i class="flaticon-hospital"></i></div>
                                 <div class="content">
-                                    <h4 class="title">Good Governance</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmod tempor incididunt.</p>
+                                    <!--<h4 class="title">Good Governance</h4>-->
+                                    <p>In the political history of Tamil Nadu, AIADMK is the only political party to ascend to power two times in a row. AIADMK has achieved this feat twice.</p>
                                 </div>
                             </li>
                             <li>
                                 <div class="icon"><i class="flaticon-earth-globe"></i></div>
                                 <div class="content">
-                                    <h4 class="title">Foreign Policy</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmod tempor incididunt.</p>
+                                    <!--<h4 class="title">Foreign Policy</h4>-->
+                                    <p>In 2014 Lok Sabha elections, AIADMK contested on its own and claimed a landslide victory by bagging 37 seats. AIADMK emerged as the third largest national party in the parliament.</p>
                                 </div>
                             </li>
                         </ul>
