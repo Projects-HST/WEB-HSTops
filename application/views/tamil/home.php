@@ -14,7 +14,7 @@
                         </div>
                     </div>
                     <div class="banner-content-style-3">
-						<h2 class="title" data-animation-in="fadeInDown" style="font-size:40px;line-height:30px;color:#0B9421;">Title 2</h2>
+						<h2 class="title" data-animation-in="fadeInDown" style="font-size:40px;line-height:30px;color:#0B9421;text-decoration-line: underline;text-decoration-thickness: 2px;">Title 2</h2>
                         <p data-animation-in="fadeInDown" style="color:#0B9421;font-weight:bold;">அனைவருக்கும் வீடு திட்டத்தின் கீழ் ரூ.27,080 கோடியில் 5,93,341 குடியிருப்புகள் கட்டித் தரப்பட்டுள்ளன..</p>
                         <div class="d-flex margin-top-10">
                             <div class="btn-wrapper" data-animation-in="fadeInDown">
@@ -23,7 +23,7 @@
                         </div>
                     </div>
                     <div class="banner-content-style-3">
-					<h2 class="title" data-animation-in="fadeInDown" style="font-size:40px;line-height:30px;color:#0B9421;">Title 3</h2>
+					<h2 class="title" data-animation-in="fadeInDown" style="font-size:40px;line-height:30px;color:#0B9421;text-decoration-line: underline;text-decoration-thickness: 2px;">Title 3</h2>
                         <p data-animation-in="fadeInLeft" style="color:#0B9421;font-weight:bold;">ஜல்லிக்கட்டிற்கான தடையை நீக்கி அவசரசட்டம் மூலம் நிரந்தரத்தீர்வு கண்டுள்ளார்.</h2>
                         <div class="d-flex margin-top-10">
                             <div class="btn-wrapper" data-animation-in="fadeInDown">
