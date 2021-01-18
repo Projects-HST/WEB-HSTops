@@ -2,28 +2,32 @@
     <div class="banner-style-3 banner-bg-1 d-flex align-items-center">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-5 offset-md-2 offset-xl-2 banner-slider-4">
+                <div class="col-md-5 offset-md-1 offset-xl-1 banner-slider-4">
                     <div class="banner-content-style-3">
-					   <h2 class="title" data-animation-in="fadeInLeft" style="font-size:28px;line-height:40px;">தமிழக அரசியல் வரலாற்றில் தொடர்ந்து 10 முறை நிதி தாக்கல் செய்த சிறப்பிற்குரியவர்.</h2>
+					  <h2 class="title" data-animation-in="fadeInLeft" style="font-size:40px;line-height:30px;color:#0B9421;text-decoration-line: underline;text-decoration-thickness: 2px;">Title 1</h2>
+					   <p data-animation-in="fadeInLeft" style="color:#0B9421;font-weight:bold;">தமிழக அரசியல் வரலாற்றில் தொடர்ந்து 10 முறை நிதி தாக்கல் செய்த சிறப்பிற்குரியவர்.</p>
+					   
                         <div class="d-flex margin-top-10">
                             <div class="btn-wrapper" data-animation-in="fadeInDown">
-                                <a class="btn btn-custom-white" href="<?php echo base_url(); ?>tamil/ops_achievements/">மேலும்</a>
+                                <a class="btn btn-custom-green" href="<?php echo base_url(); ?>tamil/ops_achievements/">மேலும்</a>
                             </div>
                         </div>
                     </div>
                     <div class="banner-content-style-3">
-                        <h2 class="title" data-animation-in="fadeInDown" style="font-size:28px;line-height:40px;">அனைவருக்கும் வீடு திட்டத்தின் கீழ் ரூ.27,080 கோடியில் 5,93,341 குடியிருப்புகள் கட்டித் தரப்பட்டுள்ளன.</h2>
+						<h2 class="title" data-animation-in="fadeInDown" style="font-size:40px;line-height:30px;color:#0B9421;">Title 2</h2>
+                        <p data-animation-in="fadeInDown" style="color:#0B9421;font-weight:bold;">அனைவருக்கும் வீடு திட்டத்தின் கீழ் ரூ.27,080 கோடியில் 5,93,341 குடியிருப்புகள் கட்டித் தரப்பட்டுள்ளன..</p>
                         <div class="d-flex margin-top-10">
                             <div class="btn-wrapper" data-animation-in="fadeInDown">
-                                <a class="btn btn-custom-white" href="<?php echo base_url(); ?>tamil/ops_achievements/">மேலும்</a>
+                                <a class="btn btn-custom-green" href="<?php echo base_url(); ?>tamil/ops_achievements/">மேலும்</a>
                             </div>
                         </div>
                     </div>
                     <div class="banner-content-style-3">
-                        <h2 class="title" data-animation-in="fadeInLeft" style="font-size:28px;line-height:40px;">ஜல்லிக்கட்டிற்கான தடையை நீக்கி அவசரசட்டம் மூலம் நிரந்தரத்தீர்வு கண்டுள்ளார்.</h2>
+					<h2 class="title" data-animation-in="fadeInDown" style="font-size:40px;line-height:30px;color:#0B9421;">Title 3</h2>
+                        <p data-animation-in="fadeInLeft" style="color:#0B9421;font-weight:bold;">ஜல்லிக்கட்டிற்கான தடையை நீக்கி அவசரசட்டம் மூலம் நிரந்தரத்தீர்வு கண்டுள்ளார்.</h2>
                         <div class="d-flex margin-top-10">
                             <div class="btn-wrapper" data-animation-in="fadeInDown">
-                                <a class="btn btn-custom-white" href="<?php echo base_url(); ?>tamil/ops_achievements/">மேலும்</a>
+                                <a class="btn btn-custom-green" href="<?php echo base_url(); ?>tamil/ops_achievements/">மேலும்</a>
                             </div>
                         </div>
                     </div>

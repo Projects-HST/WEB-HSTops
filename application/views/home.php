@@ -2,28 +2,31 @@
     <div class="banner-style-3 banner-bg-1 d-flex align-items-center">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-5 offset-md-2 offset-xl-2 banner-slider-4">
+                <div class="col-md-5 offset-md-1 offset-xl-1 banner-slider-4">
                     <div class="banner-content-style-3">
-					   <h2 class="title" data-animation-in="fadeInLeft" style="font-size:30px;line-height:40px;">The only leader in political history of TamilNadu has presented the State Budget in Assembly for 10 consecutive times.</h2>
+					   <h2 class="title" data-animation-in="fadeInLeft" style="font-size:40px;line-height:30px;color:#0B9421;text-decoration-line: underline;text-decoration-thickness: 2px;">Title 1</h2>
+					   <p data-animation-in="fadeInLeft" style="color:#0B9421;font-weight:bold;">The only leader in political history of TamilNadu has presented the State Budget in Assembly for 10 consecutive times.</p>
                         <div class="d-flex margin-top-10">
                             <div class="btn-wrapper" data-animation-in="fadeInDown">
-                                <a class="btn btn-custom-white" href="<?php echo base_url(); ?>ops_achievements/">Learn More</a>
+                                <a class="btn btn-custom-green" href="<?php echo base_url(); ?>ops_achievements/">Learn More</a>
                             </div>
                         </div>
                     </div>
                     <div class="banner-content-style-3">
-                        <h2 class="title" data-animation-in="fadeInDown" style="font-size:30px;line-height:40px;">Under the "Housing for All" scheme 5,93,341 tenements were built at a cost of Rs.27,080 crores.</h2>
+						<h2 class="title" data-animation-in="fadeInDown" style="font-size:40px;line-height:30px;color:#0B9421;">Title 2</h2>
+                        <p data-animation-in="fadeInDown" style="color:#0B9421;font-weight:bold;">Under the "Housing for All" scheme 5,93,341 tenements were built at a cost of Rs.27,080 crores.</p>
                         <div class="d-flex margin-top-10">
                             <div class="btn-wrapper" data-animation-in="fadeInDown">
-                                <a class="btn btn-custom-white" href="<?php echo base_url(); ?>ops_achievements/">Learn More</a>
+                                <a class="btn btn-custom-green" href="<?php echo base_url(); ?>ops_achievements/">Learn More</a>
                             </div>
                         </div>
                     </div>
                     <div class="banner-content-style-3">
-                        <h2 class="title" data-animation-in="fadeInLeft" style="font-size:30px;line-height:40px;">The predicament regarding the traditional bull-taming Sport of Tamil Nadu, Jallikattu, has been resolved by passing an emergency ordinance.</h2>
+						<h2 class="title" data-animation-in="fadeInDown" style="font-size:40px;line-height:30px;color:#0B9421;">Title 3</h2>
+                        <p data-animation-in="fadeInLeft" style="color:#0B9421;font-weight:bold;">The predicament regarding the traditional bull-taming Sport of Tamil Nadu, Jallikattu, has been resolved by passing an emergency ordinance.</h2>
                         <div class="d-flex margin-top-10">
                             <div class="btn-wrapper" data-animation-in="fadeInDown">
-                                <a class="btn btn-custom-white" href="<?php echo base_url(); ?>ops_achievements/">Learn More</a>
+                                <a class="btn btn-custom-green" href="<?php echo base_url(); ?>ops_achievements/">Learn More</a>
                             </div>
                         </div>
                     </div>
